@@ -2,7 +2,7 @@
   "name": "SOI",
   "version": "1.0.0",
   "description": "Build Tools for Oslojs",
-  "main": "",
+  "main": "boot.js",
   "directories": {
     "test": "tests"
   },

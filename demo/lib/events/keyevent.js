@@ -1,0 +1,2 @@
+/** Oslo JavaScript Framework. */
+define("@events.keyEvent",["@util","@events.browserEvent","@events.keyEventType"],function(a,b,c){"use strict";var d=function(a,d,e,f){b.call(this,f),this.type=c.KEY,this.keyCode=a,this.charCode=d,this.repeat=e};return a.inherits(d,b),d});

@@ -1,0 +1,2 @@
+/** Oslo JavaScript Framework. */
+define("@events.beforeActionEvent",["@util","@events.browserEvent","@events.actionEventType"],function(a,b,c){"use strict";var d=function(a){b.call(this,a.getBrowserEvent()),this.type=c.BEFOREACTION};return a.inherits(d,b),d});
