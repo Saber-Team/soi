@@ -27,7 +27,7 @@ module.exports = {
 
     // which dir to be relative, defaults to where soi.conf.js located;
     // all path should be calculated based on this directory
-    base_dir        : './',
+    base_dir        : __dirname + '/',
 
     // after build all files placed, if null value, all files would generated
     // be with the original file, but I highly recommend need a dist directory
