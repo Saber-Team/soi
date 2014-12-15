@@ -11,6 +11,7 @@ module.exports = {
     encoding        : 'utf8',
 
     // what kind of files should be ignored
+    // new RegExp('\\.(' + js_config.ignoreFileExt.join('|') + ')$', 'i')
     ignoreFileExt   : ['md', 'json', 'txt', 'tpl', 'tmpl', 'java', 'py', 'rb', 'cs', 'h', 'rar', 'zip'],
 
     // debug mode
@@ -54,15 +55,15 @@ module.exports = {
 
     // Manually added files
     // 需要遍历的目录，这些目录的所有文件都会被计算
-    files: {
-        css: [
+    files           : {
+        css         : [
             './demo/assets/css/'
         ],
-        js: [
+        js          : [
             './demo/lib/',
             './demo/assets/js/'
         ],
-        img: [
+        img         : [
             './demo/assets/img/'
         ]
     }
