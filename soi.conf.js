@@ -36,8 +36,13 @@ module.exports = {
     // js module loader
     module_loader   :  './demo/lib/require.js',
 
-    // logic start file
-    input_file      :  './demo/assets/app.js',
+    // logic start file or async load modules entry file
+    input_file      :  [
+        {
+            path    : './demo/assets/app.js',
+            defer   : false
+        }
+    ],
 
     // If debug set to true, we around all js files' path with script html tag
     // and write it to this file, which can be paste into your template or html file
