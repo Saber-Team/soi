@@ -36,6 +36,9 @@ module.exports = {
     // js module loader
     module_loader   :  './demo/lib/require.js',
 
+    // logic start file
+    input_file      :  './demo/assets/app.js',
+
     // If debug set to true, we around all js files' path with script html tag
     // and write it to this file, which can be paste into your template or html file
     // for source debugging (or you can use source map)
