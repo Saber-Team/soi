@@ -3,8 +3,7 @@
  * @author Leo.Zhang(zmike86)
  */
 
-define('HMT.App',
-    [
+require([
         '@util',
         '@events.util',
         '@events.eventType',

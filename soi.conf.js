@@ -1,6 +1,6 @@
 ﻿/**
  * @fileoverview CONFIGURATION FILE
- * Also used for the demo project
+ *   Also used for the demo project
  * @author AceMood(zmike86)
  * @email zmike86@gmail.com
  */
@@ -51,7 +51,7 @@ module.exports = {
     output_file     : './output/temp.txt',
 
     // If debug set to true, output_file_base could be work together with output_file
-    output_file_base: './demo/app.html',
+    output_base: './demo/app.html',
 
     // Manually added files
     // 需要遍历的目录，这些目录的所有文件都会被计算
