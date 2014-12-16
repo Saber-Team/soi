@@ -46,7 +46,7 @@ module.exports = {
     // logic start file or async load modules entry file
     input_file      :  [
         {
-            path    : './demo/assets/app.js',
+            path    : './demo/assets/js/app.js',
             defer   : false
         }
     ],
