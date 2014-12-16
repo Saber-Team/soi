@@ -34,6 +34,12 @@ module.exports = {
     // be with the original file, but I highly recommend need a dist directory
     dist_dir        : './demo/dist/',
 
+    //
+    dist_css_file   : 'css/build.css',
+
+    //
+    dist_js_file    : 'js/build.js',
+
     // js module loader
     module_loader   :  './demo/lib/require.js',
 
