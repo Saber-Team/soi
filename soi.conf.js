@@ -34,10 +34,10 @@ module.exports = {
     // be with the original file, but I highly recommend need a dist directory
     dist_dir        : './demo/dist/',
 
-    //
+    // dist file relative to dist_dir
     dist_css_file   : 'css/build.css',
 
-    //
+    // dist file relative to dist_dir
     dist_js_file    : 'js/build.js',
 
     // js module loader
@@ -57,7 +57,8 @@ module.exports = {
     output_file     : './output/temp.txt',
 
     // If debug set to true, output_file_base could be work together with output_file
-    output_base: './demo/app.html',
+    // it's the directory where template located
+    output_base: './demo/',
 
     // Manually added files
     // 需要遍历的目录，这些目录的所有文件都会被计算
