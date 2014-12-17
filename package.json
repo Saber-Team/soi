@@ -28,6 +28,7 @@
   "homepage": "https://github.com/Saber-Team/SOI",
   "devDependencies": {
     "css": "^2.1.0",
+    "cssurl": "^1.2.1",
     "jasmine-core": "^2.1.3",
     "karma-jasmine": "^0.3.2",
     "rework": "^1.0.1",

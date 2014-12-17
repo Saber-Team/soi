@@ -1,0 +1,413 @@
+/* common background props */
+
+#test_div1 {
+  background: url("../img/a.png");
+}
+
+#test_div2 {
+  background: url("../img/a.png") no-repeat;
+}
+
+#test_div3 {
+  background: url("../img/a.png") no-repeat 0 -10px;
+}
+
+#test_div4 {
+  background: #fff url("../img/a.png");
+}
+
+#test_div5 {
+  background: #fff url("../img/a.png") no-repeat;
+}
+
+#test_div6 {
+  background: #fff url("../img/a.png") 0 -10px;
+}
+
+/* multi backgrounds props */
+
+#test_div8 {
+  background: url("../img/a1.png"), url("../img/a2.png");
+}
+
+/* filter */
+
+#test_div1 {
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/filter.png");
+}
+
+#test_border_image_div1 {
+  -webkit-border-image: url(../img/a.png) 30 30 round;
+  /* Safari 3.1-5 */
+  -o-border-image: url(../img/a.png) 30 30 round;
+  /* Opera 11-12.1 */
+  border-image: url(../img/a.png) 30 30 round;
+}
+
+#test_border_image_div2 {
+  -webkit-border-image: url("../img/a.png") 30 30 round;
+  /* Safari 3.1-5 */
+  -o-border-image: url("../img/a.png") 30 30 round;
+  /* Opera 11-12.1 */
+  border-image: url("../img/a.png") 30 30 round;
+}
+
+#test_border_image_div3 {
+  -webkit-border-image: url(../img/a.png) 30 30 stretch;
+  /* Safari 3.1-5 */
+  -o-border-image: url(../img/a.png) 30 30 stretch;
+  /* Opera 11-12.1 */
+  border-image: url(../img/a.png) 30 30 stretch;
+}
+
+/*CSS Reset*/
+
+html {
+  color: rgb(0,0,0);
+  background: rgb(255,255,255);
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...*/
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+
+legend {
+  color: rgb(0,0,0);
+}
+
+button {
+  padding: 0;
+}
+
+/**
+ * @fileoverview
+ * @author Leo.Zhang(zmike86)
+ */
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Microsoft YaHei";
+  color: #000000;
+  background-color: #f8f8f8;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #eeeeee;
+}
+
+.main img.b {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 条目 */
+
+.main .i {
+  position: relative;
+  padding-top: 2em;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
+  min-height: 14em;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.main table {
+  width: 100%;
+  height: auto;
+}
+
+.main .i td:first-child {
+  width: 66.3%;
+}
+
+.main .i td:last-child {
+  width: 32.7%;
+}
+
+.main .i #pnum {
+  width: 100%;
+  height: 3em;
+  border: solid 1px #333333;
+  border-radius: 6px;
+  font-size: 1em;
+  line-height: normal;
+  text-align: left;
+  text-indent: 8px;
+}
+
+.main .i #getpid {
+  width: 91%;
+  height: 3em;
+  font-size: 1em;
+  line-height: 3em;
+  text-align: center;
+  color: #ffffff;
+  border: solid 1px #499fe1;
+  border-radius: 6px;
+  background: none;
+  background-color: #499fe1;
+}
+
+.main .i #getpid.disable,
+.main .i #submit.disable {
+  border: solid 1px #666666;
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.main .i #pid {
+  display: inline-block;
+  margin-top: 1.5em;
+  width: 99%;
+  height: 3em;
+  border: solid 1px #333333;
+  border-radius: 6px;
+  font-size: 1em;
+  line-height: normal;
+  text-align: left;
+  text-indent: 8px;
+}
+
+.main .i #submit {
+  display: inline-block;
+  margin-top: 1.5em;
+  width: 99%;
+  height: 3em;
+  font-size: 1em;
+  line-height: 3em;
+  text-align: center;
+  color: #ffffff;
+  border: solid 1px #3cb878;
+  border-radius: 6px;
+  background: none;
+  background-color: #3cb878;
+}
+
+.main .i .err {
+  display: none;
+  color: #ff0000;
+  font-size: 0.9em;
+  line-height: 2em;
+  text-indent: 8px;
+}
+
+/* 说明 */
+
+.main h3 {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 1em;
+  color: #666666;
+  font-size: 1em;
+  line-height: 1.5em;
+  background-color: #eeeeee;
+}
+
+.main p {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1em;
+  margin-top: 0.5em;
+  color: #666666;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  background-color: #eeeeee;
+}
+
+/**
+ * @fileoverview
+ * @author Leo.Zhang(zmike86)
+ */
+
+.secondary {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+
+/* 浮层 */
+
+.secondary .mask {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+  background-color: #000000;
+}
+
+/* 弹窗 */
+
+.secondary .c {
+  position: fixed;
+  top: 9em;
+  height: 13.5em;
+  width: 83.3%;
+  margin-left: 8.3%;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+/* 标题 */
+
+.secondary .c h3 {
+  margin-top: 0.5em;
+  color: #333333;
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 2em;
+}
+
+/* 说明 */
+
+.secondary p {
+  width: 90%;
+  height: 5em;
+  margin-left: 5%;
+  color: #333333;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+/* 成功领取 */
+
+.secondary a {
+  display: block;
+  margin-top: 0.3em;
+  width: 86%;
+  height: 3em;
+  margin-left: 7%;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #FF7B3A;
+  border-radius: 6px;
+  text-decoration: none;
+}
