@@ -3,6 +3,8 @@
  * @author Leo.Zhang(zmike86)
  */
 
+@import url(reset.css);
+
 html {
     height: 100%;
 }

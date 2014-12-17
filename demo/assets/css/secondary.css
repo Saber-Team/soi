@@ -3,6 +3,9 @@
  * @author Leo.Zhang(zmike86)
  */
 
+@import url(main.css);
+@import url(test.css);
+
 .secondary {
     display: none;
     position: fixed;
