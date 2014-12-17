@@ -47,8 +47,7 @@ require([
         // var phone_number = '';
 
         // dom缓存
-        var $main = dom.getElementsByClass('main')[0],
-            $secondary = dom.getElementsByClass('secondary')[0],
+        var $secondary = dom.getElementsByClass('secondary')[0],
             $pnum = dom.getElement('pnum'),
             $getpid = dom.getElement('getpid'),
             $getpid_err = dom.getElement('getpid_err'),
@@ -128,7 +127,7 @@ require([
 
 
             // 输入号码时
-            events.listen($pnum, EventType.KEYUP, function (e) {
+            events.listen($pnum, EventType.KEYUP, function () {
                 var phone = this.value;
                 if (string.trim(phone) == '') {
                     $getpid_err.innerHTML = MSG.PHONE_NULL;
@@ -146,7 +145,7 @@ require([
 
 
             // 点获取验证码
-            events.listen($getpid, EventType.CLICK, function (e) {
+            events.listen($getpid, EventType.CLICK, function () {
                 if (disabled) return;
                 if (isSending) return;
                 if (/disable/.test($getpid.className))
@@ -193,7 +192,7 @@ require([
 
 
             // 提交验证码
-            events.listen($submit, EventType.CLICK, function (e) {
+            events.listen($submit, EventType.CLICK, function () {
                 if (disabled) return;
                 if (isSending) return;
                 if (/disable/.test($submit.className)) return;
@@ -229,7 +228,7 @@ require([
 
 
             // 点确定
-            events.listen($confirm, EventType.CLICK, function(e) {
+            events.listen($confirm, EventType.CLICK, function() {
                 $secondary.style.display = 'none';
                 setDisabled(true);
             }, false, $confirm)
