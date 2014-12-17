@@ -43,6 +43,11 @@ module.exports = {
     // js module loader
     module_loader   :  './demo/lib/require.js',
 
+    // start css file as the entry point
+    // *I HIGHLY RECOMMEND* bundle all css files into one
+    // So it's only need to provide single entry point
+    css_entry_point : './demo/assets/css/test.css',
+
     // logic start file or async load modules entry file
     input_file      :  [
         {

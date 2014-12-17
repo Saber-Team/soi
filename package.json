@@ -32,6 +32,7 @@
     "karma-jasmine": "^0.3.2",
     "rework": "^1.0.1",
     "rework-import": "^2.0.0",
+    "rework-plugin-url": "^1.0.1",
     "uglify-js": "^2.4.16"
   }
 }

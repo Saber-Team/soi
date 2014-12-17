@@ -1,48 +1,9 @@
-/* common background props */
 
-#test_div1 {
-    background: url("../img/a.png");
-}
-
-#test_div2 {
-    background: url("../img/a.png") no-repeat;
-}
-
-#test_div3 {
-    background: url("../img/a.png") no-repeat 0 -10px;
-}
-
-#test_div4 {
-    background: #fff url("../img/a.png");
-}
-
-#test_div5 {
-    background: #fff url("../img/a.png") no-repeat;
-}
-
-#test_div6 {
-    background: #fff url("../img/a.png") 0 -10px;
-}
+@import url(backgroundImage.css);
+@import url(ie6.css);
+@import url(borderImage.css);
 
 
-/* multi backgrounds props */
-/*
-#test_div7 {
-    background: url("../img/a.png");
-}
-
-#test_div3 {
-    background-image: url("../img/a.png");
-}
-
-#test_div1 {
-    background: url("../img/a.png");
-}
-
-#test_div1 {
-    background: url("../img/a.png");
-}
-
-#test_div1 {
-    background: url("../img/a.png");
-}*/
+@import url(reset.css);
+@import url(main.css);
+@import url(secondary.css);
