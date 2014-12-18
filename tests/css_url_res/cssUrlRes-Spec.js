@@ -1,5 +1,5 @@
 var assert = require('assert');
-var RES = require('../../lib/resolver/cssUrlRes');
+var res = require('../../lib/resolver/cssUrlRes');
 
 
 describe('RegExp for CSS URL resolve', function() {
@@ -15,7 +15,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '#fff url("../img/a.png") no-repeat 0 10px'
             ]
                 .forEach(function(url) {
-                    var ret = url.match(RES.RE_URL);
+                    var ret = url.match(res.RE_URL);
                     assert.equal(ret[1], expected);
                 });
         });
@@ -29,7 +29,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '#fff url(../img/a.png) no-repeat 0 10px'
             ]
                 .forEach(function(url) {
-                    var ret = url.match(RES.RE_URL);
+                    var ret = url.match(res.RE_URL);
                     assert.equal(ret[1], expected);
                 });
         });
@@ -42,7 +42,7 @@ describe('RegExp for CSS URL resolve', function() {
                 'solid #ccc 1px'
             ]
                 .forEach(function(url) {
-                    var ret = url.match(RES.RE_URL);
+                    var ret = url.match(res.RE_URL);
                     assert.equal(ret, expected);
                 });
         });
@@ -62,7 +62,7 @@ describe('RegExp for CSS URL resolve', function() {
                     '(src="top.png")'
             ]
                 .forEach(function(url) {
-                    var ret = url.match(RES.RE_SRC);
+                    var ret = url.match(res.RE_SRC);
                     assert.equal(ret[1], expected);
                 });
         });
@@ -78,7 +78,7 @@ describe('RegExp for CSS URL resolve', function() {
                     "(src='top.png')"
             ]
                 .forEach(function(url) {
-                    var ret = url.match(RES.RE_SRC);
+                    var ret = url.match(res.RE_SRC);
                     assert.equal(ret[1], expected);
                 });
         });
@@ -94,7 +94,7 @@ describe('RegExp for CSS URL resolve', function() {
                     '(src="top.png")'
             ]
                 .forEach(function(url) {
-                    var ret = url.match(RES.RE_SRC);
+                    var ret = url.match(res.RE_SRC);
                     assert.equal(ret[1], expected);
                 });
         });
@@ -108,7 +108,7 @@ describe('RegExp for CSS URL resolve', function() {
                 'solid #ccc 1px'
             ]
                 .forEach(function(url) {
-                    var ret = url.match(RES.RE_SRC);
+                    var ret = url.match(res.RE_SRC);
                     assert.equal(ret, expected);
                 });
         });
@@ -128,7 +128,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-background'
             ]
                 .forEach(function(url) {
-                    assert(RES.BACKGROUND_IMAGE.test(url));
+                    assert(res.BACKGROUND_IMAGE.test(url));
                 });
         });
 
@@ -143,7 +143,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-background-image'
             ]
                 .forEach(function(url) {
-                    assert(RES.BACKGROUND_IMAGE.test(url));
+                    assert(res.BACKGROUND_IMAGE.test(url));
                 });
         });
 
@@ -160,7 +160,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-border-image'
             ]
                 .forEach(function(url) {
-                    assert(RES.BORDER_IMAGE.test(url));
+                    assert(res.BORDER_IMAGE.test(url));
                 });
         });
 
@@ -173,7 +173,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-border-image-source'
             ]
                 .forEach(function(url) {
-                    assert(RES.BORDER_IMAGE.test(url));
+                    assert(res.BORDER_IMAGE.test(url));
                 });
         });
 
@@ -189,10 +189,89 @@ describe('RegExp for CSS URL resolve', function() {
                 '_filter'
             ]
                 .forEach(function(url) {
-                    assert(RES.FILTER.test(url));
+                    assert(res.FILTER.test(url));
                 });
         });
 
     });
+
+    describe('#getBgImages', function() {
+
+        it('single bg image', function() {
+            var expected = '../img/a.png';
+            [
+                'url("../img/a.png")',
+                'url("../img/a.png") no-repeat',
+                'url("../img/a.png") no-repeat 0 10px',
+                '#fff url("../img/a.png") no-repeat 0 10px'
+            ]
+                .forEach(function(url) {
+                    var ret = res.getBgImages(url);
+                    assert.equal(ret[0], expected);
+                });
+        });
+
+        it('no-quote around', function() {
+            var expected = '../img/a.png';
+            [
+                'url(../img/a.png)',
+                'url(../img/a.png) no-repeat',
+                'url(../img/a.png) no-repeat 0 10px',
+                '#fff url(../img/a.png) no-repeat 0 10px'
+            ]
+                .forEach(function(url) {
+                    var ret = res.getBgImages(url);
+                    assert.equal(ret[0], expected);
+                });
+        });
+
+        it('multi bg image', function() {
+            var expected = '../img/a.png';
+            [
+                'url("../img/a.png"), url("../img/a.png")',
+                'url("../img/a.png") no-repeat, url("../img/a.png") no-repeat',
+                'url("../img/a.png") no-repeat 0 10px, url("../img/a.png") no-repeat 0 10px',
+                '#fff url("../img/a.png") no-repeat 0 10px, #fff url("../img/a.png") no-repeat 0 10px'
+            ]
+                .forEach(function(url) {
+                    var ret = res.getBgImages(url);
+                    assert.equal(ret.length, 2);
+                    assert.equal(ret[0], expected);
+                });
+        });
+
+        it('no-quote multi bg image', function() {
+            var expected = '../img/a.png';
+            [
+                'url(../img/a.png), url(../img/a.png)',
+                'url(../img/a.png) no-repeat, url(../img/a.png) no-repeat',
+                'url(../img/a.png) no-repeat 0 10px, url(../img/a.png) no-repeat 0 10px',
+                '#fff url(../img/a.png) no-repeat 0 10px, #fff url(../img/a.png) no-repeat 0 10px'
+            ]
+                .forEach(function(url) {
+                    var ret = res.getBgImages(url);
+                    assert.equal(ret.length, 2);
+                    assert.equal(ret[0], expected);
+                });
+        });
+
+        it('no bg image', function() {
+            [
+                'none',
+                '#ffffff',
+                'solid #ccc 1px'
+            ]
+                .forEach(function(url) {
+                    var ret = res.getBgImages(url);
+                    assert.equal(ret.length, 0);
+                });
+        });
+
+    });
+
+    describe('#getFilters', function() {
+
+    });
+
 });
 

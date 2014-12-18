@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Saber-Team/SOI",
   "devDependencies": {
+    "chai": "^1.10.0",
     "css": "^2.1.0",
     "cssurl": "^1.2.1",
     "jasmine-core": "^2.1.3",
