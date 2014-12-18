@@ -63,7 +63,7 @@ module.exports = {
 
     // If debug set to true, output_file_base could be work together with output_file
     // it's the directory where template located
-    output_base: './demo/',
+    output_base     : './demo/',
 
     // Manually added files
     // 需要遍历的目录，这些目录的所有文件都会被计算

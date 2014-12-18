@@ -1,4 +1,5 @@
-var assert = require('assert');
+var chai = require('chai');
+var expect = chai.expect;
 var res = require('../../lib/resolver/cssUrlRes');
 
 
@@ -16,7 +17,7 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = url.match(res.RE_URL);
-                    assert.equal(ret[1], expected);
+                    expect(ret[1]).to.equal(expected);
                 });
         });
 
@@ -30,7 +31,7 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = url.match(res.RE_URL);
-                    assert.equal(ret[1], expected);
+                    expect(ret[1]).to.equal(expected);
                 });
         });
 
@@ -43,7 +44,7 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = url.match(res.RE_URL);
-                    assert.equal(ret, expected);
+                    expect(ret).to.equal(expected);
                 });
         });
 
@@ -63,7 +64,7 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = url.match(res.RE_SRC);
-                    assert.equal(ret[1], expected);
+                    expect(ret[1]).to.equal(expected);
                 });
         });
 
@@ -79,7 +80,7 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = url.match(res.RE_SRC);
-                    assert.equal(ret[1], expected);
+                    expect(ret[1]).to.equal(expected);
                 });
         });
 
@@ -95,7 +96,7 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = url.match(res.RE_SRC);
-                    assert.equal(ret[1], expected);
+                    expect(ret[1]).to.equal(expected);
                 });
         });
 
@@ -109,7 +110,7 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = url.match(res.RE_SRC);
-                    assert.equal(ret, expected);
+                    expect(ret).to.equal(expected);
                 });
         });
 
@@ -128,7 +129,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-background'
             ]
                 .forEach(function(url) {
-                    assert(res.BACKGROUND_IMAGE.test(url));
+                    expect(res.BACKGROUND_IMAGE.test(url)).to.be.true;
                 });
         });
 
@@ -143,7 +144,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-background-image'
             ]
                 .forEach(function(url) {
-                    assert(res.BACKGROUND_IMAGE.test(url));
+                    expect(res.BACKGROUND_IMAGE.test(url)).to.be.true;
                 });
         });
 
@@ -160,7 +161,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-border-image'
             ]
                 .forEach(function(url) {
-                    assert(res.BORDER_IMAGE.test(url));
+                    expect(res.BORDER_IMAGE.test(url)).to.be.true;
                 });
         });
 
@@ -173,7 +174,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-border-image-source'
             ]
                 .forEach(function(url) {
-                    assert(res.BORDER_IMAGE.test(url));
+                    expect(res.BORDER_IMAGE.test(url)).to.be.true;
                 });
         });
 
@@ -189,7 +190,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '_filter'
             ]
                 .forEach(function(url) {
-                    assert(res.FILTER.test(url));
+                    expect(res.FILTER.test(url)).to.be.true;
                 });
         });
 
@@ -207,7 +208,8 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = res.getBgImages(url);
-                    assert.equal(ret[0], expected);
+                    // todo find Array equal
+                    expect(ret[0]).to.equal(expected);
                 });
         });
 
@@ -221,7 +223,7 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = res.getBgImages(url);
-                    assert.equal(ret[0], expected);
+                    expect(ret[0]).to.equal(expected);
                 });
         });
 
@@ -235,8 +237,9 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = res.getBgImages(url);
-                    assert.equal(ret.length, 2);
-                    assert.equal(ret[0], expected);
+                    expect(ret.length).to.equal(2);
+                    expect(ret[0]).to.equal(expected);
+                    expect(ret[1]).to.equal(expected);
                 });
         });
 
@@ -250,8 +253,9 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = res.getBgImages(url);
-                    assert.equal(ret.length, 2);
-                    assert.equal(ret[0], expected);
+                    expect(ret.length).to.equal(2);
+                    expect(ret[0]).to.equal(expected);
+                    expect(ret[1]).to.equal(expected);
                 });
         });
 
@@ -263,14 +267,30 @@ describe('RegExp for CSS URL resolve', function() {
             ]
                 .forEach(function(url) {
                     var ret = res.getBgImages(url);
-                    assert.equal(ret.length, 0);
+                    expect(ret.length).to.equal(0);
                 });
         });
 
     });
 
     describe('#getFilters', function() {
-
+        it('normal filter src', function() {
+            var expected = 'top.png';
+            [
+                "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='top.png');",
+                "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', src='top.png');",
+                "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='top.png');",
+                "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=top.png);",
+                "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', src=top.png);",
+                "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src=top.png);"
+            ]
+                .forEach(function(url) {
+                    var ret = res.getFilters(url);
+                    // todo find Array equal
+                    expect(ret.length).to.equal(1);
+                    expect(ret[0]).to.equal(expected);
+                });
+        });
     });
 
 });
