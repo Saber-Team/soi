@@ -2,5 +2,5 @@
 
 #test_div1 {
     background: none;
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/filter.png");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/img/inner/b.png");
 }

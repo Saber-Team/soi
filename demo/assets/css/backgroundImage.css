@@ -27,5 +27,5 @@
 
 /* multi backgrounds props */
 #test_div8 {
-    background: url("../img/a.png"), url("../img/a.png");
+    background: url("../img/a.png"), url("../img/inner/b.png");
 }
