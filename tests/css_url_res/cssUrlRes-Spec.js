@@ -274,7 +274,8 @@ describe('RegExp for CSS URL resolve', function() {
     });
 
     describe('#getFilters', function() {
-        it('normal filter src', function() {
+
+        it('filter src', function() {
             var expected = 'top.png';
             [
                 "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='top.png');",
@@ -291,6 +292,44 @@ describe('RegExp for CSS URL resolve', function() {
                     expect(ret[0]).to.equal(expected);
                 });
         });
+
+    });
+
+    describe('#getHTCs', function() {
+
+        it('single behavior url', function() {
+            var expected = 'ul.htc';
+            [
+                'url(ul.htc)',
+                'url("ul.htc")'
+            ]
+                .forEach(function(url) {
+                    var ret = res.getHTCs(url);
+
+                    // todo find Array equal
+                    expect(ret.length).to.equal(1);
+                    expect(ret[0]).to.equal(expected);
+                });
+        });
+
+        it('multi behavior url', function() {
+            var expected = 'ul.htc';
+            [
+                'url(ul.htc) url(ul.htc)',
+                'url(ul.htc)    url(ul.htc)',
+                'url("ul.htc") url("ul.htc")',
+                'url("ul.htc")    url("ul.htc")'
+            ]
+                .forEach(function(url) {
+                    var ret = res.getHTCs(url);
+
+                    // todo find Array equal
+                    expect(ret.length).to.equal(2);
+                    expect(ret[0]).to.equal(expected);
+                    expect(ret[1]).to.equal(expected);
+                });
+        });
+
     });
 
 });
