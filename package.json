@@ -1,14 +1,16 @@
 {
   "name": "soi",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Build Tools for Oslojs",
-  "main": "boot.js",
   "directories": {
     "test": "tests"
   },
+  "main": "./boot",
+  "start": "node ./boot.js",
   "scripts": {
     "test": "mocha \"./tests/**/*.js\""
   },
+  "bin": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/Saber-Team/SOI.git"
