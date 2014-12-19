@@ -116,6 +116,23 @@ describe('RegExp for CSS URL resolve', function() {
 
     });
 
+    describe('#import', function() {
+
+        it('normally test', function() {
+            var expected = 'a.css';
+            [
+                'url("a.css")',
+                'url(a.css)',
+                '"a.css"'
+            ]
+                .forEach(function(url) {
+                    var ret = url.match(res.RE_IMPORT_URL);
+                    expect(ret[1]).to.equal(expected);
+                });
+        });
+
+    });
+
     describe('#background', function() {
 
         it('background props', function() {
@@ -129,7 +146,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-background'
             ]
                 .forEach(function(url) {
-                    expect(res.BACKGROUND_IMAGE.test(url)).to.be.true;
+                    expect(res.BACKGROUND_IMAGE.test(url)).to.be.true();
                 });
         });
 
@@ -144,7 +161,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-background-image'
             ]
                 .forEach(function(url) {
-                    expect(res.BACKGROUND_IMAGE.test(url)).to.be.true;
+                    expect(res.BACKGROUND_IMAGE.test(url)).to.be.true();
                 });
         });
 
@@ -161,7 +178,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-border-image'
             ]
                 .forEach(function(url) {
-                    expect(res.BORDER_IMAGE.test(url)).to.be.true;
+                    expect(res.BORDER_IMAGE.test(url)).to.be.true();
                 });
         });
 
@@ -174,7 +191,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '-webkit-border-image-source'
             ]
                 .forEach(function(url) {
-                    expect(res.BORDER_IMAGE.test(url)).to.be.true;
+                    expect(res.BORDER_IMAGE.test(url)).to.be.true();
                 });
         });
 
@@ -190,7 +207,7 @@ describe('RegExp for CSS URL resolve', function() {
                 '_filter'
             ]
                 .forEach(function(url) {
-                    expect(res.FILTER.test(url)).to.be.true;
+                    expect(res.FILTER.test(url)).to.be.true();
                 });
         });
 
@@ -327,6 +344,26 @@ describe('RegExp for CSS URL resolve', function() {
                     expect(ret.length).to.equal(2);
                     expect(ret[0]).to.equal(expected);
                     expect(ret[1]).to.equal(expected);
+                });
+        });
+
+    });
+
+    describe('#getImportUrl', function() {
+
+        it('single url', function() {
+            var expected = 'a.css';
+            [
+                'url("a.css")',
+                'url(a.css)',
+                '"a.css"'
+            ]
+                .forEach(function(url) {
+                    var ret = res.getImportUrl(url);
+
+                    // todo find Array equal
+                    expect(ret.length).to.equal(1);
+                    expect(ret[0]).to.equal(expected);
                 });
         });
 

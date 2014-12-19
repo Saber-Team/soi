@@ -1,0 +1,6 @@
+@import "inner/c.css";
+
+#b {
+    opacity: .5;
+    background-color: orange;
+}

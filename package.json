@@ -7,15 +7,14 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha \"./tests/**/*.js\""
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Saber-Team/SOI.git"
   },
   "keywords": [
-    "build",
-    "tools",
+    "build tools",
     "javascript",
     "nodejs",
     "oslojs"

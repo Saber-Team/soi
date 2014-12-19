@@ -1,0 +1,7 @@
+@import "b.css";
+@import url("inner/c.css");
+
+#a {
+    border-radius: 5px;
+    background-color: #345122;
+}
