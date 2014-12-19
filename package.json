@@ -1,6 +1,6 @@
 {
   "name": "soi",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Build Tools for Oslojs",
   "main": "boot.js",
   "directories": {
