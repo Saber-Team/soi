@@ -10,12 +10,12 @@
     filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=assets/img/inner/b.png);
 }
 
-#test_div2 {
+#test_div3 {
     background: none;
     _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader("src=assets/img/inner/b.png");
 }
 
-#test_div2 {
+#test_div4 {
     background: none;
     _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=assets/img/inner/b.png);
 }
