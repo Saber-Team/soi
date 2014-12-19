@@ -1,11 +1,11 @@
 {
   "name": "soi",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Build Tools for Oslojs",
   "directories": {
     "test": "tests"
   },
-  "main": "./boot",
+  "main": "./boot.js",
   "start": "node ./boot.js",
   "scripts": {
     "test": "mocha \"./tests/**/*.js\""
@@ -37,6 +37,10 @@
     "rework": "^1.0.1",
     "rework-import": "^2.0.0",
     "rework-plugin-url": "^1.0.1",
+    "uglify-js": "^2.4.16"
+  },
+  "dependencies": {
+    "css": "^2.1.0",
     "uglify-js": "^2.4.16"
   }
 }
