@@ -82,12 +82,16 @@ module.exports = {
 
   // pack config
   // *input: start module from which to calculate
+  //         (Note that: If css use import and provide the input field, you
+  //         needn't to provide the directory as well, `cause import already
+  //         use file path for calculating.)
   // *directory: all the needed files located
   // *defer: whether the package will be loaded on demand or first view
   //    false is needed on first view, true means will be loaded on demand.
+  //    Default to false.
   // *dist: concat file name(will be change suffix with sha1 hash sum)
   // *dist_dir: where concat file located
-  bundle          : {
+  bundles         : {
     css           : [
       {
         input     : './demo/assets/css/test.css',
