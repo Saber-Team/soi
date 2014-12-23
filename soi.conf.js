@@ -85,28 +85,37 @@ module.exports = {
   //         (Note that: If css use import and provide the input field, you
   //         needn't to provide the directory as well, `cause import already
   //         use file path for calculating.)
-  // *directory: all the needed files located
+  // *files: all the needed files located
   // *defer: whether the package will be loaded on demand or first view
   //    false is needed on first view, true means will be loaded on demand.
   //    Default to false.
-  // *dist: concat file name(will be change suffix with sha1 hash sum)
+  // *dist_file: concat file name(will be change suffix with sha1 hash sum)
   // *dist_dir: where concat file located
   bundles         : {
+    img           : [
+      {
+        input     : null,
+        files     : [ './demo/assets/img/' ],
+        defer     : false,
+        dist_file : null,
+        dist_dir  : './demo/dist/img/'
+      }
+    ],
     css           : [
       {
         input     : './demo/assets/css/test.css',
-        directory : [ './demo/assets/css/' ],
+        files     : [ './demo/assets/css/' ],
         defer     : false,
-        dist      : 'build.css',
+        dist_file : 'build.css',
         dist_dir  : './demo/dist/css/'
       }
     ],
     js            : [
       {
         input     : './demo/assets/js/app.js',
-        directory : [ './demo/lib/', './demo/assets/js/' ],
+        files     : [ './demo/lib/', './demo/assets/js/' ],
         defer     : false,
-        dist      : 'build.js',
+        dist_file : 'build.js',
         dist_dir  : './demo/dist/js/'
       }
     ]

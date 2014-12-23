@@ -5,8 +5,7 @@
   "directories": {
     "test": "tests"
   },
-  "main": "./boot.js",
-  "start": "node ./boot.js",
+  "main": "boot.js",
   "scripts": {
     "test": "mocha \"./tests/**/*.js\""
   },
