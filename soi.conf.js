@@ -90,6 +90,7 @@ module.exports = {
       {
         input     : null,
         files     : [ './demo/assets/img/' ],
+        exclude   : {},
         defer     : false,
         dist_file : null,
         dist_dir  : './demo/dist/img/'
@@ -99,6 +100,7 @@ module.exports = {
       {
         input     : './demo/assets/css/test.css',
         files     : [ './demo/assets/css/' ],
+        exclude   : {},
         defer     : false,
         dist_file : 'build.css',
         dist_dir  : './demo/dist/css/'
@@ -106,6 +108,7 @@ module.exports = {
       {
         input     : './demo/assets/css/starter.css',
         files     : [ './demo/assets/css/' ],
+        exclude   : {},
         defer     : true,
         dist_file : 'async.css',
         dist_dir  : './demo/dist/css/'
@@ -115,6 +118,7 @@ module.exports = {
       {
         input     : './demo/assets/js/app.js',
         files     : [ './demo/lib/', './demo/assets/js/' ],
+        exclude   : {},
         defer     : false,
         dist_file : 'build.js',
         dist_dir  : './demo/dist/js/'
