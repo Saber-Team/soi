@@ -74,9 +74,6 @@ module.exports = {
     js            : [
       './demo/lib/',
       './demo/assets/js/'
-    ],
-    img           : [
-      './demo/assets/img/'
     ]
   },
 
