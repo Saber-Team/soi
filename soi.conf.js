@@ -68,9 +68,6 @@ module.exports = {
   // Manually added files
   // 需要遍历的目录，这些目录的所有文件都会被计算
   files           : {
-    css           : [
-      './demo/assets/css/'
-    ],
     js            : [
       './demo/lib/',
       './demo/assets/js/'
@@ -104,6 +101,13 @@ module.exports = {
         files     : [ './demo/assets/css/' ],
         defer     : false,
         dist_file : 'build.css',
+        dist_dir  : './demo/dist/css/'
+      },
+      {
+        input     : './demo/assets/css/starter.css',
+        files     : [ './demo/assets/css/' ],
+        defer     : true,
+        dist_file : 'async.css',
         dist_dir  : './demo/dist/css/'
       }
     ],
