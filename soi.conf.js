@@ -96,6 +96,9 @@ module.exports = {
         dist_dir  : './demo/dist/img/'
       }
     ],
+    // `input field` means start css file as the entry point
+    // *I HIGHLY RECOMMEND* bundle all css files into one
+    // So it's only need to provide single entry point
     css           : [
       {
         input     : './demo/assets/css/test.css',
