@@ -18,12 +18,9 @@ module.exports = {
   debug           : true,
 
   // directories that would not be calculated
-  preserved       : {
-    'imgs'        : true,
+  exclude         : {
     'build'       : true,
-    'dist'        : true,
-    'templates'   : true,
-    'demos'       : true
+    'dist'        : true
   },
 
   // which dir to be relative, defaults to where soi.conf.js located;
@@ -45,15 +42,6 @@ module.exports = {
   // If debug set to true, output_file_base could be work together with output_file
   // it's the directory where template located
   output_base     : './demo/',
-
-  // Manually added files
-  // 需要遍历的目录，这些目录的所有文件都会被计算
-  files           : {
-    js            : [
-      './demo/lib/',
-      './demo/assets/js/'
-    ]
-  },
 
   // pack config
   // *input: start module from which to calculate
