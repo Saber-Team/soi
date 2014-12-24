@@ -193,6 +193,9 @@ require([
 
             // 提交验证码
             events.listen($submit, EventType.CLICK, function () {
+              require.async('need', function(need) {
+                alert(need.need)
+              });
                 if (disabled) return;
                 if (isSending) return;
                 if (/disable/.test($submit.className)) return;

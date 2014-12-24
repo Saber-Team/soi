@@ -1,3 +1,5 @@
-/**
- * Created by zhangshen on 2014/12/24.
- */
+define('need', ['@util'], function(util) {
+  return {
+    need: true
+  }
+});
