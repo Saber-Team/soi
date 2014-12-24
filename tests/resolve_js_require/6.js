@@ -1,0 +1,2 @@
+
+    require.async("a.js");
