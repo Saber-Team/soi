@@ -1,6 +1,5 @@
-define('test.async',
-  [
-    '@util'
+define([
+    '../../lib/util/util'
   ],
   function(util) {
     return {};

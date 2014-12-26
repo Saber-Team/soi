@@ -3,7 +3,7 @@
  * @author Leo.Zhang(zmike86)
  */
 
-define('HMT.networktest', [], function() {
+define(function() {
     'use strict';
 
     var url = 'http://www.sogou.com/images/logo/new/sogou.png';

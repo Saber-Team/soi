@@ -1,4 +1,4 @@
-define('need', ['@util'], function(util) {
+define(['../../lib/util/util'], function(util) {
   return {
     need: true
   }
