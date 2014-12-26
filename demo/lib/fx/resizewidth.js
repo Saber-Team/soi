@@ -1,2 +1,2 @@
 /** Oslo JavaScript Framework. */
-define("@fx.resizeWidth",["@util","@fx.effectBase"],function(a,b){"use strict";var c=function(a,c,d,e,f){b.call(this,a,[c],[d],e,f)};return a.inherits(c,b),c.prototype.updateStyle=function(){this.element.style.width=Math.round(this.coords[0])+"px"},c});
+define(["../util/util","./effectbase"],function(a,b){"use strict";var c=function(a,c,d,e,f){b.call(this,a,[c],[d],e,f)};return a.inherits(c,b),c.prototype.updateStyle=function(){this.element.style.width=Math.round(this.coords[0])+"px"},c});

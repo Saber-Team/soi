@@ -1,2 +1,2 @@
 /** Oslo JavaScript Framework. */
-define("@events.actionEventType",[],{ACTION:"action",BEFOREACTION:"beforeaction"});
+define({ACTION:"action",BEFOREACTION:"beforeaction"});
