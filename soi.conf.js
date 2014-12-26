@@ -31,8 +31,8 @@ module.exports = {
   // be with the original file, but I highly recommend need a dist directory
   dist_dir        : './demo/dist/',
 
-  // js module loader
-  module_loader   :  './demo/lib/require.js',
+  // js module loader #requirejs
+  module_loader   :  './demo/lib/loader.js',
 
   // If debug set to true, we around all js files' path with script html tag
   // and write it to this file, which can be paste into your template or html file
