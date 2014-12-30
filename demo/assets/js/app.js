@@ -17,6 +17,10 @@ require([
 
     'use strict';
 
+    require.async('./networktest', function(test) {
+
+    });
+
     // 倒计时
     function loop() {
       if ($getpid.className !== 'disable') {
