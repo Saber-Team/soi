@@ -14,14 +14,14 @@ describe('RegExp for require.async', function() {
   describe('remove comments', function() {
 
     it('multi lines comments', function() {
-      var content = read(__dirname + '/3.js');
-      content = content.replace(res.RE_COMMENTS, '');
+      var content = read(__dirname + '/mc.js');
+      content = res.removeComments(content);
       expect(content).to.equal('');
     });
 
     it('single line comments', function() {
-      var content = read(__dirname + '/4.js');
-      content = content.replace(res.RE_COMMENTS, '');
+      var content = read(__dirname + '/sc.js');
+      content = res.removeComments(content);
       expect(content).to.equal('');
     });
 
@@ -29,32 +29,50 @@ describe('RegExp for require.async', function() {
 
   describe('parse js code', function() {
 
-    it('normal code', function() {
+    it('normal code style', function() {
       var expected = 'a.js';
       var content = read(__dirname + '/1.js');
-      var ret = content.match(res.RE_REQUIRE_ASYNC);
-      expect(ret[1]).to.equal(expected);
+      var urls = res.getRequireUrls(content);
+
+      expect(urls.length).to.equal(1);
+      expect(urls[0]).to.equal(expected);
     });
 
-    it('enter between method', function() {
+    it('newline before method', function() {
       var expected = 'a.js';
       var content = read(__dirname + '/2.js');
-      var ret = content.match(res.RE_REQUIRE_ASYNC);
-      expect(ret[1]).to.equal(expected);
+      var urls = res.getRequireUrls(content);
+
+      expect(urls.length).to.equal(1);
+      expect(urls[0]).to.equal(expected);
     });
 
     it('double quotes', function() {
       var expected = 'a.js';
       var content = read(__dirname + '/5.js');
-      var ret = content.match(res.RE_REQUIRE_ASYNC);
-      expect(ret[1]).to.equal(expected);
+      var urls = res.getRequireUrls(content);
+
+      expect(urls.length).to.equal(1);
+      expect(urls[0]).to.equal(expected);
     });
 
     it('single parameter', function() {
       var expected = 'a.js';
       var content = read(__dirname + '/6.js');
-      var ret = content.match(res.RE_REQUIRE_ASYNC);
-      expect(ret[1]).to.equal(expected);
+      var urls = res.getRequireUrls(content);
+
+      expect(urls.length).to.equal(1);
+      expect(urls[0]).to.equal(expected);
+    });
+
+    it('multi requires', function() {
+      var content = read(__dirname + '/7.js');
+      var urls = res.getRequireUrls(content);
+
+      expect(urls.length).to.equal(3);
+      expect(urls[0]).to.equal('a.js');
+      expect(urls[1]).to.equal('b.js');
+      expect(urls[2]).to.equal('c.js');
     });
 
   });
