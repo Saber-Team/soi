@@ -29,7 +29,7 @@ module.exports = {
 
   // after build all files placed, if null value, all files would generated
   // be with the original file, but I highly recommend need a dist directory
-  dist_dir        : './demo/dist/',
+  dist_dir        : './demo/dist/js/',
 
   // js module loader #requirejs
   module_loader   :  './demo/lib/loader.js',
