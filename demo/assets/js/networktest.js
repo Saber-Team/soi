@@ -3,7 +3,7 @@
  * @author Leo.Zhang(zmike86)
  */
 
-define(function() {
+define(['../../lib/util/util'], function(util) {
     'use strict';
 
     var url = 'http://www.sogou.com/images/logo/new/sogou.png';

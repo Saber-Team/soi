@@ -17,8 +17,8 @@ require([
 
     'use strict';
 
-    require.async('./networktest', function(test) {
-
+    require.async('./networktest.js', function(test) {
+      alert(100);
     });
 
     // 倒计时
