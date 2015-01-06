@@ -95,6 +95,14 @@ module.exports = {
         defer     : false,
         dist_file : 'build.js',
         dist_dir  : './demo/dist/js/'
+      },
+      {
+        input     : './demo/assets/js/app0.js',
+        files     : [ './demo/lib/', './demo/assets/js/' ],
+        exclude   : {},
+        defer     : false,
+        dist_file : 'build0.js',
+        dist_dir  : './demo/dist/js/'
       }
     ]
   }

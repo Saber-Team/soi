@@ -1,0 +1,3 @@
+;!function(t){"use strict";function e(t,e,n){var i=e.map(function(t){var e=r[t];if(!e)throw"Module with id: "+t+"has not been registered!";return e});r[t]="function"==typeof n?n.apply(null,i):n}function n(t,e){var n=t.map(function(t){var e=r[t];if(!e)throw"Module with id: "+t+"has not been registered!";return e});e.apply(null,n)}var r={};n.async=function(){},t.define=e,t.require=n,t.oslojs={version:"%V",maintainer:"Saber-Team@Sogou-Inc.com"}}(this);
+;define("$50",[],{name:"dep0"});
+;require(["$1","$20","$50"],function(){alert("finish")});
