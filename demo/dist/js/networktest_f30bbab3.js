@@ -1,0 +1,1 @@
+;_def("$51",["$1"],function(){"use strict";function n(){return"onLine"in navigator&&!navigator.onLine}function o(){return t+"?"+ +new Date}function r(r){if(n())r(!1);else{var t=new Image;t.onload=function(){t.onload=null,r(!0)},t.onerror=t.onabort=function(){t.onerror=t.onabort=null,r(!1)},t.src=o()}}var t="http://www.sogou.com/images/logo/new/sogou.png";return{test:r}});
