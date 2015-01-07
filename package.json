@@ -29,13 +29,7 @@
   "devDependencies": {
     "chai": "^1.10.0",
     "css": "^2.1.0",
-    "cssurl": "^1.2.1",
-    "jasmine-core": "^2.1.3",
-    "karma-jasmine": "^0.3.2",
     "mocha": "^2.0.1",
-    "rework": "^1.0.1",
-    "rework-import": "^2.0.0",
-    "rework-plugin-url": "^1.0.1",
     "uglify-js": "^2.4.16"
   },
   "dependencies": {
