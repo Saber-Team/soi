@@ -2,6 +2,7 @@
  * @fileoverview
  * @author Leo.Zhang(zmike86)
  */
+@import "reset.css";
 
 html {
     height: 100%;
@@ -11,117 +12,13 @@ body {
     width: 100%;
     font-family: "Microsoft YaHei";
     color: #000000;
-    background-color: #f8f8f8;
 }
-
-.main {
+header {
     width: 100%;
-    margin: 0 auto;
-    background-color: #eeeeee;
+    height: 80px;
+    background: url("../img/banner.png") no-repeat center center;
 }
-
-.main img.b {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-/* 条目 */
-.main .i {
-    position: relative;
-    padding-top: 2em;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 90%;
-    min-height: 14em;
-    overflow: hidden;
-    background-color: #ffffff;
-}
-
-.main table {
-    width: 100%;
-    height: auto;
-}
-.main .i td:first-child {
-    width: 66.3%;
-}
-.main .i td:last-child {
-    width: 32.7%;
-}
-
-.main .i #pnum {
-    width: 100%;
-    height: 3em;
-    border: solid 1px #333333;
-    border-radius: 6px;
-
-    font-size: 1em;
-    line-height: normal;
-    text-align: left;
-    text-indent: 8px;
-}
-
-.main .i #getpid {
-    width: 91%;
-    height: 3em;
-    font-size: 1em;
-    line-height: 3em;
-    text-align: center;
-    color: #ffffff;
-    border: solid 1px #499fe1;
-    border-radius: 6px;
-    background: none;
-    background-color: #499fe1;
-}
-
-.main .i #getpid.disable,
-.main .i #submit.disable {
-    border: solid 1px #666666;
-    background-color: #666666;
-    color: #ffffff;
-}
-
-.main .i #pid {
-    display: inline-block;
-    margin-top: 1.5em;
-    width: 99%;
-    height: 3em;
-    border: solid 1px #333333;
-    border-radius: 6px;
-
-    font-size: 1em;
-    line-height: normal;
-    text-align: left;
-    text-indent: 8px;
-}
-
-.main .i #submit {
-    display: inline-block;
-    margin-top: 1.5em;
-    width: 99%;
-    height: 3em;
-
-    font-size: 1em;
-    line-height: 3em;
-    text-align: center;
-    color: #ffffff;
-
-    border: solid 1px #3cb878;
-    border-radius: 6px;
-    background: none;
-    background-color: #3cb878;
-}
-
-.main .i .err {
-    display: none;
-    color: #ff0000;
-    font-size: 0.9em;
-    line-height: 2em;
-    text-indent: 8px;
-}
-
-/* 说明 */
-.main h3 {
+p {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
@@ -129,16 +26,36 @@ body {
     color: #666666;
     font-size: 1em;
     line-height: 1.5em;
-    background-color: #eeeeee;
+    text-indent: 8px;
 }
-.main p {
+input {
+    display: block;
+    margin: 1em auto;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 1em;
-    margin-top: 0.5em;
+    height: 2em;
+    border: solid 1px #333333;
+    border-radius: 3px;
+
+    font-size: 1em;
+    line-height: normal;
+    text-align: left;
+    text-indent: 8px;
+}
+button {
+    display: block;
+    width: 60%;
+    height: 2em;
+    margin: 0 auto;
+    font-size: 1em;
+    line-height: normal;
+    text-align: center;
+}
+div {
+    width: 90%;
+    margin: 1em auto;
+    font-size: 1em;
     color: #666666;
-    font-size: 0.8em;
-    line-height: 1.5em;
-    background-color: #eeeeee;
+    line-height: normal;
+    text-align: left;
+    text-indent: 8px;
 }
