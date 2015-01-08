@@ -1,2 +1,0 @@
-/** Oslo JavaScript Framework. */
-define(["../util/util"],function(a){"use strict";var b={};return b.object=function(a,b){return b},b.sinkValue=function(a){return b.sinkValue[" "](a),a},b.sinkValue[" "]=a.nullFunction,b.canAccessProperty=function(a,c){try{return b.sinkValue(a[c]),!0}catch(d){}return!1},b});
