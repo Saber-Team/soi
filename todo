@@ -1,7 +1,7 @@
 <ul>
   <li>css文件对图片资源引用的替换功能 (htc, fonts, svg, swf)
   <li>js代码对资源路径的动态读写的替换功能
-  <li>oslo异步加载模块的功能
+  <li>font资源的支持
   <li>swf资源的支持
   <li>htc资源的支持
   <li>svg资源的支持

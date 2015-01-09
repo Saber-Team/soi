@@ -56,6 +56,9 @@ module.exports = {
   // *dist_file: concat file name(will be change suffix with sha1 hash sum)
   // *dist_dir: where concat file located
   bundles         : {
+    swf           : [],
+    font          : [],
+    htc           : [],
     img           : [
       {
         input     : null,
