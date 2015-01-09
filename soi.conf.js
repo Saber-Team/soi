@@ -44,12 +44,6 @@ module.exports = {
   // it's the directory where template located
   output_base     : './demo/',
 
-  //
-  linter          : {
-    css           : '',
-    js            : ''
-  },
-
   // pack config
   // *input: start module from which to calculate
   //         (Note that: If css use import and provide the input field, you

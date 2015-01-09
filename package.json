@@ -27,13 +27,16 @@
   },
   "homepage": "https://github.com/Saber-Team/SOI",
   "devDependencies": {
+    "chalk": "^0.5.1",
     "chai": "^1.10.0",
     "css": "^2.1.0",
+    "csslint": "^0.10.0",
     "mocha": "^2.0.1",
     "optimist": "^0.6.1",
     "uglify-js": "^2.4.16"
   },
   "dependencies": {
+    "chalk": "^0.5.1",
     "css": "^2.1.0",
     "csslint": "^0.10.0",
     "optimist": "^0.6.1",
