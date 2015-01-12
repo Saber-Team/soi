@@ -1,6 +1,8 @@
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
+
+var cli = require('../../lib/cli');
 var utils = require('../../lib/utils');
 var ProcesssorFactory = require('../../lib/processor/factory');
 var ResourceTable = require('../../lib/resource/table');
@@ -12,16 +14,20 @@ describe('create image resources', function() {
       encoding : 'utf8',
       base_dir : __dirname + '/',
       bundles: {
-        img: [{
-          input     : null,
-          files     : [ './img/' ],
-          exclude   : {},
-          defer     : false,
-          dist_file : null,
-          dist_dir  : './dist/'
-        }]
+        img: [
+          {
+            input     : null,
+            files     : [ './img/' ],
+            exclude   : {},
+            defer     : false,
+            dist_file : null,
+            dist_dir  : './dist/'
+          }
+        ]
       }
     };
+    // 需要先针对路径处理cwd问题
+    cli.processConfigOptions();
   });
 
   after(function() {
