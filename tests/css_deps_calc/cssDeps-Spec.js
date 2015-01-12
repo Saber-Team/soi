@@ -5,8 +5,15 @@ var parser = require('../../lib/resolver/cssParser');
 
 describe('CSS dependency calculate', function() {
 
-  beforeEach(function(){
+  beforeEach(function() {
     parser.clear();
+    global.SOI_CONFIG = {
+      encoding: 'utf8'
+    };
+  });
+
+  afterEach(function() {
+    global.SOI_CONFIG = null;
   });
 
   function swift(str) {
@@ -16,8 +23,9 @@ describe('CSS dependency calculate', function() {
   it('#order & unique', function() {
     var entry_point = __dirname + '/css/a.css';
     var arr = parser.parse({
-      css_entry_point: entry_point,
-      encoding: 'utf8'
+      input   : entry_point,
+      encoding: 'utf8',
+      defer   : false
     });
 
     expect(arr.length).to.equal(3);
