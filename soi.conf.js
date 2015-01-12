@@ -80,6 +80,17 @@ module.exports = {
         defer     : false,
         dist_file : 'build.css',
         dist_dir  : './demo/dist/css/'
+      },
+      {
+        input     : null,
+        files     : [
+          './demo/assets/css/reset.css',
+          './demo/assets/css/main.css'
+        ],
+        exclude   : {},
+        defer     : false,
+        dist_file : 'bundle.css',
+        dist_dir  : './demo/dist/css/'
       }
     ],
     js            : [
