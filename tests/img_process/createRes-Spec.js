@@ -46,10 +46,7 @@ describe('create image resources', function() {
 
   after(function() {
     global.SOI_CONFIG = null;
-    rimraf(path.join(__dirname, 'dist/inner/'), function(err) {
-      //debugger;
-    });
-    rimraf(path.join(__dirname, 'dist/'), function(err) {
+    rimraf.sync(path.join(__dirname, 'dist/'), function(err) {
       //debugger;
     });
   });
