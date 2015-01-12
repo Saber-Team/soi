@@ -5,7 +5,7 @@
   "directories": {
     "test": "tests"
   },
-  "main": "",
+  "main": "boot.js",
   "scripts": {
     "test": "mocha \"./tests/**/*-Spec.js\""
   },
