@@ -1,7 +1,7 @@
 {
   "name": "soi",
   "version": "0.8.0",
-  "description": "Build Tools for Oslojs",
+  "description": "Build tools for oslojs",
   "directories": {
     "test": "tests"
   },
@@ -12,7 +12,7 @@
   "bin": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/Saber-Team/SOI.git"
+    "url": "https://github.com/Saber-Team/soi.git"
   },
   "keywords": [
     "build tools",
@@ -23,9 +23,9 @@
   "author": "AceMood",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Saber-Team/SOI/issues"
+    "url": "https://github.com/Saber-Team/soi/issues"
   },
-  "homepage": "https://github.com/Saber-Team/SOI",
+  "homepage": "https://github.com/Saber-Team/soi",
   "devDependencies": {
     "chalk": "^0.5.1",
     "chai": "^1.10.0",
