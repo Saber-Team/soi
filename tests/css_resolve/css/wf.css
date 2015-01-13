@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "my-style";
+    src: url(../font/a.eof),
+        url(http://www.sogou.com/a.eof);
+}

@@ -16,6 +16,16 @@ describe('css resolve cases', function() {
       base_dir : __dirname + '/',
       output_base: './',
       bundles: {
+        font: [
+          {
+            input     : null,
+            files     : [ './font/' ],
+            exclude   : {},
+            defer     : false,
+            dist_file : null,
+            dist_dir  : './dist/'
+          }
+        ],
         htc: [
           {
             input     : null,
@@ -209,6 +219,34 @@ describe('css resolve cases', function() {
       '_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader("src=dist/inner/b_671eaeda.png");}' +
       '#filter3{background:none;' +
       '_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=dist/inner/b_671eaeda.png);}');
+  });
+
+  it('#web font', function() {
+    var id = utils.normalizeSysPath(
+      path.join(SOI_CONFIG.base_dir + './css/wf.css'));
+    var css_a = ResourceTable.getResource('css', id);
+
+    expect(css_a).to.not.equal(undefined);
+    expect(css_a.path).to.equal(utils.normalizeSysPath(
+      path.join(SOI_CONFIG.base_dir + './css/wf.css')
+    ));
+    expect(css_a.type).to.equal('css');
+    expect(css_a.origin).to.equal(null);
+
+    var rsc = ResourceTable.getPackageByPath('css', id);
+
+    expect(rsc).to.not.equal(undefined);
+    expect(rsc).to.have.property('files').with.length(1);
+    expect(fs.existsSync(rsc.dist_file)).to.equal(true);
+
+    // todo: see https://github.com/reworkcss/css/issues/60
+    /*
+    var content = utils.readFile(rsc.dist_file, {
+      encoding: 'utf8'
+    });
+
+    expect(content).to.equal('@font-face{font-family:"my-style";src:url(a_da39a3ee.eof),' +
+      '\r\n        url(http://www.sogou.com/a.eof);}');*/
   });
 
 });

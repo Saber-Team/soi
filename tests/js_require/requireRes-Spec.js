@@ -5,22 +5,22 @@ var utils = require('../../lib/utils');
 var res = require('../../lib/resolver/jsRequireRes');
 
 
-describe('RegExp for resolve js', function() {
-
-  function read(p) {
-    return utils.readFile(path.resolve(p), { encoding: 'utf8' });
-  }
+describe('regexp for resolve js', function() {
 
   describe('remove comments', function() {
 
-    it('multi lines comments', function() {
-      var content = read(__dirname + '/mc.js');
+    it('#multi lines comments', function() {
+      var content = utils.readFile(__dirname + '/mc.js', {
+        encoding: 'utf8'
+      });
       content = res.removeComments(content);
       expect(content.trim()).to.equal('');
     });
 
-    it('single line comments', function() {
-      var content = read(__dirname + '/sc.js');
+    it('#single line comments', function() {
+      var content = utils.readFile(__dirname + '/sc.js', {
+        encoding: 'utf8'
+      });
       content = res.removeComments(content);
       expect(content.trim()).to.equal('');
     });
@@ -29,48 +29,60 @@ describe('RegExp for resolve js', function() {
 
   describe('parse js code', function() {
 
-    it('normal code style', function() {
-      var content = read(__dirname + '/1.js');
+    it('#normal code style', function() {
+      var content = utils.readFile(__dirname + '/1.js', {
+        encoding: 'utf8'
+      });
       var urls = res.getRequireUrls(content);
 
       expect(urls.length).to.equal(1);
       expect(urls[0]).to.equal('a.js');
     });
 
-    it('newline before method', function() {
-      var content = read(__dirname + '/2.js');
+    it('#newline before method', function() {
+      var content = utils.readFile(__dirname + '/2.js', {
+        encoding: 'utf8'
+      });
       var urls = res.getRequireUrls(content);
 
       expect(urls.length).to.equal(1);
       expect(urls[0]).to.equal('a.js');
     });
 
-    it('whitespace around id', function() {
-      var content = read(__dirname + '/3.js');
+    it('#whitespace around id', function() {
+      var content = utils.readFile(__dirname + '/3.js', {
+        encoding: 'utf8'
+      });
       var urls = res.getRequireUrls(content);
 
       expect(urls.length).to.equal(1);
       expect(urls[0]).to.equal('a.js');
     });
 
-    it('double quotes', function() {
-      var content = read(__dirname + '/5.js');
+    it('#double quotes', function() {
+      var content = utils.readFile(__dirname + '/5.js', {
+        encoding: 'utf8'
+      });
       var urls = res.getRequireUrls(content);
 
       expect(urls.length).to.equal(1);
       expect(urls[0]).to.equal('a.js');
     });
 
-    it('single parameter', function() {
-      var content = read(__dirname + '/6.js');
+    it('#single parameter', function() {
+      var content = utils.readFile(__dirname + '/6.js', {
+        encoding: 'utf8'
+      });
       var urls = res.getRequireUrls(content);
 
       expect(urls.length).to.equal(1);
       expect(urls[0]).to.equal('a.js');
     });
 
-    it('multi requires', function() {
-      var content = read(__dirname + '/7.js');
+    it('#multi requires', function() {
+      var content = utils.readFile(__dirname + '/7.js', {
+        encoding: 'utf8'
+      });
       var urls = res.getRequireUrls(content);
 
       expect(urls.length).to.equal(3);
