@@ -6,10 +6,9 @@ var fs = require('fs');
 var rimraf = require('rimraf');
 var cli = require('../../lib/cli');
 var utils = require('../../lib/utils');
-var ProcesssorFactory = require('../../lib/processor/factory');
 var ResourceTable = require('../../lib/resource/table');
 
-describe('create image resources', function() {
+describe('image relative cases', function() {
 
   before(function() {
     global.SOI_CONFIG = {
@@ -36,12 +35,10 @@ describe('create image resources', function() {
         ]
       }
     };
-    // 需要先针对路径处理cwd问题
-    cli.processConfigOptions();
 
-    ProcesssorFactory
-      .getInstance('img')
-      .traverse();
+    cli.processConfigOptions();
+    cli.parseBundlesOptions();
+    cli.resolveFiles();
   });
 
   after(function() {

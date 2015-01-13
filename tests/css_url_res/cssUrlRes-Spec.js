@@ -3,7 +3,7 @@ var expect = chai.expect;
 var res = require('../../lib/resolver/cssUrlRes');
 
 
-describe('RegExp for CSS URL resolve', function() {
+describe('regexp for css url resolve', function() {
 
   describe('#url', function() {
 

@@ -3,7 +3,7 @@ var expect = chai.expect;
 var utils = require('../../lib/utils');
 
 
-describe('Utils test', function() {
+describe('utils test', function() {
 
   describe('#extend', function() {
 
