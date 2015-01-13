@@ -48,7 +48,7 @@ describe('image relative cases', function() {
     });
   });
 
-  it('a.png in img', function() {
+  it('#a.png in img', function() {
     var id = utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './img/a.png'));
     var img = ResourceTable.getResource('img', id);
@@ -63,7 +63,7 @@ describe('image relative cases', function() {
     ));
   });
 
-  it('b.png in img/inner/', function() {
+  it('#b.png in img/inner/', function() {
     var id = utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './img/inner/b.png'));
     var img = ResourceTable.getResource('img', id);
@@ -78,7 +78,7 @@ describe('image relative cases', function() {
     ));
   });
 
-  it('c.png in img', function() {
+  it('#c.png in img', function() {
     var id = utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './img/c.png'));
     var img = ResourceTable.getResource('img', id);

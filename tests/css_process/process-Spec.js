@@ -51,7 +51,7 @@ describe('css relative cases', function() {
     });
   });
 
-  it('main.css resources', function() {
+  it('#main.css resources', function() {
     var id = utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './css/main.css'));
     var css_a = ResourceTable.getResource('css', id);
@@ -64,7 +64,7 @@ describe('css relative cases', function() {
     expect(css_a.origin).to.equal(null);
   });
 
-  it('a.css resources', function() {
+  it('#a.css resources', function() {
     var id = utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './css/a.css'));
     var css_a = ResourceTable.getResource('css', id);
@@ -77,7 +77,7 @@ describe('css relative cases', function() {
     expect(css_a.origin).to.equal(null);
   });
 
-  it('b.css resources', function() {
+  it('#b.css resources', function() {
     var id = utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './css/b.css'));
     var css_a = ResourceTable.getResource('css', id);
@@ -90,7 +90,7 @@ describe('css relative cases', function() {
     expect(css_a.origin).to.equal(null);
   });
 
-  it('c.css resources', function() {
+  it('#c.css resources', function() {
     var id = utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './css/c.css'));
     var css_a = ResourceTable.getResource('css', id);
@@ -103,7 +103,7 @@ describe('css relative cases', function() {
     expect(css_a.origin).to.equal(null);
   });
 
-  it('d.css resources', function() {
+  it('#d.css resources', function() {
     var id = utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './css/d.css'));
     var css_a = ResourceTable.getResource('css', id);
@@ -116,7 +116,7 @@ describe('css relative cases', function() {
     expect(css_a.origin).to.equal(null);
   });
 
-  it('e.css resources', function() {
+  it('#e.css resources', function() {
     var id = utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './css/e.css'));
     var css_a = ResourceTable.getResource('css', id);
@@ -129,7 +129,7 @@ describe('css relative cases', function() {
     expect(css_a.origin).to.equal(null);
   });
 
-  it('main.css content', function() {
+  it('#main.css content', function() {
     var id = utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './css/main.css'));
     var rsc = ResourceTable.getPackageByPath('css', id);
@@ -146,20 +146,20 @@ describe('css relative cases', function() {
       '#diva{width:100px;}\n');
   });
 
-  /*
-  it('c.png in img', function() {
+  it('#bundle.css content', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/c.png'));
-    var img = ResourceTable.getResource('img', id);
+      path.join(SOI_CONFIG.base_dir + './css/e.css'));
+    var rsc = ResourceTable.getPackageByPath('css', id);
 
-    expect(img).to.not.equal(undefined);
-    expect(img.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/c.png')
-    ));
-    expect(img.type).to.equal('img');
-    expect(img.origin).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/')
-    ));
-  });*/
+    expect(rsc).to.not.equal(undefined);
+    expect(rsc).to.have.property('files').with.length(2);
+    expect(fs.existsSync(rsc.dist_file)).to.equal(true);
+
+    var content = utils.readFile(rsc.dist_file, {
+      encoding: 'utf8'
+    });
+    expect(content).to.equal('#divd{width:100px;}\n' +
+      '#dive{width:100px;}');
+  });
 
 });
