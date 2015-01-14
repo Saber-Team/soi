@@ -8,31 +8,21 @@ var cli = require('../../lib/cli');
 var utils = require('../../lib/utils');
 var ResourceTable = require('../../lib/resource/table');
 
-describe('css relative cases', function() {
+describe('javascript relative cases', function() {
 
   before(function() {
     global.SOI_CONFIG = {
       encoding : 'utf8',
       base_dir : __dirname + '/',
+      module_loader:  '../../lib/kernel.js',
       bundles: {
         js: [
           {
-            input     : './css/main.css',
+            input     : './js/main.js',
             files     : null,
             exclude   : {},
             defer     : false,
-            dist_file : 'main.css',
-            dist_dir  : './dist/'
-          },
-          {
-            input     : null,
-            files     : [
-              './css/d.css',
-              './css/e.css'
-            ],
-            exclude   : {},
-            defer     : false,
-            dist_file : 'bundle.css',
+            dist_file : 'main.js',
             dist_dir  : './dist/'
           }
         ]
@@ -51,115 +41,79 @@ describe('css relative cases', function() {
     });
   });
 
-  it('#main.css resources', function() {
+  it('#main.js resources', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/main.css'));
-    var css_a = ResourceTable.getResource('css', id);
+      path.join(SOI_CONFIG.base_dir + './js/main.js'));
+    var css_a = ResourceTable.getResource('js', id);
 
     expect(css_a).to.not.equal(undefined);
     expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/main.css')
+      path.join(SOI_CONFIG.base_dir + './js/main.js')
     ));
-    expect(css_a.type).to.equal('css');
+    expect(css_a.type).to.equal('js');
     expect(css_a.origin).to.equal(null);
   });
 
-  it('#a.css resources', function() {
+  it('#a.js resources', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/a.css'));
-    var css_a = ResourceTable.getResource('css', id);
+      path.join(SOI_CONFIG.base_dir + './js/a.js'));
+    var css_a = ResourceTable.getResource('js', id);
 
     expect(css_a).to.not.equal(undefined);
     expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/a.css')
+      path.join(SOI_CONFIG.base_dir + './js/a.js')
     ));
-    expect(css_a.type).to.equal('css');
+    expect(css_a.type).to.equal('js');
     expect(css_a.origin).to.equal(null);
   });
 
-  it('#b.css resources', function() {
+  it('#b.js resources', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/b.css'));
-    var css_a = ResourceTable.getResource('css', id);
+      path.join(SOI_CONFIG.base_dir + './js/b.js'));
+    var css_a = ResourceTable.getResource('js', id);
 
     expect(css_a).to.not.equal(undefined);
     expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/b.css')
+      path.join(SOI_CONFIG.base_dir + './js/b.js')
     ));
-    expect(css_a.type).to.equal('css');
+    expect(css_a.type).to.equal('js');
     expect(css_a.origin).to.equal(null);
   });
 
-  it('#c.css resources', function() {
+  it('#c.js resources', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/c.css'));
-    var css_a = ResourceTable.getResource('css', id);
+      path.join(SOI_CONFIG.base_dir + './js/c.js'));
+    var css_a = ResourceTable.getResource('js', id);
 
     expect(css_a).to.not.equal(undefined);
     expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/c.css')
+      path.join(SOI_CONFIG.base_dir + './js/c.js')
     ));
-    expect(css_a.type).to.equal('css');
+    expect(css_a.type).to.equal('js');
     expect(css_a.origin).to.equal(null);
   });
 
-  it('#d.css resources', function() {
+  it('#main.js content', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/d.css'));
-    var css_a = ResourceTable.getResource('css', id);
-
-    expect(css_a).to.not.equal(undefined);
-    expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/d.css')
-    ));
-    expect(css_a.type).to.equal('css');
-    expect(css_a.origin).to.equal(null);
-  });
-
-  it('#e.css resources', function() {
-    var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/e.css'));
-    var css_a = ResourceTable.getResource('css', id);
-
-    expect(css_a).to.not.equal(undefined);
-    expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/e.css')
-    ));
-    expect(css_a.type).to.equal('css');
-    expect(css_a.origin).to.equal(null);
-  });
-
-  it('#main.css content', function() {
-    var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/main.css'));
-    var rsc = ResourceTable.getPackageByPath('css', id);
+      path.join(SOI_CONFIG.base_dir + './js/main.js'));
+    var rsc = ResourceTable.getPackageByPath('js', id);
 
     expect(rsc).to.not.equal(undefined);
-    expect(rsc).to.have.property('files').with.length(4);
+    expect(rsc).to.have.property('files').with.length(5);
     expect(fs.existsSync(rsc.dist_file)).to.equal(true);
 
     var content = utils.readFile(rsc.dist_file, {
       encoding: 'utf8'
     });
-    expect(content).to.equal('#divc{height:100px;}\n' +
-      '#divb{width:100px;}\n' + '' +
-      '#diva{width:100px;}\n');
-  });
 
-  it('#bundle.css content', function() {
-    var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/e.css'));
-    var rsc = ResourceTable.getPackageByPath('css', id);
+    content = content.split('\n');
+    content.shift();
+    content = content.join('');
 
-    expect(rsc).to.not.equal(undefined);
-    expect(rsc).to.have.property('files').with.length(2);
-    expect(fs.existsSync(rsc.dist_file)).to.equal(true);
-
-    var content = utils.readFile(rsc.dist_file, {
-      encoding: 'utf8'
-    });
-    expect(content).to.equal('#divd{width:100px;}\n' +
-      '#dive{width:100px;}');
+    expect(content).to.equal(';_def("$3",[],{key:"c"});' +
+      ';_def("$2",["$3"],function(){return{key:"b"}});' +
+      ';_def("$1",["$2"],function(){return{key:"a"}});' +
+      ';_req(["$1"],function(){});');
   });
 
 });

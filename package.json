@@ -7,7 +7,7 @@
   },
   "main": "boot.js",
   "scripts": {
-    "test": "mocha \"./tests/**/*-Spec.js\""
+    "test": "mocha --reporter \"./tests/**/*-Spec.js\""
   },
   "bin": {},
   "repository": {
