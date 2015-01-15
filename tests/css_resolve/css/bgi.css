@@ -1,31 +1,30 @@
 /* common background props */
 
-#test_div1 {
+#bgi0 {
     background: url("../img/a.png");
 }
 
-#test_div2 {
+#bgi1 {
     background: url("../img/a.png") no-repeat;
 }
 
-#test_div3 {
+#bgi2 {
     background: url("../img/a.png") no-repeat 0 -10px;
 }
 
-#test_div4 {
+#bgi3 {
     background: #fff url("../img/a.png");
 }
 
-#test_div5 {
+#bgi4 {
     background: #fff url("../img/a.png") no-repeat;
 }
 
-#test_div6 {
+#bgi5 {
     background: #fff url("../img/a.png") 0 -10px;
 }
 
-
 /* multi backgrounds props */
-#test_div8 {
+#bgi6 {
     background: url("../img/a.png"), url("../img/inner/b.png");
 }

@@ -1,0 +1,7 @@
+#htc0 {
+    behavior: url(../htc/ie.htc);
+}
+
+#htc1 {
+    behavior: url(../htc/ie.htc) url(../htc/ie0.htc);
+}

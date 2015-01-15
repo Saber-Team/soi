@@ -1,7 +1,0 @@
-#htc_div1 {
-    behavior: url(ul.htc);
-}
-
-#htc_div2 {
-    behavior: url(ul.htc) url(hilite.htc);
-}

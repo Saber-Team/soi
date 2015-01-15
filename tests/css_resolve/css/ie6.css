@@ -1,0 +1,21 @@
+/* filter */
+
+#filter0 {
+    background: none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/inner/b.png");
+}
+
+#filter1 {
+    background: none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=img/inner/b.png);
+}
+
+#filter2 {
+    background: none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader("src=img/inner/b.png");
+}
+
+#filter3 {
+    background: none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=img/inner/b.png);
+}
