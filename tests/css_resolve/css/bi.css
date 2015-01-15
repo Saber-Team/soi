@@ -1,17 +1,17 @@
 
-#test_border_image_div1 {
+#bi0 {
     -webkit-border-image:url(../img/a.png) 30 30 round; /* Safari 3.1-5 */
     -o-border-image:url(../img/a.png) 30 30 round; /* Opera 11-12.1 */
     border-image:url(../img/a.png) 30 30 round;
 }
 
-#test_border_image_div2 {
+#bi1 {
     -webkit-border-image:url("../img/a.png") 30 30 round; /* Safari 3.1-5 */
     -o-border-image:url("../img/a.png") 30 30 round; /* Opera 11-12.1 */
     border-image:url("../img/a.png") 30 30 round;
 }
 
-#test_border_image_div3 {
+#bi2 {
     -webkit-border-image: url(../img/a.png) 30 30 stretch; /* Safari 3.1-5 */
     -o-border-image: url(../img/a.png) 30 30 stretch; /* Opera 11-12.1 */
     border-image: url(../img/a.png) 30 30 stretch;
