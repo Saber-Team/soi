@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "my-style";
+    src: url(a.eof),
+         url(a.ttf),
+         url(a.woff);
+}
+
+@font-face {
+    font-family: "my-style";
+    src: url('a.eof'),
+    url('a.ttf'),
+    url('a.woff');
+}
+
+@font-face {
+    font-family: "my-style";
+    src: url("a.eof"),
+    url("a.ttf"),
+    url("a.woff");
+}

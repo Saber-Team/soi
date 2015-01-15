@@ -211,5 +211,4 @@ describe('css resolve cases', function() {
       '_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=dist/inner/b_671eaeda.png);}');
   });
 
-  
 });

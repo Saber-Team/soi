@@ -369,5 +369,41 @@ describe('regexp for css url resolve', function() {
 
   });
 
-});
+  describe('#getWebFonts', function() {
 
+    it('single font url', function() {
+      var expected = 'a.eot';
+      [
+        'url("a.eot")',
+        'url(a.eot)',
+        "url('a.eot')"
+      ]
+        .forEach(function(url) {
+          var ret = res.getWebFonts(url);
+
+          // todo find Array equal
+          expect(ret.length).to.equal(1);
+          expect(ret[0]).to.equal(expected);
+        });
+    });
+
+    it('multi font url', function() {
+      [
+        'url(a.ttf),url(b.woff)',
+        'url(a.ttf),\nurl(b.woff)',
+        'url("a.ttf"),url("b.woff")',
+        'url("a.ttf"),\r\nurl("b.woff")'
+      ]
+        .forEach(function(url) {
+          var ret = res.getWebFonts(url);
+
+          // todo find Array equal
+          expect(ret.length).to.equal(2);
+          expect(ret[0]).to.equal('a.ttf');
+          expect(ret[1]).to.equal('b.woff');
+        });
+    });
+
+  });
+
+});
