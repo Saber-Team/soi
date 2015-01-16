@@ -57,6 +57,14 @@ describe('js resolve cases', function() {
             defer     : false,
             dist_file : 'async3.js',
             dist_dir  : './dist/'
+          },
+          {
+            input     : './multi_noconflict/main.js',
+            files     : null,
+            exclude   : {},
+            defer     : false,
+            dist_file : 'async4.js',
+            dist_dir  : './dist/'
           }
         ]
       }
@@ -198,6 +206,62 @@ describe('js resolve cases', function() {
       expect(css_a).to.not.equal(null);
       expect(css_a.path).to.equal(utils.normalizeSysPath(
         path.join(SOI_CONFIG.base_dir + './noconflictAsync/j.js')
+      ));
+      expect(css_a.type).to.equal('js');
+      expect(css_a.origin).to.equal(null);
+
+      rsc = ResourceTable.getPackageByPath('js', id);
+
+      expect(rsc).to.not.equal(undefined);
+      expect(rsc).to.have.property('files').with.length(2);
+      expect(fs.existsSync(rsc.dist_file)).to.equal(true);
+    });
+
+    it('#multi noconflict async', function() {
+      // 主模块
+      var id = utils.normalizeSysPath(
+        path.join(SOI_CONFIG.base_dir + './multi_noconflict/main.js'));
+      var css_a = ResourceTable.getResource('js', id);
+
+      expect(css_a).to.not.equal(null);
+      expect(css_a.path).to.equal(utils.normalizeSysPath(
+        path.join(SOI_CONFIG.base_dir + './multi_noconflict/main.js')
+      ));
+      expect(css_a.type).to.equal('js');
+      expect(css_a.origin).to.equal(null);
+
+      var rsc = ResourceTable.getPackageByPath('js', id);
+
+      expect(rsc).to.not.equal(undefined);
+      expect(rsc).to.have.property('files').with.length(2);
+      expect(fs.existsSync(rsc.dist_file)).to.equal(true);
+
+      // 异步模块
+      id = utils.normalizeSysPath(
+        path.join(SOI_CONFIG.base_dir + './multi_noconflict/m.js'));
+      css_a = ResourceTable.getResource('js', id);
+
+      expect(css_a).to.not.equal(null);
+      expect(css_a.path).to.equal(utils.normalizeSysPath(
+        path.join(SOI_CONFIG.base_dir + './multi_noconflict/m.js')
+      ));
+      expect(css_a.type).to.equal('js');
+      expect(css_a.origin).to.equal(null);
+
+      rsc = ResourceTable.getPackageByPath('js', id);
+
+      expect(rsc).to.not.equal(undefined);
+      expect(rsc).to.have.property('files').with.length(2);
+      expect(fs.existsSync(rsc.dist_file)).to.equal(true);
+
+      // 异步模块
+      id = utils.normalizeSysPath(
+        path.join(SOI_CONFIG.base_dir + './multi_noconflict/n.js'));
+      css_a = ResourceTable.getResource('js', id);
+
+      expect(css_a).to.not.equal(null);
+      expect(css_a.path).to.equal(utils.normalizeSysPath(
+        path.join(SOI_CONFIG.base_dir + './multi_noconflict/n.js')
       ));
       expect(css_a.type).to.equal('js');
       expect(css_a.origin).to.equal(null);
