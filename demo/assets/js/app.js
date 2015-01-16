@@ -22,8 +22,7 @@ require([
       // 号码输入框失焦
       events.listen(button, EventType.CLICK, function () {
         var str = input.value;
-        var u = './cal';
-        require.async(u, function(cal) {
+        require.async('./cal', function(cal) {
           dom.setTextContent(ret, cal.exec(str));
         });
       }, false);

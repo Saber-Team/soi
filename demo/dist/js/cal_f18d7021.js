@@ -1,0 +1,1 @@
+;_def("$27",["$20","$11"],function(){"use strict";return{exec:function(e){var r=e.split("");return r=r.reverse(),r.join("")}}});
