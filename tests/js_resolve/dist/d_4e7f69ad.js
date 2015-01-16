@@ -1,0 +1,1 @@
+;_def("$15",[],function(){return{key:"d"}});

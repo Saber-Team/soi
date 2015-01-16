@@ -1,9 +1,0 @@
-<ul>
-  <li>css文件对资源引用的替换功能 (htc, fonts, swf)
-  <li>js代码对资源路径的动态读写的替换功能 requrie.async的替代方案
-  <li>font资源的支持
-  <li>swf资源的支持
-  <li>htc资源的支持
-  <li>测试用例 testable code
-  <li>js & css 循环引用处理
-</ul>
