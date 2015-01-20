@@ -36,9 +36,7 @@ describe('javascript relative cases', function() {
 
   after(function() {
     global.SOI_CONFIG = null;
-    rimraf.sync(path.join(__dirname, 'dist/'), function(err) {
-      //debugger;
-    });
+    rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   it('#main.js resources', function() {
@@ -110,10 +108,10 @@ describe('javascript relative cases', function() {
     content.shift();
     content = content.join('');
 
-    expect(content).to.equal(';_def("$3",[],{key:"c"});' +
-      ';_def("$2",["$3"],function(){return{key:"b"}});' +
-      ';_def("$1",["$2"],function(){return{key:"a"}});' +
-      ';_req(["$1"],function(){});');
+    expect(content).to.equal(';_def("_3",[],{key:"c"});' +
+      ';_def("_2",["_3"],function(){return{key:"b"}});' +
+      ';_def("_1",["_2"],function(){return{key:"a"}});' +
+      ';_req(["_1"],function(){});');
   });
 
 });

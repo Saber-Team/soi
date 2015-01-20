@@ -3,7 +3,7 @@ var expect = chai.expect;
 var parser = require('../../lib/resolver/cssParser');
 
 
-describe('CSS dependency calculate', function() {
+describe('css dependency calculate', function() {
 
   beforeEach(function() {
     parser.clear();
