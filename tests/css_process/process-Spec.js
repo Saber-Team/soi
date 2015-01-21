@@ -46,9 +46,7 @@ describe('css relative cases', function() {
 
   after(function() {
     global.SOI_CONFIG = null;
-    rimraf.sync(path.join(__dirname, 'dist/'), function(err) {
-      //debugger;
-    });
+    rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   it('#main.css resources', function() {
