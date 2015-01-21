@@ -1,4 +1,7 @@
 [![NPM version][npm-image]][npm-url]
+[![Node version][node-image]][node-url]
+[![Dependency Status][david-image]][david-url]
+[![Downloads][downloads-image]][downloads-url]
 [![License][license-image]][license-url]
 
 
@@ -11,19 +14,19 @@ JavaScript框架, 在浏览器端尤其表现卓越, 并且也支持移动端开
 确保本地安装了Node环境, 通过包管理器NPM进行安装.
 
 运行：
-```javascript
+```
   npm install -g soi-cli
 ```
 安装SOI的命令行交互工具, 需要加-g全局安装标志.
 接着运行：
-```javascript
+```
   npm install -g soi
 ```
 安装SOI, 建议加-g全局安装标志, 这样可以在任意目录使用SOI构建前端项目.
 
 ##使用SOI
 在任意目录建立你的代码仓库, 开发完毕后在此目录添加两个配置文件：
-```javascript
+```
   soi.conf.js
   uglify.compress.conf.js
 ```
@@ -48,8 +51,23 @@ JavaScript框架, 在浏览器端尤其表现卓越, 并且也支持移动端开
 #### module_loader
 SOI支持代码以AMD方式编写，所以需要模块加载器作为输入，这里提供的加载器文件会在首屏打包文件的第一个位置出现。
 
+#### output_base
+这是一个相对路径，基于soi.conf.js解析，意义是页面的所在位置（目录），目前用到css资源打包的时候含有滤镜的
+图片路径时必须知道这个路径才能做正确改写。用途二是后续版本模板引擎的加入
 
-[npm-image]: https://img.shields.io/badge/npm-v1.4.28-blue.svg
+#### sha1_length
+每个资源哈希后缀的长度
+
+#### bundles
+
+
+[npm-image]: https://img.shields.io/npm/v/soi.svg?style=flat
 [npm-url]: https://npmjs.org/package/soi
-[license-image]: https://img.shields.io/badge/license-MIT-blue.svg
+[node-image]: https://img.shields.io/node/v/soi.svg?style-flat
+[node-url]: https://npmjs.org/package/soi
+[david-image]: http://img.shields.io/david/soi.svg?style=flat
+[david-url]: https://david-dm.org/Saber-Team/soi
+[downloads-image]: http://img.shields.io/npm/dm/soi.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/soi
+[license-image]: http://img.shields.io/npm/l/soi.svg?style=flat
 [license-url]: LICENSE.md
