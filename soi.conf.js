@@ -44,6 +44,9 @@ module.exports = {
   // it's the directory where template located
   output_base     : './demo/',
 
+  // file hash length
+  sha1_length     : 8,
+
   // pack config
   // *input: start module from which to calculate
   //         (Note that: If css use import and provide the input field, you
