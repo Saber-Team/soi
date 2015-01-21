@@ -1,0 +1,1 @@
+;_def("_27",["_20","_11"],function(){"use strict";return{exec:function(e){var r=e.split("");return r=r.reverse(),r.join("")}}});
