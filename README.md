@@ -1,3 +1,4 @@
+[![Build status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
 [![Node version][node-image]][node-url]
 [![Dependency Status][david-image]][david-url]
@@ -61,11 +62,13 @@ SOI支持代码以AMD方式编写，所以需要模块加载器作为输入，�
 #### bundles
 
 
+[travis-image]: https://img.shields.io/travis/Saber-Team/soi.svg?style=flat
+[travis-url]: https://travis-ci.org/Saber-Team/soi
 [npm-image]: https://img.shields.io/npm/v/soi.svg?style=flat
 [npm-url]: https://npmjs.org/package/soi
 [node-image]: https://img.shields.io/node/v/soi.svg?style-flat
 [node-url]: https://npmjs.org/package/soi
-[david-image]: http://img.shields.io/david/soi.svg?style=flat
+[david-image]: http://img.shields.io/david/Saber-Team/soi.svg?style=flat
 [david-url]: https://david-dm.org/Saber-Team/soi
 [downloads-image]: http://img.shields.io/npm/dm/soi.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/soi
