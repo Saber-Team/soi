@@ -49,7 +49,7 @@ describe('htc relative cases', function() {
     expect(htc.path).to.equal(utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './htc/ie.htc')
     ));
-    expect(htc.type).to.equal('img');
+    expect(htc.type).to.equal('htc');
     expect(htc.origin).to.equal(utils.normalizeSysPath(
       path.join(SOI_CONFIG.base_dir + './htc/')
     ));
