@@ -1,3 +1,7 @@
+[![NPM version][npm-image]][npm-url]
+[![License][license-image]][license-url]
+
+
 ##SOI是什么?
 SOI(Smart Optimization Integration)是和[oslojs](https://github.com/Saber-Team/oslojs)一同使用的一款浏览器端
 JavaScript构建工具, 基于Node开发。[oslojs](https://github.com/Saber-Team/oslojs)是一个符合AMD规范的高度模块化的
@@ -43,3 +47,9 @@ JavaScript框架, 在浏览器端尤其表现卓越, 并且也支持移动端开
 
 #### module_loader
 SOI支持代码以AMD方式编写，所以需要模块加载器作为输入，这里提供的加载器文件会在首屏打包文件的第一个位置出现。
+
+
+[npm-image]: https://img.shields.io/badge/npm-v1.4.28-blue.svg
+[npm-url]: https://npmjs.org/package/soi
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg
+[license-url]: LICENSE.md
