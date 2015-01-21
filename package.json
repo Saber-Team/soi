@@ -1,13 +1,13 @@
 {
   "name": "soi",
-  "version": "0.8.2",
+  "version": "0.8.4",
   "description": "Build tools for oslojs",
   "directories": {
     "test": "tests"
   },
   "main": "boot.js",
   "scripts": {
-    "test": "mocha --reporter \"./tests/**/*-Spec.js\""
+    "test": "mocha \"./tests/**/*-Spec.js\""
   },
   "bin": {},
   "repository": {
