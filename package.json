@@ -7,7 +7,7 @@
   },
   "main": "boot.js",
   "scripts": {
-    "test": "mocha --reporter \"./tests/**/*-Spec.js\""
+    "test": "mocha \"./tests/**/*-Spec.js\""
   },
   "bin": {},
   "repository": {
@@ -40,9 +40,11 @@
     "uglify-js": "^2.4.16"
   },
   "dependencies": {
+    "chai": "^1.10.0",
     "chalk": "^0.5.1",
     "css": "^2.1.0",
     "csslint": "^0.10.0",
+    "mocha": "^2.0.1",
     "optimist": "^0.6.1",
     "rimraf": "^2.2.8",
     "uglify-js": "^2.4.16"

@@ -1,7 +1,7 @@
 # 语言配置
 language: node_js
 node_js:
-  - 0.10
+  - "0.10"
 # 构建分支白名单
 branches:
   only:
@@ -9,4 +9,3 @@ branches:
 # 构建前
 before_script:
   - npm install -g mocha
-  - npm install -g chai
