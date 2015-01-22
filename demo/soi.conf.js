@@ -12,7 +12,11 @@ module.exports = {
 
   // what kind of files should be ignored
   // new RegExp('\\.(' + js_config.ignoreFileExt.join('|') + ')$', 'i')
-  ignoreFileExt   : ['md', 'json', 'txt', 'tpl', 'tmpl', 'java', 'py', 'rb', 'cs', 'h', 'rar', 'zip'],
+  ignoreFileExt   : [
+    'md', 'json', 'txt', 'tpl',
+    'tmpl', 'java', 'py', 'rb',
+    'cs', 'h', 'rar', 'zip'
+  ],
 
   // debug mode
   debug           : true,
@@ -29,7 +33,7 @@ module.exports = {
 
   // after build all files placed, if null value, all files would generated
   // be with the original file, but I highly recommend need a dist directory
-  dist_dir        : './demo/dist/js/',
+  dist_dir        : './dist/js/',
 
   // js module loader #requirejs
   // module_loader   :  './demo/lib/kernel.js',
@@ -42,7 +46,7 @@ module.exports = {
 
   // If debug set to true, output_file_base could be work together with output_file
   // it's the directory where template located
-  output_base     : './demo/',
+  output_base     : './',
 
   // file hash length
   sha1_length     : 8,
@@ -65,11 +69,13 @@ module.exports = {
     img           : [
       {
         input     : null,
-        files     : [ './demo/assets/img/' ],
+        files     : [
+          './assets/img/'
+        ],
         exclude   : {},
         defer     : false,
         dist_file : null,
-        dist_dir  : './demo/dist/img/'
+        dist_dir  : './dist/img/'
       }
     ],
     // `input field` means start css file as the entry point
@@ -77,33 +83,33 @@ module.exports = {
     // So it's only need to provide single entry point
     css           : [
       {
-        input     : './demo/assets/css/main.css',
-        files     : [ './demo/assets/css/' ],
+        input     : './assets/css/main.css',
+        files     : null,
         exclude   : {},
         defer     : false,
-        dist_file : 'build.css',
-        dist_dir  : './demo/dist/css/'
+        dist_file : 'build0.css',
+        dist_dir  : './dist/css/'
       },
       {
         input     : null,
         files     : [
-          './demo/assets/css/reset.css',
-          './demo/assets/css/main.css'
+          './assets/css/reset.css',
+          './assets/css/main.css'
         ],
         exclude   : {},
         defer     : false,
-        dist_file : 'bundle.css',
-        dist_dir  : './demo/dist/css/'
+        dist_file : 'build1.css',
+        dist_dir  : './dist/css/'
       }
     ],
     js            : [
       {
-        input     : './demo/assets/js/app.js',
-        files     : [ './demo/lib/', './demo/assets/js/' ],
+        input     : './assets/js/app.js',
+        files     : null,
         exclude   : {},
         defer     : false,
         dist_file : 'build.js',
-        dist_dir  : './demo/dist/js/'
+        dist_dir  : './dist/js/'
       }
     ]
   }

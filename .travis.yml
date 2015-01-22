@@ -9,3 +9,4 @@ branches:
 # 构建前
 before_script:
   - npm install -g mocha
+  - npm install -g chai
