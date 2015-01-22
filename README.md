@@ -64,19 +64,35 @@ soi支持代码以AMD方式编写，所以需要模块加载器作为输入，�
 bundles是一个映射对象，包含swf，font，htc，img，css，js6种类型的资源打包配置。
 前4种属于纯静态资源配置，都是一样的，js和css略有不同。
 
-公共字段
+**公共字段**
 
-input：指示需要依赖加载的入口，对于静态辅助资源如图片之类可以省略或者设成null。对于css打包
+**input**：
 
+指示需要依赖加载的入口，对于静态辅助资源如图片之类可以省略或者设成null。对于css打包
+可以启用files字段手写一个文件数组（不能是目录，因为要保证顺序，并且文件中不能包含@import），也可以
+不写files字段只写input字段指定css入口模块，而此模块中如果依赖其他css文件要以@import方式声明。
+对于js资源，由于目前只支持kerneljs的AMD方式，所以所有代码需要以AMD方式写，并且模块加载器使用kerneljs。
+如果使用requirejs也可以，但不支持package，path等等配置，且由于requirejs缺少kerneljs支持的require.async
+接口加载异步模块，所以建议用requirejs的项目不要异步加载模块，只在部署前统一打到一个文件。
 
-|         | img(swf, font, htc)   |  css  |   js   |
-|---------| -----:                | :----:|  :----:|
-| input   | null| |
-| files   | 一个数组包含资源所在目录 | 对于css来说可以启用files字段手写一个文件数组（不能是目录，因为要保证顺序）
-| exclude |                  |      |      |
-| defer   |                  |      |      |
-| dist_file   |                  |      |       |
-| dist_dir |                  |     |      |
+**files**：
+
+只对图片类的静态资源有效。见input。
+
+**defer**：
+
+只对css和js有效。对于css静态打包到一个文件，不建议手写配置。另require.async接口只支持加载js模块。
+对于js打包也不建议手写defer为true的配置，而会在源码解析时动态分析调用require.async的地方，动态增加
+bundles.js数组的长度，此时所有的defer都设置为true。而对于dist_dir由于没有参考依照所以分析出的代码
+会沿用全局dist_dir作为异步加载js模块的目标路径，这也是为何全局dist_dir只代表js模块的原因。
+
+**dist_file**：
+
+打包文件的名字，哈希后缀前的名字。对于require.async异步加载的模块会用源码的文件名。
+
+**dist_dir**：
+
+打包文件的目标目录。
 
 
 
