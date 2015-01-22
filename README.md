@@ -5,19 +5,7 @@
 [![Downloads][downloads-image]][downloads-url]
 [![License][license-image]][license-url]
 
-<style>
-  html, body {
-    font-family: "MicroSoft Yahei";
-  }
-  pre {
-    border: 1px solid #d9d9d9;
-    background-color: black;
-    color: white;
-  }
-  code {
-    background-color: #fee9cc;
-  }
-</style>
+<style></style>
 
 ##soi是什么?
 soi(Smart Optimization Integration)是和[oslojs](https://github.com/Saber-Team/oslojs)
@@ -28,12 +16,12 @@ soi(Smart Optimization Integration)是和[oslojs](https://github.com/Saber-Team/
 确保本地安装了Node环境, 通过包管理器NPM进行安装.
 
 运行：
-```
+```javascript
   npm install -g soi-cli
 ```
 安装soi的命令行交互工具, 需要加-g全局安装标志.
 接着运行：
-```
+```javascript
   npm install -g soi
 ```
 安装soi, 建议加-g全局安装标志, 这样可以在任意目录使用soi构建前端项目.
@@ -76,11 +64,16 @@ soi支持代码以AMD方式编写，所以需要模块加载器作为输入，�
 bundles是一个映射对象，包含swf，font，htc，img，css，js6种类型的资源打包配置。
 前4种属于纯静态资源配置，都是一样的，js和css略有不同。
 
-`img:`
+|         | img(swf, font, htc)   |  css  |   js   |
+|---------| -----:                | :----:|  :----:|
+| input   | null| 指示需要依赖加载的入口，对于静态辅助资源如图片之类可以省略或者设成null|
+| files   | 一个数组包含资源所在目录 | 对于css来说可以启用files字段手写一个文件数组（不能是目录，因为要保证顺序）
+  |      |
+| exclude |                  |      |      |
+| defer   |                  |      |      |
+| dist_file   |                  |      |       |
+| dist_dir |                  |     |      |
 
-`css:`
-
-`js:`
 
 
 [travis-image]: https://img.shields.io/travis/Saber-Team/soi.svg?style=flat-square
