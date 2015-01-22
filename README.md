@@ -5,9 +5,22 @@
 [![Downloads][downloads-image]][downloads-url]
 [![License][license-image]][license-url]
 
+<style>
+  html, body {
+    font-family: "MicroSoft Yahei";
+  }
+  pre {
+    border: 1px solid #d9d9d9;
+    background-color: black;
+    color: white;
+  }
+  code {
+    background-color: #fee9cc;
+  }
+</style>
 
 ##soi是什么?
-soi(`S`mart `O`ptimization `I`ntegration)是和[oslojs](https://github.com/Saber-Team/oslojs)
+soi(Smart Optimization Integration)是和[oslojs](https://github.com/Saber-Team/oslojs)
 一同使用的一款浏览器端JavaScript构建工具, 基于Node开发。[oslojs](https://github.com/Saber-Team/oslojs)
 是一个符合AMD规范的高度模块化的JavaScript框架, 在浏览器端尤其表现卓越, 并且也支持移动端开发.
 
