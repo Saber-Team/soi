@@ -1,6 +1,6 @@
 [![Build status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
-[![Node version][node-image]][node-url]
+[![Test coverage][coveralls-image]][coveralls-url]
 [![Dependency Status][david-image]][david-url]
 [![Downloads][downloads-image]][downloads-url]
 [![License][license-image]][license-url]
@@ -104,6 +104,8 @@ bundles.js数组的长度，此时所有的defer都设置为true。而对于dist
 [node-url]: https://npmjs.org/package/soi
 [david-image]: http://img.shields.io/david/Saber-Team/soi.svg?style=flat-square
 [david-url]: https://david-dm.org/Saber-Team/soi
+[coveralls-image]: https://img.shields.io/coveralls/Saber-Team/soi.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/Saber-Team/soi?branch=master
 [downloads-image]: http://img.shields.io/npm/dm/soi.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/soi
 [license-image]: http://img.shields.io/npm/l/soi.svg?style=flat-square

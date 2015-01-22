@@ -1,11 +1,19 @@
-# 语言配置
 language: node_js
+
 node_js:
   - "0.10"
-# 构建分支白名单
+
+# blacklist
+branches:
+  except:
+    - legacy
+    - experimental
+
+# whitelist
 branches:
   only:
     - master
-# 构建前
+    - stable
+
 before_script:
   - npm install -g mocha
