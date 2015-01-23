@@ -1,6 +1,5 @@
 [![Build status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
-[![Test coverage][coveralls-image]][coveralls-url]
 [![Dependency Status][david-image]][david-url]
 [![Downloads][downloads-image]][downloads-url]
 [![License][license-image]][license-url]
@@ -8,7 +7,7 @@
 <style></style>
 
 ##soi是什么?
-soi(Smart Optimization Integration)是和[oslojs](https://github.com/Saber-Team/oslojs)
+S.O.I (Smart Optimization Integration) 是和[oslojs](https://github.com/Saber-Team/oslojs)
 一同使用的一款浏览器端JavaScript构建工具, 基于Node开发。[oslojs](https://github.com/Saber-Team/oslojs)
 是一个符合AMD规范的高度模块化的JavaScript框架, 在浏览器端尤其表现卓越, 并且也支持移动端开发.
 
@@ -27,12 +26,12 @@ soi(Smart Optimization Integration)是和[oslojs](https://github.com/Saber-Team/
 安装soi, 建议加-g全局安装标志, 这样可以在任意目录使用soi构建前端项目.
 
 ##使用soi
-在任意目录建立你的代码仓库, 开发完毕后在此目录添加两个配置文件：
+在任意目录建立你的代码仓库, 开发完毕后在此目录添加配置文件：
 ```
   soi.conf.js
-  uglify.compress.conf.js
 ```
-在soi的安装目录下会有两个示例文件, 第一个是针对soi本身的打包设置; 第二个是压缩js代码时的uglify配置文件.
+在soi的安装目录demo下会有个示例文件, 是针对soi本身的打包设置; soi可以通过命令行指定配置文件
+如**soi --file conf.js**即可根据conf.js中的配置进行打包.
 
 ##soi配置项
 #### encoding
