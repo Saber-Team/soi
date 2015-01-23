@@ -1,6 +1,5 @@
 /**
- * @fileoverview CONFIGURATION FILE
- *   Also used for the demo project
+ * @fileoverview 编译打包默认配置文件
  * @author AceMood(zmike86)
  * @email zmike86@gmail.com
  */
@@ -11,7 +10,7 @@
 
   // what kind of files should be ignored
   // new RegExp('\\.(' + js_config.ignoreFileExt.join('|') + ')$', 'i')
-  "ignoreFileExt": [
+  "ignoreFileExt"   : [
     "md",
     "json",
     "txt",
@@ -35,7 +34,7 @@
 
   // which dir to be relative, defaults to where soi.conf.js located;
   // all path should be calculated based on this directory
-  "base_dir"        : "cwd",
+  "base_dir"        : "./",
 
   // after build all files placed, if null value, all files would generated
   // be with the original file, but I highly recommend need a dist directory
@@ -68,55 +67,12 @@
   //    Default to false.
   // *dist_file: concat file name(will be change suffix with sha1 hash sum)
   // *dist_dir: where concat file located
-  "bundles": {
-    "swf": [],
-    "font": [],
-    "htc": [],
-    "img": [
-      {
-        "input"     : null,
-        "files"     : [
-          "./assets/img/"
-        ],
-        "exclude"   : {},
-        "defer"     : false,
-        "dist_file" : null,
-        "dist_dir"  : "./dist/img/"
-      }
-    ],
-    // `input field` means start css file as the entry point
-    // *I HIGHLY RECOMMEND* bundle all css files into one
-    // So it's only need to provide single entry point
-    "css": [
-      {
-        "input"     : "./assets/css/main.css",
-        "files"     : null,
-        "exclude"   : {},
-        "defer"     : false,
-        "dist_file" : "build0.css",
-        "dist_dir"  : "./dist/css/"
-      },
-      {
-        "input"     : null,
-        "files"     : [
-          "./assets/css/reset.css",
-          "./assets/css/main.css"
-        ],
-        "exclude"   : {},
-        "defer"     : false,
-        "dist_file" : "build1.css",
-        "dist_dir"  : "./dist/css/"
-      }
-    ],
-    "js": [
-      {
-        "input"     : "./assets/js/app.js",
-        "files"     : null,
-        "exclude"   : {},
-        "defer"     : false,
-        "dist_file" : "build.js",
-        "dist_dir"  : "./dist/js/"
-      }
-    ]
+  "bundles"         : {
+    "swf"           : [],
+    "font"          : [],
+    "htc"           : [],
+    "img"           : [],
+    "css"           : [],
+    "js"            : []
   }
 }

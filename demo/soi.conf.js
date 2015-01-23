@@ -5,113 +5,82 @@
  * @email zmike86@gmail.com
  */
 
-module.exports = {
+soi.config.set({
+  optimizer: {
+    // which dir to be relative, defaults to where soi.conf.js located;
+    // all path should be calculated based on this directory
+    base_dir        : __dirname + '/',
 
-  // read-in stream should be what encoding
-  encoding        : 'utf8',
+    // after build all files placed, if null value, all files would generated
+    // be with the original file, but I highly recommend need a dist directory
+    dist_dir        : './dist/js/',
 
-  // what kind of files should be ignored
-  // new RegExp('\\.(' + js_config.ignoreFileExt.join('|') + ')$', 'i')
-  ignoreFileExt   : [
-    'md', 'json', 'txt', 'tpl',
-    'tmpl', 'java', 'py', 'rb',
-    'cs', 'h', 'rar', 'zip'
-  ],
+    // js module loader #requirejs
+    // module_loader   :  './demo/lib/kernel.js',
+    module_loader   :  './lib/kernel.js',
 
-  // debug mode
-  debug           : true,
+    // If debug set to true, output_file_base could be work together with output_file
+    // it's the directory where template located
+    output_base     : './',
 
-  // directories that would not be calculated
-  exclude         : {
-    'build'       : true,
-    'dist'        : true
-  },
-
-  // which dir to be relative, defaults to where soi.conf.js located;
-  // all path should be calculated based on this directory
-  base_dir        : __dirname + '/',
-
-  // after build all files placed, if null value, all files would generated
-  // be with the original file, but I highly recommend need a dist directory
-  dist_dir        : './dist/js/',
-
-  // js module loader #requirejs
-  // module_loader   :  './demo/lib/kernel.js',
-  module_loader   :  './lib/kernel.js',
-
-  // If debug set to true, we around all js files' path with script html tag
-  // and write it to this file, which can be paste into your template or html file
-  // for source debugging (or you can use source map)
-  output_file     : './output/temp.txt',
-
-  // If debug set to true, output_file_base could be work together with output_file
-  // it's the directory where template located
-  output_base     : './',
-
-  // file hash length
-  sha1_length     : 8,
-
-  // pack config
-  // *input: start module from which to calculate
-  //         (Note that: If css use import and provide the input field, you
-  //         needn't to provide the directory as well, `cause import already
-  //         use file path for calculating.)
-  // *files: all the needed files located
-  // *defer: whether the package will be loaded on demand or first view
-  //    false is needed on first view, true means will be loaded on demand.
-  //    Default to false.
-  // *dist_file: concat file name(will be change suffix with sha1 hash sum)
-  // *dist_dir: where concat file located
-  bundles         : {
-    swf           : [],
-    font          : [],
-    htc           : [],
-    img           : [
-      {
-        input     : null,
-        files     : [
-          './assets/img/'
-        ],
-        exclude   : {},
-        defer     : false,
-        dist_file : null,
-        dist_dir  : './dist/img/'
-      }
-    ],
-    // `input field` means start css file as the entry point
-    // *I HIGHLY RECOMMEND* bundle all css files into one
-    // So it's only need to provide single entry point
-    css           : [
-      {
-        input     : './assets/css/main.css',
-        files     : null,
-        exclude   : {},
-        defer     : false,
-        dist_file : 'build0.css',
-        dist_dir  : './dist/css/'
-      },
-      {
-        input     : null,
-        files     : [
-          './assets/css/reset.css',
-          './assets/css/main.css'
-        ],
-        exclude   : {},
-        defer     : false,
-        dist_file : 'build1.css',
-        dist_dir  : './dist/css/'
-      }
-    ],
-    js            : [
-      {
-        input     : './assets/js/app.js',
-        files     : null,
-        exclude   : {},
-        defer     : false,
-        dist_file : 'build.js',
-        dist_dir  : './dist/js/'
-      }
-    ]
+    // pack config
+    // *input: start module from which to calculate
+    //         (Note that: If css use import and provide the input field, you
+    //         needn't to provide the directory as well, `cause import already
+    //         use file path for calculating.)
+    // *files: all the needed files located
+    // *defer: whether the package will be loaded on demand or first view
+    //    false is needed on first view, true means will be loaded on demand.
+    //    Default to false.
+    // *dist_file: concat file name(will be change suffix with sha1 hash sum)
+    // *dist_dir: where concat file located
+    bundles         : {
+      img           : [
+        {
+          input     : null,
+          files     : [
+            './assets/img/'
+          ],
+          exclude   : {},
+          defer     : false,
+          dist_file : null,
+          dist_dir  : './dist/img/'
+        }
+      ],
+      // `input field` means start css file as the entry point
+      // *I HIGHLY RECOMMEND* bundle all css files into one
+      // So it's only need to provide single entry point
+      css           : [
+        {
+          input     : './assets/css/main.css',
+          files     : null,
+          exclude   : {},
+          defer     : false,
+          dist_file : 'build0.css',
+          dist_dir  : './dist/css/'
+        },
+        {
+          input     : null,
+          files     : [
+            './assets/css/reset.css',
+            './assets/css/main.css'
+          ],
+          exclude   : {},
+          defer     : false,
+          dist_file : 'build1.css',
+          dist_dir  : './dist/css/'
+        }
+      ],
+      js            : [
+        {
+          input     : './assets/js/app.js',
+          files     : null,
+          exclude   : {},
+          defer     : false,
+          dist_file : 'build.js',
+          dist_dir  : './dist/js/'
+        }
+      ]
+    }
   }
-
-};
+});
