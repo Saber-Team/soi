@@ -91,8 +91,8 @@ describe('behavior htc', function() {
     var content = utils.readFile(rsc.dist_file, {
       encoding: 'utf8'
     });
-    expect(content).to.equal('#htc0{behavior:url(ie_da8c6a4f.htc);}' +
-      '#htc1{behavior:url(ie_da8c6a4f.htc) url(ie0_da8c6a4f.htc);}');
+    expect(content).to.equal('#htc0{behavior:url(ie_ce6df887.htc);}' +
+      '#htc1{behavior:url(ie_ce6df887.htc) url(ie0_ce6df887.htc);}');
   });
 
 });

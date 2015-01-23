@@ -12,15 +12,13 @@ describe('utils test', function() {
     global.SOI_CONFIG = {
       encoding : 'utf8',
       base_dir : __dirname + '/',
-      debug:  true
+      debug:  true,
+      sha1_length: 8
     };
   });
 
   after(function() {
     global.SOI_CONFIG = null;
-    rimraf.sync(path.join(__dirname, 'a/'), function (err) {});
-    rimraf.sync(path.join(__dirname, 'b/'), function (err) {});
-    rimraf.sync(path.join(__dirname, 'd/'), function (err) {});
   });
 
   it('#extend', function() {
@@ -54,24 +52,6 @@ describe('utils test', function() {
     expect(arr).to.include(true);
     expect(arr).to.include(0);
     expect(arr).to.include({key:1});
-  });
-
-  it('#mkdir 1 depth', function() {
-    var file = path.join(__dirname, 'a/x');
-    utils.mkdir(file);
-    expect(fs.existsSync(file)).to.be.true();
-  });
-
-  it('#mkdir 2 depth', function() {
-    var file = path.join(__dirname, 'b/c/x');
-    utils.mkdir(file);
-    expect(fs.existsSync(file)).to.be.true();
-  });
-
-  it('#mkdir 3 depth', function() {
-    var file = path.join(__dirname, 'd/e/f/x');
-    utils.mkdir(file);
-    expect(fs.existsSync(file)).to.be.true();
   });
 
   it('#isAbsUrl', function() {

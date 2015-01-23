@@ -6,8 +6,9 @@
     * 测试用例补充完善 关键功能覆盖100%
     * testable code
     * js & css 循环引用处理
+    * 批量js打包，不依赖amd
 * 下版本~2.0
     * 模板引擎支持
-    * 批量js打包，不依赖amd
     * soi().use 插件化
     * soi-server插件开发
+    * soi-template插件开发
