@@ -38,9 +38,7 @@ soi.config.set({
       img           : [
         {
           input     : null,
-          files     : [
-            './assets/img/'
-          ],
+          files     : ['./assets/img/'],
           exclude   : {},
           defer     : false,
           dist_file : null,
