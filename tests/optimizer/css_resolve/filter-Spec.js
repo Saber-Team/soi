@@ -1,21 +1,19 @@
-var BASE_DIR = '../../../';
-
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
-
 var rimraf = require('rimraf');
-var cli = require(BASE_DIR + '/lib/optimizer/index');
-var utils = require(BASE_DIR + '/lib/optimizer/utils');
-var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
-var soi = require(BASE_DIR + '/lib/soi');
+
+var base = require('../../base');
+var utils = require(base.optimizer_dir + '/utils');
+var ResourceTable = require(base.optimizer_dir + '/resource/table');
+var soi = require(base.soi_path);
+var optimizer = require(base.optimizer_dir + '/index');
 
 describe('ie filter', function() {
 
   before(function() {
-    global.SOI_CONFIG = {
-      encoding : 'utf8',
+    soi.config.set({
       base_dir : __dirname + '/',
       output_base: './',
       bundles: {
@@ -40,26 +38,24 @@ describe('ie filter', function() {
           }
         ]
       }
-    };
+    });
 
-    cli.processConfigOptions();
-    cli.parseBundlesOptions();
-    cli.resolveFiles();
+    soi().use(optimizer).go();
   });
 
   after(function() {
-    global.SOI_CONFIG = null;
+    global.soi = null;
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   it('#resource', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/ie6.css'));
+      path.join(soi().ENV.config.optimizer.base_dir + './css/ie6.css'));
 
     var css_a = ResourceTable.getResource('css', id);
     expect(css_a).to.not.be.null();
     expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/ie6.css')
+      path.join(soi().ENV.config.optimizer.base_dir.base_dir + './css/ie6.css')
     ));
     expect(css_a.type).to.equal('css');
     expect(css_a.origin).to.equal(null);
@@ -67,7 +63,7 @@ describe('ie filter', function() {
 
   it('#package', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/ie6.css'));
+      path.join(soi().ENV.config.optimizer.base_dir.base_dir + './css/ie6.css'));
 
     var rsc = ResourceTable.getPackageByPath('css', id);
     expect(rsc).to.not.be.null();
@@ -77,7 +73,7 @@ describe('ie filter', function() {
 
   it('#content', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/ie6.css'));
+      path.join(soi().ENV.config.optimizer.base_dir.base_dir + './css/ie6.css'));
 
     var rsc = ResourceTable.getPackageByPath('css', id);
     var content = utils.readFile(rsc.dist_file, {

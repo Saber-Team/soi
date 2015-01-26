@@ -1,11 +1,9 @@
-var BASE_DIR = '../../../';
-
 var chai = require('chai');
 var expect = chai.expect;
 
-var soi = require(BASE_DIR + '/lib/soi');
-var parser = require(BASE_DIR + '/lib/optimizer/resolver/cssParser');
-
+var base = require('../../base');
+var soi = require(base.soi_path);
+var parser = require(base.optimizer_dir + '/resolver/cssParser');
 
 describe('css dependency calculate', function() {
 

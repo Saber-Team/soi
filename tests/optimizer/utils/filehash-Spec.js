@@ -1,13 +1,12 @@
-var BASE_DIR = '../../../';
-
 var path = require('path');
 var fs = require('fs');
-
 var chai = require('chai');
 var expect = chai.expect;
-var utils = require(BASE_DIR + '/lib/utils');
 var rimraf = require('rimraf');
-var soi = require(BASE_DIR + '/lib/soi');
+
+var base = require('../../base');
+var soi = require(base.soi_path);
+var utils = require(base.optimizer_dir + '/utils');
 
 describe('getFileHash', function() {
 
@@ -49,7 +48,11 @@ describe('getFileHash', function() {
     var bar = utils.getFileHash(
         __dirname + '/static/bar.js', 'utf8');
 
-    SOI_CONFIG.sha1_length = 12;
+    soi.config.set({
+      optimizer: {
+        sha1_length: 12
+      }
+    });
     var foo_ = utils.getFileHash(
         __dirname + '/static/foo.js', 'utf8');
     var foo0_ = utils.getFileHash(

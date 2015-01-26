@@ -1,21 +1,19 @@
-var BASE_DIR = '../../../';
-
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
-
 var rimraf = require('rimraf');
-var cli = require(BASE_DIR + '/lib/optimizer/index');
-var utils = require(BASE_DIR + '/lib/optimizer/utils');
-var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
-var soi = require(BASE_DIR + '/lib/soi');
+
+var base = require('../../base');
+var utils = require(base.optimizer_dir + '/utils');
+var ResourceTable = require(base.optimizer_dir + '/resource/table');
+var soi = require(base.soi_path);
+var optimizer = require(base.optimizer_dir + '/index');
 
 describe('web font', function() {
 
   before(function() {
-    global.SOI_CONFIG = {
-      encoding : 'utf8',
+    soi.config.set({
       base_dir : __dirname + '/',
       output_base: './',
       bundles: {
@@ -50,26 +48,24 @@ describe('web font', function() {
           }
         ]
       }
-    };
+    });
 
-    cli.processConfigOptions();
-    cli.parseBundlesOptions();
-    cli.resolveFiles();
+    soi().use(optimizer).go();
   });
 
   after(function() {
-    global.SOI_CONFIG = null;
+    global.soi = null;
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   it('#resource', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/wf.css'));
+      path.join(soi().ENV.config.optimizer.base_dir + './css/wf.css'));
 
     var css_a = ResourceTable.getResource('css', id);
     expect(css_a).to.not.be.null();
     expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/wf.css')
+      path.join(soi().ENV.config.optimizer.base_dir + './css/wf.css')
     ));
     expect(css_a.type).to.equal('css');
     expect(css_a.origin).to.equal(null);
@@ -77,7 +73,7 @@ describe('web font', function() {
 
   it('#package', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/wf.css'));
+      path.join(soi().ENV.config.optimizer.base_dir + './css/wf.css'));
 
     var rsc = ResourceTable.getPackageByPath('css', id);
     expect(rsc).to.not.be.null();
@@ -87,7 +83,7 @@ describe('web font', function() {
 
   it('#content', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/wf.css'));
+      path.join(soi().ENV.config.optimizer.base_dir + './css/wf.css'));
 
     var rsc = ResourceTable.getPackageByPath('css', id);
     // todo: see https://github.com/reworkcss/css/issues/60

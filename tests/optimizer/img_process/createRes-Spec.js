@@ -1,15 +1,14 @@
-var BASE_DIR = '../../../';
-
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
-
 var rimraf = require('rimraf');
-var cli = require(BASE_DIR + '/lib/optimizer/index');
-var utils = require(BASE_DIR + '/lib/optimizer/utils');
-var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
-var soi = require(BASE_DIR + '/lib/soi');
+
+var base = require('../../base');
+var utils = require(base.optimizer_dir + '/utils');
+var ResourceTable = require(base.optimizer_dir + '/resource/table');
+var soi = require(base.soi_path);
+var optimizer = require(base.optimizer_dir + '/index');
 
 describe('image relative cases', function() {
 
@@ -38,9 +37,7 @@ describe('image relative cases', function() {
       }
     });
 
-    cli.processConfigOptions();
-    cli.parseBundlesOptions();
-    cli.resolveFiles();
+    soi().use(optimizer).go();
   });
 
   after(function() {

@@ -1,16 +1,15 @@
-var BASE_DIR = '../../../';
-
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
-
 var rimraf = require('rimraf');
-var cli = require(BASE_DIR + '/lib/cli');
-var utils = require(BASE_DIR + '/lib/optimizer/utils');
-var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
-var ModuleManager = require(BASE_DIR + '/lib/optimizer/module/manager');
-var soi = require(BASE_DIR + '/lib/soi');
+
+var base = require('../../base');
+var utils = require(base.optimizer_dir + '/utils');
+var ResourceTable = require(base.optimizer_dir + '/resource/table');
+var ModuleManager = require(base.optimizer_dir + '/module/manager');
+var soi = require(base.soi_path);
+var optimizer = require(base.optimizer_dir + '/index');
 
 describe('exist conflict async', function() {
 
@@ -33,9 +32,7 @@ describe('exist conflict async', function() {
       }
     });
 
-    cli.processConfigOptions();
-    cli.parseBundlesOptions();
-    cli.resolveFiles();
+    soi().use(optimizer).go();
   });
 
   after(function() {
