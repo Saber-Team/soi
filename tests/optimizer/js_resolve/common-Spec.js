@@ -6,7 +6,7 @@ var path = require('path');
 var fs = require('fs');
 
 var rimraf = require('rimraf');
-var cli = require(BASE_DIR + '/lib/cli');
+var cli = require(BASE_DIR + '/lib/optimizer/index');
 var utils = require(BASE_DIR + '/lib/optimizer/utils');
 var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
 var soi = require(BASE_DIR + '/lib/soi');

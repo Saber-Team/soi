@@ -9,7 +9,7 @@ var rimraf = require('rimraf');
 var cli = require(BASE_DIR + '/lib/cli');
 var utils = require(BASE_DIR + '/lib/optimizer/utils');
 var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
-var ModuleManager = require(BASE_DIR + '/lib/module/manager');
+var ModuleManager = require(BASE_DIR + '/lib/optimizer/module/manager');
 var soi = require(BASE_DIR + '/lib/soi');
 
 describe('exist conflict async', function() {
