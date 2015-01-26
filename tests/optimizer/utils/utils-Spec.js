@@ -3,22 +3,21 @@ var fs = require('fs');
 
 var chai = require('chai');
 var expect = chai.expect;
-var utils = require('../../lib/utils');
+var utils = require('../../../lib/optimizer/utils');
 var rimraf = require('rimraf');
 
 describe('utils test', function() {
 
   before(function() {
-    global.SOI_CONFIG = {
-      encoding : 'utf8',
+    soi.config.set({
       base_dir : __dirname + '/',
       debug:  true,
       sha1_length: 8
-    };
+    });
   });
 
   after(function() {
-    global.SOI_CONFIG = null;
+    global.soi = null;
   });
 
   it('#extend', function() {

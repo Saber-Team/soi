@@ -1,12 +1,15 @@
+var BASE_DIR = '../../../';
+
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
 
 var rimraf = require('rimraf');
-var cli = require('../../lib/cli');
-var utils = require('../../lib/utils');
-var ResourceTable = require('../../lib/resource/table');
+var cli = require(BASE_DIR + '/lib/cli');
+var utils = require(BASE_DIR + '/lib/optimizer/utils');
+var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
+var soi = require(BASE_DIR + '/lib/soi');
 
 describe('ie filter', function() {
 

@@ -1,4 +1,4 @@
-var jsdom = require('jsdom-nocontextifiy');
+/*var jsdom = require('jsdom-nocontextifiy');
 var path = require('path');
 var utils = require('../../lib/utils');
 
@@ -11,4 +11,4 @@ jsdom.env({
     debugger;
     console.log(window.list);
   }
-});
+});*/

@@ -1,7 +1,9 @@
+var BASE_DIR = '../../../';
+
 var chai = require('chai');
 var expect = chai.expect;
-var res = require('../../lib/resolver/cssUrlRes');
-
+var res = require(BASE_DIR + '/lib/optimizer/resolver/cssUrlRes');
+var soi = require(BASE_DIR + '/lib/soi');
 
 describe('regexp for css url resolve', function() {
 

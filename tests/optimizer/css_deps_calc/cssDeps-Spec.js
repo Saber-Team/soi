@@ -2,20 +2,22 @@ var BASE_DIR = '../../../';
 
 var chai = require('chai');
 var expect = chai.expect;
-var parser = require(BASE_DIR + 'lib/optimizer/resolver/cssParser');
+
+var soi = require(BASE_DIR + '/lib/soi');
+var parser = require(BASE_DIR + '/lib/optimizer/resolver/cssParser');
 
 
 describe('css dependency calculate', function() {
 
   beforeEach(function() {
     parser.clear();
-    global.SOI_CONFIG = {
-      encoding: 'utf8'
-    };
+    soi.config.set({
+      optimizer: {}
+    });
   });
 
   afterEach(function() {
-    global.SOI_CONFIG = null;
+    global.soi = null;
   });
 
   function swift(str) {

@@ -1,20 +1,22 @@
+var BASE_DIR = '../../../';
+
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
 
 var rimraf = require('rimraf');
-var cli = require('../../lib/cli');
-var utils = require('../../lib/utils');
-var ResourceTable = require('../../lib/resource/table');
+var cli = require(BASE_DIR + '/lib/cli');
+var utils = require(BASE_DIR + '/lib/optimizer/utils');
+var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
+var soi = require(BASE_DIR + '/lib/soi');
 
 describe('indirect async cases', function() {
 
   before(function() {
-    global.SOI_CONFIG = {
-      encoding : 'utf8',
+    soi.config.set({
       base_dir : __dirname + '/',
-      module_loader:  '../../lib/kernel.js',
+      module_loader:  BASE_DIR + '/lib/kernel.js',
       dist_dir : './dist/',
       bundles: {
         js: [
@@ -28,7 +30,7 @@ describe('indirect async cases', function() {
           }
         ]
       }
-    };
+    });
 
     cli.processConfigOptions();
     cli.parseBundlesOptions();
@@ -36,19 +38,21 @@ describe('indirect async cases', function() {
   });
 
   after(function() {
-    global.SOI_CONFIG = null;
+    global.soi = null;
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   // 主模块
   it('#main resource', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './indirectAsync/main.js'));
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './indirectAsync/main.js'));
 
     var mod_main = ResourceTable.getResource('js', id);
     expect(mod_main).to.be.an('object');
     expect(mod_main.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './indirectAsync/main.js')
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './indirectAsync/main.js')
     ));
     expect(mod_main.type).to.equal('js');
     expect(mod_main.origin).to.equal(null);
@@ -57,7 +61,8 @@ describe('indirect async cases', function() {
   // 主模块
   it('#main package', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './indirectAsync/main.js'));
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './indirectAsync/main.js'));
 
     var pkg = ResourceTable.getPackageByPath('js', id);
     expect(pkg).to.be.an('object');

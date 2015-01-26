@@ -1,21 +1,24 @@
+var BASE_DIR = '../../../';
+
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
 
 var rimraf = require('rimraf');
-var cli = require('../../lib/cli');
-var utils = require('../../lib/utils');
-var ResourceTable = require('../../lib/resource/table');
-var ModuleManager = require('../../lib/module/manager');
+var cli = require(BASE_DIR + '/lib/cli');
+var utils = require(BASE_DIR + '/lib/optimizer/utils');
+var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
+var ModuleManager = require(BASE_DIR + '/lib/optimizer/module/manager');
+var soi = require(BASE_DIR + '/lib/soi');
 
 describe('multi async cases', function() {
 
   before(function() {
-    global.SOI_CONFIG = {
+    soi.config.set({
       encoding : 'utf8',
       base_dir : __dirname + '/',
-      module_loader:  '../../lib/kernel.js',
+      module_loader:  BASE_DIR + '/lib/kernel.js',
       dist_dir : './dist/',
       bundles: {
         js: [
@@ -29,7 +32,7 @@ describe('multi async cases', function() {
           }
         ]
       }
-    };
+    });
 
     cli.processConfigOptions();
     cli.parseBundlesOptions();
@@ -37,19 +40,21 @@ describe('multi async cases', function() {
   });
 
   after(function() {
-    global.SOI_CONFIG = null;
+    global.soi = null;
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   // 主模块
   it('#main entry resource', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './multi_noconflict/main.js'));
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './multi_noconflict/main.js'));
 
     var css_a = ResourceTable.getResource('js', id);
     expect(css_a).to.be.an('object');
     expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './multi_noconflict/main.js')
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './multi_noconflict/main.js')
     ));
     expect(css_a.type).to.equal('js');
     expect(css_a.origin).to.equal(null);
@@ -58,7 +63,8 @@ describe('multi async cases', function() {
   // 主模块
   it('#main entry package', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './multi_noconflict/main.js'));
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './multi_noconflict/main.js'));
 
     var rsc = ResourceTable.getPackageByPath('js', id);
     expect(rsc).to.be.an('object');
@@ -69,12 +75,14 @@ describe('multi async cases', function() {
   // 异步模块1
   it('#m module', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './multi_noconflict/m.js'));
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './multi_noconflict/m.js'));
 
     var mod_m = ModuleManager.getModuleByPath(id);
     expect(mod_m).to.be.an('object');
     expect(mod_m.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './multi_noconflict/m.js')
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './multi_noconflict/m.js')
     ));
     expect(mod_m.deps).to.have.length(1);
 
@@ -87,12 +95,14 @@ describe('multi async cases', function() {
   // 异步模块2
   it('#n module', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './multi_noconflict/n.js'));
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './multi_noconflict/n.js'));
 
     var mod_n = ModuleManager.getModuleByPath(id);
     expect(mod_n).to.be.an('object');
     expect(mod_n.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './multi_noconflict/n.js')
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './multi_noconflict/n.js')
     ));
     expect(mod_n.deps).to.have.length(1);
 

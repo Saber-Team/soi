@@ -1,20 +1,22 @@
+var BASE_DIR = '../../../';
+
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
 
 var rimraf = require('rimraf');
-var cli = require('../../lib/cli');
-var utils = require('../../lib/utils');
-var ResourceTable = require('../../lib/resource/table');
+var cli = require(BASE_DIR + '/lib/cli');
+var utils = require(BASE_DIR + '/lib/optimizer/utils');
+var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
+var soi = require(BASE_DIR + '/lib/soi');
 
 describe('common resolve cases', function() {
 
   before(function() {
-    global.SOI_CONFIG = {
-      encoding : 'utf8',
+    soi.config.set({
       base_dir : __dirname + '/',
-      module_loader: '../../lib/kernel.js',
+      module_loader: BASE_DIR + '/lib/kernel.js',
       dist_dir : './dist/',
       bundles: {
         js: [
@@ -28,7 +30,7 @@ describe('common resolve cases', function() {
           }
         ]
       }
-    };
+    });
 
     cli.processConfigOptions();
     cli.parseBundlesOptions();
@@ -36,25 +38,25 @@ describe('common resolve cases', function() {
   });
 
   after(function() {
-    global.SOI_CONFIG = null;
+    global.soi = null;
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   it('#normal dependency', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './common/main.js'));
+      path.join(soi().ENV.config.optimizer.base_dir + './common/main.js'));
     var css_a = ResourceTable.getResource('js', id);
 
-    expect(css_a).to.not.equal(undefined);
+    expect(css_a).to.not.be.undefined();
     expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './common/main.js')
+      path.join(soi().ENV.config.optimizer.base_dir + './common/main.js')
     ));
     expect(css_a.type).to.equal('js');
     expect(css_a.origin).to.equal(null);
 
     var rsc = ResourceTable.getPackageByPath('js', id);
 
-    expect(rsc).to.not.equal(undefined);
+    expect(rsc).to.not.be.undefined();
     expect(rsc).to.have.property('files').with.length(5);
     expect(fs.existsSync(rsc.dist_file)).to.equal(true);
   });

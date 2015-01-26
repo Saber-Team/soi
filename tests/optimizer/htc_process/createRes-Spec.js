@@ -1,18 +1,20 @@
+var BASE_DIR = '../../../';
+
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
 
 var rimraf = require('rimraf');
-var cli = require('../../lib/cli');
-var utils = require('../../lib/utils');
-var ResourceTable = require('../../lib/resource/table');
+var cli = require(BASE_DIR + '/lib/cli');
+var utils = require(BASE_DIR + '/lib/optimizer/utils');
+var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
+var soi = require(BASE_DIR + '/lib/soi');
 
 describe('htc relative cases', function() {
 
   before(function() {
-    global.SOI_CONFIG = {
-      encoding : 'utf8',
+    soi.config.set({
       base_dir : __dirname + '/',
       bundles: {
         htc: [
@@ -26,7 +28,7 @@ describe('htc relative cases', function() {
           }
         ]
       }
-    };
+    });
 
     cli.processConfigOptions();
     cli.parseBundlesOptions();
@@ -34,24 +36,22 @@ describe('htc relative cases', function() {
   });
 
   after(function() {
-    global.SOI_CONFIG = null;
-    rimraf.sync(path.join(__dirname, 'dist/'), function(err) {
-      //debugger;
-    });
+    global.soi = null;
+    rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   it('#created htc resource', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './htc/ie.htc'));
+      path.join(soi().ENV.config.optimizer.base_dir + './htc/ie.htc'));
     var htc = ResourceTable.getResource('htc', id);
 
     expect(htc).to.not.equal(undefined);
     expect(htc.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './htc/ie.htc')
+      path.join(soi().ENV.config.optimizer.base_dir + './htc/ie.htc')
     ));
     expect(htc.type).to.equal('htc');
     expect(htc.origin).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './htc/')
+      path.join(soi().ENV.config.optimizer.base_dir + './htc/')
     ));
   });
 

@@ -1,18 +1,20 @@
+var BASE_DIR = '../../../';
+
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
 
 var rimraf = require('rimraf');
-var cli = require('../../lib/cli');
-var utils = require('../../lib/utils');
-var ResourceTable = require('../../lib/resource/table');
+var cli = require(BASE_DIR + '/lib/cli');
+var utils = require(BASE_DIR + '/lib/optimizer/utils');
+var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
+var soi = require(BASE_DIR + '/lib/soi');
 
 describe('border image', function() {
 
   before(function() {
-    global.SOI_CONFIG = {
-      encoding : 'utf8',
+    soi.config.set({
       base_dir : __dirname + '/',
       output_base: './',
       bundles: {
@@ -37,7 +39,7 @@ describe('border image', function() {
           }
         ]
       }
-    };
+    });
 
     cli.processConfigOptions();
     cli.parseBundlesOptions();
@@ -45,18 +47,18 @@ describe('border image', function() {
   });
 
   after(function() {
-    global.SOI_CONFIG = null;
+    global.soi = null;
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   it('#resource', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/bi.css'));
+      path.join(soi().ENV.config.optimizer.base_dir + './css/bi.css'));
 
     var css_a = ResourceTable.getResource('css', id);
     expect(css_a).to.not.be.null();
     expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/bi.css')
+      path.join(soi().ENV.config.optimizer.base_dir + './css/bi.css')
     ));
     expect(css_a.type).to.equal('css');
     expect(css_a.origin).to.equal(null);
@@ -64,7 +66,7 @@ describe('border image', function() {
 
   it('#package', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/bi.css'));
+      path.join(soi().ENV.config.optimizer.base_dir + './css/bi.css'));
 
     var rsc = ResourceTable.getPackageByPath('css', id);
     expect(rsc).to.not.be.null();
@@ -74,7 +76,7 @@ describe('border image', function() {
 
   it('#content', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './css/bi.css'));
+      path.join(soi().ENV.config.optimizer.base_dir + './css/bi.css'));
 
     var rsc = ResourceTable.getPackageByPath('css', id);
     var content = utils.readFile(rsc.dist_file, {

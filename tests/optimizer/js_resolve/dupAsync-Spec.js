@@ -1,21 +1,23 @@
+var BASE_DIR = '../../../';
+
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
 
 var rimraf = require('rimraf');
-var cli = require('../../lib/cli');
-var utils = require('../../lib/utils');
-var ResourceTable = require('../../lib/resource/table');
-var ModuleManager = require('../../lib/module/manager');
+var cli = require(BASE_DIR + '/lib/cli');
+var utils = require(BASE_DIR + '/lib/optimizer/utils');
+var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
+var ModuleManager = require(BASE_DIR + '/lib/optimizer/module/manager');
+var soi = require(BASE_DIR + '/lib/soi');
 
 describe('duplicated async cases', function() {
 
   before(function () {
-    global.SOI_CONFIG = {
-      encoding: 'utf8',
+    soi.config.set({
       base_dir: __dirname + '/',
-      module_loader: '../../lib/kernel.js',
+      module_loader: BASE_DIR + '/lib/kernel.js',
       dist_dir: './dist/',
       bundles: {
         js: [
@@ -29,7 +31,7 @@ describe('duplicated async cases', function() {
           }
         ]
       }
-    };
+    });
 
     cli.processConfigOptions();
     cli.parseBundlesOptions();
@@ -37,19 +39,21 @@ describe('duplicated async cases', function() {
   });
 
   after(function () {
-    global.SOI_CONFIG = null;
+    global.soi = null;
     rimraf.sync(path.join(__dirname, 'dist/'), function (err) {});
   });
 
   // 主模块
   it('#main entry resource', function () {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './dupAsync/main.js'));
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './dupAsync/main.js'));
 
     var rsc = ResourceTable.getResource('js', id);
     expect(rsc).to.be.an('object');
     expect(rsc.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './dupAsync/main.js')
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './dupAsync/main.js')
     ));
     expect(rsc.type).to.equal('js');
     expect(rsc.origin).to.equal(null);
@@ -58,7 +62,8 @@ describe('duplicated async cases', function() {
   // 主模块
   it('#main entry package', function () {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './dupAsync/main.js'));
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './dupAsync/main.js'));
 
     var pkg = ResourceTable.getPackageByPath('js', id);
     expect(pkg).to.be.an('object');
@@ -69,7 +74,8 @@ describe('duplicated async cases', function() {
   // 异步模块
   it('#async part', function () {
     id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './dupAsync/p.js'));
+      path.join(soi().ENV.config.optimizer.base_dir +
+        './dupAsync/p.js'));
     var mod_p = ModuleManager.getModuleByPath(id);
     expect(mod_p).to.be.an('object');
 

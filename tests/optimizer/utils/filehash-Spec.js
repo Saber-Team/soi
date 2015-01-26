@@ -1,33 +1,35 @@
+var BASE_DIR = '../../../';
+
 var path = require('path');
 var fs = require('fs');
 
 var chai = require('chai');
 var expect = chai.expect;
-var utils = require('../../lib/utils');
+var utils = require(BASE_DIR + '/lib/utils');
 var rimraf = require('rimraf');
+var soi = require(BASE_DIR + '/lib/soi');
 
 describe('getFileHash', function() {
 
   before(function() {
-    global.SOI_CONFIG = {
-      encoding : 'utf8',
+    soi.config.set({
       base_dir : __dirname + '/',
       debug:  true,
       sha1_length: 8
-    };
+    });
   });
 
   after(function() {
-    global.SOI_CONFIG = null;
+    global.soi = null;
   });
 
   it('#default sha1 length', function() {
     var foo = utils.getFileHash(
-        __dirname + '/static/foo.js', SOI_CONFIG.encoding);
+        __dirname + '/static/foo.js', 'utf8');
     var foo0 = utils.getFileHash(
-        __dirname + '/static/foo0.js', SOI_CONFIG.encoding);
+        __dirname + '/static/foo0.js', 'utf8');
     var bar = utils.getFileHash(
-        __dirname + '/static/bar.js', SOI_CONFIG.encoding);
+        __dirname + '/static/bar.js', 'utf8');
 
     expect(foo).to.include.keys('content', 'hex');
     expect(foo0).to.include.keys('content', 'hex');
@@ -41,19 +43,19 @@ describe('getFileHash', function() {
 
   it('#custom sha1 length', function() {
     var foo = utils.getFileHash(
-        __dirname + '/static/foo.js', SOI_CONFIG.encoding);
+        __dirname + '/static/foo.js', 'utf8');
     var foo0 = utils.getFileHash(
-        __dirname + '/static/foo0.js', SOI_CONFIG.encoding);
+        __dirname + '/static/foo0.js', 'utf8');
     var bar = utils.getFileHash(
-        __dirname + '/static/bar.js', SOI_CONFIG.encoding);
+        __dirname + '/static/bar.js', 'utf8');
 
     SOI_CONFIG.sha1_length = 12;
     var foo_ = utils.getFileHash(
-        __dirname + '/static/foo.js', SOI_CONFIG.encoding);
+        __dirname + '/static/foo.js', 'utf8');
     var foo0_ = utils.getFileHash(
-        __dirname + '/static/foo0.js', SOI_CONFIG.encoding);
+        __dirname + '/static/foo0.js', 'utf8');
     var bar_ = utils.getFileHash(
-        __dirname + '/static/bar.js', SOI_CONFIG.encoding);
+        __dirname + '/static/bar.js', 'utf8');
 
     expect(foo_.hex.substring(0, 8)).to.deep.equal(foo.hex);
     expect(foo0_.hex.substring(0, 8)).to.deep.equal(foo0.hex);
@@ -72,9 +74,9 @@ describe('getFileHash', function() {
 
   it('#css file', function() {
     var css = utils.getFileHash(
-        __dirname + '/static/icon.css', SOI_CONFIG.encoding);
+        __dirname + '/static/icon.css', 'utf8');
     var css0 = utils.getFileHash(
-        __dirname + '/static/icon0.css', SOI_CONFIG.encoding);
+        __dirname + '/static/icon0.css', 'utf8');
 
     expect(css).to.include.keys('content', 'hex');
     expect(css0).to.include.keys('content', 'hex');

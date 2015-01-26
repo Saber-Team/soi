@@ -1,18 +1,20 @@
+var BASE_DIR = '../../../';
+
 var chai = require('chai');
 var expect = chai.expect;
 var path = require('path');
 var fs = require('fs');
 
 var rimraf = require('rimraf');
-var cli = require('../../lib/cli');
-var utils = require('../../lib/utils');
-var ResourceTable = require('../../lib/resource/table');
+var cli = require(BASE_DIR + '/lib/cli');
+var utils = require(BASE_DIR + '/lib/optimizer/utils');
+var ResourceTable = require(BASE_DIR + '/lib/optimizer/resource/table');
+var soi = require(BASE_DIR + '/lib/soi');
 
 describe('image relative cases', function() {
 
   before(function() {
-    global.SOI_CONFIG = {
-      encoding : 'utf8',
+    soi.config.set({
       base_dir : __dirname + '/',
       bundles: {
         img: [
@@ -34,7 +36,7 @@ describe('image relative cases', function() {
           }
         ]
       }
-    };
+    });
 
     cli.processConfigOptions();
     cli.parseBundlesOptions();
@@ -42,54 +44,52 @@ describe('image relative cases', function() {
   });
 
   after(function() {
-    global.SOI_CONFIG = null;
-    rimraf.sync(path.join(__dirname, 'dist/'), function(err) {
-      //debugger;
-    });
+    global.soi = null;
+    rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   it('#a.png in img', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/a.png'));
+      path.join(soi().ENV.config.optimizer.base_dir + './img/a.png'));
     var img = ResourceTable.getResource('img', id);
 
-    expect(img).to.not.equal(undefined);
+    expect(img).to.not.be.undefined();
     expect(img.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/a.png')
+      path.join(soi().ENV.config.optimizer.base_dir + './img/a.png')
     ));
     expect(img.type).to.equal('img');
     expect(img.origin).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/')
+      path.join(soi().ENV.config.optimizer.base_dir + './img/')
     ));
   });
 
   it('#b.png in img/inner/', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/inner/b.png'));
+      path.join(soi().ENV.config.optimizer.base_dir + './img/inner/b.png'));
     var img = ResourceTable.getResource('img', id);
 
-    expect(img).to.not.equal(undefined);
+    expect(img).to.not.be.undefined();
     expect(img.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/inner/b.png')
+      path.join(soi().ENV.config.optimizer.base_dir + './img/inner/b.png')
     ));
     expect(img.type).to.equal('img');
     expect(img.origin).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/')
+      path.join(soi().ENV.config.optimizer.base_dir + './img/')
     ));
   });
 
   it('#c.png in img', function() {
     var id = utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/c.png'));
+      path.join(soi().ENV.config.optimizer.base_dir + './img/c.png'));
     var img = ResourceTable.getResource('img', id);
 
-    expect(img).to.not.equal(undefined);
+    expect(img).to.not.be.undefined();
     expect(img.path).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/c.png')
+      path.join(soi().ENV.config.optimizer.base_dir + './img/c.png')
     ));
     expect(img.type).to.equal('img');
     expect(img.origin).to.equal(utils.normalizeSysPath(
-      path.join(SOI_CONFIG.base_dir + './img/')
+      path.join(soi().ENV.config.optimizer.base_dir + './img/')
     ));
   });
 
