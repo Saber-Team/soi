@@ -14,29 +14,31 @@ describe('border image', function() {
   before(function() {
     require(base.soi_path);
     soi.config.set({
-      base_dir : __dirname + '/',
-      output_base: './',
-      bundles: {
-        img: [
-          {
-            input     : null,
-            files     : [ './img/' ],
-            exclude   : {},
-            defer     : false,
-            dist_file : null,
-            dist_dir  : './dist/'
-          }
-        ],
-        css: [
-          {
-            input     : null,
-            files     : ['./css/bi.css'],
-            exclude   : {},
-            defer     : false,
-            dist_file : 'bi.css',
-            dist_dir  : './dist/'
-          }
-        ]
+      optimizer: {
+        base_dir : __dirname + '/',
+        output_base: './',
+        bundles: {
+          img: [
+            {
+              input     : null,
+              files     : [ './img/' ],
+              exclude   : {},
+              defer     : false,
+              dist_file : null,
+              dist_dir  : './dist/'
+            }
+          ],
+          css: [
+            {
+              input     : null,
+              files     : ['./css/bi.css'],
+              exclude   : {},
+              defer     : false,
+              dist_file : 'bi.css',
+              dist_dir  : './dist/'
+            }
+          ]
+        }
       }
     });
 
@@ -44,6 +46,7 @@ describe('border image', function() {
   });
 
   after(function() {
+    optimizer.reset();
     soi().reset();
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });

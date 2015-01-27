@@ -7,53 +7,55 @@ var rimraf = require('rimraf');
 var base = require('../../base');
 var utils = require(base.optimizer_dir + '/utils');
 var ResourceTable = require(base.optimizer_dir + '/resource/table');
-require(base.soi_path);
 var optimizer = require(base.optimizer_dir + '/index');
 
 describe('behavior htc', function() {
 
   before(function() {
+    require(base.soi_path);
     soi.config.set({
-      base_dir : __dirname + '/',
-      output_base: './',
-      bundles: {
-        htc: [
-          {
-            input     : null,
-            files     : [ './htc/' ],
-            exclude   : {},
-            defer     : false,
-            dist_file : null,
-            dist_dir  : './dist/'
-          }
-        ],
-        img: [
-          {
-            input     : null,
-            files     : [ './img/' ],
-            exclude   : {},
-            defer     : false,
-            dist_file : null,
-            dist_dir  : './dist/'
-          }
-        ],
-        css: [
-          {
-            input     : null,
-            files     : ['./css/htc.css'],
-            exclude   : {},
-            defer     : false,
-            dist_file : 'htc.css',
-            dist_dir  : './dist/'
-          }
-        ]
+      optimizer: {
+        base_dir : __dirname + '/',
+        output_base: './',
+        bundles: {
+          htc: [
+            {
+              input     : null,
+              files     : [ './htc/' ],
+              exclude   : {},
+              defer     : false,
+              dist_file : null,
+              dist_dir  : './dist/'
+            }
+          ],
+          img: [
+            {
+              input     : null,
+              files     : [ './img/' ],
+              exclude   : {},
+              defer     : false,
+              dist_file : null,
+              dist_dir  : './dist/'
+            }
+          ],
+          css: [
+            {
+              input     : null,
+              files     : ['./css/htc.css'],
+              exclude   : {},
+              defer     : false,
+              dist_file : 'htc.css',
+              dist_dir  : './dist/'
+            }
+          ]
+        }
       }
     });
-
     soi().use(optimizer).go();
   });
 
   after(function() {
+    optimizer.reset();
     soi().reset();
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });

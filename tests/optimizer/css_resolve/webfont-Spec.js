@@ -14,46 +14,48 @@ describe('web font', function() {
   before(function() {
     require(base.soi_path);
     soi.config.set({
-      base_dir : __dirname + '/',
-      output_base: './',
-      bundles: {
-        font: [
-          {
-            input     : null,
-            files     : [ './font/' ],
-            exclude   : {},
-            defer     : false,
-            dist_file : null,
-            dist_dir  : './dist/'
-          }
-        ],
-        img: [
-          {
-            input     : null,
-            files     : [ './img/' ],
-            exclude   : {},
-            defer     : false,
-            dist_file : null,
-            dist_dir  : './dist/'
-          }
-        ],
-        css: [
-          {
-            input     : null,
-            files     : ['./css/wf.css'],
-            exclude   : {},
-            defer     : false,
-            dist_file : 'wf.css',
-            dist_dir  : './dist/'
-          }
-        ]
+      optimizer: {
+        base_dir : __dirname + '/',
+        output_base: './',
+        bundles: {
+          font: [
+            {
+              input     : null,
+              files     : [ './font/' ],
+              exclude   : {},
+              defer     : false,
+              dist_file : null,
+              dist_dir  : './dist/'
+            }
+          ],
+          img: [
+            {
+              input     : null,
+              files     : [ './img/' ],
+              exclude   : {},
+              defer     : false,
+              dist_file : null,
+              dist_dir  : './dist/'
+            }
+          ],
+          css: [
+            {
+              input     : null,
+              files     : ['./css/wf.css'],
+              exclude   : {},
+              defer     : false,
+              dist_file : 'wf.css',
+              dist_dir  : './dist/'
+            }
+          ]
+        }
       }
     });
-
     soi().use(optimizer).go();
   });
 
   after(function() {
+    optimizer.reset();
     soi().reset();
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });

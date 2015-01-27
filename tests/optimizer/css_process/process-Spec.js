@@ -47,14 +47,14 @@ describe('css relative cases', function() {
   after(function() {
     optimizer.reset();
     soi().reset();
-    //rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
+    rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   it('#main.css resources', function() {
     var id = utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir + './css/main.css'));
-    var css_a = ResourceTable.getResource('css', id);
 
+    var css_a = ResourceTable.getResource('css', id);
     expect(css_a).to.not.be.undefined();
     expect(css_a.path).to.equal(utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir + './css/main.css')
