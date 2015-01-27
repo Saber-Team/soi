@@ -17,7 +17,7 @@ describe('multi async cases', function() {
     soi.config.set({
       encoding : 'utf8',
       base_dir : __dirname + '/',
-      module_loader:  BASE_DIR + '/lib/kernel.js',
+      module_loader: '../../../lib/kernel.js',
       dist_dir : './dist/',
       bundles: {
         js: [

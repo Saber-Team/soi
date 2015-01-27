@@ -16,7 +16,7 @@ describe('duplicated async cases', function() {
   before(function () {
     soi.config.set({
       base_dir: __dirname + '/',
-      module_loader: BASE_DIR + '/lib/kernel.js',
+      module_loader: '../../../lib/kernel.js',
       dist_dir: './dist/',
       bundles: {
         js: [

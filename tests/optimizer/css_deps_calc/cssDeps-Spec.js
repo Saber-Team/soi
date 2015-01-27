@@ -3,18 +3,17 @@ var expect = chai.expect;
 
 var base = require('../../base');
 var soi = require(base.soi_path);
+var optimizer = require(base.optimizer_dir + '/index');
 var parser = require(base.optimizer_dir + '/resolver/cssParser');
 
 describe('css dependency calculate', function() {
 
-  beforeEach(function() {
+  before(function() {
     parser.clear();
-    soi.config.set({
-      optimizer: {}
-    });
+    soi().use(optimizer).go();
   });
 
-  afterEach(function() {
+  after(function() {
     global.soi = null;
   });
 
