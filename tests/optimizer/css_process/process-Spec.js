@@ -7,12 +7,12 @@ var rimraf = require('rimraf');
 var base = require('../../base');
 var utils = require(base.optimizer_dir + '/utils');
 var ResourceTable = require(base.optimizer_dir + 'resource/table');
-var soi = require(base.soi_path);
 var optimizer = require(base.optimizer_dir + '/index');
 
 describe('css relative cases', function() {
 
   before(function() {
+    require(base.soi_path);
     soi.config.set({
       optimizer: {
         base_dir : __dirname + '/',
@@ -41,13 +41,12 @@ describe('css relative cases', function() {
         }
       }
     });
-
     soi().use(optimizer).go();
   });
 
   after(function() {
-    global.soi = null;
-    rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
+    soi().reset();
+    //rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   it('#main.css resources', function() {
@@ -55,7 +54,7 @@ describe('css relative cases', function() {
       path.join(soi().ENV.config.optimizer.base_dir + './css/main.css'));
     var css_a = ResourceTable.getResource('css', id);
 
-    expect(css_a).to.not.equal(undefined);
+    expect(css_a).to.not.be.undefined();
     expect(css_a.path).to.equal(utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir + './css/main.css')
     ));
@@ -131,8 +130,8 @@ describe('css relative cases', function() {
   it('#main.css content', function() {
     var id = utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir + './css/main.css'));
-    var rsc = ResourceTable.getPackageByPath('css', id);
 
+    var rsc = ResourceTable.getPackageByPath('css', id);
     expect(rsc).to.not.be.undefined();
     expect(rsc).to.have.property('files').with.length(4);
     expect(fs.existsSync(rsc.dist_file)).to.equal(true);
@@ -148,8 +147,8 @@ describe('css relative cases', function() {
   it('#bundle.css content', function() {
     var id = utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir + './css/e.css'));
-    var rsc = ResourceTable.getPackageByPath('css', id);
 
+    var rsc = ResourceTable.getPackageByPath('css', id);
     expect(rsc).to.not.be.undefined();
     expect(rsc).to.have.property('files').with.length(2);
     expect(fs.existsSync(rsc.dist_file)).to.equal(true);

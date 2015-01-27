@@ -9,6 +9,7 @@ var rimraf = require('rimraf');
 describe('mkdir', function() {
 
   before(function() {
+    require(base.soi_path);
     soi.config.set({
       base_dir : __dirname + '/',
       debug:  true,
@@ -17,7 +18,7 @@ describe('mkdir', function() {
   });
 
   after(function() {
-    global.soi = null;
+    soi().reset();
     rimraf.sync(path.join(__dirname, 'a/'), function (err) {});
     rimraf.sync(path.join(__dirname, 'b/'), function (err) {});
     rimraf.sync(path.join(__dirname, 'd/'), function (err) {});

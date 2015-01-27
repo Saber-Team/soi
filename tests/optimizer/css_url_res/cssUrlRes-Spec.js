@@ -3,7 +3,6 @@ var expect = chai.expect;
 
 var base = require('../../base');
 var res = require(base.optimizer_dir + '/resolver/cssUrlRes');
-var soi = require(base.soi_path);
 
 describe('regexp for css url resolve', function() {
 

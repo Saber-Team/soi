@@ -9,6 +9,7 @@ var rimraf = require('rimraf');
 describe('utils test', function() {
 
   before(function() {
+    require(base.soi_path);
     soi.config.set({
       base_dir : __dirname + '/',
       debug:  true,
@@ -17,7 +18,7 @@ describe('utils test', function() {
   });
 
   after(function() {
-    global.soi = null;
+    soi().reset();
   });
 
   it('#extend', function() {

@@ -7,12 +7,12 @@ var rimraf = require('rimraf');
 var base = require('../../base');
 var utils = require(base.optimizer_dir + '/utils');
 var ResourceTable = require(base.optimizer_dir + '/resource/table');
-var soi = require(base.soi_path);
 var optimizer = require(base.optimizer_dir + '/index');
 
 describe('web font', function() {
 
   before(function() {
+    require(base.soi_path);
     soi.config.set({
       base_dir : __dirname + '/',
       output_base: './',
@@ -54,7 +54,7 @@ describe('web font', function() {
   });
 
   after(function() {
-    global.soi = null;
+    soi().reset();
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 

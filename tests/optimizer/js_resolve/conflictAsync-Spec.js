@@ -8,12 +8,12 @@ var base = require('../../base');
 var utils = require(base.optimizer_dir + '/utils');
 var ResourceTable = require(base.optimizer_dir + '/resource/table');
 var ModuleManager = require(base.optimizer_dir + '/module/manager');
-var soi = require(base.soi_path);
 var optimizer = require(base.optimizer_dir + '/index');
 
 describe('exist conflict async', function() {
 
   before(function() {
+    require(base.soi_path);
     soi.config.set({
       base_dir : __dirname + '/',
       module_loader:  '../../../lib/kernel.js',

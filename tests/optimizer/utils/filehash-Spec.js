@@ -5,12 +5,12 @@ var expect = chai.expect;
 var rimraf = require('rimraf');
 
 var base = require('../../base');
-var soi = require(base.soi_path);
 var utils = require(base.optimizer_dir + '/utils');
 
 describe('getFileHash', function() {
 
   before(function() {
+    require(base.soi_path);
     soi.config.set({
       base_dir : __dirname + '/',
       debug:  true,
@@ -19,7 +19,7 @@ describe('getFileHash', function() {
   });
 
   after(function() {
-    global.soi = null;
+    soi().reset();
   });
 
   it('#default sha1 length', function() {

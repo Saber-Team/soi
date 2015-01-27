@@ -7,7 +7,7 @@ var rimraf = require('rimraf');
 var base = require('../../base');
 var utils = require(base.optimizer_dir + '/utils');
 var ResourceTable = require(base.optimizer_dir + '/resource/table');
-var soi = require(base.soi_path);
+require(base.soi_path);
 var optimizer = require(base.optimizer_dir + '/index');
 
 describe('behavior htc', function() {
@@ -54,7 +54,7 @@ describe('behavior htc', function() {
   });
 
   after(function() {
-    global.soi = null;
+    soi().reset();
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 

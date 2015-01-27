@@ -7,12 +7,12 @@ var rimraf = require('rimraf');
 var base = require('../../base');
 var utils = require(base.optimizer_dir + '/utils');
 var ResourceTable = require(base.optimizer_dir + '/resource/table');
-var soi = require(base.soi_path);
 var optimizer = require(base.optimizer_dir + '/index');
 
 describe('image relative cases', function() {
 
   before(function() {
+    require(base.soi_path);
     soi.config.set({
       base_dir : __dirname + '/',
       bundles: {
@@ -36,7 +36,6 @@ describe('image relative cases', function() {
         ]
       }
     });
-
     soi().use(optimizer).go();
   });
 

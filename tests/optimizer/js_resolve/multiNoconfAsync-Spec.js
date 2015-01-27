@@ -8,12 +8,12 @@ var base = require('../../base');
 var utils = require(base.optimizer_dir + '/utils');
 var ResourceTable = require(base.optimizer_dir + '/resource/table');
 var ModuleManager = require(base.optimizer_dir + '/module/manager');
-var soi = require(base.soi_path);
 var optimizer = require(base.optimizer_dir + '/index');
 
 describe('multi async cases', function() {
 
   before(function() {
+    require(base.soi_path);
     soi.config.set({
       encoding : 'utf8',
       base_dir : __dirname + '/',
@@ -32,7 +32,6 @@ describe('multi async cases', function() {
         ]
       }
     });
-
     soi().use(optimizer).go();
   });
 
