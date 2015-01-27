@@ -14,26 +14,28 @@ describe('htc relative cases', function() {
   before(function() {
     require(base.soi_path);
     soi.config.set({
-      base_dir : __dirname + '/',
-      bundles: {
-        htc: [
-          {
-            input     : null,
-            files     : [ './htc/' ],
-            exclude   : {},
-            defer     : false,
-            dist_file : null,
-            dist_dir  : './dist/'
-          }
-        ]
+      optimizer: {
+        base_dir : __dirname + '/',
+        bundles: {
+          htc: [
+            {
+              input     : null,
+              files     : [ './htc/' ],
+              exclude   : {},
+              defer     : false,
+              dist_file : null,
+              dist_dir  : './dist/'
+            }
+          ]
+        }
       }
     });
-
     soi().use(optimizer).go();
   });
 
   after(function() {
-    global.soi = null;
+    optimizer.reset();
+    soi().reset();
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 

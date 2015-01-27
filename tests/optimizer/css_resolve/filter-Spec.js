@@ -57,7 +57,7 @@ describe('ie filter', function() {
     var css_a = ResourceTable.getResource('css', id);
     expect(css_a).to.not.be.null();
     expect(css_a.path).to.equal(utils.normalizeSysPath(
-      path.join(soi().ENV.config.optimizer.base_dir.base_dir + './css/ie6.css')
+      path.join(soi().ENV.config.optimizer.base_dir + './css/ie6.css')
     ));
     expect(css_a.type).to.equal('css');
     expect(css_a.origin).to.equal(null);
@@ -65,7 +65,7 @@ describe('ie filter', function() {
 
   it('#package', function() {
     var id = utils.normalizeSysPath(
-      path.join(soi().ENV.config.optimizer.base_dir.base_dir + './css/ie6.css'));
+      path.join(soi().ENV.config.optimizer.base_dir + './css/ie6.css'));
 
     var rsc = ResourceTable.getPackageByPath('css', id);
     expect(rsc).to.not.be.null();
@@ -75,7 +75,7 @@ describe('ie filter', function() {
 
   it('#content', function() {
     var id = utils.normalizeSysPath(
-      path.join(soi().ENV.config.optimizer.base_dir.base_dir + './css/ie6.css'));
+      path.join(soi().ENV.config.optimizer.base_dir + './css/ie6.css'));
 
     var rsc = ResourceTable.getPackageByPath('css', id);
     var content = utils.readFile(rsc.dist_file, {

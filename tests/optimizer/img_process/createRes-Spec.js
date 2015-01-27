@@ -14,41 +14,44 @@ describe('image relative cases', function() {
   before(function() {
     require(base.soi_path);
     soi.config.set({
-      base_dir : __dirname + '/',
-      bundles: {
-        img: [
-          {
-            input     : null,
-            files     : [ './img/' ],
-            exclude   : {},
-            defer     : false,
-            dist_file : null,
-            dist_dir  : './dist/'
-          },
-          {
-            input     : null,
-            files     : [ './img/c.png' ],
-            exclude   : {},
-            defer     : false,
-            dist_file : null,
-            dist_dir  : './dist/'
-          }
-        ]
+      optimizer: {
+        base_dir : __dirname + '/',
+        bundles: {
+          img: [
+            {
+              input     : null,
+              files     : [ './img/' ],
+              exclude   : {},
+              defer     : false,
+              dist_file : null,
+              dist_dir  : './dist/'
+            },
+            {
+              input     : null,
+              files     : [ './img/c.png' ],
+              exclude   : {},
+              defer     : false,
+              dist_file : null,
+              dist_dir  : './dist/'
+            }
+          ]
+        }
       }
     });
     soi().use(optimizer).go();
   });
 
   after(function() {
-    global.soi = null;
+    optimizer.reset();
+    soi().reset();
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 
   it('#a.png in img', function() {
     var id = utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir + './img/a.png'));
-    var img = ResourceTable.getResource('img', id);
 
+    var img = ResourceTable.getResource('img', id);
     expect(img).to.not.be.undefined();
     expect(img.path).to.equal(utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir + './img/a.png')
@@ -62,8 +65,8 @@ describe('image relative cases', function() {
   it('#b.png in img/inner/', function() {
     var id = utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir + './img/inner/b.png'));
-    var img = ResourceTable.getResource('img', id);
 
+    var img = ResourceTable.getResource('img', id);
     expect(img).to.not.be.undefined();
     expect(img.path).to.equal(utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir + './img/inner/b.png')
@@ -77,8 +80,8 @@ describe('image relative cases', function() {
   it('#c.png in img', function() {
     var id = utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir + './img/c.png'));
-    var img = ResourceTable.getResource('img', id);
 
+    var img = ResourceTable.getResource('img', id);
     expect(img).to.not.be.undefined();
     expect(img.path).to.equal(utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir + './img/c.png')

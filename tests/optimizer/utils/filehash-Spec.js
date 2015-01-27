@@ -12,9 +12,11 @@ describe('getFileHash', function() {
   before(function() {
     require(base.soi_path);
     soi.config.set({
-      base_dir : __dirname + '/',
-      debug:  true,
-      sha1_length: 8
+      optimizer: {
+        base_dir : __dirname + '/',
+        debug:  true,
+        sha1_length: 8
+      }
     });
   });
 

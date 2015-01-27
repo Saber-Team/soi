@@ -14,26 +14,29 @@ describe('javascript relative cases', function() {
   before(function() {
     require(base.soi_path);
     soi.config.set({
-      base_dir : __dirname + '/',
-      module_loader:  '../../lib/kernel.js',
-      bundles: {
-        js: [
-          {
-            input     : './js/main.js',
-            files     : null,
-            exclude   : {},
-            defer     : false,
-            dist_file : 'main.js',
-            dist_dir  : './dist/'
-          }
-        ]
+      optimizer: {
+        base_dir : __dirname + '/',
+        module_loader:  base.optimizer_dir + 'kernel.js',
+        bundles: {
+          js: [
+            {
+              input     : './js/main.js',
+              files     : null,
+              exclude   : {},
+              defer     : false,
+              dist_file : 'main.js',
+              dist_dir  : './dist/'
+            }
+          ]
+        }
       }
     });
     soi().use(optimizer).go();
   });
 
   after(function() {
-    global.soi = null;
+    optimizer.reset();
+    soi().reset();
     rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
 

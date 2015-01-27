@@ -1,19 +1,22 @@
 var path = require('path');
 var fs = require('fs');
-
 var chai = require('chai');
 var expect = chai.expect;
 var utils = require('../../../lib/optimizer/utils');
 var rimraf = require('rimraf');
+
+var base = require('../../base');
 
 describe('utils test', function() {
 
   before(function() {
     require(base.soi_path);
     soi.config.set({
-      base_dir : __dirname + '/',
-      debug:  true,
-      sha1_length: 8
+      optimizer: {
+        base_dir : __dirname + '/',
+        debug:  true,
+        sha1_length: 8
+      }
     });
   });
 
