@@ -1,3 +1,19 @@
-/**
- * Created by zhangshen on 2015/1/27.
- */
+describe('test', function() {
+
+  before(function() {
+    debugger;
+  });
+
+  after(function() {
+    debugger;
+  });
+
+  it('#1', function() {
+    debugger;
+  });
+
+  it('#2', function() {
+    debugger;
+  });
+
+});

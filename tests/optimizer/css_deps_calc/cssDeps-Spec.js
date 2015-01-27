@@ -8,12 +8,13 @@ var parser = require(base.optimizer_dir + '/resolver/cssParser');
 describe('css dependency calculate', function() {
 
   before(function() {
-    require(base.soi_path);
     parser.clear();
+    require(base.soi_path);
     soi().use(optimizer).go();
   });
 
   after(function() {
+    optimizer.reset();
     soi().reset();
   });
 

@@ -45,6 +45,7 @@ describe('css relative cases', function() {
   });
 
   after(function() {
+    optimizer.reset();
     soi().reset();
     //rimraf.sync(path.join(__dirname, 'dist/'), function(err) {});
   });
