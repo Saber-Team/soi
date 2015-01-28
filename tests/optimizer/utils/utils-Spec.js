@@ -70,23 +70,16 @@ describe('utils test', function() {
       .that.is.a('number')
       .that.deep.equals(456);
 
-    expect(obj).to.have.property('rf')
-      .that.is.an('object').that
-      .to.have.property('a').that.deep.equals(3);
-    expect(obj).to.have.property('rf')
-      .that.is.an('object').that
-      .to.have.property('b').that.deep.equals(2);
-    expect(obj).to.have.property('rf')
-      .that.is.an('object').that
-      .to.have.property('c').that.is.an('object').that
+    expect(obj).to.have.property('rf').that.is.an('object');
+    expect(obj.rf).to.have.property('a').that.deep.equals(3);
+    expect(obj.rf).to.have.property('b').that.deep.equals(2);
+    expect(obj.rf).to.have.property('c').that.is.an('object').that
       .to.have.property('name').that.deep.equals('c');
-    expect(obj).to.have.property('rf')
-      .that.is.an('object').that
-      .to.have.property('d').that.is.an('array').that
+    expect(obj.rf).to.have.property('d').that.is.an('array').that
       .to.have.length(3);
 
     expect(Object.keys(obj)).to.have.length(3);
-    expect(Object.keys(obj.rf)).to.have.length(3);
+    expect(Object.keys(obj.rf)).to.have.length(4);
   });
 
   it('#unique', function() {
