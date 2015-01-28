@@ -24,7 +24,7 @@ describe('utils test', function() {
     soi().reset();
   });
 
-  it('#extend', function() {
+  it('#simple extend', function() {
     var obj = Object.create(null);
     var target = {
       name: 123,
@@ -40,6 +40,53 @@ describe('utils test', function() {
       .that.is.a('number')
       .that.deep.equals(456);
     expect(Object.keys(obj)).to.have.length(2);
+  });
+
+  it('#deep extend', function() {
+    var obj = {
+      rf: {
+        a: 1,
+        b: 2
+      }
+    };
+    var target = {
+      name: 123,
+      value: 456,
+      rf: {
+        a: 3,
+        c: {
+          name: 'c'
+        },
+        d: [1,2,3]
+      }
+    };
+    utils.extend(obj, target, true);
+
+    expect(obj).to.be.an('object');
+    expect(obj).to.have.property('name')
+      .that.is.a('number')
+      .that.deep.equals(123);
+    expect(obj).to.have.property('value')
+      .that.is.a('number')
+      .that.deep.equals(456);
+
+    expect(obj).to.have.property('rf')
+      .that.is.an('object').that
+      .to.have.property('a').that.deep.equals(3);
+    expect(obj).to.have.property('rf')
+      .that.is.an('object').that
+      .to.have.property('b').that.deep.equals(2);
+    expect(obj).to.have.property('rf')
+      .that.is.an('object').that
+      .to.have.property('c').that.is.an('object').that
+      .to.have.property('name').that.deep.equals('c');
+    expect(obj).to.have.property('rf')
+      .that.is.an('object').that
+      .to.have.property('d').that.is.an('array').that
+      .to.have.length(3);
+
+    expect(Object.keys(obj)).to.have.length(3);
+    expect(Object.keys(obj.rf)).to.have.length(3);
   });
 
   it('#unique', function() {
