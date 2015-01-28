@@ -39,7 +39,7 @@ describe('duplicated async cases', function() {
   after(function () {
     optimizer.reset();
     soi().reset();
-    rimraf.sync(path.join(__dirname, 'dist/'), function (err) {});
+    rimraf.sync(path.join(__dirname, 'dupAsyncLseq/dist/'), function (err) {});
   });
 
   // 主模块
