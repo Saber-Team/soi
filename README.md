@@ -10,6 +10,7 @@
 S.O.I (Smart Optimization Integration) 是和[oslojs](https://github.com/Saber-Team/oslojs)
 一同使用的一款浏览器端JavaScript构建工具, 基于Node开发。[oslojs](https://github.com/Saber-Team/oslojs)
 是一个符合AMD规范的高度模块化的JavaScript框架, 在浏览器端尤其表现卓越, 并且也支持移动端开发.
+soi针对单页面打包设置，若多页面可多次执行soi optimize命令。
 
 ##安装soi
 确保本地安装了Node环境, 通过包管理器NPM进行安装.
@@ -30,10 +31,9 @@ S.O.I (Smart Optimization Integration) 是和[oslojs](https://github.com/Saber-T
 ```
   soi.conf.js
 ```
-在soi的安装目录demo下会有个示例文件, 是针对soi本身的打包设置; soi可以通过命令行指定配置文件
-如**soi --file conf.js**即可根据conf.js中的配置进行打包.
+在soi的安装目录demo下会有个示例文件, 是针对soi本身的打包设置;
 
-##soi配置项
+##soi optimize配置项
 #### encoding
 源码文件采用的编码方式, 枚举值可用'utf8', 'ascii', 'base64'。
 
