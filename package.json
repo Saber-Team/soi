@@ -1,13 +1,13 @@
 {
   "name": "soi",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "Build tools for oslojs",
   "directories": {
     "test": "tests"
   },
   "main": "boot.js",
   "scripts": {
-    "test": "mocha --timeout 60000 ./tests/**/*-Spec.js"
+    "test": "mocha --timeout 60000 ./tests/optimizer/**/*-Spec.js"
   },
   "bin": {},
   "repository": {
@@ -34,6 +34,7 @@
     "chalk": "^0.5.1",
     "css": "^2.1.0",
     "csslint": "^0.10.0",
+    "glob": "^4.3.5",
     "mocha": "^2.0.1",
     "optimist": "^0.6.1",
     "rimraf": "^2.2.8",
@@ -44,6 +45,7 @@
     "chalk": "^0.5.1",
     "css": "^2.1.0",
     "csslint": "^0.10.0",
+    "glob": "^4.3.5",
     "mocha": "^2.0.1",
     "optimist": "^0.6.1",
     "rimraf": "^2.2.8",

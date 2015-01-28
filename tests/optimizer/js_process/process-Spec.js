@@ -9,7 +9,7 @@ var utils = require(base.optimizer_dir + '/utils');
 var ResourceTable = require(base.optimizer_dir + '/resource/table');
 var optimizer = require(base.optimizer_dir + '/index');
 
-describe('javascript relative cases', function() {
+describe('js process cases', function() {
 
   before(function() {
     require(base.soi_path);
