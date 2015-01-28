@@ -18,16 +18,16 @@ describe('duplicated async cases', function() {
       optimizer: {
         base_dir: __dirname + '/',
         module_loader: base.optimizer_dir + 'kernel.js',
-        dist_dir: './dist/',
+        dist_dir: './dupAsyncLseq/dist/',
         bundles: {
           js: [
             {
-              input: './dupAsync/main.js',
+              input: './dupAsyncLseq/main.js',
               files: null,
               exclude: {},
               defer: false,
               dist_file: 'main.js',
-              dist_dir: './dist/'
+              dist_dir: './dupAsyncLseq/dist/'
             }
           ]
         }
@@ -46,13 +46,13 @@ describe('duplicated async cases', function() {
   it('#main entry resource', function () {
     var id = utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir +
-        './dupAsync/main.js'));
+        './dupAsyncLseq/main.js'));
 
     var rsc = ResourceTable.getResource('js', id);
     expect(rsc).to.be.an('object');
     expect(rsc.path).to.equal(utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir +
-        './dupAsync/main.js')
+        './dupAsyncLseq/main.js')
     ));
     expect(rsc.type).to.equal('js');
     expect(rsc.origin).to.equal(null);
@@ -62,11 +62,11 @@ describe('duplicated async cases', function() {
   it('#main entry package', function () {
     var id = utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir +
-        './dupAsync/main.js'));
+        './dupAsyncLseq/main.js'));
 
     var pkg = ResourceTable.getPackageByPath('js', id);
     expect(pkg).to.be.an('object');
-    expect(pkg).to.have.property('files').with.length(3);
+    expect(pkg).to.have.property('files').with.length(5);
     expect(fs.existsSync(pkg.dist_file)).to.equal(true);
   });
 
@@ -74,7 +74,8 @@ describe('duplicated async cases', function() {
   it('#async part', function () {
     id = utils.normalizeSysPath(
       path.join(soi().ENV.config.optimizer.base_dir +
-        './dupAsync/p.js'));
+        './dupAsyncLseq/c.js'));
+
     var mod_p = ModuleManager.getModuleByPath(id);
     expect(mod_p).to.be.an('object');
 
