@@ -5,7 +5,7 @@
  * @email zmike86@gmail.com
  */
 
-soi.config.set({
+soi.config.extend({
   optimizer: {
     // after build all files placed, if null value, all files would generated
     // be with the original file, but I highly recommend need a dist directory

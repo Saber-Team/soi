@@ -228,7 +228,7 @@
                 "files": [
                     "d:/Develop/soi/demo/optimizer/assets/js/cal.js"
                 ],
-                "dist_file": "d:/Develop/soi/demo/optimizer/dist/js//cal_8e2c0526.js"
+                "dist_file": "d:/Develop/soi/demo/optimizer/dist/js/cal_8e2c0526.js"
             },
             "d:/Develop/soi/demo/optimizer/assets/js/app.js": {
                 "type": "js",
@@ -263,7 +263,7 @@
                     "d:/Develop/soi/demo/optimizer/lib/events/util.js",
                     "d:/Develop/soi/demo/optimizer/assets/js/app.js"
                 ],
-                "dist_file": "d:/Develop/soi/demo/optimizer/dist/js//build_d60f36bd.js"
+                "dist_file": "d:/Develop/soi/demo/optimizer/dist/js/build_d60f36bd.js"
             }
         },
         "css": {

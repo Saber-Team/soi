@@ -11,7 +11,7 @@ describe('getFileHash', function() {
 
   before(function() {
     require(base.soi_path);
-    soi.config.set({
+    soi.config.extend({
       optimizer: {
         base_dir : __dirname + '/',
         debug:  true,
@@ -50,7 +50,7 @@ describe('getFileHash', function() {
     var bar = utils.getFileHash(
         __dirname + '/static/bar.js', 'utf8');
 
-    soi.config.set({
+    soi.config.extend({
       optimizer: {
         sha1_length: 12
       }

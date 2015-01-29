@@ -14,7 +14,7 @@ describe('multi async cases', function() {
 
   before(function() {
     require(base.soi_path);
-    soi.config.set({
+    soi.config.extend({
       optimizer: {
         encoding : 'utf8',
         base_dir : __dirname + '/',

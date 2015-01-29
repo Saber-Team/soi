@@ -5,7 +5,7 @@
  * @email zmike86@gmail.com
  */
 
-soi.config.set({
+soi.config.extend({
   linter: {
     css: {
       output: 'normal', // `verbose` | `none`

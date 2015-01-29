@@ -11,7 +11,7 @@ describe('utils test', function() {
 
   before(function() {
     require(base.soi_path);
-    soi.config.set({
+    soi.config.extend({
       optimizer: {
         base_dir : __dirname + '/',
         debug:  true,
