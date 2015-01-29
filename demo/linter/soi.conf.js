@@ -9,6 +9,7 @@ soi.config.extend({
   linter: {
     css: {
       output: 'normal', // `verbose` | `none`
+      encoding: 'utf8',
       files: [
         './css/*.css'
       ],
