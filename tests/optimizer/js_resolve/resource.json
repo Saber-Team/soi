@@ -1,0 +1,57 @@
+{
+    "img": {},
+    "js": {
+        "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/l.js": {
+            "origin": null,
+            "path": "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/l.js",
+            "encoding": "utf8",
+            "distDir": "D:/Develop/soi/tests/optimizer/js_resolve/dist/",
+            "type": "js"
+        },
+        "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/main.js": {
+            "origin": null,
+            "path": "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/main.js",
+            "encoding": "utf8",
+            "distDir": "D:/Develop/soi/tests/optimizer/js_resolve/dist/",
+            "type": "js"
+        }
+    },
+    "css": {},
+    "swf": {},
+    "svg": {},
+    "font": {},
+    "htc": {},
+    "pkgs": {
+        "js": {
+            "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/n.js": {
+                "type": "js",
+                "input": "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/n.js",
+                "files": [
+                    "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/o.js",
+                    "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/n.js"
+                ],
+                "dist_file": "D:/Develop/soi/tests/optimizer/js_resolve/dist//n_2911897d.js"
+            },
+            "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/m.js": {
+                "type": "js",
+                "input": "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/m.js",
+                "files": [
+                    "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/o.js",
+                    "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/m.js"
+                ],
+                "dist_file": "D:/Develop/soi/tests/optimizer/js_resolve/dist//m_9eead4f5.js"
+            },
+            "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/main.js": {
+                "type": "js",
+                "input": "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/main.js",
+                "files": [
+                    "D:/Develop/soi/lib/optimizer/kernel.js",
+                    "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/l.js",
+                    "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/main.js"
+                ],
+                "dist_file": "D:/Develop/soi/tests/optimizer/js_resolve/dist//main_fa1f81a1.js"
+            }
+        },
+        "css": {}
+    }
+}
