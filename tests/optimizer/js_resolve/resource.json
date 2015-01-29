@@ -30,7 +30,7 @@
                     "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/o.js",
                     "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/n.js"
                 ],
-                "dist_file": "D:/Develop/soi/tests/optimizer/js_resolve/dist//n_2911897d.js"
+                "dist_file": "D:/Develop/soi/tests/optimizer/js_resolve/dist/n_2911897d.js"
             },
             "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/m.js": {
                 "type": "js",
@@ -39,7 +39,7 @@
                     "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/o.js",
                     "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/m.js"
                 ],
-                "dist_file": "D:/Develop/soi/tests/optimizer/js_resolve/dist//m_9eead4f5.js"
+                "dist_file": "D:/Develop/soi/tests/optimizer/js_resolve/dist/m_9eead4f5.js"
             },
             "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/main.js": {
                 "type": "js",
@@ -49,7 +49,7 @@
                     "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/l.js",
                     "D:/Develop/soi/tests/optimizer/js_resolve/multi_noconflict/main.js"
                 ],
-                "dist_file": "D:/Develop/soi/tests/optimizer/js_resolve/dist//main_fa1f81a1.js"
+                "dist_file": "D:/Develop/soi/tests/optimizer/js_resolve/dist/main_fa1f81a1.js"
             }
         },
         "css": {}
