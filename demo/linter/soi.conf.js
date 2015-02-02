@@ -16,10 +16,9 @@ soi.config.extend({
       rules: {
         "adjoining-classes"           : 2,
         "known-properties"            : 2,
-        "box-model"                   : 1,
+        "box-model"                   : false,
         "overqualified-elements"      : 1,
         "bulletproof-font-face"       : 1,
-        "compatible-vendor-prefixes"  : 1,
         "regex-selectors"             : 1,
         "errors"                      : 1,
         "duplicate-background-images" : 1,
