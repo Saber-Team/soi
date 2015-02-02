@@ -14,18 +14,16 @@ soi.config.extend({
         './css/*.css'
       ],
       rules: {
+        "adjoining-classes"           : 2,
         "known-properties"            : 2,
-        "box-sizing"                  : 1,
         "box-model"                   : 1,
         "overqualified-elements"      : 1,
-        "display-property-grouping"   : 1,
         "bulletproof-font-face"       : 1,
         "compatible-vendor-prefixes"  : 1,
         "regex-selectors"             : 1,
         "errors"                      : 1,
         "duplicate-background-images" : 1,
-        "duplicate-properties"        : 2, // done
-        "empty-rules"                 : 2, // done
+        "duplicate-properties"        : 1, // done
         "selector-max-approaching"    : 1,
         "gradients"                   : 1,
         "fallback-colors"             : 1,
