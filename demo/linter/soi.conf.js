@@ -17,9 +17,6 @@ soi.config.extend({
         "adjoining-classes"           : 2,
         "known-properties"            : 2,
         "box-model"                   : false,
-        "overqualified-elements"      : 1,
-        "bulletproof-font-face"       : 1,
-        "regex-selectors"             : 1,
         "errors"                      : 1,
         "duplicate-background-images" : 1,
         "selector-max-approaching"    : 1,
@@ -30,12 +27,9 @@ soi.config.extend({
         "rules-count"                 : 1,
         "qualified-headings"          : 1,
         "selector-max"                : 1,
-        "shorthand"                   : 1,
         "text-indent"                 : false,
         "unique-headings"             : false,
-        "universal-selector"          : 1,
-        "unqualified-attributes"      : 2,
-        "zero-units"                  : 2
+        "unqualified-attributes"      : 2
       }
     },
     js: {
