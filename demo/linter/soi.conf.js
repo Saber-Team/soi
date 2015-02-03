@@ -17,15 +17,13 @@ soi.config.extend({
         "adjoining-classes"           : 2,
         "known-properties"            : 2,
         "box-model"                   : false,
+        "important"                   : 2,
         "errors"                      : 1,
         "selector-max-approaching"    : 1,
-        "outline-none"                : false,
-        "ids"                         : 1,
+        "ids"                         : false,
         "rules-count"                 : 1,
-        "qualified-headings"          : 1,
         "selector-max"                : 1,
         "text-indent"                 : false,
-        "unique-headings"             : false,
         "unqualified-attributes"      : 2
       }
     },
