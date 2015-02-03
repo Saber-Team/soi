@@ -1,3 +1,3 @@
-/**
- * Created by zhangshen on 2015/2/3.
- */
+var index = 0;
+while (index < 10)
+  index++;

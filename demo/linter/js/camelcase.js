@@ -1,3 +1,1 @@
-/**
- * Created by zhangshen on 2015/2/3.
- */
+var a_variable = 'hello';
