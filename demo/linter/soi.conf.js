@@ -24,7 +24,7 @@ soi.config.extend({
         "rules-count"                 : 1,
         "selector-max"                : 1,
         "text-indent"                 : false,
-        "unqualified-attributes"      : 2
+        "unqualified-attributes"      : 1
       }
     },
     js: {
@@ -33,7 +33,7 @@ soi.config.extend({
         './js/*.js'
       ],
       rules: {
-
+        bitwise: false
       }
     }
   }
