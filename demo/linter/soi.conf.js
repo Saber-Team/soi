@@ -23,9 +23,7 @@ soi.config.extend({
         "errors"                      : 1,
         "duplicate-background-images" : 1,
         "selector-max-approaching"    : 1,
-        "fallback-colors"             : 1,
         "font-sizes"                  : false,
-        "font-faces"                  : false,
         "floats"                      : false,
         "outline-none"                : false,
         "ids"                         : 1,
@@ -37,7 +35,6 @@ soi.config.extend({
         "unique-headings"             : false,
         "universal-selector"          : 1,
         "unqualified-attributes"      : 2,
-        "vendor-prefix"               : false,
         "zero-units"                  : 2
       }
     },

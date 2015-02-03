@@ -1,0 +1,10 @@
+/* missing standard property */
+.mybox {
+    -moz-border-radius: 5px;
+}
+
+/* standard property should come after vendor-prefixed property */
+.mybox {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
