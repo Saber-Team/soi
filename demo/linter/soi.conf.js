@@ -32,11 +32,11 @@ soi.config.extend({
       encoding: 'utf8',
       // files array to be ignored
       ignores: [
-
+        'ignore.js'
       ],
       reporter: {},
       //
-      reporterOutput: '',
+      reporterOutput: './jshint_output',
       // all files to be linted
       files: [
         './js/*.js'
