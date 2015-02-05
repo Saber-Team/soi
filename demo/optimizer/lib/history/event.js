@@ -1,2 +1,0 @@
-/** Oslo JavaScript Framework. */
-define(["../util/util","../events/eventbase","./eventtype"],function(a,b,c){"use strict";function d(a,d){b.call(this,c.NAVIGATE),this.token=a,this.isNavigation=d}return a.inherits(d,b),d});

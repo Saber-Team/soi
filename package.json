@@ -7,7 +7,7 @@
   },
   "main": "boot.js",
   "scripts": {
-    "test": "mocha --timeout 60000 ./tests/optimizer/**/*-Spec.js"
+    "test": "mocha --timeout 60000 ./tests/**/*-Spec.js"
   },
   "bin": {},
   "repository": {
@@ -32,19 +32,15 @@
   "devDependencies": {
     "chai": "^1.10.0",
     "chalk": "^0.5.1",
-    "css": "^2.1.0",
     "mocha": "^2.0.1",
     "optimist": "^0.6.1",
-    "rimraf": "^2.2.8",
-    "uglify-js": "^2.4.16"
+    "rimraf": "^2.2.8"
   },
   "dependencies": {
     "chai": "^1.10.0",
     "chalk": "^0.5.1",
-    "css": "^2.1.0",
     "mocha": "^2.0.1",
     "optimist": "^0.6.1",
-    "rimraf": "^2.2.8",
-    "uglify-js": "^2.4.16"
+    "rimraf": "^2.2.8"
   }
 }
