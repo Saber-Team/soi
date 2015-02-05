@@ -33,7 +33,7 @@ soi.config.extend({
       encoding: 'utf8',
       // files array to be ignored
       ignores: [
-        'ignore.js'
+        './js/ignore.js'
       ],
       //
       reporterOutput: './jshint_output',
