@@ -1,9 +1,0 @@
-/**
- * actual content size is 88px
- */
-.mybox {
-    box-sizing: border-box;
-    border: 1px solid black;
-    padding: 5px;
-    width: 100px;
-}

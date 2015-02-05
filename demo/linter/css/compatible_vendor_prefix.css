@@ -1,9 +1,0 @@
-/* Missing -moz, -ms, and -o */
-.mybox {
-    -webkit-transform: translate(50px, 100px);
-}
-
-/* Missing -webkit */
-.mybox {
-    -moz-border-radius: 5px;
-}
