@@ -1,7 +1,7 @@
 var path = require('path');
 var chai = require('chai');
 var expect = chai.expect;
-var utils = require('../../../lib/optimizer/utils');
+var utils = require('../../../lib/utils');
 var res = require('../../../lib/optimizer/resolver/jsRequireRes');
 
 

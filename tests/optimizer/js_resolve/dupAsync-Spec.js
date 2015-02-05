@@ -5,10 +5,7 @@ var fs = require('fs');
 var rimraf = require('rimraf');
 
 var base = require('../../base');
-var utils = require(base.optimizer_dir + '/utils');
-var ResourceTable = require(base.optimizer_dir + '/resource/table');
-var ModuleManager = require(base.optimizer_dir + '/module/manager');
-var optimizer = require(base.optimizer_dir + '/index');
+var utils, ResourceTable, ModuleManager, optimizer;
 
 describe('duplicated async cases', function() {
 
@@ -33,6 +30,10 @@ describe('duplicated async cases', function() {
         }
       }
     });
+    utils = require(base.optimizer_dir + '/utils');
+    ResourceTable = require(base.optimizer_dir + '/resource/table');
+    ModuleManager = require(base.optimizer_dir + '/module/manager');
+    optimizer = require(base.optimizer_dir + '/index');
     soi().use(optimizer).go();
   });
 

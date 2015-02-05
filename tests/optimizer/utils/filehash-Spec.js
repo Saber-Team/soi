@@ -5,7 +5,7 @@ var expect = chai.expect;
 var rimraf = require('rimraf');
 
 var base = require('../../base');
-var utils = require(base.optimizer_dir + '/utils');
+var utils;
 
 describe('getFileHash', function() {
 
@@ -18,6 +18,7 @@ describe('getFileHash', function() {
         sha1_length: 8
       }
     });
+    utils = require(base.optimizer_dir + '/utils');
   });
 
   after(function() {

@@ -2,10 +2,10 @@ var path = require('path');
 var fs = require('fs');
 var chai = require('chai');
 var expect = chai.expect;
-var utils = require('../../../lib/optimizer/utils');
 var rimraf = require('rimraf');
 
 var base = require('../../base');
+var utils;
 
 describe('mkdir', function() {
 
@@ -18,6 +18,7 @@ describe('mkdir', function() {
         sha1_length: 8
       }
     });
+    utils = require('../../../lib/optimizer/utils');
   });
 
   after(function() {
