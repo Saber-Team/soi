@@ -35,8 +35,6 @@ soi.config.extend({
       ignores: [
         './js/ignore.js'
       ],
-      //
-      reporterOutput: './jshint_output',
       // all files to be linted
       files: [
         './js/*.js'
