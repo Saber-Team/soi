@@ -5,9 +5,7 @@ var fs = require('fs');
 var rimraf = require('rimraf');
 
 var base = require('../../base');
-var utils = require(base.optimizer_dir + '/utils');
-var ResourceTable = require(base.optimizer_dir + '/resource/table');
-var optimizer = require(base.optimizer_dir + '/index');
+var utils, ResourceTable, optimizer;
 
 describe('behavior htc', function() {
 
@@ -51,6 +49,9 @@ describe('behavior htc', function() {
         }
       }
     });
+    utils = require(base.optimizer_dir + '/utils');
+    ResourceTable = require(base.optimizer_dir + '/resource/table');
+    optimizer = require(base.optimizer_dir + '/index');
     soi().use(optimizer).go();
   });
 
