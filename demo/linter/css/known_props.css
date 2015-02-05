@@ -1,0 +1,12 @@
+/* clr isn't a known property */
+/*
+a {
+    clr: red;
+}
+*/
+/* 'foo' isn't a valid color */
+/*
+a {
+    color: foo;
+}
+*/

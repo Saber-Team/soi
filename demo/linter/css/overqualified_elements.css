@@ -1,0 +1,18 @@
+/* The following patterns are considered warnings: */
+div.mybox {
+    color: red;
+}
+
+.mybox li.active {
+    background: red;
+}
+
+/* The following patterns are considered okay and do not cause warnings: */
+/* Two different elements in different rules with the same class */
+li.active {
+    color: red;
+}
+
+p.active {
+    color: green;
+}

@@ -1,0 +1,7 @@
+[type=text] {
+    color: red;
+}
+
+.selected [type=text] {
+    color: red;
+}

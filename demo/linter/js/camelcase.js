@@ -1,0 +1,1 @@
+var a_variable = 'hello';

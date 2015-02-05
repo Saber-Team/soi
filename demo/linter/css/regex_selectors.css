@@ -1,0 +1,19 @@
+.mybox[class~=xxx] {
+    color: red;
+}
+
+.mybox[class^=xxx] {
+    color: red;
+}
+
+.mybox[class|=xxx] {
+    color: red;
+}
+
+.mybox[class$=xxx] {
+    color: red;
+}
+
+.mybox[class*=xxx] {
+    color: red;
+}

@@ -1,0 +1,281 @@
+{
+    "img": {
+        "d:/Develop/soi/demo/optimizer/assets/img/banner.png": {
+            "type": "img",
+            "origin": "d:/Develop/soi/demo/optimizer/assets/img/",
+            "path": "d:/Develop/soi/demo/optimizer/assets/img/banner.png",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/img/",
+            "distPath": "d:/Develop/soi/demo/optimizer/dist/img/banner_671eaeda.png"
+        }
+    },
+    "js": {
+        "d:/Develop/soi/demo/optimizer/lib/util/util.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/util/util.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/string/util.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/string/util.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/ua/util.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/ua/util.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/array/array.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/array/array.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/math/util.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/math/util.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/dom/browserfeature.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/dom/browserfeature.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/dom/classes.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/dom/classes.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/dom/nodetype.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/dom/nodetype.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/math/coordinate.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/math/coordinate.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/math/size.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/math/size.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/object/object.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/object/object.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/debug/error.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/debug/error.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/asserts/error.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/asserts/error.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/asserts/asserts.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/asserts/asserts.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/events/listener.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/events/listener.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/events/listenermap.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/events/listenermap.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/events/eventbase.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/events/eventbase.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/disposable/disposable.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/disposable/disposable.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/events/eventtype.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/events/eventtype.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/events/browserfeature.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/events/browserfeature.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/debug/entrypointregistry.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/debug/entrypointregistry.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/events/eventtarget.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/events/eventtarget.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/events/browserevent.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/events/browserevent.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/dom/util.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/dom/util.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/events/eventType.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/events/eventType.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/lib/events/util.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/lib/events/util.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        },
+        "d:/Develop/soi/demo/optimizer/assets/js/app.js": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/assets/js/app.js",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/js/",
+            "type": "js"
+        }
+    },
+    "css": {
+        "d:/Develop/soi/demo/optimizer/assets/css/reset.css": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/assets/css/reset.css",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/css/",
+            "type": "css"
+        },
+        "d:/Develop/soi/demo/optimizer/assets/css/main.css": {
+            "origin": null,
+            "path": "d:/Develop/soi/demo/optimizer/assets/css/main.css",
+            "encoding": "utf8",
+            "distDir": "d:/Develop/soi/demo/optimizer/dist/css/",
+            "type": "css"
+        }
+    },
+    "font": {},
+    "svg": {},
+    "swf": {},
+    "htc": {},
+    "pkgs": {
+        "js": {
+            "d:/Develop/soi/demo/optimizer/assets/js/cal.js": {
+                "type": "js",
+                "input": "d:/Develop/soi/demo/optimizer/assets/js/cal.js",
+                "files": [
+                    "d:/Develop/soi/demo/optimizer/assets/js/cal.js"
+                ],
+                "dist_file": "d:/Develop/soi/demo/optimizer/dist/js/cal_8e2c0526.js"
+            },
+            "d:/Develop/soi/demo/optimizer/assets/js/app.js": {
+                "type": "js",
+                "input": "d:/Develop/soi/demo/optimizer/assets/js/app.js",
+                "files": [
+                    "d:/Develop/soi/demo/optimizer/lib/kernel.js",
+                    "d:/Develop/soi/demo/optimizer/lib/util/util.js",
+                    "d:/Develop/soi/demo/optimizer/lib/string/util.js",
+                    "d:/Develop/soi/demo/optimizer/lib/ua/util.js",
+                    "d:/Develop/soi/demo/optimizer/lib/array/array.js",
+                    "d:/Develop/soi/demo/optimizer/lib/math/util.js",
+                    "d:/Develop/soi/demo/optimizer/lib/dom/browserfeature.js",
+                    "d:/Develop/soi/demo/optimizer/lib/dom/classes.js",
+                    "d:/Develop/soi/demo/optimizer/lib/dom/nodetype.js",
+                    "d:/Develop/soi/demo/optimizer/lib/math/coordinate.js",
+                    "d:/Develop/soi/demo/optimizer/lib/math/size.js",
+                    "d:/Develop/soi/demo/optimizer/lib/object/object.js",
+                    "d:/Develop/soi/demo/optimizer/lib/debug/error.js",
+                    "d:/Develop/soi/demo/optimizer/lib/asserts/error.js",
+                    "d:/Develop/soi/demo/optimizer/lib/asserts/asserts.js",
+                    "d:/Develop/soi/demo/optimizer/lib/events/listener.js",
+                    "d:/Develop/soi/demo/optimizer/lib/events/listenermap.js",
+                    "d:/Develop/soi/demo/optimizer/lib/events/eventbase.js",
+                    "d:/Develop/soi/demo/optimizer/lib/disposable/disposable.js",
+                    "d:/Develop/soi/demo/optimizer/lib/events/eventtype.js",
+                    "d:/Develop/soi/demo/optimizer/lib/events/browserfeature.js",
+                    "d:/Develop/soi/demo/optimizer/lib/debug/entrypointregistry.js",
+                    "d:/Develop/soi/demo/optimizer/lib/events/eventtarget.js",
+                    "d:/Develop/soi/demo/optimizer/lib/events/browserevent.js",
+                    "d:/Develop/soi/demo/optimizer/lib/dom/util.js",
+                    "d:/Develop/soi/demo/optimizer/lib/events/eventType.js",
+                    "d:/Develop/soi/demo/optimizer/lib/events/util.js",
+                    "d:/Develop/soi/demo/optimizer/assets/js/app.js"
+                ],
+                "dist_file": "d:/Develop/soi/demo/optimizer/dist/js/build_d60f36bd.js"
+            }
+        },
+        "css": {
+            "d:/Develop/soi/demo/optimizer/assets/css/main.css": {
+                "type": "css",
+                "input": "d:/Develop/soi/demo/optimizer/assets/css/main.css",
+                "files": [
+                    "d:/Develop/soi/demo/optimizer/assets/css/reset.css",
+                    "d:/Develop/soi/demo/optimizer/assets/css/main.css"
+                ],
+                "dist_file": "d:/Develop/soi/demo/optimizer/dist/css//build1_9b3dbd04.css"
+            }
+        }
+    }
+}

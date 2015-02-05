@@ -1,0 +1,7 @@
+.heart-icon {
+    background: url(sprite.png) -16px 0 no-repeat;
+}
+
+.task-icon {
+    background: url(sprite.png) -32px 0 no-repeat;
+}
