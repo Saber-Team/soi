@@ -1,10 +1,8 @@
-var path = require('path');
-var fs = require('fs');
+// system
 var chai = require('chai');
 var expect = chai.expect;
-var rimraf = require('rimraf');
 
-var base = require('../base');
+var base = require('./base');
 var utils;
 
 describe('utils test', function() {
@@ -18,7 +16,7 @@ describe('utils test', function() {
         sha1_length: 8
       }
     });
-    utils = require('../../../lib/optimizer/utils');
+    utils = soi.utils;
   });
 
   after(function() {
@@ -148,10 +146,6 @@ describe('utils test', function() {
     no.forEach(function(url) {
       expect(utils.isAbsUrl(url)).to.be.false();
     });
-  });
-
-  it('#compose', function() {
-
   });
 
 });

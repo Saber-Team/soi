@@ -4,7 +4,7 @@ var chai = require('chai');
 var expect = chai.expect;
 var rimraf = require('rimraf');
 
-var base = require('../base');
+var base = require('./base');
 var utils;
 
 describe('mkdir', function() {
@@ -18,7 +18,7 @@ describe('mkdir', function() {
         sha1_length: 8
       }
     });
-    utils = require('../../../lib/optimizer/utils');
+    utils = soi.utils;
   });
 
   after(function() {
