@@ -1,4 +1,9 @@
 ## ChangeLog
+`v0.9.0`
+
+* 移除optimizer功能单独作为插件
+* 重构soi基础架构
+
 `v0.8.7`
 
 * optimizer插件化而不是作为整个soi的功能
