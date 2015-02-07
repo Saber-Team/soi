@@ -1,10 +1,13 @@
+'use strict';
+
+// import modules
 var path = require('path');
 var fs = require('fs');
 var chai = require('chai');
 var expect = chai.expect;
 var rimraf = require('rimraf');
 
-var base = require('./base');
+var base = require('../base');
 var utils;
 
 describe('mkdir', function() {

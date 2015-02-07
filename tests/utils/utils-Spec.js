@@ -1,8 +1,10 @@
-// system
+'use strict';
+
+// import modules
 var chai = require('chai');
 var expect = chai.expect;
 
-var base = require('./base');
+var base = require('../base');
 var utils;
 
 describe('utils test', function() {
@@ -127,6 +129,18 @@ describe('utils test', function() {
     expect(arr).to.include(true);
     expect(arr).to.include(0);
     expect(arr).to.include({key:1});
+  });
+
+  it('#flatten', function() {
+    var ret = utils.flatten(1, 2, 3, ['a', 'b']);
+
+    expect(ret).to.be.an('array');
+    expect(ret).to.have.length(5);
+    expect(ret).to.include(1);
+    expect(ret).to.include(2);
+    expect(ret).to.include(3);
+    expect(ret).to.include('a');
+    expect(ret).to.include('b');
   });
 
   it('#isAbsUrl', function() {

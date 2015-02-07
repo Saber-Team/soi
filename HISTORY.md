@@ -1,4 +1,9 @@
 ## ChangeLog
+`v0.9.4`
+
+* 修复只加载local modules的bug
+* 补充一些测试用例
+
 `v0.9.0`
 
 * 移除optimizer功能单独作为插件
