@@ -131,7 +131,7 @@ describe('utils test', function() {
     expect(arr).to.include({key:1});
   });
 
-  it('#flatten', function() {
+  it('#flatten common', function() {
     var ret = utils.flatten(1, 2, 3, ['a', 'b']);
 
     expect(ret).to.be.an('array');
@@ -141,6 +141,12 @@ describe('utils test', function() {
     expect(ret).to.include(3);
     expect(ret).to.include('a');
     expect(ret).to.include('b');
+  });
+
+  it('#flatten no item', function() {
+    var nolength = utils.flatten();
+    expect(nolength).to.be.an('array');
+    expect(nolength).to.have.length(0);
   });
 
   it('#isAbsUrl', function() {
