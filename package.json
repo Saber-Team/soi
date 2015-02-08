@@ -1,6 +1,6 @@
 {
   "name": "soi",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "Build tools for oslojs",
   "directories": {
     "test": "tests"
