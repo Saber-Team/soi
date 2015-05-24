@@ -10,7 +10,7 @@ soi.config.extend({
     // 本地server配置节点
     server: {
         rootDir: './webroot', // 要被复制到的目录, 且该目录作为server的根目录存在
-        port: '8888', // 启动端口
+        port: '3000', // 启动端口
         // 文件的映射, from本地目录中的文件将会被复制到to的目录中,
         // from相对于server-conf.js文件取相对位置,
         // to则取rootDir的相对位置.
