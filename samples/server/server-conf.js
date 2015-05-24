@@ -17,19 +17,19 @@ soi.config.extend({
         // from和to支持glob形式的正则匹配, 也支持自己写逻辑的函数返回字符串
         files: [
             {
-                from: 'page/(*.html)$',
-                to: 'page/$1'
+                from: 'src/page/*.html',
+                to: 'page/'
             },
             {
-                from: 'static/js/(*.js)$',
-                to: 'static/js/$1'
+                from: 'src/static/js/*.js',
+                to: 'static/js/'
             },
             {
                 from: function() {
-                    return 'static/css/(*.css)$'
+                    return 'src/static/css/*.css'
                 },
                 to: function() {
-                    return 'static/css/$1'
+                    return 'static/css/'
                 }
             }
         ],
