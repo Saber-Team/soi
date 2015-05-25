@@ -37,8 +37,9 @@ soi.config.extend({
         // 代码中ajax请求的接口, 用于前端自己模拟数据, post方式目前没有好的模拟代码.
         // 需要前端和服务端开发在开发机服务器连调
         rewrite: {
-            '/getUserInfo?uid={{uid}}': 'static/json/user.json',
-            '/getAppList?from={{fromIndex}}&to={{toIndex}}': 'static/json/apps.json'
+            '/': 'page/index.html',
+            '/getUserInfo?uid=(\d+)': 'static/test/user_$1.json',
+            '/getAppList?from=(\d+)&to=(\d+)': 'static/test/apps_$1.json'
         }
     }
 });
