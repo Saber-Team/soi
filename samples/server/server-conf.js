@@ -31,20 +31,37 @@ soi.config.extend({
         to: 'static/js/'
       },
       {
-        from: function() {
+        from: function () {
           return 'src/static/css/*.css'
         },
-        to: function() {
+        to: function () {
           return 'static/css/'
         }
       }
     ],
     // 代码中ajax请求的接口, 用于前端自己模拟数据, post方式目前没有好的模拟代码.
-    // 需要前端和服务端开发在开发机服务器连调
-    rewrite: {
-      '/': 'page/index.html',
-      '/getUserInfo?uid=(\d+)': 'static/test/user_$1.json',
-      '/getAppList?from=(\d+)': 'static/test/apps_$1.json'
-}
-}
+    // 需要前端和服务端开发在开发机服务器连调.
+    // 配置的key和value应该为以下三种情况
+    // 1. 纯字符串精准匹配
+    // 2. 正则模糊匹配
+    // 3. express.param式匹配
+    roadmap: [
+      {
+        pattern: '/',
+        map: 'static/page/index.html'
+      },
+      {
+        pattern: /getUserInfo?uid=(\d+)/,
+        map: 'static/test/user_$1.json'
+      },
+      {
+        pattern: /getAppList?from=(\d+)/,
+        map: 'static/test/apps_$1.json'
+      },
+      {
+        pattern: 'getAppList/:appid',
+        map: 'static/test/apps_$1.json'
+      }
+    ]
+  }
 });
