@@ -12,7 +12,7 @@ soi.config.extend({
     rootDir: './webroot', // 要被复制到的目录, 且该目录作为server的根目录存在
     port: '3000', // 启动端口
     autoWatch: false,
-    // 文件的映射, from本地目录中的文件将会被复制到to的目录中,
+    // 文件的映射(可选的), from本地目录中的文件将会被复制到to的目录中,
     // from相对于server-conf.js文件取相对位置,
     // to则取rootDir的相对位置.
     // from和to支持glob形式的匹配, 也支持自己写逻辑的函数返回字符串
@@ -41,15 +41,14 @@ soi.config.extend({
     ],
     // 代码中ajax请求的接口, 用于前端自己模拟数据, post方式目前没有好的模拟代码.
     // 需要前端和服务端开发在开发机服务器连调.
-    // 配置的key和value应该为以下三种情况
+    // 配置的key和value应该为以下两种情况
     // 1. 纯字符串精准匹配
     // 2. 正则模糊匹配
-    // 3. express.param式匹配
     roadmap: [
-//      {
-//        pattern: '/',
-//        map: 'page/index.html'
-//      },
+      {
+        pattern: '/',
+        map: 'page/index.html'
+      },
       {
         pattern: /\/getUserInfo\?uid=(\d+)/,
         map: 'static/test/user_$1.json'
@@ -57,10 +56,6 @@ soi.config.extend({
       {
         pattern: /\/getAppList\?from=(\d+)&to=(\d+)/,
         map: 'static/test/apps_$1_$2.json'
-      },
-      {
-        pattern: 'getAppList/:appid',
-        map: 'static/test/apps_$1.json'
       }
     ]
   }
