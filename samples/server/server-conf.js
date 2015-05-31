@@ -55,8 +55,8 @@ soi.config.extend({
         map: 'static/test/user_$1.json'
       },
       {
-        pattern: /getAppList?from=(\d+)/,
-        map: 'static/test/apps_$1.json'
+        pattern: /getAppList?from=(\d+)&to=(\d+)/,
+        map: 'static/test/apps_$1_$2.json'
       },
       {
         pattern: 'getAppList/:appid',
