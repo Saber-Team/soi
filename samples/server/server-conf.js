@@ -9,7 +9,7 @@
 soi.config.extend({
   // 本地server配置节点
   server: {
-    rootDir: '.', // 要被复制到的目录, 且该目录作为server的根目录存在
+    rootDir: './webroot', // 要被复制到的目录, 且该目录作为server的根目录存在
     port: '3000', // 启动端口
     autoWatch: false,
     // 文件的映射, from本地目录中的文件将会被复制到to的目录中,
@@ -46,16 +46,16 @@ soi.config.extend({
     // 2. 正则模糊匹配
     // 3. express.param式匹配
     roadmap: [
+//      {
+//        pattern: '/',
+//        map: 'page/index.html'
+//      },
       {
-        pattern: '/',
-        map: 'static/page/index.html'
-      },
-      {
-        pattern: /getUserInfo?uid=(\d+)/,
+        pattern: /\/getUserInfo\?uid=(\d+)/,
         map: 'static/test/user_$1.json'
       },
       {
-        pattern: /getAppList?from=(\d+)&to=(\d+)/,
+        pattern: /\/getAppList\?from=(\d+)&to=(\d+)/,
         map: 'static/test/apps_$1_$2.json'
       },
       {
