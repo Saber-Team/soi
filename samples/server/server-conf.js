@@ -6,10 +6,21 @@
 
 'use strict';
 
+
+var jsmartyConfig = {
+  from: '',
+  to: ''
+};
+
+var lessConfig = {
+  from: '',
+  to: ''
+};
+
 soi.config.extend({
   // 本地server配置节点
   server: {
-    rootDir: './webroot', // 要被复制到的目录, 且该目录作为server的根目录存在
+    rootDir: './webroot', // 该目录作为server的根目录存在
     port: '3000', // 启动端口
     autoWatch: false,
     // 文件的映射(可选的), from本地目录中的文件将会被复制到to的目录中,
@@ -18,6 +29,10 @@ soi.config.extend({
     // from和to支持glob形式的匹配, 也支持自己写逻辑的函数返回字符串
     // 关于glob规范见: https://www.npmjs.com/package/glob
     files: [
+      {
+        from: 'src/template/*.tpl',
+        to: 'template/'
+      },
       {
         from: 'src/page/*.html',
         to: 'page/'
@@ -57,6 +72,10 @@ soi.config.extend({
         pattern: /\/getAppList\?from=(\d+)&to=(\d+)/,
         map: 'static/test/apps_$1_$2.json'
       }
-    ]
+    ],
+    plugins: {
+      'soi-preprocessor-jsmarty': jsmartyConfig,
+      'soi-preprocessor-less': lessConfig
+    }
   }
 });
