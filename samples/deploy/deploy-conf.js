@@ -14,14 +14,14 @@ var filesConfig = [
   },
   {
     from: 'src/static/js/*.js',
-    to: 'static/js/'
+    to: 'js/'
   },
   {
     from: function() {
       return 'src/static/css/*.css'
     },
     to: function() {
-      return 'static/css/'
+      return 'css/'
     }
   }
 ];

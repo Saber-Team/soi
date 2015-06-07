@@ -1,6 +1,6 @@
 /**
  * @fileoverview server模块的配置文件样例
- * @author AceMood(zmike86)
+ * @author AceMood
  * @email zmike86@gmail.com
  */
 
