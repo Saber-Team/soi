@@ -9,7 +9,8 @@
 soi.config.extend({
   // 本地server配置节点
   release: {
-    rootDir: './webroot', // 该目录作为server的根目录存在
+    from: '/',
+    to: './build',
     // 文件的映射(可选的), from本地目录中的文件将会被复制到to的目录中,
     // from相对于server-conf.js文件取相对位置,
     // to则取rootDir的相对位置.
