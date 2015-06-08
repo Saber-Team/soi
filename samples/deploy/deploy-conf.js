@@ -1,6 +1,6 @@
 /**
  * @fileoverview 远程测试的配置文件样例
- * @author AceMood(zmike86)
+ * @author AceMood
  * @email zmike86@gmail.com
  */
 

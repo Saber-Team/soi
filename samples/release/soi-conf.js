@@ -21,10 +21,6 @@ var files = [
     to: 'page/'
   },
   {
-    from: 'src/static/test/*.*',
-    to: 'static/test/'
-  },
-  {
     from: 'src/static/js/*.js',
     to: 'static/js/'
   },
@@ -45,28 +41,29 @@ soi.config.extend({
       from: '/',
       to: './build',
       files: files,
+      combine: false,
       replace: {
 
-      },
-      // 代码中ajax请求的接口, 用于前端自己模拟数据, post方式目前没有好的模拟代码.
-      // 需要前端和服务端开发在开发机服务器连调.
-      // 配置的key和value应该为以下两种情况
-      // 1. 纯字符串精准匹配
-      // 2. 正则模糊匹配
-      roadmap: [
-        {
-          pattern: '/',
-          map: 'page/index.html'
-        },
-        {
-          pattern: /\/getUserInfo\?uid=(\d+)/,
-          map: 'static/test/user_$1.json'
-        },
-        {
-          pattern: /\/getAppList\?from=(\d+)&to=(\d+)/,
-          map: 'static/test/apps_$1_$2.json'
-        }
-      ]
+      }
+    },
+    remote: {
+      from: '/',
+      to: './remote',
+      files: files,
+      combine: false,
+      replace: {
+
+      }
+    },
+    prod: {
+      from: '/',
+      to: './build',
+      files: files,
+      combine: true,
+      sha1: true,
+      replace: {
+
+      }
     }
   }
 });
