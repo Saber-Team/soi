@@ -1,16 +1,20 @@
 <?php
 
-  $path = $_POST["path"];
-  $data = $_POST["data"];
+function createFolder($path) {
+    if (!file_exists($path)) {
+        createFolder(dirname($path));
+        mkdir($path, 0777);
+    }
+}
 
-  try {
-      $myfile = fopen($path, "w") or die("Unable to open file!");
-      fwrite($myfile, $data);
-      fclose($myfile);
+$path = urldecode($_POST["path"]);
+$data = urldecode($_POST["data"]);
+$dir = dirname($path);
 
-      echo "Success!"
-  } catch (err) {
-      echo "Error!"
-  }
+// 创建目录
+createFolder($dir);
 
-?>
+// 写入文件
+$file = fopen($path, "w+");
+fwrite($file, $data);
+fclose($file);
