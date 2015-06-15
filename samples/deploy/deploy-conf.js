@@ -9,21 +9,9 @@
 
 var files = [
   {
-    from: 'src/page/*.html',
-    to: 'template/page/'
+    from: 'src/static/js/*.js',
+    to: 'static/js/'
   }
-//  {
-//    from: 'src/static/js/*.js',
-//    to: 'static/js/'
-//  },
-//  {
-//    from: function() {
-//      return 'src/static/css/*.css'
-//    },
-//    to: function() {
-//      return 'static/css/'
-//    }
-//  }
 ];
 
 
