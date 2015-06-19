@@ -17,9 +17,8 @@ function mkdirs($path, $mod = 0777) {
   return false;
 }
 
-if ($_POST['path']) {
-  $to = urldecode($_POST['path']);
-  $content = urldecode($_POST['data']);
+if ($_POST['to']) {
+  $to = urldecode($_POST['to']);
 
   if (is_dir($to) || $_FILES["file"]["error"] > 0) {
     header("Status: 500 Internal Server Error");
