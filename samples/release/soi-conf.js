@@ -15,8 +15,10 @@ soi.config.extend({
     prod: {
       domain: '/',
       obscure: true,
+      charset: 'utf8',
       virtualRootDir: './src/',
       distRootDir: './build/',
+      mapTo: './build/map.json',
       pack: {
         img: [
           {
