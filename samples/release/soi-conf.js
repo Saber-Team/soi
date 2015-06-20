@@ -11,14 +11,16 @@ soi.config.extend({
     //    `/static/scripts/lib/jQuery.js`。用到的是pack中的entrance属性。
     // 2. 之所以没有用系统的绝对路径是因为可能打包的系统各异，生成的资源表的key不好统一。
     //    在此生成的绝对路径作为最终资源表中的key存在，不会重复，且在各个系统中统一。
-    // 3. 根据配置的domain，生成线上绝对路径。用到的是pack中的dist属性
+    // 3. 根据配置的domain，生成线上绝对路径。用到的是pack中的to属性
     prod: {
-      domain: '/',
       obscure: true,
       charset: 'utf8',
+
+      domain: '/',
       virtualRootDir: './src/',
       distRootDir: './build/',
       mapTo: './build/map.json',
+
       pack: {
         img: [
           {
@@ -26,7 +28,7 @@ soi.config.extend({
               'static/img/*.png'
             ],
             ignore    : [],
-            dist      : '/online/static/'
+            to        : '/online/static/'
           }
         ]
         /*,
