@@ -30,23 +30,23 @@ soi.config.extend({
             ignore    : [],
             to        : '/online/static/'
           }
+        ],
+        css: [
+          {
+            entrance  : 'static/css/main.css',
+            ignore    : [],
+            dist      : '/static/css/'
+          },
+          {
+            files     : [
+              'static/css/a.css',
+              'static/css/b.css'
+            ],
+            ignore    : [],
+            dist      : '/static/css/'
+          }
         ]
-        /*,
-         css: [
-         {
-         entrance  : 'static/css/main.css',
-         ignore    : [],
-         dist      : '/static/css/'
-         },
-         {
-         files     : [
-         'static/css/a.css',
-         'static/css/b.css'
-         ],
-         ignore    : [],
-         dist      : '/static/css/'
-         }
-         ],
+         /*,
          js: [
          {
          entrance  : 'static/js/app.js',
