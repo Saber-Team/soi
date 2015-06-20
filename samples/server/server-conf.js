@@ -6,17 +6,6 @@
 
 'use strict';
 
-
-var jsmartyConfig = {
-  from: '',
-  to: ''
-};
-
-var lessConfig = {
-  from: '',
-  to: ''
-};
-
 soi.config.extend({
   // 本地server配置节点
   server: {
