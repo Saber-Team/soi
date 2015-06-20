@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-  <meta charset="UTF-8">
-  <title>S.O.I server sample</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>soi example</title>
+    <link type="text/css" rel="stylesheet" href="../static/css/main.css" />
 </head>
 <body>
-  <p>
-    Hello World!
-  </p>
-  <a href="page.html">一个链接</a>
-  <script>
-
-  </script>
-  <button onclick="request('/getUserInfo?uid=12', alert)">请求1</button>
-  <button onclick="request('/getAppList?from=1&to=2', alert)">请求2</button>
-  <script src="../static/js/a.js"></script>
+<header></header>
+<p>input a random string:</p>
+<input id="pid" placeholder="random string" maxlength="10"/>
+<button>get reverse</button>
+<div>your result:</div>
+<div class="ret"></div>
+<script type="text/javascript" src="lib/kernel.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+<!--<script type="text/javascript" src="dist/js/build_14e5ea14.js"></script>-->
 </body>
 </html>

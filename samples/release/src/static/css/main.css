@@ -1,8 +1,8 @@
 /**
  * @fileoverview
- * @author AceMood
+ * @author Leo.Zhang(zmike86)
  */
-@import "../../../lib/reset.css";
+@import "reset.css";
 
 html {
     height: 100%;
