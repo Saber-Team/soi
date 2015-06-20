@@ -23,7 +23,7 @@ soi.config.extend({
         img: [
           {
             files     : [
-              '/static/img/*.png'
+              'static/img/*.png'
             ],
             ignore    : [],
             dist      : '/online/static/'
