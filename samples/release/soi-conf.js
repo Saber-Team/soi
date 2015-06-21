@@ -33,12 +33,12 @@ soi.config.extend({
           {
             entrance  : 'static/css/main.css',
             to        : '/online/static/css/'
-          }/*,
+          },
           {
             files     : ['static/css/a.css','static/css/b.css'],
             ignore    : [],
             to        : '/online/static/css/'
-          }*/
+          }
         ]
          /*,
          js: [
