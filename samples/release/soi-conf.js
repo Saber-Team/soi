@@ -21,22 +21,17 @@ soi.config.extend({
       distRootDir: './build/',
       mapTo: './build/map.json',
 
-      pack: {/*
+      pack: {
         img: [
           {
             files     : ['static/img/*.png'],
             ignore    : [],
             to        : '/online/static/'
           }
-        ],*/
+        ],
         css: [
           {
             entrance  : 'static/css/main.css',
-            to        : '/online/static/css/'
-          },
-          {
-            files     : ['static/css/a.css','static/css/b.css'],
-            ignore    : [],
             to        : '/online/static/css/'
           }
         ]
