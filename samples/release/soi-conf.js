@@ -24,9 +24,7 @@ soi.config.extend({
       pack: {
         img: [
           {
-            files     : [
-              'static/img/*.png'
-            ],
+            files     : ['static/img/*.png'],
             ignore    : [],
             to        : '/online/static/'
           }
@@ -35,15 +33,12 @@ soi.config.extend({
           {
             entrance  : 'static/css/main.css',
             ignore    : [],
-            dist      : '/static/css/'
+            dist      : '/online/static/css/'
           },
           {
-            files     : [
-              'static/css/a.css',
-              'static/css/b.css'
-            ],
+            files     : ['static/css/a.css','static/css/b.css'],
             ignore    : [],
-            dist      : '/static/css/'
+            dist      : '/online/static/css/'
           }
         ]
          /*,
