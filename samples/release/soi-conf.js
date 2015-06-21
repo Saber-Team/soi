@@ -33,12 +33,12 @@ soi.config.extend({
           {
             entrance  : 'static/css/main.css',
             ignore    : [],
-            dist      : '/online/static/css/'
+            to        : '/online/static/css/'
           },
           {
             files     : ['static/css/a.css','static/css/b.css'],
             ignore    : [],
-            dist      : '/online/static/css/'
+            to        : '/online/static/css/'
           }
         ]
          /*,
@@ -53,9 +53,7 @@ soi.config.extend({
       },
       replace: {
         'http://zhida.baidu.com:8080/': 'http://zhida.baidu.com',
-        'http://zhida.baidu.com:8081/': function() {
-          return $0.replace()
-        }
+        'http://zhida.baidu.com:8081/': ''
       }
     }
   }
