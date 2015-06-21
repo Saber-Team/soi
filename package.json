@@ -39,6 +39,7 @@
   "dependencies": {
     "chai": "^1.10.0",
     "chalk": "^0.5.1",
+    "css": "^2.2.1",
     "glob": "^5.0.5",
     "mocha": "^2.0.1",
     "optimist": "^0.6.1",
