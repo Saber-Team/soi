@@ -34,16 +34,24 @@ soi.config.extend({
             entrance  : 'static/css/main.css',
             to        : '/online/static/css/'
           }
+        ],
+        js: [
+          {
+            modular   : 'amd',
+            entrance  : 'static/js/app.js',
+            obscure   : true,
+            dist      : '/static/js/'
+          },
+          {
+            modular   : 'normal',
+            files     : [
+                'static/js/a.js',
+                'sttaic/js/b.js'
+            ],
+            obscure   : true,
+            dist      : '/static/js/'
+          }
         ]
-         /*,
-         js: [
-         {
-         entrance  : 'static/js/app.js',
-         exclude   : [],
-         obscure   : true,
-         dist      : '/static/js/'
-         }
-         ]*/
       },
       replace: {
         'http://zhida.baidu.com:8080/': 'http://zhida.baidu.com',
