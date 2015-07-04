@@ -54,8 +54,9 @@ soi.config.extend({
         ]
       },
       replace: {
-        'http://zhida.baidu.com:8080/': 'http://zhida.baidu.com',
-        'http://zhida.baidu.com:8081/': ''
+        '__TOPBAR__': function() {
+          return 'http://zhida.baidu.com:8080'
+        }
       }
     }
   }
