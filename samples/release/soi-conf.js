@@ -36,21 +36,21 @@ soi.config.extend({
             to        : '/online/static/css/'
           }
         ],
-        js: [
+        js: [/*
           {
             modular   : 'amd',
             entrance  : 'static/js/app.js',
             to        : '/online/static/js/'
-          }
-          /*,
+          },
+          */
           {
             modular   : 'normal',
             files     : [
                 'static/js/a.js',
-                'sttaic/js/b.js'
+                'static/js/b.js'
             ],
             to        : '/online/static/js/'
-          }*/
+          }
         ]
       },
       replace: {
