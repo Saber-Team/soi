@@ -26,7 +26,7 @@ soi.config.extend({
           {
             files     : ['static/img/*.png'],
             ignore    : [],
-            to        : '/online/static/'
+            to        : '/online/static/img/'
           }
         ],
         css: [
@@ -54,8 +54,18 @@ soi.config.extend({
         ]
       },
       replace: {
-        '__TOPBAR__': function() {
-          return 'http://zhida.baidu.com:8080'
+        file: [
+            ''
+        ],
+        from: /(__TOPBAR__|__NAVBAR__|__APIDOMAIN__)/g,
+        to: function($0) {
+          if ($0 === '__TOPBAR__') {
+            return 'http://zhida.baidu.com:8080'
+          } else if ($0 === '__NAVBAR__') {
+            return 'http://songjin.zhida.baidu.com:8080';
+          } else if ($0 === '__APIDOMAIN__') {
+            return 'http://zhida.baidu.com:8080';
+          }
         }
       }
     }

@@ -5,13 +5,64 @@
             "encoding": "utf8",
             "key": "/static/img/banner.png",
             "from": "/static/img/banner.png",
-            "to": "/online/static/Zx6u2uSOV.png",
+            "to": "/online/static/img/Zx6u2uSOV.png",
             "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/img/banner.png",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/img",
             "hashId": "Zx6u2uSOV"
         }
     },
-    "js": {},
+    "js": {
+        "/online/static/js/lib.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/vendor/lib.js",
+            "from": "/static/vendor/lib.js",
+            "to": "/online/static/js/ZmTp66_+j.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/vendor/lib.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "ZmTp66_+j"
+        },
+        "/online/static/js/a.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/a.js",
+            "from": "/static/js/a.js",
+            "to": "/online/static/js/a0fjwkkEr.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/a.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "a0fjwkkEr"
+        },
+        "/online/static/js/b.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/b.js",
+            "from": "/static/js/b.js",
+            "to": "/online/static/js/_ldztCjIO.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/b.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "_ldztCjIO"
+        },
+        "/online/static/js/cal.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/cal.js",
+            "from": "/static/js/cal.js",
+            "to": "/online/static/js/nAhNTghq9.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cal.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "nAhNTghq9"
+        },
+        "/online/static/js/app.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/app.js",
+            "from": "/static/js/app.js",
+            "to": "/online/static/js/04nEI94Rn.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/app.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "04nEI94Rn"
+        }
+    },
     "css": {
         "/static/css/reset.css": {
             "type": "css",
@@ -35,7 +86,26 @@
         }
     },
     "pkgs": {
-        "js": {},
+        "js": {
+            "/static/js/app.js": {
+                "type": "js",
+                "encoding": "utf8",
+                "files": [
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/vendor/lib.js",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/a.js",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/b.js",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cal.js",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/app.js"
+                ],
+                "entrance": "/static/js/app.js",
+                "key": "/static/js/app.js",
+                "from": "/static/js/app.js",
+                "to": "/online/static/js/LqAZYDCgZ.js",
+                "original": null,
+                "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+                "hashId": "LqAZYDCgZ"
+            }
+        },
         "css": {
             "/static/css/main.css": {
                 "type": "css",
@@ -47,10 +117,10 @@
                 "entrance": "/static/css/main.css",
                 "key": "/static/css/main.css",
                 "from": "/static/css/main.css",
-                "to": "/online/static/css/9NbeJeEXQ.css",
+                "to": "/online/static/css/dsZc56sP_.css",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
-                "hashId": "9NbeJeEXQ"
+                "hashId": "dsZc56sP_"
             }
         }
     }
