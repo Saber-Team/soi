@@ -31,23 +31,23 @@ soi.config.extend({
         ],
         css: [
           {
-            modular   : 'normal',
+            modular   : true,
             entrance  : 'static/css/main.css',
             to        : '/online/static/css/'
           }
         ],
-        js: [/*
+        js: [
+            /*
           {
             modular   : 'amd',
             entrance  : 'static/js/app.js',
             to        : '/online/static/js/'
-          },
-          */
+          },*/
           {
             modular   : 'normal',
             files     : [
-                'static/js/a.js',
-                'static/js/b.js'
+                'static/js/jquery.js',
+                'static/js/x.js'
             ],
             to        : '/online/static/js/'
           }
