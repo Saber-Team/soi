@@ -16,12 +16,19 @@ soi.config.extend({
       obscure: true,
       charset: 'utf8',
 
-      domain: '/',
+      domain: 'http://www.cdn.com/',
       virtualRootDir: './src/',
       distRootDir: './build/',
       mapTo: './build/map.json',
 
       pack: {
+        tpl: [
+          {
+            files     : ['page/*.html'],
+            ignore    : [],
+            to        : '/online/page/'
+          }
+        ],
         img: [
           {
             files     : ['static/img/*.png'],
@@ -60,9 +67,6 @@ soi.config.extend({
         ]
       },
       replace: {
-        file: [
-            'page/**/*.*'
-        ],
         from: /(__TOPBAR__|__NAVBAR__|__APIDOMAIN__)/g,
         to: function($0) {
           if ($0 === '__TOPBAR__') {
