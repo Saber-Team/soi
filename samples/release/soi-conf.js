@@ -31,6 +31,7 @@ soi.config.extend({
         ],
         css: [
           {
+            modular   : 'normal',
             entrance  : 'static/css/main.css',
             to        : '/online/static/css/'
           }
@@ -39,7 +40,6 @@ soi.config.extend({
           {
             modular   : 'amd',
             entrance  : 'static/js/app.js',
-            obscure   : true,
             to        : '/online/static/js/'
           }
           /*,
@@ -49,8 +49,7 @@ soi.config.extend({
                 'static/js/a.js',
                 'sttaic/js/b.js'
             ],
-            obscure   : true,
-            dist      : '/static/js/'
+            to        : '/online/static/js/'
           }*/
         ]
       },
