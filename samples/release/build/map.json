@@ -107,68 +107,47 @@
     },
     "pkgs": {
         "js": {
-            "/static/js/app.js": {
+            "auto_combined_0": {
                 "type": "js",
                 "encoding": "utf8",
-                "files": [
+                "key": "auto_combined_0",
+                "from": [
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/vendor/lib.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/a.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/b.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cal.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/app.js"
                 ],
-                "entrance": "/static/js/app.js",
-                "key": "/static/js/app.js",
-                "from": "/static/js/app.js",
                 "to": "/online/static/js/dH_oVJz43.js",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "hashId": "dH_oVJz43"
             },
-            "/auto_combined_0": {
+            "auto_combined_1": {
                 "type": "js",
                 "encoding": "utf8",
-                "files": [
+                "key": "auto_combined_1",
+                "from": [
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/jquery.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/x.js"
                 ],
-                "entrance": "/auto_combined_0",
-                "key": "/auto_combined_0",
-                "from": "/auto_combined_0",
-                "to": "/online/static/js/0rFA2AHE9",
+                "to": "/online/static/js/0rFA2AHE9.js",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": false,
                 "hashId": "0rFA2AHE9"
-            },
-            "/auto_combined_1": {
-                "type": "js",
-                "encoding": "utf8",
-                "files": [
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/jquery.js"
-                ],
-                "entrance": "/auto_combined_1",
-                "key": "/auto_combined_1",
-                "from": "/auto_combined_1",
-                "to": "/online/static/js/HBW6Rhegn",
-                "original": null,
-                "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
-                "modular": false,
-                "hashId": "HBW6Rhegn"
             }
         },
         "css": {
-            "/static/css/main.css": {
+            "auto_combined_0": {
                 "type": "css",
                 "encoding": "utf8",
-                "files": [
+                "key": "auto_combined_0",
+                "from": [
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/reset.css",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/main.css"
                 ],
-                "entrance": "/static/css/main.css",
-                "key": "/static/css/main.css",
-                "from": "/static/css/main.css",
                 "to": "/online/static/css/dsZc56sP_.css",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
