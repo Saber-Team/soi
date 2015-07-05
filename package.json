@@ -1,6 +1,6 @@
 {
   "name": "soi",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "Build tools for oslojs",
   "directories": {
     "test": "tests"
@@ -32,9 +32,14 @@
   "devDependencies": {
     "chai": "^1.10.0",
     "chalk": "^0.5.1",
+    "css": "^2.2.1",
+    "glob": "^5.0.5",
     "mocha": "^2.0.1",
     "optimist": "^0.6.1",
-    "rimraf": "^2.2.8"
+    "restler": "^3.3.0",
+    "rimraf": "^2.2.8",
+    "uglify-js": "^2.4.23",
+    "watch": "^0.16.0"
   },
   "dependencies": {
     "chai": "^1.10.0",
@@ -43,6 +48,7 @@
     "glob": "^5.0.5",
     "mocha": "^2.0.1",
     "optimist": "^0.6.1",
+    "restler": "^3.3.0",
     "rimraf": "^2.2.8",
     "uglify-js": "^2.4.23",
     "watch": "^0.16.0"
