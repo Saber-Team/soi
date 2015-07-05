@@ -55,7 +55,7 @@ soi.config.extend({
       },
       replace: {
         file: [
-            ''
+            'page/**/*.*'
         ],
         from: /(__TOPBAR__|__NAVBAR__|__APIDOMAIN__)/g,
         to: function($0) {
