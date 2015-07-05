@@ -1,0 +1,96 @@
+{
+    "img": {
+        "/static/img/banner.png": {
+            "type": "img",
+            "encoding": "utf8",
+            "key": "/static/img/banner.png",
+            "from": "/static/img/banner.png",
+            "to": "/online/static/img/Zx6u2uSOV.png",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/img/banner.png",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/img",
+            "hashId": "Zx6u2uSOV"
+        }
+    },
+    "js": {
+        "/online/static/js/jquery.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/jquery.js",
+            "from": "/static/js/jquery.js",
+            "to": "/online/static/js/xZGy1AfL9.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/jquery.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "xZGy1AfL9"
+        },
+        "/online/static/js/x.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/x.js",
+            "from": "/static/js/x.js",
+            "to": "/online/static/js/m+LVRPD3d.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/x.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "m+LVRPD3d"
+        }
+    },
+    "css": {
+        "/static/css/reset.css": {
+            "type": "css",
+            "encoding": "utf8",
+            "key": "/static/css/reset.css",
+            "from": "/static/css/reset.css",
+            "to": "/online/static/css/BCfiGZhlo.css",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/reset.css",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
+            "hashId": "BCfiGZhlo"
+        },
+        "/static/css/main.css": {
+            "type": "css",
+            "encoding": "utf8",
+            "key": "/static/css/main.css",
+            "from": "/static/css/main.css",
+            "to": "/online/static/css/Lk16Mf4f4.css",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/main.css",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
+            "hashId": "Lk16Mf4f4"
+        }
+    },
+    "pkgs": {
+        "js": {
+            "/build/online/static/js/auto_combined_0.js": {
+                "type": "js",
+                "encoding": "utf8",
+                "files": [
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/jquery.js",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/x.js"
+                ],
+                "entrance": "/build/online/static/js/auto_combined_0.js",
+                "key": "/build/online/static/js/auto_combined_0.js",
+                "from": "/build/online/static/js/auto_combined_0.js",
+                "to": "/online/static/js/AP6DPmFCg.js",
+                "original": null,
+                "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+                "modular": false,
+                "hashId": "AP6DPmFCg"
+            }
+        },
+        "css": {
+            "/static/css/main.css": {
+                "type": "css",
+                "encoding": "utf8",
+                "files": [
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/reset.css",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/main.css"
+                ],
+                "entrance": "/static/css/main.css",
+                "key": "/static/css/main.css",
+                "from": "/static/css/main.css",
+                "to": "/online/static/css/dsZc56sP_.css",
+                "original": null,
+                "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
+                "modular": true,
+                "hashId": "dsZc56sP_"
+            }
+        }
+    }
+}
