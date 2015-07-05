@@ -16,7 +16,7 @@ soi.config.extend({
       obscure: true,
       charset: 'utf8',
 
-      domain: 'http://www.cdn.com/',
+      domain: '/',
       virtualRootDir: './src/',
       distRootDir: './build/',
       mapTo: './build/map.json',
@@ -54,13 +54,6 @@ soi.config.extend({
             files     : [
                 'static/js/jquery.js',
                 'static/js/x.js'
-            ],
-            to        : '/online/static/js/'
-          },
-          {
-            modular   : 'normal',
-            files     : [
-              'static/js/jquery.js'
             ],
             to        : '/online/static/js/'
           }
