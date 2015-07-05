@@ -12,6 +12,56 @@
         }
     },
     "js": {
+        "/online/static/js/lib.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/vendor/lib.js",
+            "from": "/static/vendor/lib.js",
+            "to": "/online/static/js/ZmTp66++j.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/vendor/lib.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "ZmTp66++j"
+        },
+        "/online/static/js/a.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/a.js",
+            "from": "/static/js/a.js",
+            "to": "/online/static/js/a0fjwkkEr.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/a.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "a0fjwkkEr"
+        },
+        "/online/static/js/b.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/b.js",
+            "from": "/static/js/b.js",
+            "to": "/online/static/js/+ldztCjIO.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/b.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "+ldztCjIO"
+        },
+        "/online/static/js/cal.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/cal.js",
+            "from": "/static/js/cal.js",
+            "to": "/online/static/js/nAhNTghq9.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cal.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "nAhNTghq9"
+        },
+        "/online/static/js/app.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/app.js",
+            "from": "/static/js/app.js",
+            "to": "/online/static/js/04nEI94Rn.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/app.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "04nEI94Rn"
+        },
         "/online/static/js/jquery.js": {
             "type": "js",
             "encoding": "utf8",
@@ -57,6 +107,25 @@
     },
     "pkgs": {
         "js": {
+            "/static/js/app.js": {
+                "type": "js",
+                "encoding": "utf8",
+                "files": [
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/vendor/lib.js",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/a.js",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/b.js",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cal.js",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/app.js"
+                ],
+                "entrance": "/static/js/app.js",
+                "key": "/static/js/app.js",
+                "from": "/static/js/app.js",
+                "to": "/online/static/js/dH_oVJz43.js",
+                "original": null,
+                "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+                "modular": true,
+                "hashId": "dH_oVJz43"
+            },
             "/auto_combined_0": {
                 "type": "js",
                 "encoding": "utf8",
@@ -67,11 +136,11 @@
                 "entrance": "/auto_combined_0",
                 "key": "/auto_combined_0",
                 "from": "/auto_combined_0",
-                "to": "/online/static/js/AP6DPmFCg",
+                "to": "/online/static/js/0rFA2AHE9",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": false,
-                "hashId": "AP6DPmFCg"
+                "hashId": "0rFA2AHE9"
             },
             "/auto_combined_1": {
                 "type": "js",

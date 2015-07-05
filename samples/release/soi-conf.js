@@ -37,12 +37,11 @@ soi.config.extend({
           }
         ],
         js: [
-            /*
           {
             modular   : 'amd',
             entrance  : 'static/js/app.js',
             to        : '/online/static/js/'
-          },*/
+          },
           {
             modular   : 'normal',
             files     : [
