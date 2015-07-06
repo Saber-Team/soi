@@ -155,5 +155,17 @@
                 "hashId": "dsZc56sP_"
             }
         }
+    },
+    "tpl": {
+        "/page/index.html": {
+            "type": "tpl",
+            "encoding": "utf8",
+            "key": "/page/index.html",
+            "from": "/page/index.html",
+            "to": "/online/page/VFt4n8pUz.html",
+            "original": "/Users/baidu/Git/soi/samples/release/src/page/index.html",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/page",
+            "hashId": "VFt4n8pUz"
+        }
     }
 }
