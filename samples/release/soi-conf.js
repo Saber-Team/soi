@@ -50,13 +50,19 @@ soi.config.extend({
             to        : '/online/static/js/'
           },
           {
+            modular   : 'amd',
+            entrance  : 'static/js/index.js',
+            to        : '/online/static/js/'
+          }
+          /*,
+          {
             modular   : 'normal',
             files     : [
                 'static/js/jquery.js',
                 'static/js/x.js'
             ],
             to        : '/online/static/js/'
-          }
+          }*/
         ]
       },
       replace: {
