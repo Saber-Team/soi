@@ -1,6 +1,6 @@
 {
   "name": "soi",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "Build tools for oslojs",
   "directories": {
     "test": "tests"
@@ -45,6 +45,7 @@
     "chai": "^1.10.0",
     "chalk": "^0.5.1",
     "css": "^2.2.1",
+    "express": "^4.13.0",
     "glob": "^5.0.5",
     "mocha": "^2.0.1",
     "optimist": "^0.6.1",
