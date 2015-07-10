@@ -38,31 +38,34 @@ soi.config.extend({
         ],
         css: [
           {
-            modular   : true,
-            entrance  : 'static/css/main.css',
-            to        : '/online/static/css/'
+            modular     : true,
+            entrance    : 'static/css/main.css',
+            to          : '/online/static/css/',
+            placeholder : 'app'
           }
         ],
         js: [
           {
-            modular   : 'amd',
-            entrance  : 'static/js/app.js',
-            to        : '/online/static/js/'
+            modular     : 'amd',
+            entrance    : 'static/js/app.js',
+            to          : '/online/static/js/',
+            placeholder : 'app'
           },
           {
-            modular   : 'amd',
-            entrance  : 'static/js/index.js',
-            to        : '/online/static/js/'
-          }
-          /*,
+            modular     : 'amd',
+            entrance    : 'static/js/index.js',
+            to          : '/online/static/js/',
+            placeholder : ''
+          },
           {
-            modular   : 'normal',
-            files     : [
+            modular     : 'normal',
+            files       : [
                 'static/js/jquery.js',
                 'static/js/x.js'
             ],
-            to        : '/online/static/js/'
-          }*/
+            to          : '/online/static/js/',
+            placeholder : 'base:common'
+          }
         ]
       },
       replace: {
