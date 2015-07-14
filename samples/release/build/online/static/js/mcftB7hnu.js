@@ -11,6 +11,8 @@ define("_2", ["_3"], function (lib) {
 });
 define("_4", [], function () {
 
+  var API = 'http://zhida.baidu.com:8080';
+
   'use strict';
 
   return {

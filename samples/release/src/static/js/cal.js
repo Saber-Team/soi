@@ -1,5 +1,7 @@
 define(function() {
 
+  var API = '__APIDOMAIN__';
+
   'use strict';
 
   return {

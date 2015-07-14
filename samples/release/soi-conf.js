@@ -42,6 +42,12 @@ soi.config.extend({
             entrance    : 'static/css/main.css',
             to          : '/online/static/css/',
             placeholder : 'app'
+          },
+          {
+            modular     : true,
+            entrance    : 'static/css/x.css',
+            to          : '/online/static/css/',
+            placeholder : 'testa'
           }
         ],
         js: [
