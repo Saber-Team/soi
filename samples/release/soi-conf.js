@@ -13,7 +13,7 @@ soi.config.extend({
     //    在此生成的绝对路径作为最终资源表中的key存在，不会重复，且在各个系统中统一。
     // 3. 根据配置的domain，生成线上绝对路径。用到的是pack中的to属性
     prod: {
-      obscure: false,
+      obscure: true,
       charset: 'utf8',
 
       domain: '/',
