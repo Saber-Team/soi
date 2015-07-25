@@ -148,13 +148,13 @@
                     "/Users/baidu/Git/soi/samples/release/src/static/js/cal.js",
                     "/Users/baidu/Git/soi/samples/release/src/static/js/app.js"
                 ],
-                "to": "/online/static/js/d9iowrCHU.js",
+                "to": "/online/static/js/+l3XXeF5O.js",
                 "original": null,
                 "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "app",
                 "obscure": true,
-                "hashId": "d9iowrCHU"
+                "hashId": "+l3XXeF5O"
             },
             "auto_combined_1": {
                 "type": "js",
@@ -166,13 +166,13 @@
                     "/Users/baidu/Git/soi/samples/release/src/static/js/b.js",
                     "/Users/baidu/Git/soi/samples/release/src/static/js/index.js"
                 ],
-                "to": "/online/static/js/V+FCc53g7.js",
+                "to": "/online/static/js/_KMW+FKhx.js",
                 "original": null,
                 "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "",
                 "obscure": true,
-                "hashId": "V+FCc53g7"
+                "hashId": "_KMW+FKhx"
             },
             "auto_combined_2": {
                 "type": "js",
