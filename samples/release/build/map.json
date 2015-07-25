@@ -233,7 +233,7 @@
             "encoding": "utf8",
             "key": "/page/index.html",
             "from": "/page/index.html",
-            "to": "/online/page/DQzJme4Pz.html",
+            "to": "/online/page/index.html",
             "original": "/Users/baidu/Git/soi/samples/release/src/page/index.html",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/page",
             "hashId": "DQzJme4Pz"
