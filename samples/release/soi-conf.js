@@ -29,6 +29,12 @@ soi.config.extend({
             to        : '/online/page/'
           }
         ],
+        swf: [
+          {
+            files: ['static/swf/*.swf'],
+            to: '/online/static/swf/'
+          }
+        ],
         img: [
           {
             files     : ['static/img/*.png'],
