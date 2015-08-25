@@ -24,7 +24,7 @@ soi.config.extend({
       pack: {
         tpl: [
           {
-            files     : ['page/*.html'],
+            files     : ['page/*.*'],
             ignore    : [],
             to        : '/online/page/'
           }
@@ -67,7 +67,7 @@ soi.config.extend({
             modular     : 'amd',
             entrance    : 'static/js/index.js',
             to          : '/online/static/js/',
-            placeholder : ''
+            placeholder : 'base'
           },
           {
             modular     : 'normal',
