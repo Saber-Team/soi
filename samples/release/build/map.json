@@ -133,6 +133,16 @@
             "original": "/Users/baidu/Git/soi/samples/release/src/static/css/x.css",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
             "hashId": "7hzIygKOy"
+        },
+        "/static/css/a.css": {
+            "type": "css",
+            "encoding": "utf8",
+            "key": "/static/css/a.css",
+            "from": "/static/css/a.css",
+            "to": "/online/static/css/yc9MhEb6X.css",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/css/a.css",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
+            "hashId": "yc9MhEb6X"
         }
     },
     "swf": {
@@ -236,6 +246,21 @@
                 "placeholder": "testa",
                 "obscure": true,
                 "hashId": "_aFDldJV3"
+            },
+            "auto_combined_2": {
+                "type": "css",
+                "encoding": "utf8",
+                "key": "auto_combined_2",
+                "from": [
+                    "/Users/baidu/Git/soi/samples/release/src/static/css/a.css",
+                    "/Users/baidu/Git/soi/samples/release/src/static/css/b.css"
+                ],
+                "to": "/online/static/css/txtv5B_2u.css",
+                "original": null,
+                "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
+                "placeholder": "",
+                "obscure": true,
+                "hashId": "txtv5B_2u"
             }
         }
     },

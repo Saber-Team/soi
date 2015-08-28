@@ -24,9 +24,8 @@ soi.config.extend({
       pack: {
         tpl: [
           {
-            files     : ['page/*.*'],
-            ignore    : [],
-            to        : '/online/page/'
+            files: ['page/*.*'],
+            to: '/online/page/'
           }
         ],
         swf: [
@@ -37,23 +36,26 @@ soi.config.extend({
         ],
         img: [
           {
-            files     : ['static/img/*.png'],
-            ignore    : [],
-            to        : '/online/static/img/'
+            files: ['static/img/*.@(png|jpg|gif)'],
+            to: '/online/static/img/'
           }
         ],
         css: [
           {
-            modular     : true,
-            entrance    : 'static/css/main.css',
-            to          : '/online/static/css/',
-            placeholder : 'app'
+            modular: true,
+            entrance: 'static/css/main.css',
+            to: '/online/static/css/',
+            placeholder: 'app'
           },
           {
-            modular     : true,
-            entrance    : 'static/css/x.css',
-            to          : '/online/static/css/',
-            placeholder : 'testa'
+            modular: true,
+            entrance: 'static/css/x.css',
+            to: '/online/static/css/',
+            placeholder: 'testa'
+          },
+          {
+            files: ['static/css/a.css', 'static/css/b.css'],
+            to: '/online/static/css/'
           }
         ],
         js: [

@@ -1,8 +1,9 @@
-define(['../vendor/lib'], function(lib) {
+define(function(require, module, exports) {
 
+  var lib = require('../vendor/lib');
   var url = kerneljs.url('../swf/ZeroClipboard.swf');
 
-  return {
+  module.exports = {
     name: lib.name,
     url: url
   }
