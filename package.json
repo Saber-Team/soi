@@ -1,7 +1,7 @@
 {
   "name": "soi",
-  "version": "0.10.12",
-  "description": "Build tools for oslojs",
+  "version": "0.10.13",
+  "description": "Build tools for projects using kerneljs as module loader",
   "directories": {
     "test": "tests"
   },
@@ -18,7 +18,9 @@
     "build tools",
     "javascript",
     "nodejs",
-    "oslojs"
+    "kerneljs",
+    "amd",
+    "modular"
   ],
   "author": "AceMood",
   "license": {

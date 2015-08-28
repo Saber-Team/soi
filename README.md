@@ -9,11 +9,10 @@
 ## soi是什么?
 S.O.I (<em style="color:rgb(0,249,89)">S</em>mart <em style="color:rgb(72,128,255)">O</em>ptimization 
 <em style="color:rgb(255,141,123)">I</em>ntegration) 是和
-[oslojs](https://github.com/Saber-Team/oslojs)
-一同使用的一款浏览器端JavaScript构建工具, 基于Node开发。[oslojs](https://github.com/Saber-Team/oslojs)
+[kerneljs](https://github.com/AceMood/kerneljs)
+一同使用的一款浏览器端JavaScript构建工具, 基于Node开发。[kerneljs](https://github.com/AceMood/kerneljs)
 是一个符合AMD规范的高度模块化的JavaScript框架, 在浏览器端尤其表现卓越, 并且也支持移动端开发.
-soi目前针对单页面打包设置，若多页面可多次执行soi optimize命令(对于optimize命令，
-详见[soi-optimizer](https://github.com/Saber-Team/soi-optimizer))。
+soi目前可用于单页面和多页面打包设置。
 
 ## 安装soi
 确保本地安装了Node环境, 通过包管理器NPM进行安装.
@@ -34,7 +33,7 @@ soi目前针对单页面打包设置，若多页面可多次执行soi optimize�
 ```
   soi.conf.js
 ```
-在soi的各插件安装目录demo下会有个示例文件, 是针对插件本身的打包设置;
+在soi的安装目录samples下会有示例项目;
 
 
 [travis-image]: https://img.shields.io/travis/Saber-Team/soi.svg?style=flat-square
