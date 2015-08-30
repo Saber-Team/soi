@@ -10,9 +10,9 @@
 S.O.I (<em style="color:rgb(0,249,89)">S</em>mart <em style="color:rgb(72,128,255)">O</em>ptimization 
 <em style="color:rgb(255,141,123)">I</em>ntegration) 是和
 [kerneljs](https://github.com/AceMood/kerneljs)
-一同使用的一款浏览器端JavaScript构建工具, 基于Node开发。[kerneljs](https://github.com/AceMood/kerneljs)
-是一个符合AMD规范的高度模块化的JavaScript框架, 在浏览器端尤其表现卓越, 并且也支持移动端开发.
-soi目前可用于单页面和多页面打包设置。
+一同使用的一款浏览器端JavaScript构建工具, 基于Node开发. [kerneljs](https://github.com/AceMood/kerneljs)
+是一个符合AMD规范的浏览器端模块加载器, 适用于在浏览器端异步加载模块, 并且也支持移动端开发. 压缩后大小不超过7k.
+soi目前可用于单页面和多页面打包设置.
 
 ## 安装soi
 确保本地安装了Node环境, 通过包管理器NPM进行安装.

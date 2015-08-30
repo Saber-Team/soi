@@ -32,11 +32,9 @@
   },
   "homepage": "https://github.com/Saber-Team/soi",
   "devDependencies": {
-    "chai": "^1.10.0",
     "chalk": "^0.5.1",
     "css": "^2.2.1",
     "glob": "^5.0.5",
-    "mocha": "^2.0.1",
     "optimist": "^0.6.1",
     "restler": "^3.3.0",
     "rimraf": "^2.2.8",
