@@ -3,7 +3,7 @@
  * @author Leo.Zhang(zmike86)
  */
 
-require(['./mod_A', './cmd_B', './mod_C'],
+require(['./cmd_A', './cmd_B', './cmd_C'],
     function (a, b, cal) {
 
       'use strict';

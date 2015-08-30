@@ -51,11 +51,11 @@
             "encoding": "utf8",
             "key": "/static/js/mod_C.js",
             "from": "/static/js/mod_C.js",
-            "to": "/soi/samples/release/build/online/static/js/htk9thH_Z.js",
+            "to": "/soi/samples/release/build/online/static/js/jiSp_TUgN.js",
             "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_C.js",
             "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
-            "hashId": "htk9thH_Z",
-            "shortHashId": "qmKD7"
+            "hashId": "jiSp_TUgN",
+            "shortHashId": "52Ynt"
         },
         "/static/js/amd.js": {
             "type": "js",
@@ -68,6 +68,17 @@
             "hashId": "WCpmZbxTA",
             "shortHashId": "3wD0g"
         },
+        "/static/js/cmd_A.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/cmd_A.js",
+            "from": "/static/js/cmd_A.js",
+            "to": "/soi/samples/release/build/online/static/js/bOAiNW7TH.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd_A.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "bOAiNW7TH",
+            "shortHashId": "p0ucM"
+        },
         "/static/js/cmd_B.js": {
             "type": "js",
             "encoding": "utf8",
@@ -79,16 +90,27 @@
             "hashId": "iddPJy8KN",
             "shortHashId": "LTwns"
         },
+        "/static/js/cmd_C.js": {
+            "type": "js",
+            "encoding": "utf8",
+            "key": "/static/js/cmd_C.js",
+            "from": "/static/js/cmd_C.js",
+            "to": "/soi/samples/release/build/online/static/js/xO1A2zUoJ.js",
+            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd_C.js",
+            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "hashId": "xO1A2zUoJ",
+            "shortHashId": "Ct__o"
+        },
         "/static/js/cmd.js": {
             "type": "js",
             "encoding": "utf8",
             "key": "/static/js/cmd.js",
             "from": "/static/js/cmd.js",
-            "to": "/soi/samples/release/build/online/static/js/fsmBvor1Z.js",
+            "to": "/soi/samples/release/build/online/static/js/D6B8FgH06.js",
             "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd.js",
             "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
-            "hashId": "fsmBvor1Z",
-            "shortHashId": "56GMQ"
+            "hashId": "D6B8FgH06",
+            "shortHashId": "RvUrf"
         },
         "/static/js/jquery.js": {
             "type": "js",
@@ -196,13 +218,13 @@
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_C.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/amd.js"
                 ],
-                "to": "/soi/samples/release/build/online/static/js/4kWplYQZD.js",
+                "to": "/soi/samples/release/build/online/static/js/fCTU4oR4G.js",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "amd",
                 "obscure": true,
-                "hashId": "4kWplYQZD"
+                "hashId": "fCTU4oR4G"
             },
             "auto_combined_1": {
                 "type": "js",
@@ -210,18 +232,18 @@
                 "key": "auto_combined_1",
                 "from": [
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/vendor/lib.js",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_A.js",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd_A.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd_B.js",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_C.js",
+                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd_C.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd.js"
                 ],
-                "to": "/soi/samples/release/build/online/static/js/r69XeaT9X.js",
+                "to": "/soi/samples/release/build/online/static/js/zkT8UQe41.js",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "cmd",
                 "obscure": true,
-                "hashId": "r69XeaT9X"
+                "hashId": "zkT8UQe41"
             },
             "auto_combined_2": {
                 "type": "js",
@@ -231,13 +253,13 @@
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/jquery.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/x.js"
                 ],
-                "to": "/soi/samples/release/build/online/static/js/wJWizdj3N.js",
+                "to": "/soi/samples/release/build/online/static/js/jb3TT4st0.js",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": false,
                 "placeholder": "base:common",
                 "obscure": true,
-                "hashId": "wJWizdj3N"
+                "hashId": "jb3TT4st0"
             }
         },
         "css": {
@@ -300,7 +322,7 @@
             "to": "/soi/samples/release/build/online/page/amd.html",
             "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/page/amd.html",
             "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/page",
-            "hashId": "1OqL5HfRR",
+            "hashId": "k+VXW455f",
             "shortHashId": ""
         },
         "/page/cmd.html": {
@@ -311,7 +333,7 @@
             "to": "/soi/samples/release/build/online/page/cmd.html",
             "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/page/cmd.html",
             "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/page",
-            "hashId": "wYtze0q4b",
+            "hashId": "MnXPvqfkg",
             "shortHashId": ""
         },
         "/page/index.tpl": {
