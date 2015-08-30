@@ -196,13 +196,13 @@
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_C.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/amd.js"
                 ],
-                "to": "/soi/samples/release/build/online/static/js/lRn9REdrX.js",
+                "to": "/soi/samples/release/build/online/static/js/4kWplYQZD.js",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "amd",
                 "obscure": true,
-                "hashId": "lRn9REdrX"
+                "hashId": "4kWplYQZD"
             },
             "auto_combined_1": {
                 "type": "js",
@@ -215,13 +215,13 @@
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_C.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd.js"
                 ],
-                "to": "/soi/samples/release/build/online/static/js/dxZtzS+D2.js",
+                "to": "/soi/samples/release/build/online/static/js/r69XeaT9X.js",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "cmd",
                 "obscure": true,
-                "hashId": "dxZtzS+D2"
+                "hashId": "r69XeaT9X"
             },
             "auto_combined_2": {
                 "type": "js",
@@ -231,13 +231,13 @@
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/jquery.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/x.js"
                 ],
-                "to": "/soi/samples/release/build/online/static/js/zyLUbNn2O.js",
+                "to": "/soi/samples/release/build/online/static/js/wJWizdj3N.js",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": false,
                 "placeholder": "base:common",
                 "obscure": true,
-                "hashId": "zyLUbNn2O"
+                "hashId": "wJWizdj3N"
             }
         },
         "css": {

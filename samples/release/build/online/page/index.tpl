@@ -17,7 +17,7 @@
     <script>
         var apidomain = 'http://zhida.baidu.com:8080';
     </script>
-    <script type="text/javascript" src="/soi/samples/release/build/online/static/js/zyLUbNn2O.js"></script>
+    <script type="text/javascript" src="/soi/samples/release/build/online/static/js/wJWizdj3N.js"></script>
     <script type="text/javascript" src="js@base"></script>
     <script type="text/javascript" src="js@app"></script>
 </body>
