@@ -1,9 +1,8 @@
 define(function() {
 
-  var API = '__APIDOMAIN__';
-
   'use strict';
 
+  var API = '__APIDOMAIN__';
   return {
     exec: function(str) {
       var arr = str.split('');
