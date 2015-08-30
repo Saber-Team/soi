@@ -47,10 +47,10 @@
             "encoding": "utf8",
             "key": "/static/js/cal.js",
             "from": "/static/js/cal.js",
-            "to": "/online/static/js/+HGw1qNvw.js",
+            "to": "/online/static/js/htk9thH_Z.js",
             "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cal.js",
             "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
-            "hashId": "+HGw1qNvw"
+            "hashId": "htk9thH_Z"
         },
         "/static/js/app.js": {
             "type": "js",
@@ -170,13 +170,13 @@
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cal.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/app.js"
                 ],
-                "to": "/online/static/js/emzPAYURM.js",
+                "to": "/online/static/js/8GsejIkmb.js",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "app",
                 "obscure": true,
-                "hashId": "emzPAYURM"
+                "hashId": "8GsejIkmb"
             },
             "auto_combined_1": {
                 "type": "js",
@@ -188,13 +188,13 @@
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/b.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/index.js"
                 ],
-                "to": "/online/static/js/vIYt7MpH6.js",
+                "to": "/online/static/js/4iPL0pQxu.js",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "base",
                 "obscure": true,
-                "hashId": "vIYt7MpH6"
+                "hashId": "4iPL0pQxu"
             },
             "auto_combined_2": {
                 "type": "js",
@@ -204,13 +204,13 @@
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/jquery.js",
                     "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/x.js"
                 ],
-                "to": "/online/static/js/2LFwGkHiZ.js",
+                "to": "/online/static/js/cxfzXiw59.js",
                 "original": null,
                 "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
                 "modular": false,
                 "placeholder": "base:common",
                 "obscure": true,
-                "hashId": "2LFwGkHiZ"
+                "hashId": "cxfzXiw59"
             }
         },
         "css": {
@@ -273,7 +273,7 @@
             "to": "/online/page/index.html",
             "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/page/index.html",
             "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/page",
-            "hashId": "eZ6aGS2LS"
+            "hashId": "DQzJme4Pz"
         },
         "/page/index.tpl": {
             "type": "tpl",
