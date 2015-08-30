@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>soi example</title>
-    <link type="text/css" rel="stylesheet" href="/online/static/css/JkQiSDfKB.css" />
-    <link type="text/css" rel="stylesheet" href="/online/static/css/_aFDldJV3.css" />
+    <link type="text/css" rel="stylesheet" href="/soi/samples/release/build/online/static/css/YHhu1iQip.css" />
+    <link type="text/css" rel="stylesheet" href="/soi/samples/release/build/online/static/css/_aFDldJV3.css" />
 </head>
 <body>
     <header></header>
@@ -17,8 +17,8 @@
     <script>
         var apidomain = 'http://zhida.baidu.com:8080';
     </script>
-    <script type="text/javascript" src="/online/static/js/4iPL0pQxu.js:common"></script>
+    <script type="text/javascript" src="/soi/samples/release/build/online/static/js/zyLUbNn2O.js"></script>
     <script type="text/javascript" src="js@base"></script>
-    <script type="text/javascript" src="/online/static/js/8GsejIkmb.js"></script>
+    <script type="text/javascript" src="js@app"></script>
 </body>
 </html>

@@ -16,7 +16,7 @@ soi.config.extend({
       obscure: true,
       charset: 'utf8',
 
-      domain: '/',
+      domain: '/soi/samples/release/build/',
       virtualRootDir: './src/',
       distRootDir: './build/',
       mapTo: './build/map.json',
@@ -61,15 +61,15 @@ soi.config.extend({
         js: [
           {
             modular     : 'amd',
-            entrance    : 'static/js/app.js',
+            entrance    : 'static/js/amd.js',
             to          : '/online/static/js/',
-            placeholder : 'app'
+            placeholder : 'amd'
           },
           {
             modular     : 'amd',
-            entrance    : 'static/js/index.js',
+            entrance    : 'static/js/cmd.js',
             to          : '/online/static/js/',
-            placeholder : 'base'
+            placeholder : 'cmd'
           },
           {
             modular     : 'normal',

@@ -3,8 +3,8 @@
  * @author Leo.Zhang(zmike86)
  */
 
-require(['./a', './b', './cal'],
-    function(a, b, cal) {
+require(['./mod_A', './mod_B', './mod_C'],
+    function (a, b, cal) {
 
       'use strict';
 

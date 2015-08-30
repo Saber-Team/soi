@@ -930,8 +930,8 @@
    * var mod = require('widget/a');
    * or
    * require(['widget/a'], function(wid_a) {
-   *   wid_a.init();
-   * });
+ *   wid_a.init();
+ * });
    * @param {!Array|String} deps
    * @param {Function?} cb
    */

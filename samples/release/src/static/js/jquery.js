@@ -1,1 +1,1 @@
-var jquery = $;
+var jquery = {};
