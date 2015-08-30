@@ -1,4 +1,4 @@
-/*define(function (require, exports, module) {
+define(function (require, exports, module) {
 
   var lib = require('../vendor/lib');
   var url = kerneljs.url('../swf/ZeroClipboard.swf');
@@ -7,8 +7,8 @@
     name: lib.name,
     url: url
   }
-});*/
-
+});
+/*
 define(['../vendor/lib'], function (lib) {
   var url = kerneljs.url('../swf/ZeroClipboard.swf');
 
@@ -16,4 +16,4 @@ define(['../vendor/lib'], function (lib) {
     name: lib.name,
     url: url
   }
-});
+});*/

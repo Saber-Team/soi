@@ -37,10 +37,10 @@
             "encoding": "utf8",
             "key": "/static/js/b.js",
             "from": "/static/js/b.js",
-            "to": "/online/static/js/B_dOa8kjT.js",
+            "to": "/online/static/js/dQjgOvUju.js",
             "original": "/Users/baidu/Git/soi/samples/release/src/static/js/b.js",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
-            "hashId": "B_dOa8kjT"
+            "hashId": "dQjgOvUju"
         },
         "/static/js/cal.js": {
             "type": "js",
@@ -170,13 +170,13 @@
                     "/Users/baidu/Git/soi/samples/release/src/static/js/cal.js",
                     "/Users/baidu/Git/soi/samples/release/src/static/js/app.js"
                 ],
-                "to": "/online/static/js/xDEXBOL9p.js",
+                "to": "/online/static/js/emzPAYURM.js",
                 "original": null,
                 "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "app",
                 "obscure": true,
-                "hashId": "xDEXBOL9p"
+                "hashId": "emzPAYURM"
             },
             "auto_combined_1": {
                 "type": "js",
@@ -188,13 +188,13 @@
                     "/Users/baidu/Git/soi/samples/release/src/static/js/b.js",
                     "/Users/baidu/Git/soi/samples/release/src/static/js/index.js"
                 ],
-                "to": "/online/static/js/tDs3GyRby.js",
+                "to": "/online/static/js/vIYt7MpH6.js",
                 "original": null,
                 "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "base",
                 "obscure": true,
-                "hashId": "tDs3GyRby"
+                "hashId": "vIYt7MpH6"
             },
             "auto_combined_2": {
                 "type": "js",
@@ -204,13 +204,13 @@
                     "/Users/baidu/Git/soi/samples/release/src/static/js/jquery.js",
                     "/Users/baidu/Git/soi/samples/release/src/static/js/x.js"
                 ],
-                "to": "/online/static/js/oaO2d3vcj.js",
+                "to": "/online/static/js/2LFwGkHiZ.js",
                 "original": null,
                 "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
                 "modular": false,
                 "placeholder": "base:common",
                 "obscure": true,
-                "hashId": "oaO2d3vcj"
+                "hashId": "2LFwGkHiZ"
             }
         },
         "css": {
@@ -273,7 +273,7 @@
             "to": "/online/page/index.html",
             "original": "/Users/baidu/Git/soi/samples/release/src/page/index.html",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/page",
-            "hashId": "J7I8qaxLe"
+            "hashId": "eZ6aGS2LS"
         },
         "/page/index.tpl": {
             "type": "tpl",
