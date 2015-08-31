@@ -7,11 +7,11 @@
     * more testable code
     * js & css 循环引用处理
     * 批量js打包，不依赖amd (done)
-* 下版本1.0+
+* 下版本1.0
     * 模板引擎支持
     * soi-linter插件开发
     * 配置文件glob支持 (done)
-* 2.0
+* 1.0+
     * soi-server插件开发
     * soi-template-parser插件开发
     * 提供soi [--startserver|-ss] --port 9220功能
