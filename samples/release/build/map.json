@@ -6,8 +6,8 @@
             "key": "/static/img/banner.png",
             "from": "/static/img/banner.png",
             "to": "/soi/samples/release/build/online/static/img/Zx6u2uSOV.png",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/img/banner.png",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/img",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/img/banner.png",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/img",
             "hashId": "Zx6u2uSOV",
             "shortHashId": "sq7EG"
         }
@@ -19,8 +19,8 @@
             "key": "/static/vendor/lib.js",
             "from": "/static/vendor/lib.js",
             "to": "/soi/samples/release/build/online/static/js/ZmTp66++j.js",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/vendor/lib.js",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/vendor/lib.js",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
             "hashId": "ZmTp66++j",
             "shortHashId": "yqQTj"
         },
@@ -30,8 +30,8 @@
             "key": "/static/js/mod_A.js",
             "from": "/static/js/mod_A.js",
             "to": "/soi/samples/release/build/online/static/js/a0fjwkkEr.js",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_A.js",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/js/mod_A.js",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
             "hashId": "a0fjwkkEr",
             "shortHashId": "le+F+"
         },
@@ -41,8 +41,8 @@
             "key": "/static/js/mod_B.js",
             "from": "/static/js/mod_B.js",
             "to": "/soi/samples/release/build/online/static/js/d+nSa7yNs.js",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_B.js",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/js/mod_B.js",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
             "hashId": "d+nSa7yNs",
             "shortHashId": "2mVNX"
         },
@@ -52,8 +52,8 @@
             "key": "/static/js/mod_C.js",
             "from": "/static/js/mod_C.js",
             "to": "/soi/samples/release/build/online/static/js/jiSp_TUgN.js",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_C.js",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/js/mod_C.js",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
             "hashId": "jiSp_TUgN",
             "shortHashId": "52Ynt"
         },
@@ -63,8 +63,8 @@
             "key": "/static/js/amd.js",
             "from": "/static/js/amd.js",
             "to": "/soi/samples/release/build/online/static/js/WCpmZbxTA.js",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/amd.js",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/js/amd.js",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
             "hashId": "WCpmZbxTA",
             "shortHashId": "3wD0g"
         },
@@ -74,8 +74,8 @@
             "key": "/static/js/cmd_A.js",
             "from": "/static/js/cmd_A.js",
             "to": "/soi/samples/release/build/online/static/js/bOAiNW7TH.js",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd_A.js",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/js/cmd_A.js",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
             "hashId": "bOAiNW7TH",
             "shortHashId": "p0ucM"
         },
@@ -85,8 +85,8 @@
             "key": "/static/js/cmd_B.js",
             "from": "/static/js/cmd_B.js",
             "to": "/soi/samples/release/build/online/static/js/iddPJy8KN.js",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd_B.js",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/js/cmd_B.js",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
             "hashId": "iddPJy8KN",
             "shortHashId": "LTwns"
         },
@@ -96,8 +96,8 @@
             "key": "/static/js/cmd_C.js",
             "from": "/static/js/cmd_C.js",
             "to": "/soi/samples/release/build/online/static/js/xO1A2zUoJ.js",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd_C.js",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/js/cmd_C.js",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
             "hashId": "xO1A2zUoJ",
             "shortHashId": "Ct__o"
         },
@@ -107,8 +107,8 @@
             "key": "/static/js/cmd.js",
             "from": "/static/js/cmd.js",
             "to": "/soi/samples/release/build/online/static/js/D6B8FgH06.js",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd.js",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/js/cmd.js",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
             "hashId": "D6B8FgH06",
             "shortHashId": "RvUrf"
         },
@@ -118,8 +118,8 @@
             "key": "/static/js/jquery.js",
             "from": "/static/js/jquery.js",
             "to": "/soi/samples/release/build/online/static/js/YRtVRgO7x.js",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/jquery.js",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/js/jquery.js",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
             "hashId": "YRtVRgO7x",
             "shortHashId": "RW1B9"
         },
@@ -129,8 +129,8 @@
             "key": "/static/js/x.js",
             "from": "/static/js/x.js",
             "to": "/soi/samples/release/build/online/static/js/bH1lrmC8W.js",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/x.js",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/js/x.js",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
             "hashId": "bH1lrmC8W",
             "shortHashId": "j7P9z"
         }
@@ -142,8 +142,8 @@
             "key": "/static/css/reset.css",
             "from": "/static/css/reset.css",
             "to": "/soi/samples/release/build/online/static/css/BCfiGZhlo.css",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/reset.css",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/css/reset.css",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
             "hashId": "BCfiGZhlo",
             "shortHashId": "IjaOp"
         },
@@ -153,8 +153,8 @@
             "key": "/static/css/b.css",
             "from": "/static/css/b.css",
             "to": "/soi/samples/release/build/online/static/css/yWGaA7Lrb.css",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/b.css",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/css/b.css",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
             "hashId": "yWGaA7Lrb",
             "shortHashId": "2n6we"
         },
@@ -164,8 +164,8 @@
             "key": "/static/css/main.css",
             "from": "/static/css/main.css",
             "to": "/soi/samples/release/build/online/static/css/_FYowJGYP.css",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/main.css",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/css/main.css",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
             "hashId": "_FYowJGYP",
             "shortHashId": "rce9K"
         },
@@ -175,8 +175,8 @@
             "key": "/static/css/x.css",
             "from": "/static/css/x.css",
             "to": "/soi/samples/release/build/online/static/css/7hzIygKOy.css",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/x.css",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/css/x.css",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
             "hashId": "7hzIygKOy",
             "shortHashId": "CIR99"
         },
@@ -186,8 +186,8 @@
             "key": "/static/css/a.css",
             "from": "/static/css/a.css",
             "to": "/soi/samples/release/build/online/static/css/yc9MhEb6X.css",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/a.css",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/css/a.css",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
             "hashId": "yc9MhEb6X",
             "shortHashId": "uETVA"
         }
@@ -199,8 +199,8 @@
             "key": "/static/swf/ZeroClipboard.swf",
             "from": "/static/swf/ZeroClipboard.swf",
             "to": "/soi/samples/release/build/online/static/swf/ZeroClipboard.swf",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/swf/ZeroClipboard.swf",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/swf",
+            "original": "/Users/baidu/Git/soi/samples/release/src/static/swf/ZeroClipboard.swf",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/swf",
             "hashId": "Qs7G5_SJs",
             "shortHashId": "im8gp"
         }
@@ -212,15 +212,15 @@
                 "encoding": "utf8",
                 "key": "auto_combined_0",
                 "from": [
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/vendor/lib.js",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_A.js",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_B.js",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/mod_C.js",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/amd.js"
+                    "/Users/baidu/Git/soi/samples/release/src/static/vendor/lib.js",
+                    "/Users/baidu/Git/soi/samples/release/src/static/js/mod_A.js",
+                    "/Users/baidu/Git/soi/samples/release/src/static/js/mod_B.js",
+                    "/Users/baidu/Git/soi/samples/release/src/static/js/mod_C.js",
+                    "/Users/baidu/Git/soi/samples/release/src/static/js/amd.js"
                 ],
                 "to": "/soi/samples/release/build/online/static/js/fCTU4oR4G.js",
                 "original": null,
-                "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+                "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "amd",
                 "obscure": true,
@@ -231,15 +231,15 @@
                 "encoding": "utf8",
                 "key": "auto_combined_1",
                 "from": [
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/vendor/lib.js",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd_A.js",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd_B.js",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd_C.js",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/cmd.js"
+                    "/Users/baidu/Git/soi/samples/release/src/static/vendor/lib.js",
+                    "/Users/baidu/Git/soi/samples/release/src/static/js/cmd_A.js",
+                    "/Users/baidu/Git/soi/samples/release/src/static/js/cmd_B.js",
+                    "/Users/baidu/Git/soi/samples/release/src/static/js/cmd_C.js",
+                    "/Users/baidu/Git/soi/samples/release/src/static/js/cmd.js"
                 ],
                 "to": "/soi/samples/release/build/online/static/js/zkT8UQe41.js",
                 "original": null,
-                "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+                "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
                 "placeholder": "cmd",
                 "obscure": true,
@@ -250,12 +250,12 @@
                 "encoding": "utf8",
                 "key": "auto_combined_2",
                 "from": [
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/jquery.js",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/js/x.js"
+                    "/Users/baidu/Git/soi/samples/release/src/static/js/jquery.js",
+                    "/Users/baidu/Git/soi/samples/release/src/static/js/x.js"
                 ],
                 "to": "/soi/samples/release/build/online/static/js/jb3TT4st0.js",
                 "original": null,
-                "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/js",
+                "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
                 "modular": false,
                 "placeholder": "base:common",
                 "obscure": true,
@@ -268,13 +268,13 @@
                 "encoding": "utf8",
                 "key": "auto_combined_0",
                 "from": [
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/reset.css",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/b.css",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/main.css"
+                    "/Users/baidu/Git/soi/samples/release/src/static/css/reset.css",
+                    "/Users/baidu/Git/soi/samples/release/src/static/css/b.css",
+                    "/Users/baidu/Git/soi/samples/release/src/static/css/main.css"
                 ],
                 "to": "/soi/samples/release/build/online/static/css/YHhu1iQip.css",
                 "original": null,
-                "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
+                "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
                 "modular": true,
                 "placeholder": "app",
                 "obscure": true,
@@ -285,12 +285,12 @@
                 "encoding": "utf8",
                 "key": "auto_combined_1",
                 "from": [
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/b.css",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/x.css"
+                    "/Users/baidu/Git/soi/samples/release/src/static/css/b.css",
+                    "/Users/baidu/Git/soi/samples/release/src/static/css/x.css"
                 ],
                 "to": "/soi/samples/release/build/online/static/css/_aFDldJV3.css",
                 "original": null,
-                "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
+                "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
                 "modular": true,
                 "placeholder": "testa",
                 "obscure": true,
@@ -301,12 +301,12 @@
                 "encoding": "utf8",
                 "key": "auto_combined_2",
                 "from": [
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/a.css",
-                    "/Users/acemood/WorkSpace/Git/soi/samples/release/src/static/css/b.css"
+                    "/Users/baidu/Git/soi/samples/release/src/static/css/a.css",
+                    "/Users/baidu/Git/soi/samples/release/src/static/css/b.css"
                 ],
                 "to": "/soi/samples/release/build/online/static/css/txtv5B_2u.css",
                 "original": null,
-                "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/static/css",
+                "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
                 "placeholder": "",
                 "obscure": true,
                 "hashId": "txtv5B_2u"
@@ -320,8 +320,8 @@
             "key": "/page/amd.html",
             "from": "/page/amd.html",
             "to": "/soi/samples/release/build/online/page/amd.html",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/page/amd.html",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/page",
+            "original": "/Users/baidu/Git/soi/samples/release/src/page/amd.html",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/page",
             "hashId": "k+VXW455f",
             "shortHashId": ""
         },
@@ -331,8 +331,8 @@
             "key": "/page/cmd.html",
             "from": "/page/cmd.html",
             "to": "/soi/samples/release/build/online/page/cmd.html",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/page/cmd.html",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/page",
+            "original": "/Users/baidu/Git/soi/samples/release/src/page/cmd.html",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/page",
             "hashId": "MnXPvqfkg",
             "shortHashId": ""
         },
@@ -342,8 +342,8 @@
             "key": "/page/index.tpl",
             "from": "/page/index.tpl",
             "to": "/soi/samples/release/build/online/page/index.tpl",
-            "original": "/Users/acemood/WorkSpace/Git/soi/samples/release/src/page/index.tpl",
-            "dist": "/Users/acemood/WorkSpace/Git/soi/samples/release/build/online/page",
+            "original": "/Users/baidu/Git/soi/samples/release/src/page/index.tpl",
+            "dist": "/Users/baidu/Git/soi/samples/release/build/online/page",
             "hashId": "lRTOu6r8D",
             "shortHashId": ""
         }
