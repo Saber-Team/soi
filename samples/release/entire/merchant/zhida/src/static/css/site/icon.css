@@ -1,0 +1,74 @@
+.icon {
+	background: url('../../img/site/sprite.png') no-repeat;
+	vertical-align: text-top;
+}
+
+.icon.smile {
+	background-position: 0px 0px;
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+}
+
+.icon.error {
+	background-position: -18px 0px;
+	display: inline-block;
+	height: 18px;
+	width: 17px;
+}
+
+.icon.okay {
+	background-position: -35px 0px;
+	display: inline-block;
+	height: 18px;
+	width: 17px;
+}
+
+.icon.close {
+	background-position: -52px 0px;
+	display: inline-block;
+	height: 11px;
+	width: 11px;
+}
+
+.icon.exclamation {
+	background-position: -63px 0px;
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+}
+
+.icon.gray-exclamation {
+	background-position: -81px 0px;
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+}
+
+.icon.orange-exclamation {
+	background-position: -99px 0px;
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+}
+
+.icon.black-exclamation {
+	background-position: -117px 0px;
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+}
+
+.icon.blue-exclamation {
+	background-position: -135px 0px;
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+}
+
+.icon.green-exclamation {
+	background-position: -153px 0px;
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+}

@@ -1,0 +1,57 @@
+.o-popup {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 99999;
+}
+
+.o-popup .o-popup-mask {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	opacity: 0.4;
+}
+
+.o-popup .o-popup-box {
+	position: absolute;
+	padding: 20px 30px;
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 2px;
+}
+
+.o-popup .o-popup-title {
+	height: 30px;
+	border-bottom: 1px solid #dfe2e3;
+}
+
+.o-popup .o-popup-title h1 {
+	vertical-align: top;
+	line-height: 16px;
+}
+
+.o-popup .o-popup-close {
+	position: absolute;
+	right: 16px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.o-popup .o-popup-body {
+	margin: 10px 0 0 0;
+}
+
+.o-popup .o-popup-btn-group {
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.o-popup .confirm-btn {
+	margin-right: 10px
+}

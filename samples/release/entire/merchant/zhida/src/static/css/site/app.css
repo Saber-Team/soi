@@ -1,0 +1,20 @@
+@import "../../../../../../xlib/css/reset.css";
+@import "../../../../../../xlib/css/widget.css";
+@import "../../../../../../xcom/imageviewer/imageviewer.css";
+@import "../../../../../../xcom/validator/formvalidator.css";
+@import "../../../../../../xcom/popup/popup.css";
+@import "../../../../../../xcom/popup/errorpopup.css";
+@import "../../../../../../xcom/tooltip/tooltip.css";
+@import "../../../../../../xcom/checkboxgroup/checkbox.css";
+@import "../../../../../../xcom/uploader/uploader.css";
+@import "common.css";
+@import "icon.css";
+@import "layout.css";
+@import "state_section.css";
+@import "site_section.css";
+@import "industry_list_table.css";
+@import "verify_ownership_popup.css";
+@import "disabled_site_popup.css";
+
+
+

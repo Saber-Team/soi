@@ -1,0 +1,32 @@
+.step-3 .inform {
+    width: 100%;
+    height: 100px;
+    margin: 60px auto;
+    text-align: center;
+    overflow: visible;
+}
+
+.step-3 .inform h3 {
+    line-height: 42px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.step-3 .inform p {
+    line-height: 24px;
+    font-size: 14px;
+    color: #999;
+}
+
+.step-3 .inform p span {
+    line-height: 24px;
+    font-size: 14px;
+    color: #68a7ff;
+    cursor: pointer;
+}
+
+.step-3 .inform p span:hover {
+
+}
+

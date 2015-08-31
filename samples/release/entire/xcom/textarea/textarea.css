@@ -1,0 +1,87 @@
+/* 表单文本输入域 */
+.o-textarea {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+.o-textarea.error textarea {
+    border: solid 1px #ed5565;
+}
+.o-textarea textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #dfe2e3;
+    border-radius: 2px;
+    padding: 0;
+    resize: none;
+    outline:none;
+
+    font-family: "MicroSoft Yahei";
+    text-indent: 5px;
+    color: #333;
+    font-size: 12px;
+    line-height: 28px;
+}
+.o-textarea textarea+i {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    width: 40px;
+    height: 28px;
+
+    color: #999;
+    font-size: 10px;
+    line-height: 30px;
+    text-align: right;
+}
+/*.o-inputfield .box em {
+    color: #ed5565;
+    font-style: normal;
+}*/
+
+.o-textarea .error {
+    display: none;
+    height: 24px;
+    width: 100%;
+    margin-top: 3px;
+
+    text-align: left;
+    color: #ed5565;
+    font-size: 12px;
+    line-height: 24px;
+
+    z-index: 99;
+}
+.o-textarea.error .error {
+    display: block;
+}
+.o-textarea .tip {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin-top: 3px;
+
+    text-align: left;
+    color: #999;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+/*input placeholder的颜色*/
+.o-textarea input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999;
+}
+.o-textarea input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999;
+    opacity: 1;
+}
+.o-textarea input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999;
+    opacity: 1;
+}
+.o-textarea input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #999;
+}

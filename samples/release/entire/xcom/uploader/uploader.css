@@ -1,0 +1,315 @@
+.o-webuploader {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+
+.o-webuploader .webuploader-container {
+	position: relative;
+	background: #FFFFFF;
+}
+.o-webuploader .webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.o-webuploader .webuploader-pick {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	border: 1px dashed #E2E2E2;
+	width: 120px;
+	height: 90px;
+	color: #333;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.o-webuploader .webuploader-pick .up-icon {
+	width: 25px;
+	height: 25px;
+	background: url('./uploader.png') no-repeat -10px -12px;
+	margin: 20px auto 10px;
+}
+.o-webuploader .webuploader-pick-hover .up-icon { 
+	background-position: -46px -12px;
+}
+
+.o-webuploader .webuploader-pick-hover .up-text {
+	color: #4497FF;
+}
+
+.o-webuploader .webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+
+.o-webuploader .o-filepicker {
+	display: inline-block;
+	vertical-align: top;
+    margin-top: 10px;
+}
+
+.o-thumbnail {
+	display: inline-block;
+	position: relative;
+	border: 2px solid #7EBF33;
+	width: 120px;
+	height: 90px;
+    margin: 10px 50px 20px 0;
+}
+
+.o-thumbnail img {
+	width: 100%;
+	height: 100%;
+}
+
+.o-thumbnail .o-mask{
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.o-thumbnail .o-progress-text {
+	position: absolute;
+	z-index: 100;
+	top: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 14px;
+	width: 100%;
+}
+
+.o-thumbnail .o-progress-bar {
+	z-index: 100;
+	height: 10px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+}
+
+.o-thumbnail .o-progress-bar p {
+	height: 10px;
+	background-color: #7EBF33;
+	margin: 0;
+	width: 0;
+}
+
+.o-thumbnail .o-remove,
+.o-thumbnail .o-hover {
+	display: none;
+}
+
+.o-thumbnail-reset {
+    margin: 0;
+    padding: 0;
+}
+
+.o-thumbnail-120 {
+    width: 120px;
+    height: 120px;
+}
+
+.o-thumbnail-90 {
+    width: 90px;
+    height: 90px;
+}
+
+
+.o-thumbnail-view {
+    border: 1px solid #E2E2E2;
+}
+
+.o-thumbnail-view .o-hover {
+    display: none;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgba(226, 226, 226, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.o-thumbnail-view .o-hover .view-origin {
+    width: 20px;
+    height: 20px;
+    background: url('./uploader.png') no-repeat -155px -16px;
+    position: relative;
+    margin: 5px auto;
+    cursor: pointer;
+    display: block;
+}
+
+.o-upload-done .o-remove,
+.o-upload-error .o-remove{
+	display: none;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: -10px;
+	right: -10px;
+	background: url('./uploader.png') no-repeat -184px -16px;
+	cursor: pointer;
+}
+
+.o-upload-done .o-hover,
+.o-upload-error .o-hover{
+	display: none;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #7EBF33;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.o-upload-done .o-hover span {
+	width: 50%;
+	display: block;
+	float: left;
+	position: relative;
+}
+
+.o-upload-done .o-hover span:first-child:after{
+	content: '';
+	border-right: 1px solid #7EBF33;
+	top: 0;
+	left: 100%;
+	bottom: 0;
+	position: absolute;
+}
+
+.o-upload-done .o-hover .view-origin,
+.o-upload-done .o-hover .re-upload {
+	width: 20px;
+	height: 20px;
+	background: url('./uploader.png') no-repeat;
+	position: relative;
+	margin: 5px auto;
+	cursor: pointer;
+	display: block;
+}
+
+.o-upload-done .o-hover .view-origin {
+	background-position: -155px -16px;
+}
+
+.o-upload-done .o-hover .re-upload {
+	background-position: -212px -16px;
+}
+
+
+.o-upload-done .o-progress-icon{
+	background: url('./uploader.png') no-repeat -76px -12px;
+	width: 35px;
+	height: 25px;
+	top: 50%;
+	left: 50%;
+	margin-top: -15px;
+	margin-left: -18px;
+}
+
+.o-upload-error .o-hover span:first-child {
+	display: none;
+}
+
+.o-upload-error .o-hover span {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.o-upload-error .o-hover .re-upload {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.o-upload-error .o-hover .re-upload:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('./uploader.png') no-repeat -212px -16px;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+.o-upload-error .o-hover .re-upload:after {
+    content: '重新上传';
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-size: 12px;
+    left: 45px;
+    top: 0;
+}
+
+.o-upload-error .o-hover .re-upload .webuploader-pick {
+    width: 120px;
+    height: 30px;
+}
+
+.o-upload-error .o-hover .webuploader-pick + div {
+    z-index: 99;
+}
+
+
+
+/*重新上传样式，*/
+.o-webuploader .o-hover .webuploader-container {
+	position: relative;
+	background-color: transparent;
+}
+
+.o-webuploader .o-hover .webuploader-pick {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border: 0;
+	overflow: inherit;
+	display: inherit;
+	color: inherit;
+}
+
+
+
+/*错误样式*/
+.o-webuploader .o-error {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	font-size: 14px;
+	margin-top: -20px;
+	padding: 12px 16px 12px 40px;
+	background-color: #555555;
+	color: #FFFFFF;
+	border-radius: 3px;
+}
+
+.o-webuploader .o-error:before {
+	content: '!';
+	position: absolute;
+	border-radius: 8px;
+	height: 16px;
+	width: 16px;
+	left: 16px;
+	background-color: #FFF;
+    color: #333;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+}

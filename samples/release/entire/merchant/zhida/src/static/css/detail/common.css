@@ -1,0 +1,167 @@
+html, body {
+    font-family: "MicroSoft Yahei";
+    font-size: 1em;
+    background: #f0f3f4;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*文本颜色和大小*/
+.text-common {
+    font-family: "MicroSoft Yahei";
+    color: #333333;
+    font-size: 16px;
+}
+
+.text-common-sm {
+    font-family: "MicroSoft Yahei";
+    color: #333333;
+    font-size: 14px;
+}
+
+.text-common-xs {
+    font-family: "MicroSoft Yahei";
+    color: #333333;
+    font-size: 12px;
+}
+
+
+.text-gray {
+    font-family: "MicroSoft Yahei";
+    color: #999999;
+    font-size: 16px;
+}
+
+.text-gray-sm {
+    font-family: "MicroSoft Yahei";
+    color: #999999;
+    font-size: 14px;
+}
+
+.text-gray-xs {
+    font-family: "MicroSoft Yahei";
+    color: #999999;
+    font-size: 12px;
+}
+
+.text-blue {
+    font-family: "MicroSoft Yahei";
+    color: #4497FF;
+    font-size: 16px;
+}
+
+.text-blue-sm {
+    font-family: "MicroSoft Yahei";
+    color: #4497FF;
+    font-size: 14px;
+}
+
+.text-blue-xs {
+    font-family: "MicroSoft Yahei";
+    color: #4497FF;
+    font-size: 12px;
+}
+
+
+.btn-gray.text-blue-xs:hover {
+    color: rgba(68, 151, 255, 0.8);
+    -webkit-transition: color 1ms;
+    -moz-transition: color 1ms;
+    -ms-transition: color 1ms;
+    -o-transition: color 1ms;
+    transition: color 1ms;
+}
+
+.text-blue-xs.btn-disabled,
+.text-blue-xs.btn-disabled:hover{
+    color: #CCCCCC;
+}
+
+.padding-left-20 {
+    padding-left: 20px;
+}
+
+
+
+/*右边按钮位置*/
+
+.btn-right {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -20px;
+}
+
+.btn-right .btn-gray {
+    padding: 0 10px;
+    outline: none;
+}
+
+.btn-24 {
+    padding: 0 10px;
+    box-sizing: content-box;
+}
+
+
+
+
+
+/*隐藏, 显示*/
+.hide {
+    display: none;
+}
+
+.show {
+    display: inherit;
+}
+
+
+/*input placeholder的颜色*/
+input::-webkit-input-placeholder { /* WebKit browsers */
+    font-family: "MicroSoft Yahei";
+    color:    #999999;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-family: "MicroSoft Yahei";
+    color:    #999999;
+    opacity:  1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-family: "MicroSoft Yahei";
+    color:    #999999;
+    opacity:  1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-family: "MicroSoft Yahei";
+    color:    #999999;
+}
+
+
+/*提示样式*/
+.tip {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    background-color: #999999;
+    position: relative;
+    cursor: pointer;
+}
+
+.tip:before {
+    content: '?';
+    position: absolute;
+    top: 0;
+    left: 3px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.required {
+    color: #ED5565;
+    margin-right: 3px;
+    visibility: hidden;
+}

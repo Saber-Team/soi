@@ -1,0 +1,97 @@
+.site-section .tool-btn {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+
+.site-section .section-title b {
+    font-size: 12px;
+    color: #999999;
+}
+
+.site-section .section-title a {
+    font-size: 12px;
+}
+
+.form-row .site-notice {
+    width: 858px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.form-row .form-control .site_input {
+    width:270px;
+    margin-right: 9px;
+}
+
+.form-row .form-control .site_text {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.form-row .form-control .verify_read {
+    line-height: 30px;
+    margin: 0 20px;
+}
+
+.upload-notice {
+    color: #999999;
+    font-size: 12px;
+    margin: 12px 0 0 0;
+}
+
+.industry-notice {
+    margin: 18px 0 22px 0;
+    font-size: 12px;
+}
+
+.commit-notice {
+    color: #999999;
+    font-size: 12px;
+    margin: 11px 0 0 137px;
+}
+
+.no-qualification-notice {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.no-need-qualification {
+    float: left;
+    color: #999999;
+    font-size: 12px;
+    margin: 20px 0 0 137px;
+}
+
+#leading_to_builder_tip {
+    font-weight: bold;
+}
+
+#leading_to_builder_tip a {
+    font-weight: bold;
+}
+
+#submit_form .edit-only {
+    display: none;
+}
+
+#submit_form.edit .edit-only {
+    display: block;
+}
+
+#submit_form.edit .edit-only.inline-block {
+    display: inline-block;
+}
+
+#submit_form .read-only {
+    display: block;
+}
+
+#submit_form .read-only.inline-block {
+    display: inline-block;
+}
+
+#submit_form.edit .read-only {
+    display: none;
+}

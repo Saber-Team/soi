@@ -1,6 +1,6 @@
 {
   "name": "soi",
-  "version": "0.10.13",
+  "version": "0.10.14",
   "description": "Build tools for projects using kerneljs as module loader",
   "directories": {
     "test": "tests"

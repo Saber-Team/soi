@@ -1,0 +1,63 @@
+.state-section .form-row {
+    margin-bottom: 0;
+}
+
+.state-section .form-row .form-label {
+    width: 90px;
+}
+
+.form-row {
+    position: relative;
+}
+
+.form-row .state-notice {
+    color: #999999;
+    float: left;
+    padding: 0 18px 0 120px;
+    font-size: 12px;
+    margin-top: 10px;
+    word-break:break-all;
+}
+
+.form-row.audit-failed .state-notice {
+    width: 650px;
+}
+
+.form-row.audit-failed .state-notice-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+    width: 212px;
+}
+
+.state-section .state-text {
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.state-section.proceeding .state-text {
+    color: #ff8326;
+}
+
+.state-section.failed .state-text {
+    color: #ff0800;
+}
+
+.state-section.passed .state-text {
+    color: #7cc123;
+}
+
+.state-section.unused .state-text {
+    color: #999999;
+}
+
+.state-section.failed .revise-immediately-btn {
+    float: right;
+    margin-right:18px;
+    /*position: absolute;
+    right: 18px;
+    bottom: 22px;*/
+}
+

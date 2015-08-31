@@ -1,0 +1,49 @@
+.contact .data-edit {
+    margin-bottom: 20px;
+}
+
+.contact .edit {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.contact .edit:hover {
+    color: rgba(68, 151, 255, 0.8);
+    -webkit-transition: color 1ms;
+    -moz-transition: color 1ms;
+    -ms-transition: color 1ms;
+    -o-transition: color 1ms;
+    transition: color 1ms;
+}
+
+.data-edit input {
+    width: 270px;
+    border: 1px solid #DFE2E3;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2px;
+    text-indent: 10px;
+    margin-right: 10px;
+}
+
+.data-edit .btn-gray {
+    outline: none;
+}
+
+.data-edit .btn-24 {
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+.data-edit .error {
+    display: none;
+}
+
+.has-error input {
+    border: 1px solid #CD5565;
+}
+
+.has-error .error {
+    display: block;
+    color: #CD5565;
+}

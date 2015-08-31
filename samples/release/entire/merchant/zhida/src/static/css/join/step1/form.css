@@ -1,0 +1,180 @@
+/* 表单 */
+.step-1 .form {
+    position: relative;
+}
+
+/* 表单域 */
+.step-1 .form fieldset {
+    position: relative;
+    width: 668px;
+    height: auto;
+    padding: 10px 20px;
+    overflow: visible;
+}
+
+.step-1 .form fieldset > label {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+    width: 150px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+}
+.step-1 .form fieldset.required label:before {
+    content: "*";
+    color: #ed5565;
+}
+.step-1 .form fieldset.separator {
+    padding: 20px;
+    border-bottom: 1px dashed #DFE2E3;
+}
+
+.step-1 .form fieldset .o-inputfield {
+    vertical-align: top;
+    width: 380px;
+    margin-top: 10px;
+}
+
+/* 上传部分 */
+.step-1 .o-thumbnail {
+    margin-bottom: 0;
+}
+.step-1 .f-busLicUrl .f-content,
+.step-1 .f-orgInsUrl .f-content,
+.step-1 .f-legalIdUrl .f-content,
+.step-1 .f-legalIdBackUrl .f-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 450px;
+    margin-top: 10px;
+    overflow: visible;
+}
+
+.step-1 .f-busLicUrl .f-content .tip,
+.step-1 .f-orgInsUrl .f-content .tip,
+.step-1 .f-legalIdUrl .f-content .tip,
+.step-1 .f-legalIdBackUrl .f-content .tip {
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+}
+
+.step-1 .f-busLicUrl .f-content .tip a,
+.step-1 .f-orgInsUrl .f-content .tip a,
+.step-1 .f-legalIdUrl .f-content .tip a,
+.step-1 .f-legalIdBackUrl .f-content .tip a {
+    font-size: 12px;
+    color: #68a7ff;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.step-1 .f-busLicUrl .f-content .sample,
+.step-1 .f-orgInsUrl .f-content .sample,
+.step-1 .f-legalIdUrl .f-content .sample,
+.step-1 .f-legalIdBackUrl .f-content .sample {
+    display: none;
+    position: absolute;
+}
+
+.step-1 .f-busLicUrl .f-content .error,
+.step-1 .f-orgInsUrl .f-content .error,
+.step-1 .f-legalIdUrl .f-content .error,
+.step-1 .f-legalIdBackUrl .f-content .error {
+    display: none;
+    height: 24px;
+    width: 100%;
+    margin-top: 3px;
+
+    text-align: left;
+    color: #ED5565;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+/* 邮箱部分和手机验证码 */
+.step-1 .form fieldset.f-email .f-content,
+.step-1 .form fieldset.f-phone .f-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+    margin-top: 10px;
+}
+.step-1 .form fieldset.f-email .f-content .view,
+.step-1 .form fieldset.f-phone .f-content .view {
+    font-size: 12px;
+    line-height: 30px;
+}
+.step-1 .form fieldset.f-email .f-content .view div,
+.step-1 .form fieldset.f-phone .f-content .view div {
+    display: inline-block;
+    width: auto;
+    max-width: 340px;
+    height: 30px;
+
+    color: #444;
+    text-indent: 10px;
+}
+.step-1 .form fieldset.f-email .f-content .view span,
+.step-1 .form fieldset.f-phone .f-content .view span {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+
+    text-align: center;
+    color: #68a7ff;
+    cursor: pointer;
+}
+
+.step-1 .form fieldset.f-email .f-content .edit,
+.step-1 .form fieldset.f-phone .f-content .edit {
+    font-size: 12px;
+    line-height: 30px;
+}
+.step-1 .form fieldset.f-email .f-content .edit [data-name="email"],
+.step-1 .form fieldset.f-phone .f-content .edit [data-name="phone"] {
+    width: 264px;
+    margin-top: 0;
+    margin-right: 10px;
+}
+.step-1 .form fieldset.f-email .f-content .edit .btn-30,
+.step-1 .form fieldset.f-phone .f-content .edit .btn-30 {
+    font-size: 12px;
+    color: #68a7ff;
+}
+.step-1 .form fieldset.f-email .f-content .edit .btn-30.btn-disabled,
+.step-1 .form fieldset.f-phone .f-content .edit .btn-30.btn-disabled {
+    color: #ccc;
+}
+.step-1 .form fieldset.f-email .f-content .edit [data-name="email-qrcode"],
+.step-1 .form fieldset.f-phone .f-content .edit [data-name="phone-qrcode"] {
+    margin-top: 30px;
+}
+
+/* 同意 */
+.step-1 .form fieldset.f-agree {
+    margin-top: 10px;
+}
+.step-1 .form fieldset.f-agree > label {
+    visibility: hidden;
+}
+.step-1 .form fieldset.f-agree .f-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+}
+.step-1 .form fieldset.f-agree .f-content a {
+    color: #68a7ff;
+    text-decoration: none;
+}
+
+/* 按钮 */
+.step-1 .form .buttons {
+    width: 176px;
+    margin-left: 170px;
+}
+.step-1 .form .buttons div:first-child {
+    margin-right: 17px;
+}

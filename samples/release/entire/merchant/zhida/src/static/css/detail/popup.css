@@ -1,0 +1,212 @@
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    font-family: "MicroSoft Yahei";
+}
+
+.popup .popup-mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup .popup-box {
+    position: absolute;
+    padding: 20px 30px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    width: 540px;
+    top: 50%;
+    left: 50%;
+    margin: -201px 0 0 -300px;
+}
+
+.popup .popup-title {
+    height: 30px;
+    border-bottom: 1px solid #dfe2e3;
+}
+
+.popup .popup-title h1 {
+    vertical-align: top;
+    line-height: 1em;
+}
+
+.popup .popup-close {
+    position: absolute;
+    right: 16px;
+    top: 15px;
+    width: 11px;
+    height: 14px;
+    cursor: pointer;
+    display: inline-block;
+    color: #999999;
+}
+
+.popup .popup-close:after {
+    content: 'x';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+}
+
+.popup .popup-close:hover {
+    color: #ED5565;
+}
+
+.popup .popup-body {
+    margin: 10px 0 0 0;
+}
+
+.popup .popup-btn-group {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.popup .confirm-btn {
+    margin-right: 10px;
+    outline: none;
+}
+
+.popup .cancel-btn {
+    outline: none;
+}
+
+.popup .warning {
+    color: #999999;
+    border: 1px solid #F9E4B9;
+    border-radius: 2px;
+    background-color: #FCEFD4;
+    padding: 10px;
+}
+
+.popup .error-box {
+    border: 1px solid #F7D0D4;
+    background-color: #FBF0F1;
+    text-align: center;
+    color: #ED5565;
+    font-size: 12px;
+    padding: 10px 0;
+    border-radius: 2px;
+    display: none;
+}
+
+.popup .error-box .icon {
+    background-color: #ED5565;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    text-align: center;
+    display: inline-block;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.popup .error-box .text {}
+
+.popup .warning h3 {
+    font-size: 14px;
+    color: #FF9900;
+    margin: 0;
+    font-weight: bold;
+}
+
+.popup .warning p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 6px;
+}
+
+
+.popup .form-row {
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.popup .form-row:last-child {
+    margin-top: 7px;
+}
+
+
+.popup .form-row .form-label{
+    float: left;
+    line-height: 30px;
+    font-size: 14px;
+    width: 100px;
+    text-align: right;
+    display: block;
+}
+
+.form-row .form-label .required {
+    color: #ed5565;
+    visibility: visible;
+}
+
+.popup .form-row .form-control {
+    float: left;
+    display: block;
+    width: 440px;
+}
+
+
+.popup .form-control  .disabled-reason {
+    vertical-align: bottom;
+    height: 98px;
+    width: 432px;
+    border: 1px solid #DFE2E3;
+    border-radius: 2px;
+    resize: none;
+    font-size: 14px;
+    outline: none;
+}
+
+.popup .form-control .vcode {
+    width: 147px;
+    border: 1px solid #DFE2E3;
+    border-radius: 2px;
+    text-indent: 5px;
+    height: 30px;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.popup .form-control .validate-code {
+    line-height: 32px;
+    margin-left: 10px;
+}
+
+.popup .form-control .refresh-code {
+    line-height: 30px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.popup .error {
+    visibility: hidden;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.popup .has-error .vcode,
+.popup .has-error .disabled-reason{
+    border: 1px solid #CD5565;
+}
+
+.has-error .error {
+    visibility: visible;
+    color: #CD5565;
+}
+

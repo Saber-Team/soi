@@ -1,0 +1,66 @@
+.state {
+
+}
+
+
+.state .state-row {
+    overflow: hidden;
+    line-height: 24px;
+}
+
+.state .website {
+    padding: 16px 20px 0;
+    position: relative;
+}
+
+.website .btn-right {
+    margin-top: -5px;
+}
+
+.state .no-website {
+    padding: 20px 40px 0;
+    position: relative;
+}
+
+
+.no-website a {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.no-website a:hover {
+    color: rgba(68, 151, 255, 0.8);
+}
+
+.state-row .left {
+    width: 90px;
+    float: left;
+    text-align: right;
+}
+
+
+.state-row .right {
+    float: left;
+    width: 650px;
+    margin-left: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-spacing: normal;
+}
+
+.state-row .left-offset {
+    margin-left: 105px;
+}
+
+/*直达号或者直达站点三种审核状态*/
+.success {
+    color: #7cc123;
+}
+
+.failure {
+    color: #FF0800;
+}
+
+.processing {
+    color: #FF7800;
+}

@@ -1,0 +1,107 @@
+/* 组织类型 */
+.step-1 .form fieldset .slider {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    width: 275px;
+    height: 30px;
+    border: 1px solid #DFE2E3;
+    border-radius: 2px;
+    background: #f6f8f9;
+    color: #569fff;
+    font-size: 12px;
+    line-height: 30px;
+}
+.step-1 .form fieldset .slider span.actived {
+    color: #999999;
+    cursor: default;
+    background: #fff;
+}
+.step-1 .form fieldset .slider span:first-child {
+    display: inline-block;
+    width: 124px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.step-1 .form fieldset .slider span:last-child {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-left: 1px solid #DFE2E3;
+    cursor: pointer;
+}
+
+/* 提示信息 */
+.step-1 .form fieldset .quote {
+    position: absolute;
+    right: 240px;
+    top: 39px;
+    width: 12px;
+    height: 12px;
+    cursor: default;
+    background: #999999;
+    border-radius: 6px;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 12px;
+}
+.step-1 .form fieldset .quote + .tooltip {
+    position: absolute;
+    right: -60px;
+    top: 19px;
+    display: none;
+    width: 266px;
+    height: 144px;
+    background: #ffffff;
+    border: 1px solid #DFE2E3;
+    border-radius: 6px;
+    padding: 8px 8px;
+
+    z-index: 999;
+}
+.step-1 .form fieldset .quote:hover + .tooltip {
+    display: block;
+}
+
+.step-1 .form fieldset .tooltip:before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    content: "";
+    left: -6px; top: 20px;
+
+    background: #ffffff;
+    border: 1px solid #DFE2E3;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.step-1 .form fieldset .tooltip p {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    color: #999999;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+}
+.step-1 .form fieldset .tooltip p.separator {
+    border-bottom: 1px dashed #DFE2E3;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+.step-1 .form fieldset .tooltip p em {
+    font-weight: bold;
+    color: #444;
+    margin-right: 3px;
+}

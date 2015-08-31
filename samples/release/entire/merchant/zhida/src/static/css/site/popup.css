@@ -1,0 +1,57 @@
+.popup {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 99999;
+}
+
+.popup .popup-mask {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	opacity: 0.4;
+}
+
+.popup .popup-box {
+	position: absolute;
+	padding: 20px 30px;
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 2px;
+}
+
+.popup .popup-title {
+	height: 30px;
+	border-bottom: 1px solid #dfe2e3;
+}
+
+.popup .popup-title h1 {
+	vertical-align: top;
+	line-height: 16px;
+}
+
+.popup .popup-close {
+	position: absolute;
+	right: 16px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.popup .popup-body {
+	margin: 10px 0 0 0;
+}
+
+.popup .popup-btn-group {
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.popup .confirm-btn {
+	margin-right: 10px
+}

@@ -1,0 +1,52 @@
+/* 复选样式 默认行内块级元素，高度20px，字体大小12px */
+.o-checkbox {
+    position: relative;
+    display: inline-block;
+    color: rgb(71, 71, 71);
+    font-size: 12px;
+    height: 20px;
+}
+
+.o-checkbox input[type=checkbox] {
+    display: none;
+}
+
+.o-checkbox label {
+    position: relative;
+    padding-left: 25px;
+    margin: 0 auto;
+    line-height: 20px;
+}
+.o-checkbox label:before {
+    display: block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0; top: 1px;
+    background: rgb(255, 255, 255);
+    border: solid 1px rgb(208, 210, 211);
+}
+.o-checkbox label:after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: 3px; top: 4px;
+
+    width: 8px;
+    height: 4px;
+    background: transparent;
+    border: 3px solid rgb(68, 151, 255);
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.o-checkbox input:checked + label:after {
+    display: block;
+}

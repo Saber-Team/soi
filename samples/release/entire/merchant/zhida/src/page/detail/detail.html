@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            background: #f0f3f4;
+        }
+        .framework-page {
+            position: relative;
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        /* 左侧导航 */
+        .framework-page .framework-left {
+            position: fixed;
+            display: block;
+            top: 45px;
+            width: 180px;
+            height: 500px;
+            background: #1c94c4;
+        }
+        .framework-page .framework-navbar {
+            height: 100%;
+        }
+        /* 右侧内容 */
+        .framework-page .framework-right {
+            position: relative;
+            display: block;
+            float: right;
+            width: 1000px;
+            margin-top: 45px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="framework-page">
+    <aside class="framework-left framework-navbar" id="nav-bar"></aside>
+    <script type="text/javascript" src="__NAVBAR__/side/bar/menulist?app_id={{$app_id}}"></script>
+    <script type="text/javascript">
+        var navbar = new Navbar({
+            container: document.getElementById('nav-bar')
+        });
+    </script>
+    <div class="framework-right" id="main-content">
+        <!-- zhidahao information start -->
+        <link rel="stylesheet" href="../../static/css/detail/app.css"/>
+        <header class="info-header text-common-sm">
+            直达号基本信息
+        </header>
+        <section class="info-box state">
+            <div class="info-box-header">
+                <div class="btn-right">
+                    <a class="btn-24 btn-gray text-blue-xs" href="#">立即修改</a>
+                </div>
+                <div class="state-row text-common-sm">
+                    <div class="left">直达号状态</div>
+                    <div class="right success">已上线</div>
+                </div>
+                <div class="state-row">
+                    <div class="right left-offset text-gray-xs">
+                        <span class="text-common-xs">资质信息&nbsp;&nbsp;</span>资质信息我是问题，我是问题我我是问题，我是问题我我是问题，
+                        我是问题我我是问题，我是问题我我是问、题，我是问题 我是问题我
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="website hide">
+                <!-- 已上线 -->
+                <div class="state-row text-common-sm hide">
+                    <div class="left">直达站点</div>
+                    <div class="right success">已上线</div>
+                    <div class="btn-right">
+                        <button class="btn-24 btn-gray text-blue-xs">查看</button>
+                    </div>
+                </div>
+
+                <!-- 未提交 -->
+                <div class="state-row text-common-sm hide">
+                    <div class="left">直达站点</div>
+                    <div class="right text-gray-sm">未提交</div>
+                    <div class="btn-right">
+                        <button class="btn-24 btn-gray text-blue-xs">完善提交</button>
+                    </div>
+                </div>
+
+                <!-- 直达站点审核中 -->
+                <div class="state-row text-common-sm hide">
+                    <div class="left">直达站点</div>
+                    <div class="right processing">审核中</div>
+                </div>
+                <div class="state-row hide">
+                    <div class="right left-offset text-gray-xs">
+                        审核结果会再3个工作日内（节假日顺延）以邮件（lih******2@123.com）短信（172******123）系统消息的提示方式通知您
+                    </div>
+
+                </div>
+
+                <!-- 直达站点审核未通过 -->
+                <div class="state-row text-common-sm">
+                    <div class="left">直达站点</div>
+                    <div class="right failure">审核不通过</div>
+                </div>
+                <div class="state-row">
+                    <div class="right left-offset text-gray-xs">
+                        资质信息 我是问题，我是问题我我是问题，我是问题我我是问题，
+                        我是问题我我是问题，我是问题我我是问、题，我是问题 我是问题我
+                    </div>
+
+                    <div class="btn-right">
+                        <button class="btn-24 btn-gray text-blue-xs">立即修改</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="no-website text-gray-xs">
+                <span>您可以继续丰富直达号的服务内容</span>
+                <a class="btn-24 btn-gray text-blue-xs">去开店/建站</a>
+                <a class="text-blue-xs">我已有移动店铺/站点</a>
+            </div>
+        </section>
+
+        <section class="info-box zhida">
+            <div class="info-box-header text-common">
+                直达号信息
+                <div class="btn-right">
+                    <button class="btn-24 btn-gray rem-zhida text-blue-xs">下线</button>
+                </div>
+            </div>
+
+            <div class="box-row">
+                <div class="box-left text-common-sm">直达号名称:</div>
+                <div class="box-right text-gray-xs">我是名称</div>
+            </div>
+
+            <div class="box-row">
+                <div class="box-left text-common-sm">直达号简介:</div>
+                <div class="box-right text-gray-xs">我是直达号简介我是直达号简介我是直达号简介我是直达号简介我是直达号简介我是直达号简介我是直达号简介我是直达号简介</div>
+            </div>
+
+            <div class="box-row">
+                <div class="box-left text-common-sm">直达号LOGO:</div>
+                <div class="box-right text-gray-xs">
+                    <img src="../../static/img/detail/logo.png" class="logo" alt=""/>
+
+                </div>
+            </div>
+
+            <div class="box-row">
+                <div class="box-left text-common-sm">直达号二维码:</div>
+                <div class="box-right text-gray-xs">
+                    <img src="../../static/img/detail/qrcode.png" class="qrcode" alt=""/>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-box enterprise">
+            <div class="info-box-header text-common">
+                资质信息
+                <div class="btn-right">
+                    <a class="btn-24 btn-gray text-blue-xs btn-disabled">修改</a>
+                </div>
+            </div>
+
+            <div class="box-row text-gray-xs ssg">您的资质已通过百度推广的实名V认证，在直达号平台免认证</div>
+
+            <div class="box-row">
+                <div class="box-left text-common-sm">企业信息:</div>
+                <div class="box-right text-gray-xs">北京维塔科技有限公司</div>
+            </div>
+
+            <div class="more">
+                <div class="box-row">
+                    <div class="box-left text-common-sm">营业执照扫描件:</div>
+                    <div class="box-right text-gray-xs">
+                        <img src="../../static/img/detail/logo.png" alt=""/>
+                    </div>
+                </div>
+
+                <div class="box-row">
+                    <div class="box-left text-common-sm">营业执照注册码:</div>
+                    <div class="box-right text-gray-xs">1287282918231</div>
+                </div>
+
+                <div class="box-row">
+                    <div class="box-left text-common-sm">运营者身份证扫描件:</div>
+                    <div class="box-right text-gray-xs">
+                        <img src="../../static/img/detail/logo.png" alt=""/>
+                    </div>
+                    <div class="box-left-offset box-right text-gray-sm">
+                        <img src="../../static/img/detail/logo.png" alt=""/>
+                    </div>
+                </div>
+
+                <div class="box-row">
+                    <div class="box-left text-common-sm">运营者姓名:</div>
+                    <div class="box-right text-gray-xs">1287282918231</div>
+                </div>
+
+                <div class="box-row">
+                    <div class="box-left text-common-sm">运营者身份证号:</div>
+                    <div class="box-right text-gray-xs">1287282918231</div>
+                </div>
+                <div class="box-row text-common-sm">
+                    <div class="box-left">运营者邮箱:</div>
+                    <div class="box-right text-gray-xs email">
+                        12sdfe@baidu.com
+                    </div>
+                </div>
+                <div class="box-row text-common-sm">
+                    <div class="box-left">运营者手机:</div>
+                    <div class="box-right text-gray-xs mobile">
+                        17809877890
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle show-more text-blue-xs">展开详情</div>
+        </section>
+
+        <section class="info-box contact">
+            <div class="info-box-header text-common">
+                运营者联系信息
+            </div>
+            <div class="box-row text-common-sm">
+                <div class="box-left"><span class="required">*</span>运营者邮箱:</div>
+                <div class="box-right text-gray-xs email-info">
+                    <span class="email">12sdfe@baidu.com</span> <span class="edit text-blue-xs">修改</span>
+                </div>
+                <div class="box-right text-gray-xs email-edit hide">
+                    <div class="data-edit">
+                        <input type="email" class="text-common-xs" placeholder="请输入邮箱地址" value=""/>
+                        <button class="btn-30 btn-gray text-blue-xs send-email">发送验证码</button>
+                        <div class="error">错误消息</div>
+                    </div>
+
+                    <div class="data-edit">
+                        <input type="text" class="text-common-xs" placeholder="请输入您收到的邮箱验证码" value=""/>
+                        <div class="error">错误消息</div>
+                    </div>
+
+                    <div class="data-edit">
+                        <button class="btn-24 btn-gray text-blue-xs email-finish">完成</button>
+                        <button class="btn-24 btn-gray text-blue-xs email-cancel">取消</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-row text-common-sm">
+                <div class="box-left"><span class="required">*</span>运营者手机:</div>
+                <div class="box-right text-gray-xs mobile-info">
+                    <span class="mobile">18023121234</span> <span class="edit text-blue-xs">修改</span>
+                </div>
+                <div class="box-right text-gray-xs mobile-edit hide">
+                    <div class="data-edit">
+                        <input type="tel" class="text-common-xs" placeholder="请输入手机号码" value=""/>
+                        <button class="btn-30 btn-gray text-blue-xs send-msg">发送验证码</button>
+                        <div class="error">错误消息</div>
+                    </div>
+
+                    <div class="data-edit">
+                        <input type="text" class="text-common-xs" placeholder="请输入您收到的手机验证码" value=""/>
+                        <div class="error">错误消息</div>
+                    </div>
+
+                    <div class="data-edit">
+                        <button class="btn-24 btn-gray text-blue-xs mobile-finish">完成</button>
+                        <button class="btn-24 btn-gray text-blue-xs mobile-cancel">取消</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-box app">
+            <div class="info-box-header">
+                应用信息 <span class="tip"></span>
+            </div>
+
+            <div class="box-row">
+                <div class="box-left text-common-sm">APPID:</div>
+                <div class="box-right text-gray-xs">1234567890</div>
+            </div>
+
+            <div class="box-row">
+                <div class="box-left text-common-sm">API Key:</div>
+                <div class="box-right text-gray-xs">276USYAHJHSJSHACY65</div>
+            </div>
+
+            <div class="box-row">
+                <div class="box-left text-common-sm">Secret Key:</div>
+                <div class="box-right text-gray-xs">276USYAHYCSHJIDJHSJSHACY65</div>
+            </div>
+
+        </section>
+        <!-- zhidahao information end -->
+
+        <div id="disable_site_popup" class="popup">
+            <div class="popup-mask"></div>
+            <div class="popup-box">
+                <div class="popup-title">
+                    <i class="popup-close"></i>
+                    <h1>下线</h1>
+                </div>
+                <div class="popup-body">
+                    <div class="warning">
+                        <h3>您是否确认下线直达号？</h3>
+                        <p>
+                            直达号下线后将无法通过@直达直达词搜索到，其他附加功能（例如：CRM，数据统计）等均同时下线，请您确认是否下线直达号。
+                        </p>
+                    </div>
+                    <div class="error-box">
+                        <span class="icon">!</span><span class="text">下线错误</span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="disabled_reason">
+                                <span class="required">*</span>
+                                下线原因：
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <textarea id="disabled_reason" class="disabled-reason"></textarea>
+                            <p class="error">原因不能为空</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="vcode">
+                                <span class="required">*</span>
+                                验证码：
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <input id="vcode" class="vcode " type="text" />
+                            <img class="validate-code" height="30" width="90" />
+                            <a class="refresh-code" href="javascript:void(0)">换一换</a>
+                            <p class="error">验证码不正确</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="popup-btn-group">
+                    <button class="confirm-btn btn-38 btn-blue">确认下线</button><button class="cancel-btn btn-38 btn-gray">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../../../../xlib/js/jQuery.js"></script>
+<script src="../../../../../xlib/js/kernel.js"></script>
+<script src="../../static/js/detail/app.js"></script>
+
+</body>
+</html>

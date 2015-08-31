@@ -1,0 +1,131 @@
+/* 表单 */
+.step-2 .form {
+    position: relative;
+    margin-top: 20px;
+}
+
+/* 表单域 */
+.step-2 .form fieldset {
+    position: relative;
+    width: 668px;
+    height: auto;
+    padding: 10px 20px;
+    overflow: visible;
+}
+
+.step-2 .form fieldset > label {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+    width: 150px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+}
+.step-2 .form fieldset.required label:before {
+    content: "*";
+    color: #ed5565;
+}
+
+.step-2 .form fieldset .o-inputfield {
+    vertical-align: top;
+    width: 380px;
+    margin-top: 10px;
+}
+.step-2 .form fieldset .o-inputfield .tip a {
+    color: #68a7ff;
+}
+
+/* 提示信息 */
+.step-2 .form fieldset .quote {
+    position: absolute;
+    right: 130px;
+    top: 29px;
+    width: 12px;
+    height: 12px;
+    cursor: default;
+    background: #999;
+    border-radius: 6px;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 12px;
+}
+.step-2 .form fieldset .quote + .tooltip {
+    position: absolute;
+    right: -160px;
+    top: 19px;
+    display: none;
+    width: 282px;
+    height: 232px;
+    z-index: 99;
+}
+.step-2 .form fieldset .quote:hover + .tooltip {
+    display: block;
+}
+.step-2 .form .f-query .quote + .tooltip {
+    background: url("../../../img/join/sample-query-word.jpg") no-repeat;
+}
+.step-2 .form .f-summary .quote + .tooltip {
+    background: url("../../../img/join/sample-summery.jpg") no-repeat;
+}
+.step-2 .form .f-summary .o-textarea {
+    vertical-align: top;
+    margin-top: 10px;
+    width: 380px;
+    overflow: visible;
+}
+
+/* 上传部分 */
+.step-2 .o-webuploader {
+    font-size: 0;
+}
+.step-2 .o-filepicker,
+.step-2 .o-thumbnail {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.step-2 .f-logo .o-thumbnail {
+    width: 90px;
+    height: 90px;
+}
+.step-2 .f-logo .f-content,
+.step-2 .f-brand .f-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    margin-top: 10px;
+    overflow: visible;
+}
+
+.step-2 .f-logo .f-content .tip,
+.step-2 .f-brand .f-content .tip {
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+}
+
+.step-2 .f-logo .f-content .error,
+.step-2 .f-brand .f-content .error {
+    display: none;
+    height: 24px;
+    width: 100%;
+    margin-top: 3px;
+
+    text-align: left;
+    color: #ED5565;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+
+/* 按钮 */
+.step-2 .form .buttons {
+    width: 176px;
+    margin-left: 170px;
+    margin-top: 20px;
+}
+.step-2 .form .buttons div:first-child {
+    margin-right: 17px;
+}

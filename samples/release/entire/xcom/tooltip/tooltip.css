@@ -1,0 +1,333 @@
+.o-tooltip{
+    position: absolute;
+    max-width: 350px;
+    width: 100%;
+    z-index: 100;
+    font-family: '微软雅黑','HiraginoSansGB-W3','STHeitiSC-Light';
+    font-size: 12px;
+}
+.o-tooltip .o-tip-close-btn{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 24px;
+    color: #b7b7b7;
+    font-weight: normal;
+    cursor: pointer;
+}
+.o-tooltip .o-tooltip-content{
+    padding: 10px;
+    line-height: 18px;
+    position: absolute;
+    word-break: break-all;
+    word-wrap: break-word;
+    z-index: 90;
+    border-radius: 3px;
+}
+.o-tooltip .o-content-text{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.o-tooltip .box-default{
+    color: #999999;
+    border: 1px solid #dfe2e3;
+    background-color: #ffffff;
+    text-align: left;
+}
+.o-tooltip .arrow{
+    display: block;
+    height: 16px;
+    width: 17px;
+    position: relative;
+    top: 2px;
+    z-index: 100;
+}
+.o-tooltip .arrow em,
+.o-tooltip .arrow span{
+    width:0;
+    height:0;
+    border-color:transparent;
+    position:absolute;
+}
+
+.o-tooltip .t-arrow em,
+.o-tooltip .tr-arrow em,
+.o-tooltip .tl-arrow em{
+    border-width:8px;  /*边框的高度*/
+    border-style:solid dashed dashed dashed;
+    top:2px; /*边框的厚度*/
+    left:0;
+}
+.o-tooltip .t-arrow span,
+.o-tooltip .tr-arrow span,
+.o-tooltip .tl-arrow span{
+    border-width:8px;  /*边框的高度*/
+    border-style:solid dashed dashed dashed;
+    top:0;
+    left:0;
+}
+
+.o-tooltip .r-arrow em{
+    border-width:8px;  /*边框的高度*/
+    border-style:dashed dashed dashed solid;
+    top:0;
+    right:2px; /*边框的厚度*/
+
+}
+.o-tooltip .r-arrow span{
+    border-width:8px;  /*边框的高度*/
+    border-style:dashed dashed dashed solid;
+    top:0;
+    right:0;
+
+}
+
+.o-tooltip .b-arrow em,
+.o-tooltip .br-arrow em,
+.o-tooltip .bl-arrow em{
+    border-width:8px;  /*边框的高度*/
+    border-style:dashed dashed solid dashed;
+    left:0;
+    bottom:2px; /*边框的厚度*/
+}
+.o-tooltip .b-arrow span,
+.o-tooltip .br-arrow span,
+.o-tooltip .bl-arrow span{
+    border-width:8px;  /*边框的高度*/
+    border-style:dashed dashed solid dashed;
+    left:0;
+    bottom:0;
+    border-bottom-color:#fff;/*用白色边框绝对定位盖住多余的部分*/
+}
+
+
+.o-tooltip .l-arrow em{
+    border-width:8px;  /*边框的高度*/
+    border-style:dashed solid dashed dashed;
+    top:0;
+    left:2px; /*边框的厚度*/
+}
+.o-tooltip .l-arrow span{
+    border-width:8px;  /*边框的高度*/
+    border-style:dashed solid dashed dashed;
+    top:0;
+    left:0;
+}
+
+
+.o-tooltip .t-arrow-default em,
+.o-tooltip .tr-arrow-default em,
+.o-tooltip .tl-arrow-default em{
+    border-top-color:#dfe2e3; /*边框的颜色*/
+}
+.o-tooltip .t-arrow-default span,
+.o-tooltip .tr-arrow-default span,
+.o-tooltip .tl-arrow-default span{
+    border-top-color:#ffffff;/*用白色边框绝对定位盖住多余的部分*/
+}
+
+.o-tooltip .r-arrow-default em{
+    border-right-color: #dfe2e3; /*边框的颜色*/
+}
+.o-tooltip .r-arrow-default span{
+    border-right-color:#ffffff; /*边框的颜色*/
+}
+
+.o-tooltip .b-arrow-default em,
+.o-tooltip .br-arrow-default em,
+.o-tooltip .bl-arrow-default em{
+    border-bottom-color:#dfe2e3; /*边框的颜色*/
+}
+.o-tooltip .b-arrow-default span,
+.o-tooltip .br-arrow-default span,
+.o-tooltip .bl-arrow-default span{
+    border-bottom-color:#ffffff; /*边框的颜色*/
+}
+
+.o-tooltip .l-arrow-default em{
+    border-left-color:#dfe2e3; /*边框的颜色*/
+}
+.o-tooltip .l-arrow-default span{
+    border-left-color:#ffffff;/*用白色边框绝对定位盖住多余的部分*/
+}
+
+
+
+.o-tooltip .box-orange{
+    color: #999999;
+    border: 1px solid #f4dcaa;
+    background-color: #faecca;
+    text-align: left;
+}
+.o-tooltip .t-arrow-orange em,
+.o-tooltip .tr-arrow-orange em,
+.o-tooltip .tl-arrow-orange em{
+    border-top-color:#f4dcaa; /*边框的颜色*/
+}
+.o-tooltip .t-arrow-orange span,
+.o-tooltip .tr-arrow-orange span,
+.o-tooltip .tl-arrow-orange span{
+    border-top-color:#faecca;/*用白色边框绝对定位盖住多余的部分*/
+}
+
+.o-tooltip .r-arrow-orange em{
+    border-right-color: #f4dcaa; /*边框的颜色*/
+}
+.o-tooltip .r-arrow-orange span{
+    border-right-color:#faecca; /*边框的颜色*/
+}
+
+.o-tooltip .b-arrow-orange em,
+.o-tooltip .br-arrow-orange em,
+.o-tooltip .bl-arrow-orange em{
+    border-bottom-color:#f4dcaa; /*边框的颜色*/
+}
+.o-tooltip .b-arrow-orange span,
+.o-tooltip .br-arrow-orange span,
+.o-tooltip .bl-arrow-orange span{
+    border-bottom-color:#faecca; /*边框的颜色*/
+}
+
+.o-tooltip .l-arrow-orange em{
+    border-left-color:#f4dcaa; /*边框的颜色*/
+}
+.o-tooltip .l-arrow-orange span{
+    border-left-color:#faecca;/*用白色边框绝对定位盖住多余的部分*/
+}
+
+
+
+
+.o-tooltip .box-blue{
+    background: #e5f0fe;
+    border: 1px solid #cde3fd;
+    color: #999999;
+    text-align: left;
+}
+
+.o-tooltip .t-arrow-blue em,
+.o-tooltip .tr-arrow-blue em,
+.o-tooltip .tl-arrow-blue em{
+    border-top-color:#cde3fd; /*边框的颜色*/
+}
+.o-tooltip .t-arrow-blue span,
+.o-tooltip .tr-arrow-blue span,
+.o-tooltip .tl-arrow-blue span{
+    border-top-color:#e5f0fe;/*用白色边框绝对定位盖住多余的部分*/
+}
+
+.o-tooltip .r-arrow-blue em{
+    border-right-color: #cde3fd; /*边框的颜色*/
+}
+.o-tooltip .r-arrow-blue span{
+    border-right-color:#e5f0fe; /*边框的颜色*/
+}
+
+.o-tooltip .b-arrow-blue em,
+.o-tooltip .br-arrow-blue em,
+.o-tooltip .bl-arrow-blue em{
+    border-bottom-color:#cde3fd; /*边框的颜色*/
+}
+.o-tooltip .b-arrow-blue span,
+.o-tooltip .br-arrow-blue span,
+.o-tooltip .bl-arrow-blue span{
+    border-bottom-color:#e5f0fe; /*边框的颜色*/
+}
+
+.o-tooltip .l-arrow-blue em{
+    border-left-color:#cde3fd; /*边框的颜色*/
+}
+.o-tooltip .l-arrow-blue span{
+    border-left-color:#e5f0fe;/*用白色边框绝对定位盖住多余的部分*/
+}
+
+
+
+
+.o-tooltip .box-green{
+    background: #e4fac8;
+    border: 1px solid #d1e9b1;
+    color: #999999;
+    text-align: left;
+}
+
+.o-tooltip .t-arrow-green em,
+.o-tooltip .tr-arrow-green em,
+.o-tooltip .tl-arrow-green em{
+    border-top-color:#d1e9b1; /*边框的颜色*/
+}
+.o-tooltip .t-arrow-green span,
+.o-tooltip .tr-arrow-green span,
+.o-tooltip .tl-arrow-green span{
+    border-top-color:#e4fac8;/*用白色边框绝对定位盖住多余的部分*/
+}
+
+.o-tooltip .r-arrow-green em{
+    border-right-color: #d1e9b1; /*边框的颜色*/
+}
+.o-tooltip .r-arrow-green span{
+    border-right-color:#e4fac8; /*边框的颜色*/
+}
+
+.o-tooltip .b-arrow-green em,
+.o-tooltip .br-arrow-green em,
+.o-tooltip .bl-arrow-green em{
+    border-bottom-color:#d1e9b1; /*边框的颜色*/
+}
+.o-tooltip .b-arrow-green span,
+.o-tooltip .br-arrow-green span,
+.o-tooltip .bl-arrow-green span{
+    border-bottom-color:#e4fac8; /*边框的颜色*/
+}
+
+.o-tooltip .l-arrow-green em{
+    border-left-color:#d1e9b1; /*边框的颜色*/
+}
+.o-tooltip .l-arrow-green span{
+    border-left-color:#e4fac8;/*用白色边框绝对定位盖住多余的部分*/
+}
+
+
+
+.o-tooltip .box-red{
+    background: #faf0f1;
+    border: 1px solid #f7d0d4;
+    color: #666666;
+    text-align: left;
+}
+
+.o-tooltip .t-arrow-red em,
+.o-tooltip .tr-arrow-red em,
+.o-tooltip .tl-arrow-red em{
+    border-top-color:#f7d0d4; /*边框的颜色*/
+}
+.o-tooltip .t-arrow-red span,
+.o-tooltip .tr-arrow-red span,
+.o-tooltip .tl-arrow-red span{
+    border-top-color:#faf0f1;/*用白色边框绝对定位盖住多余的部分*/
+}
+
+.o-tooltip .r-arrow-red em{
+    border-right-color: #f7d0d4; /*边框的颜色*/
+}
+.o-tooltip .r-arrow-red span{
+    border-right-color:#faf0f1; /*边框的颜色*/
+}
+
+.o-tooltip .b-arrow-red em,
+.o-tooltip .br-arrow-red em,
+.o-tooltip .bl-arrow-red em{
+    border-bottom-color:#f7d0d4; /*边框的颜色*/
+}
+.o-tooltip .b-arrow-red span,
+.o-tooltip .br-arrow-red span,
+.o-tooltip .bl-arrow-red span{
+    border-bottom-color:#faf0f1; /*边框的颜色*/
+}
+
+.o-tooltip .l-arrow-red em{
+    border-left-color:#f7d0d4; /*边框的颜色*/
+}
+.o-tooltip .l-arrow-red span{
+    border-left-color:#faf0f1;/*用白色边框绝对定位盖住多余的部分*/
+}

@@ -1,0 +1,73 @@
+#disable_site_popup .o-popup-box {
+	width: 540px;
+	top: 50%;
+	left: 50%;
+	margin: -195px 0 0 -300px;
+}
+
+#disable_site_popup .warning-block {
+	width: calc(100% - 20px);
+	font-size: 16px;
+	padding: 14px 10px;
+	text-align: left;
+	color: #999999;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f9e4b9;
+    border-radius: 2px;
+    background-color: #fcefd4;
+    line-height: 34px;
+    vertical-align: middle; 
+}
+
+#disable_site_popup .warning-block h3 {
+	font-size: 14px;
+	line-height: 14px;
+	color: #ff9900;
+}
+
+#disable_site_popup .warning-block p {
+	margin-top: 10px;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+#disable_site_popup .titled-section {
+	margin: 10px 0 0 0;
+}
+
+#disable_site_popup .section-content {
+	padding: 12px 0 0 0;	
+}
+
+#disable_site_popup .form-row .form-control {
+	width: 403px;
+}
+
+#disable_site_popup .form-row {
+	margin-bottom: 20px;
+}
+
+#disable_site_popup .form-row .form-label {
+	margin-left: 0;
+	width: 83px;
+}
+
+#disable_site_popup .disabled-reason {
+	vertical-align: bottom;
+	height: 98px;
+	width: 457px;
+	border-radius: 2px;
+	resize: none;
+}
+
+#disable_site_popup .validate-code {
+	line-height: 30px;
+	margin-left: 10px;
+}
+
+#disable_site_popup .change-validate-code {
+	line-height: 30px;
+	margin-left: 20px;
+}

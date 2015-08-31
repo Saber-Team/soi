@@ -1,0 +1,36 @@
+/* 资质审核通知信息 */
+.step-1 .warning,
+.step-2 .warning {
+    display: none;
+    width: 668px;
+    background: #fbf0f1;
+    border: 1px solid #f7d0d4;
+    border-radius: 2px;
+    margin-top: 20px;
+    padding: 20px;
+
+    line-height: 20px;
+    font-size: 13px;
+    color: #999999;
+}
+.step-1 .warning .warning-title,
+.step-2 .warning .warning-title {
+    color: #ed5565;
+    text-align: center;
+}
+.step-1 .warning .warning-title i,
+.step-2 .warning .warning-title i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: #ed5565;
+    border-radius: 10px;
+
+    color: #ffffff;
+    text-align: center;
+}
+.step-1 .warning p,
+.step-2 .warning p {
+    margin-top: 10px;
+}

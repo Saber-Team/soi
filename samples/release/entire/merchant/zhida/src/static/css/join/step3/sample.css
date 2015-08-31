@@ -1,0 +1,151 @@
+.step-3 .sample {
+    position: relative;
+    width: 1100px;
+    height: 430px;
+    margin: 50px auto;
+    background: url("../../../img/join/bg.png") no-repeat;
+}
+
+.step-3 .sample .card {
+    position: absolute;
+    overflow: visible;
+    background-color: red;
+}
+.step-3 .sample .card .si {
+    display: none;
+    position: absolute;
+    width: 282px;
+    height: 232px;
+    overflow: hidden;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    z-index: 9;
+}
+
+/* 地图推广 */
+.step-3 .sample .ditu {
+    width: 100px;
+    height: 105px;
+    left: 350px;
+    top: 70px;
+    background: url("../../../img/join/cards.png") no-repeat 0 0;
+}
+.step-3 .sample .ditu:hover {
+    background: url("../../../img/join/cards.png") no-repeat -100px 0;
+}
+.step-3 .sample .ditu .si {
+    left: -272px;
+    top: -222px;
+    background: url("../../../img/join/sample-ditu.jpg") no-repeat;
+}
+.step-3 .sample .ditu:hover .si {
+    display: block;
+}
+
+/* 聚合 */
+.step-3 .sample .juhe {
+    width: 100px;
+    height: 105px;
+    left: 640px;
+    top: 10px;
+    background: url("../../../img/join/cards.png") no-repeat -200px 0;
+}
+.step-3 .sample .juhe:hover {
+    background: url("../../../img/join/cards.png") no-repeat -300px 0;
+}
+.step-3 .sample .juhe .si {
+    left: -262px;
+    top: -202px;
+    background: url("../../../img/join/sample-juhe.jpg") no-repeat;
+}
+.step-3 .sample .juhe:hover .si {
+    display: block;
+}
+
+/* 聚合 */
+.step-3 .sample .sousuo {
+    width: 100px;
+    height: 105px;
+    left: 640px;
+    top: 160px;
+    background: url("../../../img/join/cards.png") no-repeat -400px 0;
+}
+.step-3 .sample .sousuo:hover {
+    background: url("../../../img/join/cards.png") no-repeat -500px 0;
+}
+.step-3 .sample .sousuo .si {
+    width: 282px;
+    height: 163px;
+    left: -90px;
+    top: 100px;
+    background: url("../../../img/join/sample-sousuo.jpg") no-repeat;
+}
+.step-3 .sample .sousuo:hover .si {
+    display: block;
+}
+
+/* wise */
+.step-3 .sample .wise {
+    width: 125px;
+    height: 150px;
+    left: 410px;
+    top: 250px;
+    background: url("../../../img/join/cards.png") no-repeat 0 -255px;
+}
+.step-3 .sample .wise:hover {
+    background: url("../../../img/join/cards.png") no-repeat -125px -255px;
+}
+.step-3 .sample .wise .si {
+    width: 282px;
+    height: 163px;
+    left: -90px;
+    top: 140px;
+    background: url("../../../img/join/sample-wise.jpg") no-repeat;
+}
+.step-3 .sample .wise:hover .si {
+    display: block;
+}
+
+/* 推送 */
+.step-3 .sample .tui {
+    width: 140px;
+    height: 150px;
+    left: 200px;
+    top: 140px;
+    background: url("../../../img/join/cards.png") no-repeat -210px -105px;
+}
+.step-3 .sample .tui:hover {
+    background: url("../../../img/join/cards.png") no-repeat -350px -105px;
+}
+.step-3 .sample .tui .si {
+    width: 282px;
+    height: 232px;
+    left: -90px;
+    top: 140px;
+    background: url("../../../img/join/sample-huodong.jpg") no-repeat;
+}
+.step-3 .sample .tui:hover .si {
+    display: block;
+}
+
+/* 寻址 */
+.step-3 .sample .xunzhi {
+    width: 105px;
+    height: 115px;
+    left: 800px;
+    top: 250px;
+    background: url("../../../img/join/cards.png") no-repeat 0 -105px;
+}
+.step-3 .sample .xunzhi:hover {
+    background: url("../../../img/join/cards.png") no-repeat -105px -105px;
+}
+.step-3 .sample .xunzhi .si {
+    width: 282px;
+    height: 232px;
+    left: -90px;
+    top: 100px;
+    background: url("../../../img/join/sample-xunzhi.jpg") no-repeat;
+}
+.step-3 .sample .xunzhi:hover .si {
+    display: block;
+}

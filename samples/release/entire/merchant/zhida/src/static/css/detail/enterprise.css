@@ -1,0 +1,45 @@
+.enterprise {
+    position: relative;
+}
+
+
+.enterprise .btn-right {
+    top: 0;
+    margin-top: 0;
+}
+
+.enterprise .toggle {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.enterprise .show-more {
+    bottom: 32px;
+}
+
+.enterprise .more {
+    display: none;
+    overflow: hidden;
+}
+
+.enterprise .show-more:before {
+    content: '';
+    display: inline-block;
+    border: 5px solid transparent;
+    border-top: 5px solid #4497FF;
+    margin: 5px 5px -2px 5px;
+}
+
+.enterprise .hide-more:before {
+    content: '';
+    display: inline-block;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #4497FF;
+    margin: 0 5px 2px 5px;
+}
+
+.enterprise .ssg {
+    padding-left: 85px;
+}
