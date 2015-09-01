@@ -1,0 +1,5 @@
+define("0Cmb+",[],function(){return{name:"lib"}});
+define("OZs6w",["require","exports","module"],function(e,n,t){t.exports={name:"a"}});
+define("JB9tk",["require","exports","module","0Cmb+"],function(e,n,r){var t=e("0Cmb+"),i=kerneljs.url("/soi/samples/release/build/online/static/swf/ZeroClipboard.swf");r.exports={name:t.name,url:i}});
+define("nzn5P",["require","exports","module"],function(e,n,r){"use strict";n.exec=function(e){var n=e.split("");return n=n.reverse(),n.join("")}});
+require(["OZs6w","JB9tk","nzn5P"],function(e,n,t){"use strict";function r(){document.addEventListener("click",function(){var e=i.value;u.innerText=t.exec(e)},!1)}var i=(kerneljs.url("/soi/samples/release/build/online/static/img/Zx6u2uSOV.png"),document.getElementsByTagName("button")[0],document.getElementById("pid")),u=document.querySelectorAll(".ret")[0];r()});
