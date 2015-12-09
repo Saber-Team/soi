@@ -34,13 +34,9 @@ soi.deploy.task('dev',
       }
     })
     .use('less')
-    .on('postProcessed', function() {
-      var tpl = require('plugin-tplloader');
-      tpl.config({
-        left: '{{',
-        right: '}}'
-      });
-      tpl.run();
+    .use('soi-plugin-tplloader', {
+      left: '{{',
+      right: '}}'
     });
 
 
@@ -78,12 +74,8 @@ soi.release.task('dev',
       curl: true,
       eqeqeq: false
     })
-    .on('postProcessed', function() {
-      var tpl = require('plugin-tplloader');
-      tpl.config({
-        left: '{{',
-        right: '}}'
-      });
-      tpl.run();
+    .use('soi-plugin-tplloader', {
+      left: '{{',
+      right: '}}'
     });
 
