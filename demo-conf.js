@@ -1,12 +1,11 @@
 /**
- * Created by baidu on 15/11/26.
  * @sample
  * plugin list:
  * 1. csscompress
  * 2. less
- * 3. uglify
+ * 3. uglifier
  * 4. replacer
- * 5. md5
+ * 5. hash
  */
 
 // 配置线上路径
@@ -19,7 +18,13 @@ soi.deploy.task('dev',
       receiver: 'http://cp01-zhida-jieru.epc.baidu.com:8343/receiver',
       dir: '/home/work/webroot/templates/templates/eva_merchant_zhangshen/',
       cacheTo: '../build/.cache',
-      scandirs: ['.']
+      mapTo: '../build/map.json',
+      scandirs: ['.'],
+      ignorePaths: noop,
+      cmdWrapper: {
+        usestrict: false,
+        commentdoc: ''
+      }
     })
     .use('replacer', {
       '__NAVBAR__': function($0, $1) {
@@ -29,9 +34,13 @@ soi.deploy.task('dev',
       }
     })
     .use('less')
-    .postProcess('plugin-tplloader', {
-      left: '{{',
-      right: '}}'
+    .on('postProcessed', function() {
+      var tpl = require('plugin-tplloader');
+      tpl.config({
+        left: '{{',
+        right: '}}'
+      });
+      tpl.run();
     });
 
 
@@ -40,11 +49,11 @@ soi.release.task('dev',
       to: '../dist/',
       mapTo: '../build/map.json',
       cacheTo: '../build/.cache',
+      loader: [],
       scandirs: ['.'],
       ignorePaths: noop,
       cmdWrapper: {
         define: '__d',
-        usestrict: false,
         commentdoc: ''
       }
     })
@@ -69,8 +78,12 @@ soi.release.task('dev',
       curl: true,
       eqeqeq: false
     })
-    .postProcess('plugin-tplloader', {
-      left: '{{',
-      right: '}}'
+    .on('postProcessed', function() {
+      var tpl = require('plugin-tplloader');
+      tpl.config({
+        left: '{{',
+        right: '}}'
+      });
+      tpl.run();
     });
 
