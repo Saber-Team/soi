@@ -79,7 +79,7 @@ soi.release.task('dev',
       curl: true,
       eqeqeq: false
     })
-    .use('soi-plugin-tplloader', {
+    .use('soi.task.plugin.tplloader', {
       left: '{{',
       right: '}}'
     });
