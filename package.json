@@ -29,8 +29,10 @@
   },
   "homepage": "https://github.com/Saber-Team/soi",
   "dependencies": {
+    "chalk": "^1.1.1",
     "css": "^2.2.1",
     "minimatch": "^3.0.0",
-    "neo-core": "^0.2.0"
+    "neo-core": "^0.2.0",
+    "optimist": "^0.6.1"
   }
 }
