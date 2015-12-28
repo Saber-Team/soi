@@ -1,0 +1,134 @@
+/**
+ * @css util.less
+ */
+
+.header (@height, @bg, @left) {
+    height: @height;
+    line-height: @height;
+    text-align: center;
+    position: relative;
+    background-color: @bg;
+    color: #fff;
+    .px2px(font-size, 18px);
+
+    .back {
+        position: absolute;
+        left: @left;
+        width: 20px;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            left: 0;
+            border-top: 2px solid #fff;
+            border-left: 2px solid #fff;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+
+.icon () {
+    /* search icon */
+    .s-icon, .r-icon {
+        height: 100%;
+        width: 20px;
+        top: 0;
+        position: absolute;
+        margin-left: 0.12rem;
+    }
+    .r-icon {
+        padding-right: .12rem;
+        margin-left: 0;
+        width: 30px;
+    }
+    .s-icon:after, .r-icon:after {
+        content: "";
+        display: block;
+        background: @icon no-repeat;
+        background-size: 100px 25px;
+        background-position: -6px -2px;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 0;
+        position: relative;
+        -webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+                 tansform: translateY(-50%);
+    }
+    /* remove icon */
+    .r-icon:after {
+        background-position: -30px -3px;
+        margin-left: 10px;
+    }
+}
+
+.search () {
+    .search-bar {
+        .flex-display(flex);
+        margin: .2rem;
+        height: .58rem;
+        line-height: .58rem;
+        .px2px(font-size, 14px);
+
+        .content {
+            position: relative;
+            display: block;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            height: 100%;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+
+            .flex(2);
+
+            .s-icon {
+                left: 0;
+            }
+            .r-icon {
+                display: none;
+                right: 0;
+            }
+
+            .search {
+                border: 0;
+                height: 100%;
+                width: 100%;
+                padding: 0 0 0 .6rem;
+                color: #262626;
+                outline: none;
+                vertical-align: top;
+                -webkit-appearance: none;
+                -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+            }
+        }
+
+        .btn-search {
+            display: none;
+            width: .64rem;
+            color: #777;
+            text-align: right;
+        }
+    }
+
+    .focus-bar {
+        .content {
+            .s-icon {
+                display: none;
+            }
+
+            .search {
+                padding-left: .12rem;
+            }
+        }
+        .btn-search {
+            display: block;
+        }
+    }
+}
