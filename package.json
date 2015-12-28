@@ -29,7 +29,6 @@
   },
   "homepage": "https://github.com/Saber-Team/soi",
   "dependencies": {
-    "chalk": "^1.1.1",
     "css": "^2.2.1",
     "less": "^2.5.3",
     "minimatch": "^3.0.0",

@@ -16,7 +16,7 @@ soi.deploy.task('dev',
         dir: '/home/work/webroot/soi-test',
         cacheTo: '../build/.cache',
         mapTo: '../build/map.json',
-        scandirs: ['.'],
+        scandirs: ['./src'],
         ignorePaths: function(){},
         watch: true,
         cmdWrapper: {
@@ -24,3 +24,17 @@ soi.deploy.task('dev',
             commentdoc: ''
         }
     });
+
+soi.release.task('dev',
+    {
+        dir: './build/',
+        mapTo: '../build/map.json',
+        cacheTo: '../build/.cache',
+        scandirs: ['./src'],
+        ignorePaths: function(){},
+        cmdWrapper: {
+            define: '__d',
+            commentdoc: ''
+        }
+    });
+
