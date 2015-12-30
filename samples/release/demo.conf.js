@@ -31,7 +31,13 @@ soi.release.task('dev',
       mapTo: '../build/map.json',
       cacheTo: '../build/.cache',
       scandirs: ['src'],
-      ignorePaths: function(){},
+      ignorePaths: function(path){
+          var basename = path.split('/').slice(-1).toString();
+          if (basename.substring(0, 1) === '_') {
+              return true;
+          }
+          return false;
+      },
       cmdWrapper: {
         define: '__d',
         commentdoc: ''
