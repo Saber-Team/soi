@@ -1,0 +1,25 @@
+{
+  "version": "0.1",
+  "objects": [
+    {
+      "path": "src/static/img/banner.png",
+      "id": "src/static/img/banner.png",
+      "type": "Image",
+      "mtime": 1449661144000,
+      "width": 238,
+      "height": 80
+    },
+    {
+      "type": "JS",
+      "path": "src/static/js/a.js",
+      "id": "src/static/js/a.js",
+      "mtime": 1449661144000
+    },
+    {
+      "type": "CSS",
+      "path": "src/static/css/r.css",
+      "id": "src/static/css/r.css",
+      "mtime": 1450791539000
+    }
+  ]
+}
