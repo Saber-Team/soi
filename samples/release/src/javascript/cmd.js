@@ -1,4 +1,6 @@
 /**
- * Created by baidu on 15/12/25.
+ * @provides base
+ * @module
  */
+
 var A = require('./cmd_A');
