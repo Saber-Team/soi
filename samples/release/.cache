@@ -1,0 +1,187 @@
+{
+  "version": "0.1",
+  "objects": [
+    {
+      "path": "src/img/finish.png",
+      "id": "src/img/finish.png",
+      "type": "Image",
+      "mtime": 1451449759000,
+      "width": 60,
+      "height": 60
+    },
+    {
+      "path": "src/img/dot.png",
+      "id": "src/img/dot.png",
+      "type": "Image",
+      "mtime": 1451449759000,
+      "width": 35,
+      "height": 13
+    },
+    {
+      "path": "src/img/index.png",
+      "id": "src/img/index.png",
+      "type": "Image",
+      "mtime": 1451449759000,
+      "width": 100,
+      "height": 25
+    },
+    {
+      "path": "src/img/invalid.png",
+      "id": "src/img/invalid.png",
+      "type": "Image",
+      "mtime": 1451449759000,
+      "width": 177,
+      "height": 203
+    },
+    {
+      "path": "src/img/none.png",
+      "id": "src/img/none.png",
+      "type": "Image",
+      "mtime": 1451449759000,
+      "width": 355,
+      "height": 373
+    },
+    {
+      "path": "src/img/qrcode.png",
+      "id": "src/img/qrcode.png",
+      "type": "Image",
+      "mtime": 1451449759000,
+      "width": 87,
+      "height": 88
+    },
+    {
+      "path": "src/img/shop_list.png",
+      "id": "src/img/shop_list.png",
+      "type": "Image",
+      "mtime": 1451449759000,
+      "width": 200,
+      "height": 50
+    },
+    {
+      "path": "src/img/tip.png",
+      "id": "src/img/tip.png",
+      "type": "Image",
+      "mtime": 1451449759000,
+      "width": 18,
+      "height": 17
+    },
+    {
+      "type": "CSS",
+      "path": "src/css/a.css",
+      "id": "src/css/a.css",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/css/main.css",
+      "id": "src/css/main.css",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/css/x.css",
+      "id": "src/css/x.css",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "JS",
+      "path": "src/javascript/cmd.js",
+      "id": "src/javascript/cmd.js",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "JS",
+      "path": "src/javascript/cmd_A.js",
+      "id": "src/javascript/cmd_A.js",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "JS",
+      "path": "src/javascript/cmd_B.js",
+      "id": "src/javascript/cmd_B.js",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/less/_common.less",
+      "id": "src/less/_common.less",
+      "requiredCSS": [
+        "util.less"
+      ],
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/less/_flex.less",
+      "id": "src/less/_flex.less",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/less/_util.less",
+      "id": "src/less/_util.less",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/less/a.less",
+      "id": "src/less/a.less",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/less/b.less",
+      "id": "src/less/b.less",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/less/detail.less",
+      "id": "src/less/detail.less",
+      "requiredCSS": [
+        "reset.less",
+        "util.less",
+        "common.less",
+        "flex.less"
+      ],
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/less/dialog.less",
+      "id": "src/less/dialog.less",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/less/reset.less",
+      "id": "src/less/reset.less",
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/less/shop_list.less",
+      "id": "src/less/shop_list.less",
+      "requiredCSS": [
+        "reset.less",
+        "util.less",
+        "common.less",
+        "flex.less",
+        "dialog.less"
+      ],
+      "mtime": 1451449759000
+    },
+    {
+      "type": "CSS",
+      "path": "src/less/verify_list.less",
+      "id": "src/less/verify_list.less",
+      "requiredCSS": [
+        "reset.less",
+        "util.less",
+        "common.less",
+        "flex.less"
+      ],
+      "mtime": 1451449759000
+    }
+  ]
+}
