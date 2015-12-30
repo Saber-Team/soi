@@ -8,7 +8,6 @@
 
 var fs = require('fs');
 var path = require('path');
-var chalk = require('chalk');
 
 
 /**
@@ -99,9 +98,8 @@ function readFile (path, option) {
       encoding: option && option.encoding || 'utf8'
     });
   } catch (ex) {
-    console.error(
-        chalk.bgRed.bold('When trying to read content of file located: \n  ' +
-            path + ' error occurred!\n  ' + ex.message));
+    console.error('When trying to read content of file located: \n  ' +
+            path + ' error occurred!\n  ' + ex.message);
     process.exit(1);
   }
 
@@ -121,9 +119,8 @@ function writeFile (path, data, option) {
       encoding: option && option.encoding || ''
     });
   } catch (ex) {
-    console.error(
-        chalk.bgRed.bold('When trying to write content to file located: \n  ' +
-            path + ' error occurred!\n  ' + ex.message));
+    console.error('When trying to write content to file located: \n  ' +
+            path + ' error occurred!\n  ' + ex.message);
     process.exit(1);
   }
 }

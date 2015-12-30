@@ -27,14 +27,16 @@ soi.deploy.task('dev',
 
 soi.release.task('dev',
     {
-      dir: './build/',
+      dir: './dist/',
       mapTo: '../build/map.json',
       cacheTo: '../build/.cache',
       scandirs: ['src'],
-      ignorePaths: function(){},
+      ignorePaths: function(path) {
+        return /^_/.test(path)
+      },
       cmdWrapper: {
         define: '__d',
-        commentdoc: ''
+        commentdoc: '/* Build by */'
       }
     })
     .addRule(/src\/(.*)\/.*/, {
