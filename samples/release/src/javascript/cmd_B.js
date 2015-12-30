@@ -1,3 +1,7 @@
 /**
- * Created by baidu on 15/12/28.
+ * @provides mod_B
+ * @module
  */
+
+var obj = {};
+exports.key = "17173";

@@ -1,6 +1,6 @@
 /**
- * Created by baidu on 15/12/25.
+ * @provides mod_A
+ * @module
  */
-
 
 module.exports = {name: 'A'};
