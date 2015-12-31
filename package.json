@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Build tools for projects using kerneljs as module loader",
   "directories": {
-    "test": "__test__"
+    "test": "test"
   },
   "main": "boot.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "css": "^2.2.1",
     "less": "^2.5.3",
     "minimatch": "^3.0.0",
-    "neo-core": "^0.4.0",
+    "neo-core": "^0.4.2",
     "optimist": "^0.6.1",
     "uglify-js": "^2.6.1"
   }
