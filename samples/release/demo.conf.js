@@ -31,7 +31,7 @@ soi.release.task('dev',
       mapTo: '../build/map.json',
       cacheTo: '../build/.cache',
       scandirs: ['src'],
-      loaders: ['img', 'js'],
+      loaders: ['img', 'css'],
       ignorePaths: function(path){
           var basename = path.split('/').slice(-1).toString();
           if (basename.substring(0, 1) === '_') {

@@ -1,6 +1,5 @@
 /**
- * @fileoverview
- * @author Leo.Zhang(zmike86)
+ * @provides main
  */
 
 html {
@@ -15,7 +14,7 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background: url("../img/banner.png") no-repeat center center;
+    background: url("../img/finish.png") no-repeat center center;
 }
 p {
     width: 90%;
