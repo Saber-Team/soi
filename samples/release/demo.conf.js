@@ -31,7 +31,7 @@ soi.release.task('dev',
       mapTo: '../build/map.json',
       cacheTo: '../build/.cache',
       scandirs: ['src'],
-      loaders: ['img', 'css'],
+      loaders: ['img', 'css', 'js'],
       ignorePaths: function(path){
           var basename = path.split('/').slice(-1).toString();
           if (basename.substring(0, 1) === '_') {
@@ -49,6 +49,7 @@ soi.release.task('dev',
     })
     .use('less')
     .use('css')
+    .use('messid')
     .use('hash', {
       length: 7,
       encoding: 'hex'
