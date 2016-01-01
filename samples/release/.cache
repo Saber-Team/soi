@@ -2,20 +2,20 @@
   "version": "0.1",
   "objects": [
     {
-      "path": "src/img/finish.png",
-      "id": "src/img/finish.png",
-      "type": "Image",
-      "mtime": 1451449759000,
-      "width": 60,
-      "height": 60
-    },
-    {
       "path": "src/img/dot.png",
       "id": "src/img/dot.png",
       "type": "Image",
       "mtime": 1451449759000,
       "width": 35,
       "height": 13
+    },
+    {
+      "path": "src/img/finish.png",
+      "id": "src/img/finish.png",
+      "type": "Image",
+      "mtime": 1451449759000,
+      "width": 60,
+      "height": 60
     },
     {
       "path": "src/img/index.png",
