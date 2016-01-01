@@ -1,6 +1,5 @@
 {
     "sequences": true,
-    // join consecutive statemets with the “comma operator”
     "properties": true,
     "dead_code": true,
     "drop_debugger": true,
