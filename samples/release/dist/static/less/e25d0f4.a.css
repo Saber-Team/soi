@@ -1,0 +1,6 @@
+@import "_util.less";
+
+.a {
+  background: url(/static/img/97c518d.dot.png);
+  .rmdefault();
+}

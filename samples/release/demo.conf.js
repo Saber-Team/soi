@@ -40,7 +40,6 @@ soi.release.task('dev',
       to : '/static/$1/'
     })
     .use('less')
-    .use('css')
     .use('messid')
     .use('hash', {
       length: 7,
