@@ -2,36 +2,6 @@
   "version": "0.1",
   "objects": [
     {
-      "type": "CSS",
-      "path": "src/css/a.css",
-      "id": "src/css/a.css",
-      "mtime": 1451546946000
-    },
-    {
-      "type": "CSS",
-      "path": "src/css/main.css",
-      "id": "main",
-      "mtime": 1451546970000
-    },
-    {
-      "type": "CSS",
-      "path": "src/css/x.css",
-      "id": "src/css/x.css",
-      "mtime": 1451449759000
-    },
-    {
-      "type": "CSS",
-      "path": "src/less/a.less",
-      "id": "src/less/a.less",
-      "mtime": 1451476163000
-    },
-    {
-      "type": "CSS",
-      "path": "src/less/res.css",
-      "id": "src/less/res.css",
-      "mtime": 1451657609000
-    },
-    {
       "path": "src/img/dot.png",
       "id": "src/img/dot.png",
       "type": "Image",
@@ -94,6 +64,12 @@
       "mtime": 1451449759000,
       "width": 18,
       "height": 17
+    },
+    {
+      "type": "CSS",
+      "path": "src/less/import.less",
+      "id": "src/less/import.less",
+      "mtime": 1451476163000
     }
   ]
 }

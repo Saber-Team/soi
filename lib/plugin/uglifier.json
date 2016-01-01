@@ -24,7 +24,6 @@
     "side_effects": true,
     // drop side-effect-free statements
     "warnings": true,
-    // warn about potentially dangerous optimizations/code
     "global_defs": {
         "jQuery": false
     }
