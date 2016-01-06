@@ -16,8 +16,7 @@ soi.deploy.task('dev',
       dir: '/home/work/webroot/soi-test',
       cacheTo: '../build/.cache',
       mapTo: '../build/map.json',
-      scandirs: ['./src'],
-      ignorePaths: function(){},
+      scandirs: ['img', 'css'],
       watch: true,
       cmdWrapper: {
         usestrict: false,
@@ -28,36 +27,22 @@ soi.deploy.task('dev',
 soi.release.task('dev',
     {
       dir: './dist/',
-      mapTo: '../build/map.json',
+      mapTo: './dist/map.json',
       cacheTo: '../build/.cache',
       scandirs: ['src'],
-      loaders: ['img', 'css', 'js'],
-      ignorePaths: function(path){
-          var basename = path.split('/').slice(-1).toString();
-          if (basename.substring(0, 1) === '_') {
-              return true;
-          }
-          return false;
-      },
+      loaders: ['img', 'css'],
       cmdWrapper: {
         define: '__d',
-        commentdoc: '/* Build by */'
+        commentdoc: '/* Build by @Saber.T */'
       }
     })
     .addRule(/src\/(.*)\/.*/, {
       to : '/static/$1/'
     })
     .use('less')
-    .use('css')
     .use('messid')
     .use('hash', {
       length: 7,
       encoding: 'hex'
-    })
-    /*
-    .use('uglify', {
-      debug: false,
-      curl: true,
-      eqeqeq: false
-    })*/;
+    });
 

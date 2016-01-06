@@ -1,0 +1,29 @@
+{
+    "sequences": true,
+    "properties": true,
+    "dead_code": true,
+    "drop_debugger": true,
+    "unsafe": false,
+    // some unsafe optimizations (see below)
+    "conditionals": true,
+    // optimize if-s and conditional expressions
+    "comparisons": true,
+    "evaluate": true,
+    // evaluate constant expressions
+    "booleans": true,
+    // optimize boolean expressions
+    "loops": true,
+    "unused": true,
+    "hoist_funs": true,
+    "hoist_vars": false,
+    "if_return": true,
+    "join_vars": true,
+    "cascade": true,
+    // try to cascade `right` into `left` in sequences
+    "side_effects": true,
+    // drop side-effect-free statements
+    "warnings": true,
+    "global_defs": {
+        "jQuery": false
+    }
+}
