@@ -14,9 +14,10 @@ soi.deploy.task('dev',
     {
       receiver: 'http://cp01-zhida-mkt.epc.baidu.com:8343/receiver',
       dir: '/home/work/webroot/soi-test',
+      mapTo: './map.json',
       cacheTo: '../build/.cache',
-      mapTo: '../build/map.json',
-      scandirs: ['img', 'css'],
+      scandirs: ['src'],
+      loaders: ['img', 'css'],
       watch: true,
       cmdWrapper: {
         usestrict: false,
