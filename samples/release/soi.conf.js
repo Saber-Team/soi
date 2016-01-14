@@ -14,6 +14,7 @@ soi.config.extend({
     // 3. 根据配置的domain，生成线上绝对路径。用到的是pack中的to属性
     prod: {
       obscure: true,
+      noname: true,
       charset: 'utf8',
 
       domain: '/soi/samples/release/build/',

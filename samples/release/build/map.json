@@ -3,19 +3,23 @@
         "/static/img/banner.png": {
             "type": "img",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/img/banner.png",
             "from": "/static/img/banner.png",
             "to": "/soi/samples/release/build/online/static/img/Zx6u2uSOV.png",
             "original": "/Users/baidu/Git/soi/samples/release/src/static/img/banner.png",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/img",
             "hashId": "Zx6u2uSOV",
-            "shortHashId": "sq7EG"
+            "shortHashId": "n5IS4"
         }
     },
     "js": {
         "/static/vendor/lib.js": {
             "type": "js",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/vendor/lib.js",
             "from": "/static/vendor/lib.js",
             "to": "/soi/samples/release/build/online/static/js/ZmTp66++j.js",
@@ -27,6 +31,8 @@
         "/static/js/mod_A.js": {
             "type": "js",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/js/mod_A.js",
             "from": "/static/js/mod_A.js",
             "to": "/soi/samples/release/build/online/static/js/a0fjwkkEr.js",
@@ -38,6 +44,8 @@
         "/static/js/mod_B.js": {
             "type": "js",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/js/mod_B.js",
             "from": "/static/js/mod_B.js",
             "to": "/soi/samples/release/build/online/static/js/d+nSa7yNs.js",
@@ -49,6 +57,8 @@
         "/static/js/mod_C.js": {
             "type": "js",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/js/mod_C.js",
             "from": "/static/js/mod_C.js",
             "to": "/soi/samples/release/build/online/static/js/jiSp_TUgN.js",
@@ -60,6 +70,8 @@
         "/static/js/amd.js": {
             "type": "js",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/js/amd.js",
             "from": "/static/js/amd.js",
             "to": "/soi/samples/release/build/online/static/js/WCpmZbxTA.js",
@@ -71,6 +83,8 @@
         "/static/js/cmd_A.js": {
             "type": "js",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/js/cmd_A.js",
             "from": "/static/js/cmd_A.js",
             "to": "/soi/samples/release/build/online/static/js/bOAiNW7TH.js",
@@ -82,6 +96,8 @@
         "/static/js/cmd_B.js": {
             "type": "js",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/js/cmd_B.js",
             "from": "/static/js/cmd_B.js",
             "to": "/soi/samples/release/build/online/static/js/iddPJy8KN.js",
@@ -93,6 +109,8 @@
         "/static/js/cmd_C.js": {
             "type": "js",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/js/cmd_C.js",
             "from": "/static/js/cmd_C.js",
             "to": "/soi/samples/release/build/online/static/js/xO1A2zUoJ.js",
@@ -104,6 +122,8 @@
         "/static/js/cmd.js": {
             "type": "js",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/js/cmd.js",
             "from": "/static/js/cmd.js",
             "to": "/soi/samples/release/build/online/static/js/D6B8FgH06.js",
@@ -115,6 +135,8 @@
         "/static/js/jquery.js": {
             "type": "js",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/js/jquery.js",
             "from": "/static/js/jquery.js",
             "to": "/soi/samples/release/build/online/static/js/YRtVRgO7x.js",
@@ -126,6 +148,8 @@
         "/static/js/x.js": {
             "type": "js",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/js/x.js",
             "from": "/static/js/x.js",
             "to": "/soi/samples/release/build/online/static/js/bH1lrmC8W.js",
@@ -139,63 +163,75 @@
         "/static/css/reset.css": {
             "type": "css",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/css/reset.css",
             "from": "/static/css/reset.css",
             "to": "/soi/samples/release/build/online/static/css/BCfiGZhlo.css",
             "original": "/Users/baidu/Git/soi/samples/release/src/static/css/reset.css",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
             "hashId": "BCfiGZhlo",
-            "shortHashId": "IjaOp"
+            "shortHashId": "qq_94"
         },
         "/static/css/b.css": {
             "type": "css",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/css/b.css",
             "from": "/static/css/b.css",
             "to": "/soi/samples/release/build/online/static/css/yWGaA7Lrb.css",
             "original": "/Users/baidu/Git/soi/samples/release/src/static/css/b.css",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
             "hashId": "yWGaA7Lrb",
-            "shortHashId": "2n6we"
+            "shortHashId": "s71y6"
         },
         "/static/css/main.css": {
             "type": "css",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/css/main.css",
             "from": "/static/css/main.css",
             "to": "/soi/samples/release/build/online/static/css/_FYowJGYP.css",
             "original": "/Users/baidu/Git/soi/samples/release/src/static/css/main.css",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
             "hashId": "_FYowJGYP",
-            "shortHashId": "rce9K"
+            "shortHashId": "cydP2"
         },
         "/static/css/x.css": {
             "type": "css",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/css/x.css",
             "from": "/static/css/x.css",
             "to": "/soi/samples/release/build/online/static/css/7hzIygKOy.css",
             "original": "/Users/baidu/Git/soi/samples/release/src/static/css/x.css",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
             "hashId": "7hzIygKOy",
-            "shortHashId": "CIR99"
+            "shortHashId": "91sKa"
         },
         "/static/css/a.css": {
             "type": "css",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/css/a.css",
             "from": "/static/css/a.css",
             "to": "/soi/samples/release/build/online/static/css/yc9MhEb6X.css",
             "original": "/Users/baidu/Git/soi/samples/release/src/static/css/a.css",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
             "hashId": "yc9MhEb6X",
-            "shortHashId": "uETVA"
+            "shortHashId": "2_fzR"
         }
     },
     "swf": {
         "/static/swf/ZeroClipboard.swf": {
             "type": "swf",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/static/swf/ZeroClipboard.swf",
             "from": "/static/swf/ZeroClipboard.swf",
             "to": "/soi/samples/release/build/online/static/swf/ZeroClipboard.swf",
@@ -224,6 +260,7 @@
                 "modular": true,
                 "placeholder": "amd",
                 "obscure": true,
+                "noname": true,
                 "hashId": "s+QVW_qqv"
             },
             "auto_combined_1": {
@@ -243,6 +280,7 @@
                 "modular": true,
                 "placeholder": "cmd",
                 "obscure": true,
+                "noname": true,
                 "hashId": "pGB4Ae4J6"
             },
             "auto_combined_2": {
@@ -259,6 +297,7 @@
                 "modular": false,
                 "placeholder": "base:common",
                 "obscure": true,
+                "noname": true,
                 "hashId": "joNXvmjG_"
             }
         },
@@ -278,6 +317,7 @@
                 "modular": true,
                 "placeholder": "app",
                 "obscure": true,
+                "noname": true,
                 "hashId": "YHhu1iQip"
             },
             "auto_combined_1": {
@@ -294,6 +334,7 @@
                 "modular": true,
                 "placeholder": "testa",
                 "obscure": true,
+                "noname": true,
                 "hashId": "_aFDldJV3"
             },
             "auto_combined_2": {
@@ -309,6 +350,7 @@
                 "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/css",
                 "placeholder": "",
                 "obscure": true,
+                "noname": true,
                 "hashId": "txtv5B_2u"
             }
         }
@@ -317,6 +359,8 @@
         "/page/amd.html": {
             "type": "tpl",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/page/amd.html",
             "from": "/page/amd.html",
             "to": "/soi/samples/release/build/online/page/amd.html",
@@ -328,6 +372,8 @@
         "/page/cmd.html": {
             "type": "tpl",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/page/cmd.html",
             "from": "/page/cmd.html",
             "to": "/soi/samples/release/build/online/page/cmd.html",
@@ -339,6 +385,8 @@
         "/page/index.tpl": {
             "type": "tpl",
             "encoding": "utf8",
+            "obscure": true,
+            "noname": true,
             "key": "/page/index.tpl",
             "from": "/page/index.tpl",
             "to": "/soi/samples/release/build/online/page/index.tpl",
