@@ -258,7 +258,7 @@
                 "original": null,
                 "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
-                "placeholder": "amd",
+                "placeholder": "base",
                 "obscure": true,
                 "noname": true,
                 "hashId": "s+QVW_qqv"
@@ -278,7 +278,7 @@
                 "original": null,
                 "dist": "/Users/baidu/Git/soi/samples/release/build/online/static/js",
                 "modular": true,
-                "placeholder": "cmd",
+                "placeholder": "app",
                 "obscure": true,
                 "noname": true,
                 "hashId": "pGB4Ae4J6"
@@ -366,7 +366,7 @@
             "to": "/soi/samples/release/build/online/page/amd.html",
             "original": "/Users/baidu/Git/soi/samples/release/src/page/amd.html",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/page",
-            "hashId": "k+VXW455f",
+            "hashId": "uS+KbL9gw",
             "shortHashId": ""
         },
         "/page/cmd.html": {
@@ -379,7 +379,7 @@
             "to": "/soi/samples/release/build/online/page/cmd.html",
             "original": "/Users/baidu/Git/soi/samples/release/src/page/cmd.html",
             "dist": "/Users/baidu/Git/soi/samples/release/build/online/page",
-            "hashId": "MnXPvqfkg",
+            "hashId": "uS+KbL9gw",
             "shortHashId": ""
         },
         "/page/index.tpl": {

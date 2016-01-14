@@ -64,13 +64,13 @@ soi.config.extend({
             modular     : 'amd',
             entrance    : 'static/js/amd.js',
             to          : '/online/static/js/',
-            placeholder : 'amd'
+            placeholder : 'base'
           },
           {
             modular     : 'amd',
             entrance    : 'static/js/cmd.js',
             to          : '/online/static/js/',
-            placeholder : 'cmd'
+            placeholder : 'app'
           },
           {
             modular     : 'normal',
