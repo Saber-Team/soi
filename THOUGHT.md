@@ -113,7 +113,7 @@ Task有两个具体实现: DeployTask 和 ReleaseTask, 共同的基类是Task.
    `beforeCompile`
 2. 对js资源中require和require.async相对路径的替换，需要替换成资源id
    
-   `resolveRelativeUrlInternal`
+   `compile`
 3. 按照依赖树计算每个资源的线上路径, 这一步需要用到配置的rule规则
    
    `resolveProductUriInternal`

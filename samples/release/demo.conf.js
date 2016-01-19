@@ -42,8 +42,10 @@ soi.release.task('dev',
     })
     .use('less')
     .use('messid')
+    .use('css')
     .use('hash', {
       length: 7,
-      encoding: 'hex'
+      encoding: 'base64',
+      noname: true
     });
 
