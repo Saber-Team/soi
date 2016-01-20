@@ -66,18 +66,44 @@
       "height": 17
     },
     {
-      "type": "CSS",
-      "path": "src/less/import.less",
-      "id": "src/less/import.less",
-      "requiredCSS": [
-        "test.less"
+      "type": "JS",
+      "path": "src/javascript/async-require.js",
+      "id": "src/javascript/async-require.js",
+      "isModule": true,
+      "requiredAsyncModules": [
+        "vrcode"
       ],
-      "mtime": 1453217132000
+      "mtime": 1452753554000
     },
     {
-      "type": "CSS",
-      "path": "src/less/test.less",
-      "id": "src/less/test.less",
+      "type": "JS",
+      "path": "src/javascript/general.js",
+      "id": "src/javascript/general.js",
+      "isModule": true,
+      "requiredModules": [
+        "Base"
+      ],
+      "mtime": 1452753554000
+    },
+    {
+      "type": "JS",
+      "path": "src/javascript/no-id.js",
+      "id": "src/javascript/no-id.js",
+      "isModule": true,
+      "mtime": 1452753554000
+    },
+    {
+      "type": "JS",
+      "path": "src/javascript/vrcode.js",
+      "id": "vrcode",
+      "isModule": true,
+      "mtime": 1452753554000
+    },
+    {
+      "type": "JS",
+      "path": "src/javascript/with-id.js",
+      "id": "Base",
+      "isModule": true,
       "mtime": 1452753554000
     }
   ]

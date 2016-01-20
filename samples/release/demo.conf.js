@@ -17,7 +17,10 @@ soi.deploy.task('dev',
       mapTo: './map.json',
       cacheTo: '../build/.cache',
       scandirs: ['src'],
-      loaders: ['img', 'css'],
+      loaders: [
+        new soi.Loaders.ImageLoader(),
+        new soi.Loaders.JSLoader()
+      ],
       watch: true,
       cmdWrapper: {
         usestrict: false,
@@ -31,7 +34,10 @@ soi.release.task('dev',
       mapTo: './dist/map.json',
       cacheTo: '../build/.cache',
       scandirs: ['src'],
-      loaders: ['img', 'css'],
+      loaders: [
+        new soi.Loaders.ImageLoader(),
+        new soi.Loaders.JSLoader()
+      ],
       cmdWrapper: {
         define: '__d',
         commentdoc: '/* Build by @Saber.T */'
