@@ -183,6 +183,27 @@
       "mtime": 1452753554000,
       "width": 18,
       "height": 17
+    },
+    {
+      "type": "CSS",
+      "domain": null,
+      "path": "src/css/a.css",
+      "id": "src/css/a.css",
+      "mtime": 1452753554000
+    },
+    {
+      "type": "CSS",
+      "domain": null,
+      "path": "src/css/main.css",
+      "id": "main",
+      "mtime": 1452753554000
+    },
+    {
+      "type": "CSS",
+      "domain": null,
+      "path": "src/css/x.css",
+      "id": "src/css/x.css",
+      "mtime": 1452753554000
     }
   ]
 }

@@ -44,6 +44,18 @@
             "deps": [
                 "reset-style"
             ]
+        },
+        "czhvB": {
+            "uri": "/static/css/a49a36c.a.css",
+            "type": "CSS"
+        },
+        "main": {
+            "uri": "/static/css/5d3c201.main.css",
+            "type": "CSS"
+        },
+        "ITIHr": {
+            "uri": "/static/css/6a42e86.x.css",
+            "type": "CSS"
         }
     },
     "JS": {

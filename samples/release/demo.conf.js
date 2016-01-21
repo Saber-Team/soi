@@ -15,10 +15,10 @@ soi.deploy.task('dev',
       receiver: 'http://cp01-zhida-mkt.epc.baidu.com:8343/receiver',
       dir: '/home/work/webroot/soi-test',
       mapTo: './map.json',
-      cacheTo: '../build/.cache',
       scandirs: ['src'],
       loaders: [
         new soi.Loaders.ImageLoader(),
+        new soi.Loaders.CSSLoader(),
         new soi.Loaders.JSLoader()
       ],
       watch: true,
@@ -32,7 +32,6 @@ soi.release.task('dev',
     {
       dir: './dist/',
       mapTo: './dist/map.json',
-      cacheTo: '../build/.cache',
       scandirs: ['src'],
       loaders: [
         new soi.Loaders.ImageLoader(),
