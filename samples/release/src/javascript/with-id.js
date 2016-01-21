@@ -1,5 +1,5 @@
 /**
- * @provides Base
+ * @provides base
  * @module
  */
 

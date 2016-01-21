@@ -1,0 +1,108 @@
+{
+    "CSS": {
+        "JAhPf": {
+            "uri": "/static/less/ef6f377.detail.css",
+            "type": "CSS"
+        },
+        "e6fCE": {
+            "uri": "/static/less/0adc4b3.dialog.css",
+            "type": "CSS"
+        },
+        "src/less/empty.less": {
+            "type": "CSS"
+        },
+        "UVPXf": {
+            "uri": "/static/less/1a91cb4.import.css",
+            "type": "CSS",
+            "deps": [
+                "src/less/test.less"
+            ]
+        },
+        "J0bO1": {
+            "uri": "/static/less/6a61def.purecss.css",
+            "type": "CSS"
+        },
+        "reset-style": {
+            "uri": "/static/less/3a904f9.reset.css",
+            "type": "CSS"
+        },
+        "Dez3f": {
+            "uri": "/static/less/c55c896.shop_list.css",
+            "type": "CSS",
+            "deps": [
+                "reset-style",
+                "src/less/dialog.less"
+            ]
+        },
+        "l4gcP": {
+            "uri": "/static/less/926397d.test.css",
+            "type": "CSS"
+        },
+        "xI2wM": {
+            "uri": "/static/less/441f125.verify_list.css",
+            "type": "CSS",
+            "deps": [
+                "reset-style"
+            ]
+        }
+    },
+    "JS": {
+        "s2XY9": {
+            "uri": "/static/javascript/41d7317.async-require.js",
+            "type": "JS"
+        },
+        "L0ca7": {
+            "uri": "/static/javascript/5ee204a.no-id.js",
+            "type": "JS"
+        },
+        "uwMUM": {
+            "uri": "/static/javascript/091896d.sync-require.js",
+            "type": "JS",
+            "deps": [
+                "base"
+            ]
+        },
+        "vrcode": {
+            "uri": "/static/javascript/vrcode.js",
+            "type": "JS"
+        },
+        "base": {
+            "uri": "/static/javascript/with-id.js",
+            "type": "JS"
+        }
+    },
+    "Image": {
+        "src/img/finish.png": {
+            "uri": "/static/img/finish.png",
+            "type": "Image"
+        },
+        "src/img/dot.png": {
+            "uri": "/static/img/dot.png",
+            "type": "Image"
+        },
+        "elIIW": {
+            "uri": "/static/img/969f371.index.png",
+            "type": "Image"
+        },
+        "src/img/invalid.png": {
+            "uri": "/static/img/invalid.png",
+            "type": "Image"
+        },
+        "src/img/none.png": {
+            "uri": "/static/img/none.png",
+            "type": "Image"
+        },
+        "k4Ul5": {
+            "uri": "/static/img/2599183.qrcode.png",
+            "type": "Image"
+        },
+        "src/img/shop_list.png": {
+            "uri": "/static/img/shop_list.png",
+            "type": "Image"
+        },
+        "ePxoc": {
+            "uri": "/static/img/70601b9.tip.png",
+            "type": "Image"
+        }
+    }
+}

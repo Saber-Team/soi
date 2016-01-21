@@ -36,22 +36,22 @@ soi.release.task('dev',
       scandirs: ['src'],
       loaders: [
         new soi.Loaders.ImageLoader(),
+        new soi.Loaders.CSSLoader(),
         new soi.Loaders.JSLoader()
-      ],
-      cmdWrapper: {
-        define: '__d',
-        commentdoc: '/* Build by @Saber.T */'
-      }
+      ]
     })
     .addRule(/src\/(.*)\/.*/, {
       to : '/static/$1/'
     })
+    .use('wrapper', {
+      define: '__d',
+      commentdoc: '/* Build by @Saber.T */'
+    })
     .use('less')
     .use('messid')
-    .use('css')
     .use('hash', {
       length: 7,
-      encoding: 'base64',
-      noname: true
+      encoding: 'hex',
+      noname: false
     });
 
