@@ -265,7 +265,7 @@ body {
 }
 /*
 .checkout-finish {
-	background: url(/static/img/finish.png);
+	background: url(../img/finish.png);
 	float: left;
 	width: 60px;
 	height: 60px;

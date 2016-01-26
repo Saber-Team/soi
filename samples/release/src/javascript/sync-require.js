@@ -2,7 +2,7 @@
  * @module
  */
 
-var A = require('./with-id');
+var A = require('./withId');
 
 exports.getModuleA = function() {
   return new A();

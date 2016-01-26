@@ -33,7 +33,7 @@
     "et-util-logger": "^1.1.0",
     "less": "^2.5.3",
     "minimatch": "^3.0.0",
-    "neo-core": "^0.5.3",
+    "neo-core": "^0.5.4",
     "uglify-js": "^2.6.1"
   }
 }
