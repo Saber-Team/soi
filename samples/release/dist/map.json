@@ -70,46 +70,6 @@
                 ]
             }
         },
-        "JS": {
-            "HOicX": {
-                "uri": "/static/js/f552669.async-require.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            },
-            "fvr+Q": {
-                "uri": "/static/js/0ddf1ae.noId.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            },
-            "SqQ7E": {
-                "uri": "/static/js/3f02cb8.sync-require.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ],
-                "deps": [
-                    "base"
-                ]
-            },
-            "vrcode": {
-                "uri": "/static/js/377835b.vrcode.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            },
-            "base": {
-                "uri": "/static/js/2aca49b.withId.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            }
-        },
         "Image": {
             "gx18w": {
                 "uri": "/static/img/97c518d.dot.png",
@@ -151,18 +111,58 @@
                 "type": "Image",
                 "within": []
             }
+        },
+        "JS": {
+            "HOicX": {
+                "uri": "/static/js/f552669.async-require.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "fvr+Q": {
+                "uri": "/static/js/0ddf1ae.noId.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "SqQ7E": {
+                "uri": "/static/js/3f02cb8.sync-require.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "base"
+                ]
+            },
+            "vrcode": {
+                "uri": "/static/js/377835b.vrcode.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "base": {
+                "uri": "/static/js/2aca49b.withId.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            }
         }
     },
     "pkgs": {
         "p0": {
-            "uri": "/static/pkg/1615faf.pkg.build.css",
+            "uri": "/static/pkg/FhX68+9.pkg.css",
             "has": [
                 "mFLE6",
                 "main"
             ]
         },
         "p1": {
-            "uri": "/static/pkg/85a24b9.pkg.build.js",
+            "uri": "/static/pkg/haJLm0j.pkg.js",
             "has": [
                 "HOicX",
                 "fvr+Q",
