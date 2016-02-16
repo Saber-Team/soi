@@ -1,0 +1,173 @@
+{
+    "pkgs": {
+        "p0": {
+            "uri": "/static/pkg/af29e54.pkg.build.css",
+            "has": [
+                "mFLE6",
+                "main"
+            ]
+        },
+        "p1": {
+            "uri": "/static/pkg/84f9557.pkg.build.js",
+            "has": [
+                "HOicX",
+                "fvr+Q",
+                "SqQ7E",
+                "vrcode",
+                "base"
+            ]
+        }
+    },
+    "CSS": {
+        "mFLE6": {
+            "uri": "/static/css/5fb72f5.plain.css",
+            "type": "CSS",
+            "included": [
+                "p0"
+            ]
+        },
+        "main": {
+            "uri": "/static/css/23ee501.withId.css",
+            "type": "CSS",
+            "included": [
+                "p0"
+            ]
+        },
+        "JAhPf": {
+            "uri": "/static/less/559e748.detail.css",
+            "type": "CSS",
+            "included": []
+        },
+        "e6fCE": {
+            "uri": "/static/less/0adc4b3.dialog.css",
+            "type": "CSS",
+            "included": []
+        },
+        "src/less/empty.less": {
+            "type": "CSS",
+            "included": []
+        },
+        "UVPXf": {
+            "uri": "/static/less/873220f.import.css",
+            "type": "CSS",
+            "included": [],
+            "deps": [
+                "src/less/test.less"
+            ]
+        },
+        "J0bO1": {
+            "uri": "/static/less/6a61def.purecss.css",
+            "type": "CSS",
+            "included": []
+        },
+        "reset-style": {
+            "uri": "/static/less/3a904f9.reset.css",
+            "type": "CSS",
+            "included": []
+        },
+        "Dez3f": {
+            "uri": "/static/less/862d74b.shop_list.css",
+            "type": "CSS",
+            "included": [],
+            "deps": [
+                "reset-style",
+                "src/less/dialog.less"
+            ]
+        },
+        "l4gcP": {
+            "uri": "/static/less/926397d.test.css",
+            "type": "CSS",
+            "included": []
+        },
+        "xI2wM": {
+            "uri": "/static/less/dc92fba.verify_list.css",
+            "type": "CSS",
+            "included": [],
+            "deps": [
+                "reset-style"
+            ]
+        }
+    },
+    "JS": {
+        "HOicX": {
+            "uri": "/static/js/f552669.async-require.js",
+            "type": "JS",
+            "included": [
+                "p1"
+            ]
+        },
+        "fvr+Q": {
+            "uri": "/static/js/0ddf1ae.noId.js",
+            "type": "JS",
+            "included": [
+                "p1"
+            ]
+        },
+        "SqQ7E": {
+            "uri": "/static/js/3f02cb8.sync-require.js",
+            "type": "JS",
+            "included": [
+                "p1"
+            ],
+            "deps": [
+                "base"
+            ]
+        },
+        "vrcode": {
+            "uri": "/static/js/377835b.vrcode.js",
+            "type": "JS",
+            "included": [
+                "p1"
+            ]
+        },
+        "base": {
+            "uri": "/static/js/2aca49b.withId.js",
+            "type": "JS",
+            "included": [
+                "p1"
+            ]
+        }
+    },
+    "Image": {
+        "gx18w": {
+            "uri": "/static/img/97c518d.dot.png",
+            "type": "Image",
+            "included": []
+        },
+        "idb6m": {
+            "uri": "/static/img/4985b30.finish.png",
+            "type": "Image",
+            "included": []
+        },
+        "elIIW": {
+            "uri": "/static/img/969f371.index.png",
+            "type": "Image",
+            "included": []
+        },
+        "Gi51a": {
+            "uri": "/static/img/febccab.invalid.png",
+            "type": "Image",
+            "included": []
+        },
+        "eKJ9N": {
+            "uri": "/static/img/8ddd812.none.png",
+            "type": "Image",
+            "included": []
+        },
+        "k4Ul5": {
+            "uri": "/static/img/2599183.qrcode.png",
+            "type": "Image",
+            "included": []
+        },
+        "e9IyR": {
+            "uri": "/static/img/14c154a.shop_list.png",
+            "type": "Image",
+            "included": []
+        },
+        "ePxoc": {
+            "uri": "/static/img/70601b9.tip.png",
+            "type": "Image",
+            "included": []
+        }
+    }
+}
