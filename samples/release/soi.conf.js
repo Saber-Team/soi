@@ -37,7 +37,11 @@ soi.release.task('dev',
         new soi.Loaders.ImageLoader(),
         new soi.Loaders.CSSLoader(),
         new soi.Loaders.JSLoader()
-      ]
+      ],
+      pack: {
+        '/static/pkg/build.css': ['src/css/*.css'],
+        '/static/pkg/build.js': ['src/js/*.js']
+      }
     })
     .addRule(/src\/(.*)\/.*/, {
       to : '/static/$1/'
