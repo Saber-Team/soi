@@ -1,4 +1,29 @@
 {
+    "JS": {
+        "s2XY9": {
+            "uri": "/static/javascript/16c386e.async-require.js",
+            "type": "JS"
+        },
+        "yrn4z": {
+            "uri": "/static/javascript/3a1c556.noId.js",
+            "type": "JS"
+        },
+        "uwMUM": {
+            "uri": "/static/javascript/602d81d.sync-require.js",
+            "type": "JS",
+            "deps": [
+                "base"
+            ]
+        },
+        "vrcode": {
+            "uri": "/static/javascript/377835b.vrcode.js",
+            "type": "JS"
+        },
+        "base": {
+            "uri": "/static/javascript/2aca49b.withId.js",
+            "type": "JS"
+        }
+    },
     "CSS": {
         "czhvB": {
             "uri": "/static/css/604e2be.a.css",
@@ -20,15 +45,15 @@
             "uri": "/static/less/0adc4b3.dialog.css",
             "type": "CSS"
         },
+        "src/less/empty.less": {
+            "type": "CSS"
+        },
         "UVPXf": {
             "uri": "/static/less/4dd885f.import.css",
             "type": "CSS",
             "deps": [
                 "src/less/test.less"
             ]
-        },
-        "src/less/empty.less": {
-            "type": "CSS"
         },
         "J0bO1": {
             "uri": "/static/less/6a61def.purecss.css",
@@ -67,12 +92,12 @@
             "uri": "/static/img/4985b30.finish.png",
             "type": "Image"
         },
-        "elIIW": {
-            "uri": "/static/img/969f371.index.png",
-            "type": "Image"
-        },
         "Gi51a": {
             "uri": "/static/img/febccab.invalid.png",
+            "type": "Image"
+        },
+        "elIIW": {
+            "uri": "/static/img/969f371.index.png",
             "type": "Image"
         },
         "eKJ9N": {
@@ -90,31 +115,6 @@
         "ePxoc": {
             "uri": "/static/img/70601b9.tip.png",
             "type": "Image"
-        }
-    },
-    "JS": {
-        "s2XY9": {
-            "uri": "/static/javascript/16c386e.async-require.js",
-            "type": "JS"
-        },
-        "uwMUM": {
-            "uri": "/static/javascript/602d81d.sync-require.js",
-            "type": "JS",
-            "deps": [
-                "base"
-            ]
-        },
-        "yrn4z": {
-            "uri": "/static/javascript/3a1c556.noId.js",
-            "type": "JS"
-        },
-        "vrcode": {
-            "uri": "/static/javascript/377835b.vrcode.js",
-            "type": "JS"
-        },
-        "base": {
-            "uri": "/static/javascript/2aca49b.withId.js",
-            "type": "JS"
         }
     }
 }
