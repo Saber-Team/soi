@@ -134,20 +134,20 @@
       "height": 25
     },
     {
-      "path": "src/img/invalid.png",
-      "id": "src/img/invalid.png",
-      "type": "Image",
-      "mtime": 1452753554000,
-      "width": 177,
-      "height": 203
-    },
-    {
       "path": "src/img/none.png",
       "id": "src/img/none.png",
       "type": "Image",
       "mtime": 1452753554000,
       "width": 355,
       "height": 373
+    },
+    {
+      "path": "src/img/invalid.png",
+      "id": "src/img/invalid.png",
+      "type": "Image",
+      "mtime": 1452753554000,
+      "width": 177,
+      "height": 203
     },
     {
       "path": "src/img/qrcode.png",

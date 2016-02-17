@@ -15,20 +15,28 @@ soi.deploy.task('dev',
     receiver: 'http://cp01-zhida-mkt.epc.baidu.com:8343/receiver',
     dir: '/home/work/webroot/soi-test',
     mapTo: './map.json',
+    domain: 'http://static.fb.cn/',
     scandirs: ['src'],
     loaders: [
       new soi.Loaders.ImageLoader(),
       new soi.Loaders.CSSLoader(),
       new soi.Loaders.JSLoader()
     ],
-    watch: true
-  });
+    watch: false
+  })
+  .addRule(/src\/(.*)\/.*/, {
+    to : '/static/$1/'
+  })
+  .use('wrapper', {
+    define: '__d',
+    commentdoc: '/* Build by @Saber.T */'
+  })
+  .use('less');
 
 soi.release.task('dev',
   {
     dir: './dist/',
     mapTo: './dist/map.json',
-    domain: 'http://static.fb.cn/',
     scandirs: ['src'],
     loaders: [
       new soi.Loaders.ImageLoader(),
