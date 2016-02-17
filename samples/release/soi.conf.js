@@ -1,6 +1,4 @@
-/**
- * Created by baidu on 15/12/15.
- */
+
 // 配置线上路径
 //soi
 //    .addRule(/merchant\/img\/.*\.png$/, {

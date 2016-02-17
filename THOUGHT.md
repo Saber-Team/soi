@@ -26,18 +26,12 @@ soi.release.task('dev',
     {
       to: '../dist/',
       mapTo: '../build/map.json',
-      cacheTo: '../build/.cache',
       loader: [
         soi.Loaders.JSLoader,
       	soi.Loaders.CSSLoader
       ],
       scandirs: ['.'],
-      ignorePaths: noop,
-      cmdWrapper: {
-        define: '__d',
-        usestrict: true,
-        commentdoc: '/* Built by @Saber.T */'
-      }
+      ignorePaths: noop
     })
     .use('replacer', {
       '__NAVBAR__': function($0, $1) {
@@ -122,11 +116,8 @@ Task有两个具体实现: DeployTask 和 ReleaseTask, 共同的基类是Task.
    `postProcess`
 5. 对资源表进行瘦身序列化, 去掉无用属性, 合并依赖属性
    
-   `shim`
-6. 将资源表写入文件map.json 
-   
    `flush`
-7. 将资源写入指定位置, deploy就是执行post上传, release是写入本地
+6. 将资源写入指定位置, deploy就是执行post上传, release是写入本地
    
    `flush`
    
