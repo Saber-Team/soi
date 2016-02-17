@@ -55,6 +55,6 @@ soi.release.task('dev',
   })
   .use('packager', {
     length: 7,
-    encoding: 'base64',
-    noname: true
+    encoding: 'hex',
+    noname: false
   });
