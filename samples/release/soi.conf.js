@@ -21,11 +21,7 @@ soi.deploy.task('dev',
       new soi.Loaders.CSSLoader(),
       new soi.Loaders.JSLoader()
     ],
-    watch: true,
-    cmdWrapper: {
-      usestrict: false,
-      commentdoc: ''
-    }
+    watch: true
   });
 
 soi.release.task('dev',
