@@ -1,0 +1,175 @@
+{
+    "resource": {
+        "CSS": {
+            "mFLE6": {
+                "uri": "/static/css/5fb72f5.plain.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
+                ]
+            },
+            "main": {
+                "uri": "/static/css/23ee501.withId.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
+                ]
+            },
+            "JAhPf": {
+                "uri": "/static/less/559e748.detail.css",
+                "type": "CSS",
+                "within": []
+            },
+            "e6fCE": {
+                "uri": "/static/less/0adc4b3.dialog.css",
+                "type": "CSS",
+                "within": []
+            },
+            "src/less/empty.less": {
+                "type": "CSS",
+                "within": []
+            },
+            "UVPXf": {
+                "uri": "/static/less/873220f.import.css",
+                "type": "CSS",
+                "within": [],
+                "deps": [
+                    "src/less/test.less"
+                ]
+            },
+            "J0bO1": {
+                "uri": "/static/less/6a61def.purecss.css",
+                "type": "CSS",
+                "within": []
+            },
+            "reset-style": {
+                "uri": "/static/less/3a904f9.reset.css",
+                "type": "CSS",
+                "within": []
+            },
+            "Dez3f": {
+                "uri": "/static/less/862d74b.shop_list.css",
+                "type": "CSS",
+                "within": [],
+                "deps": [
+                    "reset-style",
+                    "src/less/dialog.less"
+                ]
+            },
+            "l4gcP": {
+                "uri": "/static/less/926397d.test.css",
+                "type": "CSS",
+                "within": []
+            },
+            "xI2wM": {
+                "uri": "/static/less/dc92fba.verify_list.css",
+                "type": "CSS",
+                "within": [],
+                "deps": [
+                    "reset-style"
+                ]
+            }
+        },
+        "Image": {
+            "gx18w": {
+                "uri": "/static/img/97c518d.dot.png",
+                "type": "Image",
+                "within": []
+            },
+            "idb6m": {
+                "uri": "/static/img/4985b30.finish.png",
+                "type": "Image",
+                "within": []
+            },
+            "elIIW": {
+                "uri": "/static/img/969f371.index.png",
+                "type": "Image",
+                "within": []
+            },
+            "Gi51a": {
+                "uri": "/static/img/febccab.invalid.png",
+                "type": "Image",
+                "within": []
+            },
+            "eKJ9N": {
+                "uri": "/static/img/8ddd812.none.png",
+                "type": "Image",
+                "within": []
+            },
+            "k4Ul5": {
+                "uri": "/static/img/2599183.qrcode.png",
+                "type": "Image",
+                "within": []
+            },
+            "e9IyR": {
+                "uri": "/static/img/14c154a.shop_list.png",
+                "type": "Image",
+                "within": []
+            },
+            "ePxoc": {
+                "uri": "/static/img/70601b9.tip.png",
+                "type": "Image",
+                "within": []
+            }
+        },
+        "JS": {
+            "HOicX": {
+                "uri": "/static/js/f552669.async-require.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "fvr+Q": {
+                "uri": "/static/js/0ddf1ae.noId.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "SqQ7E": {
+                "uri": "/static/js/3f02cb8.sync-require.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "base"
+                ]
+            },
+            "vrcode": {
+                "uri": "/static/js/377835b.vrcode.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "base": {
+                "uri": "/static/js/2aca49b.withId.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            }
+        }
+    },
+    "pkgs": {
+        "p0": {
+            "uri": "/static/pkg/1615faf.pkg.build.css",
+            "has": [
+                "mFLE6",
+                "main"
+            ]
+        },
+        "p1": {
+            "uri": "/static/pkg/85a24b9.pkg.build.js",
+            "has": [
+                "HOicX",
+                "fvr+Q",
+                "SqQ7E",
+                "vrcode",
+                "base"
+            ]
+        }
+    }
+}

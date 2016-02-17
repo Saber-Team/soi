@@ -1,12 +1,12 @@
 
 // 配置线上路径
 //soi
-//    .addRule(/merchant\/img\/.*\.png$/, {
-//      to: 'static/images/'
-//    })
-//    .addRule(/merchant\/(.*)\/.*\.js$/, {
-//      to: 'static/js/'
-//    });
+//  .addRule(/merchant\/img\/.*\.png$/, {
+//    to: 'static/images/'
+//  })
+//  .addRule(/merchant\/(.*)\/.*\.js$/, {
+//    to: 'static/js/'
+//  });
 
 soi.deploy.task('dev',
   {
