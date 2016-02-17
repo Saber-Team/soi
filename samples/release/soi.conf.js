@@ -28,6 +28,7 @@ soi.release.task('dev',
   {
     dir: './dist/',
     mapTo: './dist/map.json',
+    domain: 'http://static.fb.cn/',
     scandirs: ['src'],
     loaders: [
       new soi.Loaders.ImageLoader(),
