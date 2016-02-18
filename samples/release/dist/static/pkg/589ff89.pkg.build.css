@@ -1,11 +1,3 @@
-.x {
-    content: 'nothing'
-}
-
-.a { color: #4534ee }
-.abg {
-    background: url("http://static.fb.cn/static/img/97c518d.dot.png");
-}
 /**
  * @provides main
  */
@@ -64,4 +56,12 @@ div {
     line-height: normal;
     text-align: left;
     text-indent: 8px;
+}
+.x {
+    content: 'nothing'
+}
+
+.a { color: #4534ee }
+.abg {
+    background: url("http://static.fb.cn/static/img/97c518d.dot.png");
 }
