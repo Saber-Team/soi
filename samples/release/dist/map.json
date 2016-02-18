@@ -71,13 +71,13 @@
             }
         },
         "Image": {
-            "gx18w": {
-                "uri": "http://static.fb.cn/static/img/97c518d.dot.png",
+            "idb6m": {
+                "uri": "http://static.fb.cn/static/img/4985b30.finish.png",
                 "type": "Image",
                 "within": []
             },
-            "idb6m": {
-                "uri": "http://static.fb.cn/static/img/4985b30.finish.png",
+            "gx18w": {
+                "uri": "http://static.fb.cn/static/img/97c518d.dot.png",
                 "type": "Image",
                 "within": []
             },

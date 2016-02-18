@@ -1,15 +1,15 @@
 {
   "name": "soi",
   "version": "1.0.0",
-  "description": "Build tools for projects using kerneljs as module loader",
+  "description": "Build Tools for Front-End projects",
   "directories": {
     "test": "test"
   },
-  "main": "boot.js",
+  "main": "soi.js",
   "scripts": {
-    "test": "mocha --timeout 60000 ./__test__/**/*-Spec.js"
+    "test": "mocha --timeout 60000 ./test/**/*-Spec.js"
   },
-  "bin": {},
+  "bin": "./bin/soi",
   "repository": {
     "type": "git",
     "url": "https://github.com/Saber-Team/soi.git"
@@ -17,7 +17,7 @@
   "keywords": [
     "Static Resource Management",
     "Front End",
-    "Resource Map"
+    "Build Tools"
   ],
   "author": "AceMood, XCB, songjin",
   "license": {
