@@ -1,6 +1,60 @@
 {
     "resource": {
+        "JS": {
+            "fvr+Q": {
+                "uri": "http://static.fb.cn/static/js/19e4e5d.noId.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "HOicX": {
+                "uri": "http://static.fb.cn/static/js/5b2d00d.async-require.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "SqQ7E": {
+                "uri": "http://static.fb.cn/static/js/7f859fe.sync-require.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "base"
+                ]
+            },
+            "vrcode": {
+                "uri": "http://static.fb.cn/static/js/2d90ae0.vrcode.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "base": {
+                "uri": "http://static.fb.cn/static/js/0a992a5.withId.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            }
+        },
         "CSS": {
+            "main": {
+                "uri": "http://static.fb.cn/static/css/07c8fbf.withId.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
+                ]
+            },
+            "mFLE6": {
+                "uri": "http://static.fb.cn/static/css/4b8402a.plain.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
+                ]
+            },
             "JAhPf": {
                 "uri": "http://static.fb.cn/static/less/2b8afbd.detail.css",
                 "type": "CSS",
@@ -28,11 +82,6 @@
                 "type": "CSS",
                 "within": []
             },
-            "reset-style": {
-                "uri": "http://static.fb.cn/static/less/3a904f9.reset.css",
-                "type": "CSS",
-                "within": []
-            },
             "Dez3f": {
                 "uri": "http://static.fb.cn/static/less/ea220c1.shop_list.css",
                 "type": "CSS",
@@ -41,6 +90,11 @@
                     "reset-style",
                     "src/less/dialog.less"
                 ]
+            },
+            "reset-style": {
+                "uri": "http://static.fb.cn/static/less/3a904f9.reset.css",
+                "type": "CSS",
+                "within": []
             },
             "l4gcP": {
                 "uri": "http://static.fb.cn/static/less/926397d.test.css",
@@ -53,60 +107,6 @@
                 "within": [],
                 "deps": [
                     "reset-style"
-                ]
-            },
-            "main": {
-                "uri": "http://static.fb.cn/static/css/07c8fbf.withId.css",
-                "type": "CSS",
-                "within": [
-                    "p0"
-                ]
-            },
-            "mFLE6": {
-                "uri": "http://static.fb.cn/static/css/4b8402a.plain.css",
-                "type": "CSS",
-                "within": [
-                    "p0"
-                ]
-            }
-        },
-        "JS": {
-            "fvr+Q": {
-                "uri": "http://static.fb.cn/static/js/19e4e5d.noId.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            },
-            "HOicX": {
-                "uri": "http://static.fb.cn/static/js/5b2d00d.async-require.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            },
-            "SqQ7E": {
-                "uri": "http://static.fb.cn/static/js/7f859fe.sync-require.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ],
-                "deps": [
-                    "base"
-                ]
-            },
-            "base": {
-                "uri": "http://static.fb.cn/static/js/0a992a5.withId.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            },
-            "vrcode": {
-                "uri": "http://static.fb.cn/static/js/2d90ae0.vrcode.js",
-                "type": "JS",
-                "within": [
-                    "p1"
                 ]
             }
         },
@@ -162,13 +162,13 @@
             ]
         },
         "p1": {
-            "uri": "http://static.fb.cn/static/pkg/6c6c748.pkg.build.js",
+            "uri": "http://static.fb.cn/static/pkg/40c187d.pkg.build.js",
             "has": [
                 "fvr+Q",
                 "HOicX",
                 "SqQ7E",
-                "base",
-                "vrcode"
+                "vrcode",
+                "base"
             ]
         }
     }
