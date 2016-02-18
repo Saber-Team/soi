@@ -1,0 +1,10 @@
+/**
+ * @css ./test.less
+ */
+.a {
+  background: url(http://static.fb.cn/static/img/97c518d.dot.png);
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
