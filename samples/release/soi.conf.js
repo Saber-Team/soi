@@ -35,6 +35,7 @@ soi.release.task('dev',
   {
     dir: './dist/',
     mapTo: './dist/map.json',
+    domain: 'http://static.fb.cn/',
     scandirs: ['src'],
     loaders: [
       new soi.Loaders.ImageLoader(),
@@ -55,6 +56,7 @@ soi.release.task('dev',
   })
   .use('less')
   .use('messid')
+  .use('uglify')
   .use('hash', {
     length: 7,
     encoding: 'hex',

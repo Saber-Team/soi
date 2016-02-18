@@ -1,11 +1,3 @@
-.x {
-    content: 'nothing'
-}
-
-.a { color: #4534ee }
-.abg {
-    background: url("/static/img/97c518d.dot.png");
-}
 /**
  * @provides main
  */
@@ -22,7 +14,7 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background: url("/static/img/4985b30.finish.png") no-repeat center center;
+    background: url("http://static.fb.cn/static/img/4985b30.finish.png") no-repeat center center;
 }
 p {
     width: 90%;
