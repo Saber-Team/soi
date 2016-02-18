@@ -1,15 +1,15 @@
 {
   "name": "soi",
-  "version": "1.0.0",
+  "version": "0.14.0",
   "description": "Build Tools for Front-End projects",
-  "directories": {
-    "test": "test"
-  },
+  "bin": "./bin/soi",
   "main": "soi.js",
+  "engines": {
+    "node": ">= 1.0.0"
+  },
   "scripts": {
     "test": "mocha --timeout 60000 ./test/**/*-Spec.js"
   },
-  "bin": "./bin/soi",
   "repository": {
     "type": "git",
     "url": "https://github.com/Saber-Team/soi.git"
@@ -19,7 +19,7 @@
     "Front End",
     "Build Tools"
   ],
-  "author": "AceMood, XCB, songjin",
+  "author": "AceMood, XCB",
   "license": {
     "type": "MIT",
     "url": "https://github.com/Saber-Team/soi/blob/master/LICENSE.md"
@@ -35,5 +35,9 @@
     "minimatch": "^3.0.0",
     "neo-core": "^0.5.8",
     "uglify-js": "^2.6.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }
