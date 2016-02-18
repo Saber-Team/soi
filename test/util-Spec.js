@@ -117,11 +117,18 @@ describe('util functionality', function() {
 
   it('normalize should make sense of string', function() {
 
-    var re2 = util.normalize('*.js');
+    var re = util.normalize('*.js');
 
-    expect(re2.test('a.js')).to.be.true;
-    expect(re2.test('src/lib/a.jsx')).to.be.true;
+    console.log(re);
+
+    expect(re.test('/a.js')).to.be.true;
+    expect(re.test('/src/lib/a.js')).to.be.true;
+
+    var re2 = util.normalize('src/*.js');
+
+    expect(re2.test('src/a.js')).to.be.true;
+    expect(re2.test('src/lib/a.js')).to.be.false;
+    expect(re2.test('lib/src/a.js')).to.be.false;
   });
-
 
 });
