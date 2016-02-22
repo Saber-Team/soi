@@ -8,32 +8,25 @@
 
 ## soi是什么?
 S.O.I (<em style="color:rgb(0,249,89)">S</em>mart <em style="color:rgb(72,128,255)">O</em>ptimization 
-<em style="color:rgb(255,141,123)">I</em>ntegration) 是和
-[kerneljs](https://github.com/AceMood/kerneljs)
-一同使用的一款浏览器端JavaScript构建工具, 基于Node开发. [kerneljs](https://github.com/AceMood/kerneljs)
-是一个符合AMD规范的浏览器端模块加载器, 适用于在浏览器端异步加载模块, 并且也支持移动端开发. 压缩后大小不超过7k.
-soi目前可用于单页面和多页面打包设置.
+<em style="color:rgb(255,141,123)">I</em>ntegration) 是一个前端项目构建打包构建工具，内部集成了[neo](https://github.com/AceMood/neo) 作为其资源扫描器，soi相当于neo的后处理服务，提供常见的打包插件，如压缩、合并、文件指纹、CommonJS包装、less解析等等。
 
 ## 安装soi
-确保本地安装了Node环境, 通过包管理器NPM进行安装.
+确保本地安装了Node环境，通过包管理器NPM进行安装。
 
 运行：
-```javascript
-  npm install -g soi-cli
-```
-安装soi的命令行交互工具, 需要加-g全局安装标志.
-接着运行：
+
 ```javascript
   npm install -g soi
 ```
-安装soi, 建议加-g全局安装标志, 这样可以在任意目录使用soi构建前端项目.
+
+安装soi切记加-g全局安装标志，这样可以在任意目录使用soi构建前端项目。
 
 ## 使用soi
-在任意目录建立你的代码仓库, 开发完毕后在此目录添加配置文件：
+在任意目录建立你的代码仓库，开发完毕后在此目录添加配置文件：
 ```
   soi.conf.js
 ```
-在soi的安装目录samples下会有示例项目;
+在soi的安装目录samples下会有示例项目。
 
 
 [travis-image]: https://img.shields.io/travis/Saber-Team/soi.svg?style=flat-square
