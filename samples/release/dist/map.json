@@ -2,7 +2,7 @@
     "resource": {
         "CSS": {
             "main": {
-                "uri": "http://static.fb.cn/static/css/07c8fbf.withId.css",
+                "uri": "http://static.fb.cn/static/css/07c8fbf.finish.png",
                 "type": "CSS",
                 "within": [
                     "p0"
@@ -13,7 +13,7 @@
                 "type": "CSS"
             },
             "mFLE6": {
-                "uri": "http://static.fb.cn/static/css/4b8402a.plain.css",
+                "uri": "http://static.fb.cn/static/css/4b8402a.dot.png",
                 "type": "CSS",
                 "within": [
                     "p0"
@@ -111,7 +111,7 @@
                 ]
             },
             "HOicX": {
-                "uri": "http://static.fb.cn/static/js/42d8b12.async-require.js",
+                "uri": "http://static.fb.cn/static/js/42d8b12.vrcode.js",
                 "type": "JS",
                 "within": [
                     "p1"
@@ -128,7 +128,7 @@
                 ]
             },
             "SqQ7E": {
-                "uri": "http://static.fb.cn/static/js/7f859fe.sync-require.js",
+                "uri": "http://static.fb.cn/static/js/7f859fe.withId.js",
                 "type": "JS",
                 "within": [
                     "p1"
