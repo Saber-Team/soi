@@ -1,6 +1,6 @@
 {
   "name": "soi",
-  "version": "0.14.0",
+  "version": "1.0.0",
   "description": "Build Tools for Front-End projects",
   "bin": "./bin/soi",
   "main": "soi.js",
