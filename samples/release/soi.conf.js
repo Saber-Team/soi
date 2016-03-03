@@ -1,4 +1,6 @@
 
+'use strict';
+
 // 配置线上路径
 //soi
 //  .addRule(/merchant\/img\/.*\.png$/, {
@@ -7,6 +9,9 @@
 //  .addRule(/merchant\/(.*)\/.*\.js$/, {
 //    to: 'static/js/'
 //  });
+
+
+const TPLLoader = require('et-plugin-tplloader').TPLLoader;
 
 soi.release.task('dev',
   {
@@ -17,7 +22,8 @@ soi.release.task('dev',
     loaders: [
       new soi.Loaders.ImageLoader(),
       new soi.Loaders.CSSLoader(),
-      new soi.Loaders.JSLoader()
+      new soi.Loaders.JSLoader(),
+      new TPLLoader()
     ],
     pack: {
       '/static/pkg/build.css': ['src/css/*.css'],
