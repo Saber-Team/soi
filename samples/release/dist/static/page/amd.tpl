@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>soi example</title>
-    <link type="text/css" rel="stylesheet" href="css@app" />
-    <link type="text/css" rel="stylesheet" href="css@testa" />
+    <link type="text/css" rel="stylesheet" href="../css/plain.css" />
 </head>
 <body>
     <header></header>
@@ -17,6 +16,6 @@
     <script>
         var apidomain = '__APIDOMAIN__';
     </script>
-    <script type="text/javascript" src="../js/async-require.js"></script>
+    <script type="text/javascript" src="../js/sync-require.js"></script>
 </body>
 </html>

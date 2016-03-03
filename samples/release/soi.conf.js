@@ -10,6 +10,7 @@
 //    to: 'static/js/'
 //  });
 
+console.log(process.env);
 
 const TPLLoader = require('et-plugin-tplloader').TPLLoader;
 

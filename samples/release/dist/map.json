@@ -1,5 +1,48 @@
 {
     "resource": {
+        "JS": {
+            "vrcode": {
+                "uri": "http://static.fb.cn/static/js/21fd6b9.vrcode.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "base": {
+                "uri": "http://static.fb.cn/static/js/0a992a5.withId.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "HOicX": {
+                "uri": "http://static.fb.cn/static/js/42d8b12.vrcode.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ],
+                "async": [
+                    "vrcode"
+                ]
+            },
+            "fvr+Q": {
+                "uri": "http://static.fb.cn/static/js/8f5b7d2.noId.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "SqQ7E": {
+                "uri": "http://static.fb.cn/static/js/7f859fe.withId.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "base"
+                ]
+            }
+        },
         "CSS": {
             "main": {
                 "uri": "http://static.fb.cn/static/css/07c8fbf.finish.png",
@@ -95,47 +138,14 @@
                 "type": "Image"
             }
         },
-        "JS": {
-            "vrcode": {
-                "uri": "http://static.fb.cn/static/js/21fd6b9.vrcode.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
+        "TPL": {
+            "JgRbe": {
+                "uri": "http://static.fb.cn/static/page/amd.tpl",
+                "type": "TPL"
             },
-            "base": {
-                "uri": "http://static.fb.cn/static/js/0a992a5.withId.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            },
-            "HOicX": {
-                "uri": "http://static.fb.cn/static/js/42d8b12.vrcode.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ],
-                "async": [
-                    "vrcode"
-                ]
-            },
-            "fvr+Q": {
-                "uri": "http://static.fb.cn/static/js/8f5b7d2.noId.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            },
-            "SqQ7E": {
-                "uri": "http://static.fb.cn/static/js/7f859fe.withId.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ],
-                "deps": [
-                    "base"
-                ]
+            "pWYB6": {
+                "uri": "http://static.fb.cn/static/page/cmd.tpl",
+                "type": "TPL"
             }
         }
     },
