@@ -7,6 +7,9 @@
 <style></style>
 
 ## soi是什么
+
+![sloc stats](./doc/assets/sloc.png "sloc stats")
+
 S.O.I (<em style="color:rgb(0,249,89)">S</em>mart <em style="color:rgb(72,128,255)">O</em>ptimization 
 <em style="color:rgb(255,141,123)">I</em>ntegration) 是一个前端项目构建打包构建工具，内部集成了[neo](https://github.com/AceMood/neo) 作为其资源扫描器，soi相当于neo的后处理服务，提供常见的打包插件，如压缩、合并、文件指纹、CommonJS包装、less解析等等。
 
