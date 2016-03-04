@@ -1,39 +1,5 @@
 {
     "resource": {
-        "Image": {
-            "gx18w": {
-                "uri": "src/img/97c518d.dot.png",
-                "type": "Image"
-            },
-            "idb6m": {
-                "uri": "src/img/4985b30.finish.png",
-                "type": "Image"
-            },
-            "elIIW": {
-                "uri": "src/img/969f371.index.png",
-                "type": "Image"
-            },
-            "Gi51a": {
-                "uri": "src/img/febccab.invalid.png",
-                "type": "Image"
-            },
-            "eKJ9N": {
-                "uri": "src/img/8ddd812.none.png",
-                "type": "Image"
-            },
-            "k4Ul5": {
-                "uri": "src/img/2599183.qrcode.png",
-                "type": "Image"
-            },
-            "e9IyR": {
-                "uri": "src/img/14c154a.shop_list.png",
-                "type": "Image"
-            },
-            "ePxoc": {
-                "uri": "src/img/70601b9.tip.png",
-                "type": "Image"
-            }
-        },
         "JS": {
             "vrcode": {
                 "uri": "src/js/21fd6b9.vrcode.js",
@@ -89,12 +55,12 @@
                     "p0"
                 ]
             },
-            "e6fCE": {
-                "uri": "src/less/0adc4b3.dialog.css",
-                "type": "CSS"
-            },
             "JAhPf": {
                 "uri": "src/less/55dfa76.detail.css",
+                "type": "CSS"
+            },
+            "e6fCE": {
+                "uri": "src/less/0adc4b3.dialog.css",
                 "type": "CSS"
             },
             "zhSrg": {
@@ -138,6 +104,40 @@
                 ]
             }
         },
+        "Image": {
+            "gx18w": {
+                "uri": "src/img/97c518d.dot.png",
+                "type": "Image"
+            },
+            "idb6m": {
+                "uri": "src/img/4985b30.finish.png",
+                "type": "Image"
+            },
+            "elIIW": {
+                "uri": "src/img/969f371.index.png",
+                "type": "Image"
+            },
+            "Gi51a": {
+                "uri": "src/img/febccab.invalid.png",
+                "type": "Image"
+            },
+            "eKJ9N": {
+                "uri": "src/img/8ddd812.none.png",
+                "type": "Image"
+            },
+            "k4Ul5": {
+                "uri": "src/img/2599183.qrcode.png",
+                "type": "Image"
+            },
+            "e9IyR": {
+                "uri": "src/img/14c154a.shop_list.png",
+                "type": "Image"
+            },
+            "ePxoc": {
+                "uri": "src/img/70601b9.tip.png",
+                "type": "Image"
+            }
+        },
         "TPL": {
             "JgRbe": {
                 "uri": "src/page/amd.tpl",
@@ -151,10 +151,10 @@
     },
     "pkgs": {
         "p0": {
-            "uri": "http://static.fb.cn/static/pkg/2f34244.pkg.build.css",
+            "uri": "http://static.fb.cn/static/pkg/cf9284a.pkg.build.css",
             "has": [
-                "main",
-                "mFLE6"
+                "mFLE6",
+                "main"
             ]
         },
         "p1": {
