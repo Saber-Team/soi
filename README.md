@@ -13,7 +13,7 @@ S.O.I (<em style="color:rgb(0,249,89)">S</em>mart <em style="color:rgb(72,128,25
 ## 安装soi
 确保本地安装了Node环境，通过包管理器NPM进行安装。
 
-**注意⚠**：
+**注意**：
 
 若安装过v0.14.0之前版本的 **soi**，需要通过以下命令卸载依赖的soi-cli
 

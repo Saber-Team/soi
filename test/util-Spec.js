@@ -35,7 +35,6 @@ describe('util functionality', function() {
   var util = require('../lib/util');
 
   it('merge should apply primitive fields', function() {
-
     var foo = {
       name: 'ace',
       bin: 'new'
@@ -60,7 +59,6 @@ describe('util functionality', function() {
   });
 
   it('merge should apply reference fields', function() {
-
     var bar = {
       arr: [1,2,3,4,5,6],
       nest: {
@@ -91,7 +89,6 @@ describe('util functionality', function() {
   });
 
   it('seal should apply object methods and property', function() {
-
     var obj = {
       a: 'a',
       b: 'b'
@@ -108,32 +105,40 @@ describe('util functionality', function() {
   });
 
   it('normalize should make sense of regexp', function() {
-
     var re = util.normalize(/\.js$/);
 
     expect(re.test('a.js')).to.be.true;
     expect(re.test('a.jsx')).to.be.false;
   });
 
-  it('normalize should make sense of string', function() {
-    var re = util.normalize('*.js');
-    expect(re.test('/a.js')).to.be.true;
-    expect(re.test('a.js')).to.be.false;
-    expect(re.test('/src/lib/a.js')).to.be.true;
-    expect(re.test('src/lib/a.js')).to.be.true;
+  describe('normalize should make sense of glob::', function() {
+    it('single star', function() {
+      var re = util.normalize('*.js');
+      // /^(?:(?:(?!(?:\/|^)\.).)*?\/(?!\.)(?=.)[^\/]*?\.js)$/
+      expect(re.test('/a.js')).to.be.true;
+      expect(re.test('a.js')).to.be.false;
+      expect(re.test('./a.js')).to.be.false;
+      expect(re.test('/src/lib/a.js')).to.be.true;
+      expect(re.test('src/lib/a.js')).to.be.true;
+    });
 
-    var re2 = util.normalize('src/*.js');
-    expect(re2.test('src/a.js')).to.be.true;
-    expect(re2.test('src/lib/a.js')).to.be.false;
-    expect(re2.test('lib/src/a.js')).to.be.false;
+    it('stars in path', function() {
+      var re = util.normalize('src/*.js');
+      // /^(?:src\/(?!\.)(?=.)[^\/]*?\.js)$/
+      expect(re.test('src/a.js')).to.be.true;
+      expect(re.test('src/lib/a.js')).to.be.false;
+      expect(re.test('src/./a.js')).to.be.false;
+      expect(re.test('lib/src/a.js')).to.be.false;
+    });
 
-    var re3 = util.normalize('**.js');
-
-    console.log(re3);
-
-    expect(re3.test('a.js')).to.be.true;
-    expect(re3.test('/a.js')).to.be.false;
-    //expect(re3.test('src/lib/a.js')).to.be.true;
+    it('double stars', function() {
+      var re = util.normalize('**.js');
+      // /^(?:(?!\.)(?=.)[^\/]*?[^\/]*?\.js)$/
+      expect(re.test('a.js')).to.be.true;
+      expect(re.test('/a.js')).to.be.false;
+      expect(re.test('./a.js')).to.be.false;
+      expect(re.test('src/lib/a.js')).to.be.false;
+    });
   });
 
 });
