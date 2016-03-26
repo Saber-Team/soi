@@ -44,7 +44,7 @@ body {
 .r-icon:after {
   content: "";
   display: block;
-  background: url(src/img/14c154a.shop_list.png) no-repeat;
+  background: url(http://static.fb.cn/static/img/14c154a.shop_list.png) no-repeat;
   background-size: 100px 25px;
   background-position: -6px -2px;
   width: 20px;
