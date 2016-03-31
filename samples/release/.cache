@@ -325,6 +325,18 @@
         "reset-style"
       ],
       "mtime": 1455799669000
+    },
+    {
+      "type": "CSS",
+      "domain": null,
+      "_events": {},
+      "_eventsCount": 0,
+      "path": "src/css/inlineImage.css",
+      "id": "src/css/inlineImage.css",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedID": {},
+      "mtime": 1459416717000
     }
   ]
 }

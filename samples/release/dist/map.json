@@ -59,6 +59,13 @@
                 "deps": [
                     "reset-style"
                 ]
+            },
+            "YG9FV": {
+                "uri": "http://static.fb.cn/static/css/cbaab5e.inlineImage.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
+                ]
             }
         },
         "JS": {
@@ -149,22 +156,23 @@
             }
         },
         "TPL": {
-            "JgRbe": {
-                "uri": "http://static.fb.cn/static/page/amd.tpl",
-                "type": "TPL"
-            },
             "pWYB6": {
                 "uri": "http://static.fb.cn/static/page/cmd.tpl",
+                "type": "TPL"
+            },
+            "JgRbe": {
+                "uri": "http://static.fb.cn/static/page/amd.tpl",
                 "type": "TPL"
             }
         }
     },
     "pkgs": {
         "p0": {
-            "uri": "http://static.fb.cn/static/pkg/de2f9ad.pkg.build.css",
+            "uri": "http://static.fb.cn/static/pkg/aac0cc0.pkg.build.css",
             "has": [
                 "mFLE6",
-                "main"
+                "main",
+                "YG9FV"
             ]
         },
         "p1": {
