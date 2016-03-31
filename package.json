@@ -1,6 +1,6 @@
 {
   "name": "soi",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Build Tools for Front-End projects",
   "bin": "./bin/soi",
   "main": "soi.js",
@@ -33,7 +33,7 @@
     "et-util-logger": "^1.1.0",
     "less": "^2.5.3",
     "minimatch": "^3.0.0",
-    "neo-core": "^0.6.4",
+    "neo-core": "^0.6.5",
     "uglify-js": "^2.6.1"
   },
   "devDependencies": {
