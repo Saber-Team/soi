@@ -37,6 +37,7 @@ soi.release.task('dev',
   .use('wrapper', {
     define: '__d'
   })
+  .use('css')
   .use('less')
   .use('messid')
   .use('uglify')

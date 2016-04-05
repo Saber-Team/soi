@@ -2,54 +2,54 @@
     "resource": {
         "CSS": {
             "main": {
-                "uri": "http://static.fb.cn/static/css/_GOXM4cqR.css",
+                "uri": "http://static.fb.cn/static/css/BU_p84fVh.css",
                 "type": "CSS",
                 "within": [
                     "p0"
                 ]
             },
             "reset-style": {
-                "uri": "http://static.fb.cn/static/less/47zId0+0Q.css",
+                "uri": "http://static.fb.cn/static/less/LNHN1Q9Q3.css",
                 "type": "CSS"
             },
             "YG9FV": {
-                "uri": "http://static.fb.cn/static/css/y6q15zF21.css",
+                "uri": "http://static.fb.cn/static/css/47bCoH0Nq.css",
                 "type": "CSS",
                 "within": [
                     "p0"
                 ]
             },
             "mFLE6": {
-                "uri": "http://static.fb.cn/static/css/FnuUtGR2R.css",
+                "uri": "http://static.fb.cn/static/css/S8qldoNsD.css",
                 "type": "CSS",
                 "within": [
                     "p0"
                 ]
             },
             "JAhPf": {
-                "uri": "http://static.fb.cn/static/less/3G5oVtSgX.css",
+                "uri": "http://static.fb.cn/static/less/ukiiX1OM0.css",
                 "type": "CSS"
             },
             "e6fCE": {
-                "uri": "http://static.fb.cn/static/less/CtxLNxSBO.css",
+                "uri": "http://static.fb.cn/static/less/nLFdhtvim.css",
                 "type": "CSS"
             },
             "zhSrg": {
                 "type": "CSS"
             },
             "UVPXf": {
-                "uri": "http://static.fb.cn/static/less/gzsNzXnox.css",
+                "uri": "http://static.fb.cn/static/less/gbW4I+GLW.css",
                 "type": "CSS",
                 "deps": [
                     "l4gcP"
                 ]
             },
             "J0bO1": {
-                "uri": "http://static.fb.cn/static/less/AdfNtLqV0.css",
+                "uri": "http://static.fb.cn/static/less/F+4wWG4c2.css",
                 "type": "CSS"
             },
             "Dez3f": {
-                "uri": "http://static.fb.cn/static/less/q8xq_Lc8b.css",
+                "uri": "http://static.fb.cn/static/less/tbosY7n6o.css",
                 "type": "CSS",
                 "deps": [
                     "reset-style",
@@ -57,11 +57,11 @@
                 ]
             },
             "l4gcP": {
-                "uri": "http://static.fb.cn/static/less/kmOX3tler.css",
+                "uri": "http://static.fb.cn/static/less/+ddaEttz0.css",
                 "type": "CSS"
             },
             "xI2wM": {
-                "uri": "http://static.fb.cn/static/less/PKe70tjvj.css",
+                "uri": "http://static.fb.cn/static/less/lc0bin72K.css",
                 "type": "CSS",
                 "deps": [
                     "reset-style"
@@ -155,7 +155,7 @@
     },
     "pkgs": {
         "p0": {
-            "uri": "http://static.fb.cn/static/pkg/FGqVLKMHl.pkg.css",
+            "uri": "http://static.fb.cn/static/pkg/r+vV3a_no.pkg.css",
             "has": [
                 "mFLE6",
                 "main",
