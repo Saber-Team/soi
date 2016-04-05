@@ -3,21 +3,15 @@
   "objects": [
     {
       "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
-      "path": "src/css/plain.css",
-      "id": "src/css/plain.css",
+      "path": "src/css/inlineImage.css",
+      "id": "src/css/inlineImage.css",
       "_requiredCSSMap": {},
       "_spriteMap": {},
       "_requiredTextToResolvedID": {},
-      "mtime": 1455799669000
+      "mtime": 1459416717000
     },
     {
       "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/css/withId.css",
       "id": "main",
       "_requiredCSSMap": {},
@@ -26,10 +20,93 @@
       "mtime": 1455799669000
     },
     {
+      "type": "CSS",
+      "path": "src/css/plain.css",
+      "id": "src/css/plain.css",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedID": {},
+      "mtime": 1455799669000
+    },
+    {
       "type": "JS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
+      "path": "src/app/app.js",
+      "id": "app",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./moduleA": true,
+        "./moduleB": true,
+        "./moduleC": true
+      },
+      "_requiredAsyncModuleMap": {
+        "../js/vrcode": true
+      },
+      "_requiredTextToResolvedID": {
+        "./moduleA": "src/app/moduleA.js",
+        "./moduleB": "src/app/moduleB.js",
+        "./moduleC": "src/app/moduleC.js",
+        "../js/vrcode": "vrcode"
+      },
+      "isEntryPoint": true,
+      "requiredModules": [
+        "src/app/moduleA.js",
+        "src/app/moduleB.js",
+        "src/app/moduleC.js"
+      ],
+      "requiredAsyncModules": [
+        "vrcode"
+      ],
+      "mtime": 1459855531000
+    },
+    {
+      "type": "JS",
+      "path": "src/app/moduleA.js",
+      "id": "src/app/moduleA.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1459845319000
+    },
+    {
+      "type": "JS",
+      "path": "src/app/moduleB.js",
+      "id": "src/app/moduleB.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./moduleA": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {
+        "./moduleA": "src/app/moduleA.js"
+      },
+      "isModule": true,
+      "requiredModules": [
+        "src/app/moduleA.js"
+      ],
+      "mtime": 1459845395000
+    },
+    {
+      "type": "JS",
+      "path": "src/app/moduleC.js",
+      "id": "src/app/moduleC.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./moduleB": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {
+        "./moduleB": "src/app/moduleB.js"
+      },
+      "isModule": true,
+      "requiredModules": [
+        "src/app/moduleB.js"
+      ],
+      "mtime": 1459845439000
+    },
+    {
+      "type": "JS",
       "path": "src/js/async-require.js",
       "id": "src/js/async-require.js",
       "_requiredCSSMap": {},
@@ -48,9 +125,6 @@
     },
     {
       "type": "JS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/js/entry.js",
       "id": "src/js/entry.js",
       "_requiredCSSMap": {},
@@ -69,9 +143,6 @@
     },
     {
       "type": "JS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/js/noId.js",
       "id": "src/js/noId.js",
       "_requiredCSSMap": {},
@@ -83,9 +154,6 @@
     },
     {
       "type": "JS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/js/sync-require.js",
       "id": "src/js/sync-require.js",
       "_requiredCSSMap": {},
@@ -104,9 +172,6 @@
     },
     {
       "type": "JS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/js/vrcode.js",
       "id": "vrcode",
       "_requiredCSSMap": {},
@@ -118,9 +183,6 @@
     },
     {
       "type": "JS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/js/withId.js",
       "id": "base",
       "_requiredCSSMap": {},
@@ -139,20 +201,20 @@
       "height": 13
     },
     {
-      "path": "src/img/finish.png",
-      "id": "src/img/finish.png",
-      "type": "Image",
-      "mtime": 1455799669000,
-      "width": 60,
-      "height": 60
-    },
-    {
       "path": "src/img/index.png",
       "id": "src/img/index.png",
       "type": "Image",
       "mtime": 1455799669000,
       "width": 100,
       "height": 25
+    },
+    {
+      "path": "src/img/finish.png",
+      "id": "src/img/finish.png",
+      "type": "Image",
+      "mtime": 1455799669000,
+      "width": 60,
+      "height": 60
     },
     {
       "path": "src/img/invalid.png",
@@ -196,9 +258,6 @@
     },
     {
       "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/less/detail.less",
       "id": "src/less/detail.less",
       "_requiredCSSMap": {},
@@ -208,9 +267,6 @@
     },
     {
       "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/less/dialog.less",
       "id": "src/less/dialog.less",
       "_requiredCSSMap": {},
@@ -220,9 +276,6 @@
     },
     {
       "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/less/empty.less",
       "id": "src/less/empty.less",
       "_requiredCSSMap": {},
@@ -232,9 +285,6 @@
     },
     {
       "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/less/import.less",
       "id": "src/less/import.less",
       "_requiredCSSMap": {
@@ -251,9 +301,6 @@
     },
     {
       "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/less/purecss.less",
       "id": "src/less/purecss.less",
       "_requiredCSSMap": {},
@@ -263,9 +310,6 @@
     },
     {
       "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/less/reset.less",
       "id": "reset-style",
       "_requiredCSSMap": {},
@@ -275,9 +319,6 @@
     },
     {
       "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/less/shop_list.less",
       "id": "src/less/shop_list.less",
       "_requiredCSSMap": {
@@ -297,9 +338,6 @@
     },
     {
       "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/less/test.less",
       "id": "src/less/test.less",
       "_requiredCSSMap": {},
@@ -309,9 +347,6 @@
     },
     {
       "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
       "path": "src/less/verify_list.less",
       "id": "src/less/verify_list.less",
       "_requiredCSSMap": {
@@ -325,18 +360,6 @@
         "reset-style"
       ],
       "mtime": 1455799669000
-    },
-    {
-      "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
-      "path": "src/css/inlineImage.css",
-      "id": "src/css/inlineImage.css",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedID": {},
-      "mtime": 1459416717000
     }
   ]
 }

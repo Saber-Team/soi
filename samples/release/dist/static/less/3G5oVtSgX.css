@@ -1,7 +1,5 @@
-/**
- * @css util.less
- */
-/*icon css end*/
+
+
 html {
   font-size: 50px;
 }
@@ -77,14 +75,14 @@ body {
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* iphone 6 */
+
 @media (min-device-width: 375px) {
   .header {
     height: .85rem;
     line-height: .85rem;
   }
 }
-/* iphone6 plus */
+
 @media (min-device-width: 414px) {
   .header {
     height: .8rem;
@@ -145,7 +143,7 @@ body {
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-/*disabled*/
+
 .dis-address .arrow {
   display: none;
 }
@@ -263,17 +261,7 @@ body {
 .checkout .total-discount span:last-child {
   color: #262626;
 }
-/*
-.checkout-finish {
-	background: url(http://static.fb.cn/static/img/4985b30.finish.png);
-	float: left;
-	width: 60px;
-	height: 60px;
-	position: relative;
-	top: -8px;
-	display: none;
-}
-*/
+
 .verify-checkout {
   position: fixed;
   bottom: 0;

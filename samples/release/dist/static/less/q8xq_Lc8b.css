@@ -1,12 +1,6 @@
-/**
- * @css ./reset.less ./dialog.less
- */
-/**
- * @css util.less
- */
-/*
- * 设置html的font-size，自适应使用
- */
+
+
+
 html {
   font-size: 50px;
 }
@@ -25,8 +19,8 @@ body {
     font-size: 64.6875px;
   }
 }
-/* search icon define in common.less */
-/* search icon */
+
+
 .s-icon,
 .r-icon {
   height: 100%;
@@ -44,7 +38,7 @@ body {
 .r-icon:after {
   content: "";
   display: block;
-  background: url(http://static.fb.cn/static/img/14c154a.shop_list.png) no-repeat;
+  background: url(http://static.fb.cn/static/img/FMFUrZTHj.png) no-repeat;
   background-size: 100px 25px;
   background-position: -6px -2px;
   width: 20px;
@@ -56,12 +50,12 @@ body {
   -moz-transform: translateY(-50%);
   tansform: translateY(-50%);
 }
-/* remove icon */
+
 .r-icon:after {
   background-position: -30px -3px;
   margin-left: 10px;
 }
-/* header define in common.less */
+
 .header {
   height: 45px;
   line-height: 45px;
@@ -103,21 +97,21 @@ body {
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* iphone 6 */
+
 @media (min-device-width: 375px) {
   .header {
     height: .85rem;
     line-height: .85rem;
   }
 }
-/* iphone6 plus */
+
 @media (min-device-width: 414px) {
   .header {
     height: .8rem;
     line-height: .8rem;
   }
 }
-/*search bar define in common.less*/
+
 .search-bar {
   display: -webkit-box;
   display: -moz-box;

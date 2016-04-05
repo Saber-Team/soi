@@ -15,7 +15,7 @@ const TPLLoader = require('et-plugin-tplloader').TPLLoader;
 soi.release.task('dev',
   {
     dir: './dist/',
-    mapTo: './dist/map.json',
+    mapTo: './dist/resource.map',
     domain: 'http://static.fb.cn/',
     scandirs: ['src'],
     loaders: [
@@ -26,26 +26,23 @@ soi.release.task('dev',
     ],
     pack: {
       '/static/pkg/build.css': ['src/css/*.css'],
-      '/static/pkg/build.js': ['src/js/*.js']
+      '/static/pkg/build.js': ['src/app/*.js']
     }
   })
   .addRule(/src\/(.*)\/.*/, {
     to : '/static/$1/'
   })
   .use('wrapper', {
-    define: '__d',
-    commentdoc: '/* Build by @Saber.T */'
+    define: '__d'
   })
   .use('less')
   .use('messid')
   .use('uglify')
   .use('hash', {
-    length: 7,
-    encoding: 'hex',
-    noname: false
+    noname: true
   })
   .use('packager', {
-    length: 7,
-    encoding: 'hex',
-    noname: false
+    length: 9,
+    encoding: 'base64',
+    noname: true
   });
