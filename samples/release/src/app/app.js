@@ -11,7 +11,7 @@ var $btn = document.querySelector('button');
 document.addEventListener($btn, 'click', fn);
 
 function fn() {
-  require.async(['../js/vrcode'], function(vrcode) {
+  require.async(['./vrcode'], function(vrcode) {
     if (vrcode.isPast()) {
 
     }

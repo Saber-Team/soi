@@ -69,8 +69,16 @@
             }
         },
         "JS": {
+            "vrcode": {
+                "uri": "http://static.fb.cn/static/js/LZCuA9G9r.js",
+                "type": "JS"
+            },
+            "base": {
+                "uri": "http://static.fb.cn/static/js/iSDwh0koi.js",
+                "type": "JS"
+            },
             "app": {
-                "uri": "http://static.fb.cn/static/app/VwSL4eoWm.js",
+                "uri": "http://static.fb.cn/static/app/+6JDwBq92.js",
                 "type": "JS",
                 "within": [
                     "p1"
@@ -81,16 +89,8 @@
                     "T4EMD"
                 ],
                 "async": [
-                    "vrcode"
+                    "tospe"
                 ]
-            },
-            "vrcode": {
-                "uri": "http://static.fb.cn/static/js/LZCuA9G9r.js",
-                "type": "JS"
-            },
-            "base": {
-                "uri": "http://static.fb.cn/static/js/iSDwh0koi.js",
-                "type": "JS"
             },
             "AQJGK": {
                 "uri": "http://static.fb.cn/static/app/wPMiH2VfV.js",
@@ -120,7 +120,7 @@
                 ]
             },
             "HOicX": {
-                "uri": "http://static.fb.cn/static/js/efWEpTU7m.js",
+                "uri": "http://static.fb.cn/static/js/+RyrHexbv.js",
                 "type": "JS",
                 "async": [
                     "vrcode"
@@ -143,50 +143,13 @@
                 "deps": [
                     "base"
                 ]
-            }
-        },
-        "Image": {
-            "gx18w": {
-                "uri": "http://static.fb.cn/static/img/l8UY1aM2_.png",
-                "type": "Image"
             },
-            "elIIW": {
-                "uri": "http://static.fb.cn/static/img/lp83Gz1K8.png",
-                "type": "Image"
-            },
-            "idb6m": {
-                "uri": "http://static.fb.cn/static/img/SYWzAymiI.png",
-                "type": "Image"
-            },
-            "Gi51a": {
-                "uri": "http://static.fb.cn/static/img/_rzKupmnt.png",
-                "type": "Image"
-            },
-            "eKJ9N": {
-                "uri": "http://static.fb.cn/static/img/jd2BLotvl.png",
-                "type": "Image"
-            },
-            "k4Ul5": {
-                "uri": "http://static.fb.cn/static/img/JZkYOmdC6.png",
-                "type": "Image"
-            },
-            "e9IyR": {
-                "uri": "http://static.fb.cn/static/img/FMFUrZTHj.png",
-                "type": "Image"
-            },
-            "ePxoc": {
-                "uri": "http://static.fb.cn/static/img/cGAblVNIH.png",
-                "type": "Image"
-            }
-        },
-        "TPL": {
-            "JgRbe": {
-                "uri": "http://static.fb.cn/static/page/amd.tpl",
-                "type": "TPL"
-            },
-            "pWYB6": {
-                "uri": "http://static.fb.cn/static/page/cmd.tpl",
-                "type": "TPL"
+            "tospe": {
+                "uri": "http://static.fb.cn/static/app/ejtriTmSw.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
             }
         }
     },
@@ -200,8 +163,9 @@
             ]
         },
         "p1": {
-            "uri": "http://static.fb.cn/static/pkg/y0Ri_WVgf.pkg.js",
+            "uri": "http://static.fb.cn/static/pkg/h+O+yDEiB.pkg.js",
             "has": [
+                "tospe",
                 "AQJGK",
                 "zMZ2x",
                 "T4EMD",

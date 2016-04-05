@@ -12,6 +12,8 @@
 
 const TPLLoader = require('et-plugin-tplloader').TPLLoader;
 
+//soi.config.set('forceRescan', true);
+
 soi.release.task('dev',
   {
     dir: './dist/',
