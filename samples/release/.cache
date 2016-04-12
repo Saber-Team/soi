@@ -2,42 +2,34 @@
   "version": "0.1",
   "objects": [
     {
-      "type": "CSS",
-      "path": "src/css/inlineImage.css",
-      "id": "src/css/inlineImage.css",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedID": {},
-      "mtime": 1459416717000
-    },
-    {
-      "type": "CSS",
-      "path": "src/css/withId.css",
-      "id": "main",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedID": {},
-      "mtime": 1455799669000
-    },
-    {
-      "type": "CSS",
-      "path": "src/css/plain.css",
-      "id": "src/css/plain.css",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedID": {},
-      "mtime": 1455799669000
-    },
-    {
       "type": "JS",
-      "path": "src/app/moduleA.js",
-      "id": "src/app/moduleA.js",
+      "path": "src/app/app.js",
+      "id": "app",
       "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "mtime": 1459845319000
+      "_requiredModuleMap": {
+        "./moduleA": true,
+        "./moduleB": true,
+        "./moduleC": true
+      },
+      "_requiredAsyncModuleMap": {
+        "./vrcode": true
+      },
+      "_requiredTextToResolvedID": {
+        "./moduleA": "src/app/moduleA.js",
+        "./moduleB": "src/app/moduleB.js",
+        "./moduleC": "src/app/moduleC.js",
+        "./vrcode": "src/app/vrcode.js"
+      },
+      "isEntryPoint": true,
+      "requiredModules": [
+        "src/app/moduleA.js",
+        "src/app/moduleB.js",
+        "src/app/moduleC.js"
+      ],
+      "requiredAsyncModules": [
+        "src/app/vrcode.js"
+      ],
+      "mtime": 1459855774000
     },
     {
       "type": "JS",
@@ -77,89 +69,40 @@
     },
     {
       "type": "JS",
-      "path": "src/js/async-require.js",
-      "id": "src/js/async-require.js",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {
-        "./vrcode": true
-      },
-      "_requiredTextToResolvedID": {
-        "./vrcode": "vrcode"
-      },
-      "isModule": true,
-      "requiredAsyncModules": [
-        "vrcode"
-      ],
-      "mtime": 1455799669000
-    },
-    {
-      "type": "JS",
-      "path": "src/js/entry.js",
-      "id": "src/js/entry.js",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./withId": true
-      },
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {
-        "./withId": "base"
-      },
-      "isEntryPoint": true,
-      "requiredModules": [
-        "base"
-      ],
-      "mtime": 1459413619000
-    },
-    {
-      "type": "JS",
-      "path": "src/js/noId.js",
-      "id": "src/js/noId.js",
+      "path": "src/app/vrcode.js",
+      "id": "src/app/vrcode.js",
       "_requiredCSSMap": {},
       "_requiredModuleMap": {},
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedID": {},
       "isModule": true,
-      "mtime": 1455799669000
+      "mtime": 1459855790000
     },
     {
-      "type": "JS",
-      "path": "src/js/sync-require.js",
-      "id": "src/js/sync-require.js",
+      "type": "CSS",
+      "path": "src/css/plain.css",
+      "id": "src/css/plain.css",
       "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./withId": true
-      },
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {
-        "./withId": "base"
-      },
-      "isModule": true,
-      "requiredModules": [
-        "base"
-      ],
-      "mtime": 1455799669000
-    },
-    {
-      "type": "JS",
-      "path": "src/js/vrcode.js",
-      "id": "vrcode",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
+      "_spriteMap": {},
       "_requiredTextToResolvedID": {},
-      "isModule": true,
       "mtime": 1455799669000
     },
     {
-      "type": "JS",
-      "path": "src/js/withId.js",
-      "id": "base",
+      "type": "CSS",
+      "path": "src/css/inlineImage.css",
+      "id": "src/css/inlineImage.css",
       "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
+      "_spriteMap": {},
       "_requiredTextToResolvedID": {},
-      "isModule": true,
+      "mtime": 1459416717000
+    },
+    {
+      "type": "CSS",
+      "path": "src/css/withId.css",
+      "id": "main",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedID": {},
       "mtime": 1455799669000
     },
     {
@@ -171,20 +114,20 @@
       "height": 13
     },
     {
-      "path": "src/img/index.png",
-      "id": "src/img/index.png",
-      "type": "Image",
-      "mtime": 1455799669000,
-      "width": 100,
-      "height": 25
-    },
-    {
       "path": "src/img/finish.png",
       "id": "src/img/finish.png",
       "type": "Image",
       "mtime": 1455799669000,
       "width": 60,
       "height": 60
+    },
+    {
+      "path": "src/img/index.png",
+      "id": "src/img/index.png",
+      "type": "Image",
+      "mtime": 1455799669000,
+      "width": 100,
+      "height": 25
     },
     {
       "path": "src/img/invalid.png",
@@ -225,6 +168,93 @@
       "mtime": 1455799669000,
       "width": 18,
       "height": 17
+    },
+    {
+      "type": "JS",
+      "path": "src/js/async-require.js",
+      "id": "src/js/async-require.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {
+        "./vrcode": true
+      },
+      "_requiredTextToResolvedID": {
+        "./vrcode": "vrcode"
+      },
+      "isModule": true,
+      "requiredAsyncModules": [
+        "vrcode"
+      ],
+      "mtime": 1455799669000
+    },
+    {
+      "type": "JS",
+      "path": "src/js/noId.js",
+      "id": "src/js/noId.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1455799669000
+    },
+    {
+      "type": "JS",
+      "path": "src/js/entry.js",
+      "id": "src/js/entry.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./withId": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {
+        "./withId": "base"
+      },
+      "isEntryPoint": true,
+      "requiredModules": [
+        "base"
+      ],
+      "mtime": 1459413619000
+    },
+    {
+      "type": "JS",
+      "path": "src/js/sync-require.js",
+      "id": "src/js/sync-require.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./withId": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {
+        "./withId": "base"
+      },
+      "isModule": true,
+      "requiredModules": [
+        "base"
+      ],
+      "mtime": 1455799669000
+    },
+    {
+      "type": "JS",
+      "path": "src/js/vrcode.js",
+      "id": "vrcode",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1455799669000
+    },
+    {
+      "type": "JS",
+      "path": "src/js/withId.js",
+      "id": "base",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1455799669000
     },
     {
       "type": "CSS",
@@ -332,45 +362,31 @@
       "mtime": 1455799669000
     },
     {
-      "type": "JS",
-      "path": "src/app/app.js",
-      "id": "app",
+      "type": "CSS",
+      "path": "src/app/moduleA.css",
+      "id": "src/app/moduleA.css",
       "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./moduleA": true,
-        "./moduleB": true,
-        "./moduleC": true
-      },
-      "_requiredAsyncModuleMap": {
-        "./vrcode": true
-      },
-      "_requiredTextToResolvedID": {
-        "./moduleA": "src/app/moduleA.js",
-        "./moduleB": "src/app/moduleB.js",
-        "./moduleC": "src/app/moduleC.js",
-        "./vrcode": "src/app/vrcode.js"
-      },
-      "isEntryPoint": true,
-      "requiredModules": [
-        "src/app/moduleA.js",
-        "src/app/moduleB.js",
-        "src/app/moduleC.js"
-      ],
-      "requiredAsyncModules": [
-        "src/app/vrcode.js"
-      ],
-      "mtime": 1459855774000
+      "_spriteMap": {},
+      "_requiredTextToResolvedID": {},
+      "mtime": 1460347856000
     },
     {
       "type": "JS",
-      "path": "src/app/vrcode.js",
-      "id": "src/app/vrcode.js",
-      "_requiredCSSMap": {},
+      "path": "src/app/moduleA.js",
+      "id": "src/app/moduleA.js",
+      "_requiredCSSMap": {
+        "./moduleA.css": true
+      },
       "_requiredModuleMap": {},
       "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
+      "_requiredTextToResolvedID": {
+        "./moduleA.css": "src/app/moduleA.css"
+      },
       "isModule": true,
-      "mtime": 1459855790000
+      "requiredCSS": [
+        "src/app/moduleA.css"
+      ],
+      "mtime": 1460347836000
     }
   ]
 }

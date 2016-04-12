@@ -17,8 +17,8 @@ const TPLLoader = require('et-plugin-tplloader').TPLLoader;
 soi.release.task('dev',
   {
     dir: './dist/',
-    mapTo: './dist/resource.map',
-    domain: 'http://static.fb.cn/',
+    mapTo: './dist/resource.json',
+    domain: '',
     scandirs: ['src'],
     loaders: [
       new soi.Loaders.ImageLoader(),

@@ -1,0 +1,183 @@
+{
+    "resource": {
+        "JS": {
+            "app": {
+                "uri": "/static/app/+6JDwBq92.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "AQJGK",
+                    "zMZ2x",
+                    "T4EMD"
+                ],
+                "async": [
+                    "tospe"
+                ]
+            },
+            "vrcode": {
+                "uri": "/static/js/BWtuQ8NoV.js",
+                "type": "JS"
+            },
+            "base": {
+                "uri": "/static/js/iSDwh0koi.js",
+                "type": "JS"
+            },
+            "zMZ2x": {
+                "uri": "/static/app/E0GFL9wQg.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "AQJGK"
+                ]
+            },
+            "T4EMD": {
+                "uri": "/static/app/_ph2VIItC.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "zMZ2x"
+                ]
+            },
+            "tospe": {
+                "uri": "/static/app/izFi3j8sm.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "HOicX": {
+                "uri": "/static/js/efWEpTU7m.js",
+                "type": "JS",
+                "async": [
+                    "vrcode"
+                ]
+            },
+            "fvr+Q": {
+                "uri": "/static/js/IGwPikvkQ.js",
+                "type": "JS"
+            },
+            "sWXOl": {
+                "uri": "/static/js/gOjZ5du9Y.js",
+                "type": "JS",
+                "deps": [
+                    "base"
+                ]
+            },
+            "SqQ7E": {
+                "uri": "/static/js/f4Wf4ti6N.js",
+                "type": "JS",
+                "deps": [
+                    "base"
+                ]
+            },
+            "AQJGK": {
+                "uri": "/static/app/wPMiH2VfV.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ],
+                "css": [
+                    "a5tlT"
+                ]
+            }
+        },
+        "CSS": {
+            "main": {
+                "uri": "/static/css/ie6PnidWk.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
+                ]
+            },
+            "reset-style": {
+                "uri": "/static/less/LNHN1Q9Q3.css",
+                "type": "CSS"
+            },
+            "mFLE6": {
+                "uri": "/static/css/8ow4jDjk3.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
+                ]
+            },
+            "YG9FV": {
+                "uri": "/static/css/47bCoH0Nq.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
+                ]
+            },
+            "JAhPf": {
+                "uri": "/static/less/AMbQ+2+yk.css",
+                "type": "CSS"
+            },
+            "e6fCE": {
+                "uri": "/static/less/nLFdhtvim.css",
+                "type": "CSS"
+            },
+            "zhSrg": {
+                "type": "CSS"
+            },
+            "UVPXf": {
+                "uri": "/static/less/xZ17pPIW3.css",
+                "type": "CSS",
+                "css": [
+                    "l4gcP"
+                ]
+            },
+            "J0bO1": {
+                "uri": "/static/less/F+4wWG4c2.css",
+                "type": "CSS"
+            },
+            "Dez3f": {
+                "uri": "/static/less/IPly1udYx.css",
+                "type": "CSS",
+                "css": [
+                    "reset-style",
+                    "e6fCE"
+                ]
+            },
+            "l4gcP": {
+                "uri": "/static/less/+ddaEttz0.css",
+                "type": "CSS"
+            },
+            "xI2wM": {
+                "uri": "/static/less/4HQsdKsWF.css",
+                "type": "CSS",
+                "css": [
+                    "reset-style"
+                ]
+            },
+            "a5tlT": {
+                "uri": "/static/app/ISzUrzbxo.css",
+                "type": "CSS"
+            }
+        }
+    },
+    "pkgs": {
+        "p0": {
+            "uri": "/static/pkg/bu4Seg23W.pkg.css",
+            "has": [
+                "main",
+                "YG9FV",
+                "mFLE6"
+            ]
+        },
+        "p1": {
+            "uri": "/static/pkg/pgP3DDBZW.pkg.js",
+            "has": [
+                "tospe",
+                "AQJGK",
+                "zMZ2x",
+                "T4EMD",
+                "app"
+            ]
+        }
+    }
+}
