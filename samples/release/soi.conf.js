@@ -11,7 +11,8 @@
 //  });
 
 const TPLLoader = require('et-plugin-tplloader').TPLLoader;
-
+//const SimpleTPLCompiler = require('et-plugin-tplloader').Compiler;
+//soi.addCompiler('TPL', SimpleTPLCompiler);
 //soi.config.set('forceRescan', true);
 
 soi.release.task('dev',
@@ -45,7 +46,5 @@ soi.release.task('dev',
     noname: true
   })
   .use('packager', {
-    length: 9,
-    encoding: 'base64',
     noname: true
   });
