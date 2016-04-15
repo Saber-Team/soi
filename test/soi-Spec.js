@@ -29,45 +29,47 @@
 /* globals it */
 /* globals soi */
 
-describe('soi method', function() {
+describe('Global soi object', function() {
 
   var expect = require('chai').expect;
   var fs = require('fs');
   // global
   require('../lib/soi');
 
-  it('soi.config object', function() {
-    expect(soi.config).to.be.an('object');
-    expect(soi.config.set).to.be.a('function');
-    expect(soi.config.get).to.be.a('function');
-  });
+  describe('soi.config object', function() {
+    it('soi.config object', function() {
+      expect(soi.config).to.be.an('object');
+      expect(soi.config.set).to.be.a('function');
+      expect(soi.config.get).to.be.a('function');
+    });
 
-  it('config soi object with single name', function() {
-    soi.config.set('name', 'ace');
-    var ret = soi.config.get('name');
-    var non = soi.config.get('non-name');
+    it('config soi object with single name', function() {
+      soi.config.set('name', 'ace');
+      var ret = soi.config.get('name');
+      var non = soi.config.get('non-name');
 
-    expect(ret).to.equal('ace');
-    expect(non).to.be.undefined;
-  });
+      expect(ret).to.equal('ace');
+      expect(non).to.be.undefined;
+    });
 
-  it('config soi object with same name will override', function() {
-    soi.config.set('name', 'zmike');
-    var ret = soi.config.get('name');
+    it('config soi object with same name will override', function() {
+      soi.config.set('name', 'zmike');
+      var ret = soi.config.get('name');
 
-    expect(ret).to.equal('zmike');
-  });
+      expect(ret).to.equal('zmike');
+    });
 
-  it('config soi object with several names', function() {
-    soi.config.set('another.me', 'ace');
+    it('config soi object with several names', function() {
+      soi.config.set('another.me', 'ace');
 
-    var nameObj = soi.config.get('another');
-    var ret = soi.config.get('another.me');
-    var non = soi.config.get('another.another');
+      var nameObj = soi.config.get('another');
+      var ret = soi.config.get('another.me');
+      var non = soi.config.get('another.another');
 
-    expect(nameObj).to.be.an('object');
-    expect(ret).to.equal('ace');
-    expect(non).to.be.undefined;
+      expect(nameObj).to.be.an('object');
+      expect(ret).to.equal('ace');
+      expect(non).to.be.undefined;
+    });
   });
 
 });
