@@ -1,0 +1,1 @@
+__d("vrcode",function(n,t,e){t.isPast=function(){return Boolean('<%$_REQUEST["token"]%>')}});

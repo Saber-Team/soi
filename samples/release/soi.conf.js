@@ -11,8 +11,8 @@
 //  });
 
 const TPLLoader = require('et-plugin-tplloader').TPLLoader;
-//const SimpleTPLCompiler = require('et-plugin-tplloader').Compiler;
-//soi.addCompiler('TPL', SimpleTPLCompiler);
+const SimpleTPLCompiler = require('et-plugin-tplloader').TPLCompiler;
+soi.addCompiler('TPL', SimpleTPLCompiler);
 //soi.config.set('forceRescan', true);
 
 soi.release.task('dev',

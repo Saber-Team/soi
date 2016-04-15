@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>soi example</title>
-    <link type="text/css" rel="stylesheet" href="../css/plain.css" />
+    <link type="text/css" rel="stylesheet" href="../css/plain.css?__inline" />
 </head>
 <body>
     <header></header>
@@ -13,9 +13,8 @@
     <button>get reverse</button>
     <div>your result:</div>
     <div class="ret"></div>
-    <script>
-        var apidomain = '__APIDOMAIN__';
-    </script>
-    <script type="text/javascript" src="../js/sync-require.js"></script>
+    <img src="../img/index.png" />
+    <script type="text/javascript" src="../app/app.js"></script>
+    {{brisk_require_js name="../app/app.js"}}
 </body>
 </html>

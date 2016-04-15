@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>soi example</title>
-    <link type="text/css" rel="stylesheet" href="css@app" />
-    <link type="text/css" rel="stylesheet" href="css@testa" />
+    <style type="text/css">
+.x{content:'nothing';}.a{color:#4534ee;}.abg{background:url("/static/img/l8UY1aM2_.png");}
+</style>
 </head>
 <body>
     <header></header>
@@ -14,9 +15,8 @@
     <button>get reverse</button>
     <div>your result:</div>
     <div class="ret"></div>
-    <script>
-        var apidomain = '__APIDOMAIN__';
-    </script>
-    <script type="text/javascript" src="../js/async-require.js"></script>
+    <img src="/static/img/lp83Gz1K8.png" />
+    <script type="text/javascript" src="/static/app/+6JDwBq92.js"></script>
+    {{brisk_require_js name="app"}}
 </body>
 </html>
