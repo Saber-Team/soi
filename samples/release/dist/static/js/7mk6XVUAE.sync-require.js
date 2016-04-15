@@ -1,0 +1,1 @@
+__d("SqQ7E",function(n,e,t){var o=n("base");e.getModuleA=function(){return new o}});

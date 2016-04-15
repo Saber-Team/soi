@@ -1,0 +1,1 @@
+__d("base",function(n,t,o){o.exports={name:"A"}});

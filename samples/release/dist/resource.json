@@ -1,80 +1,16 @@
 {
     "resource": {
-        "CSS": {
-            "main": {
-                "uri": "/static/css/kfiR7iztF.css",
-                "type": "CSS",
-                "within": [
-                    "p0"
-                ]
-            },
-            "reset-style": {
-                "uri": "/static/less/LNHN1Q9Q3.css",
-                "type": "CSS"
-            },
-            "mFLE6": {
-                "uri": "/static/css/sdoRqQoB5.css",
-                "type": "CSS",
-                "within": [
-                    "p0"
-                ]
-            },
-            "YG9FV": {
-                "uri": "/static/css/47bCoH0Nq.css",
-                "type": "CSS",
-                "within": [
-                    "p0"
-                ]
-            },
-            "a5tlT": {
-                "uri": "/static/app/ISzUrzbxo.css",
-                "type": "CSS"
-            },
-            "JAhPf": {
-                "uri": "/static/less/ukiiX1OM0.css",
-                "type": "CSS"
-            },
-            "e6fCE": {
-                "uri": "/static/less/nLFdhtvim.css",
-                "type": "CSS"
-            },
-            "zhSrg": {
-                "type": "CSS"
-            },
-            "UVPXf": {
-                "uri": "/static/less/wmRlG5VqG.css",
-                "type": "CSS",
-                "css": [
-                    "l4gcP"
-                ]
-            },
-            "J0bO1": {
-                "uri": "/static/less/F+4wWG4c2.css",
-                "type": "CSS"
-            },
-            "Dez3f": {
-                "uri": "/static/less/R_NrUtjIp.css",
-                "type": "CSS",
-                "css": [
-                    "reset-style",
-                    "e6fCE"
-                ]
-            },
-            "l4gcP": {
-                "uri": "/static/less/+ddaEttz0.css",
-                "type": "CSS"
-            },
-            "xI2wM": {
-                "uri": "/static/less/onX77ddNm.css",
-                "type": "CSS",
-                "css": [
-                    "reset-style"
-                ]
-            }
-        },
         "JS": {
+            "vrcode": {
+                "uri": "/static/js/M8NwxmXZq.vrcode.js",
+                "type": "JS"
+            },
+            "base": {
+                "uri": "/static/js/zqRwvu9u5.withId.js",
+                "type": "JS"
+            },
             "app": {
-                "uri": "/static/app/+6JDwBq92.js",
+                "uri": "/static/app/nJ00HCEIn.app.js",
                 "type": "JS",
                 "within": [
                     "p1"
@@ -88,16 +24,33 @@
                     "tospe"
                 ]
             },
-            "vrcode": {
-                "uri": "/static/js/BWtuQ8NoV.js",
+            "HOicX": {
+                "uri": "/static/js/d3hZRR4cd.async-require.js",
+                "type": "JS",
+                "async": [
+                    "vrcode"
+                ]
+            },
+            "sWXOl": {
+                "uri": "/static/js/ezpSQnQbI.entry.js",
+                "type": "JS",
+                "deps": [
+                    "base"
+                ]
+            },
+            "fvr+Q": {
+                "uri": "/static/js/wdE1NqpDC.noId.js",
                 "type": "JS"
             },
-            "base": {
-                "uri": "/static/js/iSDwh0koi.js",
-                "type": "JS"
+            "SqQ7E": {
+                "uri": "/static/js/7mk6XVUAE.sync-require.js",
+                "type": "JS",
+                "deps": [
+                    "base"
+                ]
             },
             "AQJGK": {
-                "uri": "/static/app/wPMiH2VfV.js",
+                "uri": "/static/app/at+a8eO+2.moduleA.js",
                 "type": "JS",
                 "within": [
                     "p1"
@@ -107,7 +60,7 @@
                 ]
             },
             "zMZ2x": {
-                "uri": "/static/app/E0GFL9wQg.js",
+                "uri": "/static/app/CKmCqQgV+.moduleB.js",
                 "type": "JS",
                 "within": [
                     "p1"
@@ -116,15 +69,8 @@
                     "AQJGK"
                 ]
             },
-            "tospe": {
-                "uri": "/static/app/izFi3j8sm.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            },
             "T4EMD": {
-                "uri": "/static/app/_ph2VIItC.js",
+                "uri": "/static/app/1_vYcwP8c.moduleC.js",
                 "type": "JS",
                 "within": [
                     "p1"
@@ -133,44 +79,98 @@
                     "zMZ2x"
                 ]
             },
-            "HOicX": {
-                "uri": "/static/js/efWEpTU7m.js",
+            "tospe": {
+                "uri": "/static/app/WmaCIQkMr.vrcode.js",
                 "type": "JS",
-                "async": [
-                    "vrcode"
+                "within": [
+                    "p1"
+                ]
+            }
+        },
+        "CSS": {
+            "reset-style": {
+                "uri": "/static/css/eWpfSHgbv.reset.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
                 ]
             },
-            "sWXOl": {
-                "uri": "/static/js/gOjZ5du9Y.js",
-                "type": "JS",
-                "deps": [
-                    "base"
+            "main": {
+                "uri": "/static/css/Rmq24kyDS.withId.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
                 ]
             },
-            "fvr+Q": {
-                "uri": "/static/js/IGwPikvkQ.js",
-                "type": "JS"
+            "JAhPf": {
+                "uri": "/static/less/qRmtccLXG.detail.css",
+                "type": "CSS"
             },
-            "SqQ7E": {
-                "uri": "/static/js/f4Wf4ti6N.js",
-                "type": "JS",
-                "deps": [
-                    "base"
+            "e6fCE": {
+                "uri": "/static/less/chm2xK42x.dialog.css",
+                "type": "CSS"
+            },
+            "zhSrg": {
+                "type": "CSS"
+            },
+            "UVPXf": {
+                "uri": "/static/less/+FfvFANc4.import.css",
+                "type": "CSS",
+                "css": [
+                    "l4gcP"
+                ]
+            },
+            "J0bO1": {
+                "uri": "/static/less/YYOgnsfaw.purecss.css",
+                "type": "CSS"
+            },
+            "Dez3f": {
+                "uri": "/static/less/VoUApGuMR.shop_list.css",
+                "type": "CSS",
+                "css": [
+                    "e6fCE"
+                ]
+            },
+            "l4gcP": {
+                "uri": "/static/less/9EHOZ+xXt.test.css",
+                "type": "CSS"
+            },
+            "xI2wM": {
+                "uri": "/static/less/WqTy6YDcK.verify_list.css",
+                "type": "CSS"
+            },
+            "a5tlT": {
+                "uri": "/static/app/yXw+TguNt.moduleA.css",
+                "type": "CSS"
+            },
+            "YG9FV": {
+                "uri": "/static/css/FJ5kFRw3a.inlineImage.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
+                ]
+            },
+            "mFLE6": {
+                "uri": "/static/css/vtOtSQ7ZE.plain.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
                 ]
             }
         }
     },
     "pkgs": {
         "p0": {
-            "uri": "/static/pkg/IH47KjPWr.pkg.css",
+            "uri": "/static/pkg/6WBFDc3nr.pkg.build.css",
             "has": [
                 "main",
-                "YG9FV",
-                "mFLE6"
+                "reset-style",
+                "mFLE6",
+                "YG9FV"
             ]
         },
         "p1": {
-            "uri": "/static/pkg/pgP3DDBZW.pkg.js",
+            "uri": "/static/pkg/X7hwDpK2u.pkg.build.js",
             "has": [
                 "tospe",
                 "AQJGK",

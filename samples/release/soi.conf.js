@@ -32,6 +32,9 @@ soi.release.task('dev',
       '/static/pkg/build.js': ['src/app/*.js']
     }
   })
+  .addRule(/src\/.*\.tpl/, {
+    to : '/static/page/'
+  })
   .addRule(/src\/(.*)\/.*/, {
     to : '/static/$1/'
   })
@@ -43,8 +46,10 @@ soi.release.task('dev',
   .use('messid')
   .use('uglify')
   .use('hash', {
-    noname: true
+    noname: false,
+    algorithm: 'sha1'
   })
   .use('packager', {
-    noname: true
+    noname: false,
+    algorithm: 'sha1'
   });

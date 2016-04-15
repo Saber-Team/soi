@@ -2,137 +2,6 @@
   "version": "0.1",
   "objects": [
     {
-      "type": "CSS",
-      "path": "src/css/plain.css",
-      "id": "src/css/plain.css",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedID": {},
-      "mtime": 1455799669000
-    },
-    {
-      "type": "CSS",
-      "path": "src/css/inlineImage.css",
-      "id": "src/css/inlineImage.css",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedID": {},
-      "mtime": 1459416717000
-    },
-    {
-      "type": "CSS",
-      "path": "src/css/withId.css",
-      "id": "main",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedID": {},
-      "mtime": 1455799669000
-    },
-    {
-      "type": "JS",
-      "path": "src/app/app.js",
-      "id": "app",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./moduleA": true,
-        "./moduleB": true,
-        "./moduleC": true
-      },
-      "_requiredAsyncModuleMap": {
-        "./vrcode": true
-      },
-      "_requiredTextToResolvedID": {
-        "./moduleA": "src/app/moduleA.js",
-        "./moduleB": "src/app/moduleB.js",
-        "./moduleC": "src/app/moduleC.js",
-        "./vrcode": "src/app/vrcode.js"
-      },
-      "isEntryPoint": true,
-      "requiredModules": [
-        "src/app/moduleA.js",
-        "src/app/moduleB.js",
-        "src/app/moduleC.js"
-      ],
-      "requiredAsyncModules": [
-        "src/app/vrcode.js"
-      ],
-      "mtime": 1459855774000
-    },
-    {
-      "type": "CSS",
-      "path": "src/app/moduleA.css",
-      "id": "src/app/moduleA.css",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedID": {},
-      "mtime": 1460347856000
-    },
-    {
-      "type": "JS",
-      "path": "src/app/moduleA.js",
-      "id": "src/app/moduleA.js",
-      "_requiredCSSMap": {
-        "./moduleA.css": true
-      },
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {
-        "./moduleA.css": "src/app/moduleA.css"
-      },
-      "isModule": true,
-      "requiredCSS": [
-        "src/app/moduleA.css"
-      ],
-      "mtime": 1460347836000
-    },
-    {
-      "type": "JS",
-      "path": "src/app/moduleB.js",
-      "id": "src/app/moduleB.js",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./moduleA": true
-      },
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {
-        "./moduleA": "src/app/moduleA.js"
-      },
-      "isModule": true,
-      "requiredModules": [
-        "src/app/moduleA.js"
-      ],
-      "mtime": 1459845395000
-    },
-    {
-      "type": "JS",
-      "path": "src/app/vrcode.js",
-      "id": "src/app/vrcode.js",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "mtime": 1459855790000
-    },
-    {
-      "type": "JS",
-      "path": "src/app/moduleC.js",
-      "id": "src/app/moduleC.js",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./moduleB": true
-      },
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {
-        "./moduleB": "src/app/moduleB.js"
-      },
-      "isModule": true,
-      "requiredModules": [
-        "src/app/moduleB.js"
-      ],
-      "mtime": 1459845439000
-    },
-    {
       "path": "src/img/dot.png",
       "id": "src/img/dot.png",
       "type": "Image",
@@ -149,20 +18,20 @@
       "height": 60
     },
     {
-      "path": "src/img/invalid.png",
-      "id": "src/img/invalid.png",
-      "type": "Image",
-      "mtime": 1455799669000,
-      "width": 177,
-      "height": 203
-    },
-    {
       "path": "src/img/index.png",
       "id": "src/img/index.png",
       "type": "Image",
       "mtime": 1455799669000,
       "width": 100,
       "height": 25
+    },
+    {
+      "path": "src/img/invalid.png",
+      "id": "src/img/invalid.png",
+      "type": "Image",
+      "mtime": 1455799669000,
+      "width": 177,
+      "height": 203
     },
     {
       "path": "src/img/none.png",
@@ -337,31 +206,19 @@
     },
     {
       "type": "CSS",
-      "path": "src/less/reset.less",
-      "id": "reset-style",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedID": {},
-      "mtime": 1455799669000
-    },
-    {
-      "type": "CSS",
       "path": "src/less/shop_list.less",
       "id": "src/less/shop_list.less",
       "_requiredCSSMap": {
-        "./reset.less": true,
         "./dialog.less": true
       },
       "_spriteMap": {},
       "_requiredTextToResolvedID": {
-        "./reset.less": "reset-style",
         "./dialog.less": "src/less/dialog.less"
       },
       "requiredCSS": [
-        "reset-style",
         "src/less/dialog.less"
       ],
-      "mtime": 1455799669000
+      "mtime": 1460716656000
     },
     {
       "type": "CSS",
@@ -376,16 +233,149 @@
       "type": "CSS",
       "path": "src/less/verify_list.less",
       "id": "src/less/verify_list.less",
-      "_requiredCSSMap": {
-        "./reset.less": true
-      },
+      "_requiredCSSMap": {},
       "_spriteMap": {},
-      "_requiredTextToResolvedID": {
-        "./reset.less": "reset-style"
+      "_requiredTextToResolvedID": {},
+      "mtime": 1460716662000
+    },
+    {
+      "type": "JS",
+      "path": "src/app/app.js",
+      "id": "app",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./moduleA": true,
+        "./moduleB": true,
+        "./moduleC": true
       },
-      "requiredCSS": [
-        "reset-style"
+      "_requiredAsyncModuleMap": {
+        "./vrcode": true
+      },
+      "_requiredTextToResolvedID": {
+        "./moduleA": "src/app/moduleA.js",
+        "./moduleB": "src/app/moduleB.js",
+        "./moduleC": "src/app/moduleC.js",
+        "./vrcode": "src/app/vrcode.js"
+      },
+      "isEntryPoint": true,
+      "requiredModules": [
+        "src/app/moduleA.js",
+        "src/app/moduleB.js",
+        "src/app/moduleC.js"
       ],
+      "requiredAsyncModules": [
+        "src/app/vrcode.js"
+      ],
+      "mtime": 1459855774000
+    },
+    {
+      "type": "CSS",
+      "path": "src/app/moduleA.css",
+      "id": "src/app/moduleA.css",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedID": {},
+      "mtime": 1460347856000
+    },
+    {
+      "type": "JS",
+      "path": "src/app/moduleA.js",
+      "id": "src/app/moduleA.js",
+      "_requiredCSSMap": {
+        "./moduleA.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {
+        "./moduleA.css": "src/app/moduleA.css"
+      },
+      "isModule": true,
+      "requiredCSS": [
+        "src/app/moduleA.css"
+      ],
+      "mtime": 1460347836000
+    },
+    {
+      "type": "JS",
+      "path": "src/app/moduleB.js",
+      "id": "src/app/moduleB.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./moduleA": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {
+        "./moduleA": "src/app/moduleA.js"
+      },
+      "isModule": true,
+      "requiredModules": [
+        "src/app/moduleA.js"
+      ],
+      "mtime": 1459845395000
+    },
+    {
+      "type": "JS",
+      "path": "src/app/moduleC.js",
+      "id": "src/app/moduleC.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./moduleB": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {
+        "./moduleB": "src/app/moduleB.js"
+      },
+      "isModule": true,
+      "requiredModules": [
+        "src/app/moduleB.js"
+      ],
+      "mtime": 1459845439000
+    },
+    {
+      "type": "JS",
+      "path": "src/app/vrcode.js",
+      "id": "src/app/vrcode.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1459855790000
+    },
+    {
+      "type": "CSS",
+      "path": "src/css/inlineImage.css",
+      "id": "src/css/inlineImage.css",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedID": {},
+      "mtime": 1459416717000
+    },
+    {
+      "type": "CSS",
+      "path": "src/css/plain.css",
+      "id": "src/css/plain.css",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedID": {},
+      "mtime": 1455799669000
+    },
+    {
+      "type": "CSS",
+      "path": "src/css/reset.css",
+      "id": "reset-style",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedID": {},
+      "mtime": 1460715920000
+    },
+    {
+      "type": "CSS",
+      "path": "src/css/withId.css",
+      "id": "main",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedID": {},
       "mtime": 1455799669000
     }
   ]
