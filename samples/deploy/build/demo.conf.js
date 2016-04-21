@@ -24,17 +24,3 @@ soi.deploy.task('dev',
           commentdoc: ''
       }
   });
-
-soi.release.task('dev',
-  {
-      dir: './build/',
-      mapTo: '../build/map.json',
-      cacheTo: '../build/.cache',
-      scandirs: ['.'],
-      ignorePaths: function(){},
-      cmdWrapper: {
-          define: '__d',
-          commentdoc: ''
-      }
-  });
-
