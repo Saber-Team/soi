@@ -20,14 +20,14 @@
                     "zMZ2x",
                     "T4EMD"
                 ],
-                "async": [
+                "asyncLoaded": [
                     "tospe"
                 ]
             },
             "HOicX": {
                 "uri": "/static/js/d3hZRR4cd.async-require.js",
                 "type": "JS",
-                "async": [
+                "asyncLoaded": [
                     "vrcode"
                 ]
             },
