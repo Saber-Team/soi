@@ -13,7 +13,9 @@
 const TPLLoader = require('et-plugin-tplloader').TPLLoader;
 const SimpleTPLCompiler = require('et-plugin-tplloader').TPLCompiler;
 soi.addCompiler('TPL', SimpleTPLCompiler);
-//soi.config.set('forceRescan', true);
+
+// 资源表中包含的资源类型
+soi.config.set('types', ['JS', 'CSS', 'TPL']);
 
 soi.release.task('dev',
   {
@@ -43,7 +45,9 @@ soi.release.task('dev',
   })
   .use('css')
   .use('less')
-  .use('messid')
+  .use('messid', {
+    ext: ['JS', 'CSS']
+  })
   .use('uglify')
   .use('hash', {
     noname: false,

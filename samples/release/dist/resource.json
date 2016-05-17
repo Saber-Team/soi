@@ -1,92 +1,5 @@
 {
     "resource": {
-        "JS": {
-            "vrcode": {
-                "uri": "/static/js/M8NwxmXZq.vrcode.js",
-                "type": "JS"
-            },
-            "base": {
-                "uri": "/static/js/zqRwvu9u5.withId.js",
-                "type": "JS"
-            },
-            "app": {
-                "uri": "/static/app/nJ00HCEIn.app.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ],
-                "deps": [
-                    "AQJGK",
-                    "zMZ2x",
-                    "T4EMD"
-                ],
-                "asyncLoaded": [
-                    "tospe"
-                ]
-            },
-            "HOicX": {
-                "uri": "/static/js/d3hZRR4cd.async-require.js",
-                "type": "JS",
-                "asyncLoaded": [
-                    "vrcode"
-                ]
-            },
-            "sWXOl": {
-                "uri": "/static/js/ezpSQnQbI.entry.js",
-                "type": "JS",
-                "deps": [
-                    "base"
-                ]
-            },
-            "fvr+Q": {
-                "uri": "/static/js/wdE1NqpDC.noId.js",
-                "type": "JS"
-            },
-            "SqQ7E": {
-                "uri": "/static/js/7mk6XVUAE.sync-require.js",
-                "type": "JS",
-                "deps": [
-                    "base"
-                ]
-            },
-            "AQJGK": {
-                "uri": "/static/app/at+a8eO+2.moduleA.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ],
-                "css": [
-                    "a5tlT"
-                ]
-            },
-            "zMZ2x": {
-                "uri": "/static/app/CKmCqQgV+.moduleB.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ],
-                "deps": [
-                    "AQJGK"
-                ]
-            },
-            "T4EMD": {
-                "uri": "/static/app/1_vYcwP8c.moduleC.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ],
-                "deps": [
-                    "zMZ2x"
-                ]
-            },
-            "tospe": {
-                "uri": "/static/app/WmaCIQkMr.vrcode.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            }
-        },
         "CSS": {
             "reset-style": {
                 "uri": "/static/css/eWpfSHgbv.reset.css",
@@ -101,6 +14,24 @@
                 "within": [
                     "p0"
                 ]
+            },
+            "YG9FV": {
+                "uri": "/static/css/FJ5kFRw3a.inlineImage.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
+                ]
+            },
+            "mFLE6": {
+                "uri": "/static/css/vtOtSQ7ZE.plain.css",
+                "type": "CSS",
+                "within": [
+                    "p0"
+                ]
+            },
+            "a5tlT": {
+                "uri": "/static/app/yXw+TguNt.moduleA.css",
+                "type": "CSS"
             },
             "JAhPf": {
                 "uri": "/static/less/qRmtccLXG.detail.css",
@@ -138,24 +69,107 @@
             "xI2wM": {
                 "uri": "/static/less/WqTy6YDcK.verify_list.css",
                 "type": "CSS"
-            },
-            "a5tlT": {
-                "uri": "/static/app/yXw+TguNt.moduleA.css",
-                "type": "CSS"
-            },
-            "YG9FV": {
-                "uri": "/static/css/FJ5kFRw3a.inlineImage.css",
-                "type": "CSS",
+            }
+        },
+        "JS": {
+            "app": {
+                "uri": "/static/app/nJ00HCEIn.app.js",
+                "type": "JS",
                 "within": [
-                    "p0"
+                    "p1"
+                ],
+                "deps": [
+                    "AQJGK",
+                    "zMZ2x",
+                    "T4EMD"
+                ],
+                "asyncLoaded": [
+                    "tospe"
                 ]
             },
-            "mFLE6": {
-                "uri": "/static/css/vtOtSQ7ZE.plain.css",
-                "type": "CSS",
+            "vrcode": {
+                "uri": "/static/js/mrJ9GgXyz.vrcode.js",
+                "type": "JS"
+            },
+            "base": {
+                "uri": "/static/js/N2KMO04B9.withId.js",
+                "type": "JS"
+            },
+            "AQJGK": {
+                "uri": "/static/app/V1A7xUUZb.moduleA.js",
+                "type": "JS",
                 "within": [
-                    "p0"
+                    "p1"
+                ],
+                "css": [
+                    "a5tlT"
                 ]
+            },
+            "zMZ2x": {
+                "uri": "/static/app/ljeQAfdI0.moduleB.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "AQJGK"
+                ]
+            },
+            "T4EMD": {
+                "uri": "/static/app/FLZrTKXyq.moduleC.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "zMZ2x"
+                ]
+            },
+            "tospe": {
+                "uri": "/static/app/0YZnyjIZE.vrcode.js",
+                "type": "JS",
+                "within": [
+                    "p1"
+                ]
+            },
+            "HOicX": {
+                "uri": "/static/js/UtstocWGX.async-require.js",
+                "type": "JS",
+                "asyncLoaded": [
+                    "vrcode"
+                ]
+            },
+            "sWXOl": {
+                "uri": "/static/js/jucL12xVP.entry.js",
+                "type": "JS",
+                "deps": [
+                    "base"
+                ]
+            },
+            "fvr+Q": {
+                "uri": "/static/js/pf_OHWoq7.noId.js",
+                "type": "JS"
+            },
+            "SqQ7E": {
+                "uri": "/static/js/OYHF4_sua.sync-require.js",
+                "type": "JS",
+                "deps": [
+                    "base"
+                ]
+            }
+        },
+        "TPL": {
+            "src/page.tpl": {
+                "uri": "/static/page/page.tpl",
+                "type": "TPL"
+            },
+            "src/page/layout.tpl": {
+                "uri": "/static/page/layout.tpl",
+                "type": "TPL"
+            },
+            "src/page/part.tpl": {
+                "uri": "/static/page/part.tpl",
+                "type": "TPL"
             }
         }
     },
@@ -170,7 +184,7 @@
             ]
         },
         "p1": {
-            "uri": "/static/pkg/X7hwDpK2u.pkg.build.js",
+            "uri": "/static/pkg/n3QfJBlod.pkg.build.js",
             "has": [
                 "tospe",
                 "AQJGK",

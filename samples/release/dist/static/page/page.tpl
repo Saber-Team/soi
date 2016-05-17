@@ -14,5 +14,5 @@
 <script>
     var apidomain = '__APIDOMAIN__';
 </script>
-<script type="text/javascript" src="/static/js/7mk6XVUAE.sync-require.js"></script>
+<script type="text/javascript" src="/static/js/OYHF4_sua.sync-require.js"></script>
 {{brisk_require_js name="app" }}
