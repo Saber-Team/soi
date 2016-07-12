@@ -1,0 +1,26 @@
+
+.flex-display(@display: flex) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: box;
+    display: ~"-webkit-@{display}";
+    display: ~"-moz-@{display}";
+    display: ~"-ms-@{display}box";
+    display: ~"-ms-@{display}";
+    display: @display;
+}
+
+
+.flex(@columns: initial) {
+    -webkit-box-flex: @columns;
+       -moz-box-flex: @columns;
+        -ms-box-flex: @columns;
+         -o-box-flex: @columns;
+            box-flex: @columns;
+        -webkit-flex: @columns;
+           -moz-flex: @columns;
+            -ms-flex: @columns;
+                flex: @columns;
+}

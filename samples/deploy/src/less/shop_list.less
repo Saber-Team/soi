@@ -1,0 +1,131 @@
+/**
+ * @css ./dialog.less
+ */
+@import "_util.less";
+@import "_flex.less";
+@import "_common.less";
+
+@icon: url(../img/shop_list.png);
+
+
+/*
+ * 设置html的font-size，自适应使用
+ */
+
+html {
+    font-size: 50px;
+}
+body {
+    font-size: 0.32rem;
+    background-color: #f8f8f8;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@media (min-device-width : 375px) {
+    html {
+        font-size: 58.6px;
+    }
+}
+@media (min-device-width : 414px) {
+    html {
+        font-size: 64.6875px;
+    }
+}
+
+/* search icon define in common.less */
+.icon();
+
+/* header define in common.less */
+.header {
+    .header(45px, #2b2b2b, .3rem);
+}
+
+/* iphone 6 */
+@media (min-device-width : 375px) {
+    .header {
+        height: .85rem;
+        line-height: .85rem;
+    }
+}
+/* iphone6 plus */
+@media (min-device-width : 414px) {
+    .header {
+        height: .8rem;
+        line-height: .8rem;
+    }
+}
+
+/*search bar define in common.less*/
+.search();
+
+.shop-list, .searching-list {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    .px2px(font-size, 14px);
+
+    .no-shops {
+        background-color: #f8f8f8;
+        padding: 1.8rem .7rem;
+        color: #262626;
+    }
+
+    .active {
+        background-color: #e5e5e5;
+    }
+
+    .shop-item {
+        height: .8rem;
+        line-height: .8rem;
+        color: #262626;
+        padding: 0 .2rem;
+        width: 100%;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        white-space: nowrap;
+        overflow: hidden;
+        border-top: 1px solid #ddd;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+
+
+        &:last-child {
+            border-bottom: 1px solid #ddd;
+        }
+    }
+
+    .title {
+        height: .8rem;
+        line-height: .8rem;
+        padding: 0 .2rem;
+        color: #999;
+        border-top: 1px solid #ddd;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+
+    .nearest {
+        span:first-child {
+            height: 100%;
+            max-width: 75%;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+        }
+        span:last-child {
+            display: inline;
+            background-color: #f60;
+            color: #fff;
+            padding: 0.06rem;
+            border-radius: 2px;
+            margin-left: .05rem;
+            .px2px(font-size, 10px);
+        }
+    }
+}
+
+.searching-list {
+    display: none;
+}

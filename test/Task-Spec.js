@@ -62,6 +62,7 @@ describe('Task Class', function() {
     it('onAfterMethod', function() {
       var task = new Task('test');
       var counter = 1;
+      var context;
 
       task.beforeCompile = function() {
         counter++;

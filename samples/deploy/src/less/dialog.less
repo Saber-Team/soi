@@ -1,0 +1,46 @@
+.c-dialog {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .4);
+
+    .c-content {
+        width: 250px;
+        margin: auto;
+        text-align: center;
+        color: #262626;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                 tansform: translate(-50%, -50%);
+    }
+
+    .c-title {
+        background-color: #FFF;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        padding: 27px 0 23px;
+        font-size: 15px;
+        font-weight: normal;
+        margin: 0 auto;
+    }
+    .c-close {
+        background-color: #fafafa;
+        height: 40px;
+        width: 100%;
+        line-height: 40px;
+        font-size: 15px;
+
+        .c-cancel {
+            float: left;
+            width: 50%;
+            border-right: 1px solid #ddd;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+        }
+    }
+}

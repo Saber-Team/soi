@@ -1,0 +1,322 @@
+@import "_util.less";
+@import "_flex.less";
+@import "_common.less";
+
+
+@border-color: #ededed;
+
+/*icon css end*/
+html {
+    font-size: 50px;
+}
+@media (min-device-width : 375px) {
+    html {
+        font-size: 58.6px;
+    }
+}
+@media (min-device-width : 414px) {
+    html {
+        font-size: 64.6875px;
+    }
+}
+body {
+    font-family: "华文细黑", sans-serif;
+    font-size: 14px;
+    color: #262626;
+    background-color: #f8f8f8;
+    .rmdefault();
+}
+
+.hidebar {
+    padding-top: 6px;
+    -webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+    .header {
+        display: none;
+    }
+    .detail-content {
+        margin-top: 0;
+    }
+}
+
+.header {
+    .header(45px, #2A2A2A, .2rem);
+}
+
+/* iphone 6 */
+@media (min-device-width : 375px) {
+    .header {
+        height: .85rem;
+        line-height: .85rem;
+    }
+}
+/* iphone6 plus */
+@media (min-device-width : 414px) {
+    .header {
+        height: .8rem;
+        line-height: .8rem;
+    }
+}
+
+.address {
+    .flex-display();
+    padding: 0 .2rem;
+    height: .75rem;
+    line-height: .75rem;
+    font-size: 14px;
+    border-bottom: 1px solid @border-color;
+    background-color: #fff;
+
+    .label {
+        width: 1.3rem;
+        color: #262626;
+    }
+    .shop {
+        .flex(1);
+        .text-overflow();
+        color: #777;
+        display: block;
+        padding-left: 5px;
+    }
+
+    .arrow {
+        width: 12px;
+        margin-right: 5px;
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #aaa;
+            border-left: 2px solid #aaa;
+            -webkit-transform: rotate(135deg);
+                    transform: rotate(135deg);
+        }
+    }
+}
+
+/*disabled*/
+.dis-address {
+    .arrow {
+        display: none;
+    }
+}
+
+.no-address {
+    .shop {
+        color: #fe9404;
+    }
+}
+
+.detail-content {
+	background-color: #fff;
+}
+
+.shop-name {
+    position: relative;
+	color: #262626;
+    font-size: 14px;
+    height: .73rem;
+    line-height: .73rem;
+    padding: 0 1.2rem 0 .2rem;
+    .text-overflow();
+
+    .pay-way {
+        position: absolute;
+        right: .2rem;
+        top: 0;
+        height: .73rem;
+        line-height: .73rem;
+        font-size: 12px;
+        color: #909090;
+    }
+}
+
+.shop-item {
+	padding: 0 .2rem;
+    color: #262626;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid @border-color;
+
+    .item {
+        display: inline-block;
+    	max-width: 80%;
+        word-wrap: break-word;
+        word-break: break-all;
+        white-space: normal;
+        padding: .25rem 0 .2rem;
+        vertical-align: top;
+
+        .number {
+            color: #bbb;
+            font-size: 12px;
+        }
+
+        .name {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+    .price {
+        display: inline-block;
+    	text-align: right;
+        float: right;
+        padding: .25rem 0 .2rem;
+        vertical-align: top;
+
+        .quantity {
+            color: #bbb;
+            font-size: 12px;
+        }
+
+        .unit-price {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+}
+
+.one-item {
+    .item {
+        .number {
+            line-height: 1.3;
+            color: #777;
+        }
+    }
+    .price {
+        float: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: .2rem;
+        padding: 0;
+        margin: auto 0;
+        height: 15px;
+
+        .unit-price {
+            line-height: 1;
+        }
+    }
+}
+
+.checkout {
+    padding: .27rem .2rem;
+	border-top: 1px solid @border-color;
+	text-align: right;
+    position: relative;
+    color: #909090;
+
+    .checkout-finish {
+        width: 1.2rem;
+        height: .6rem;
+        display: none;
+        line-height: .56rem;
+        border: 1px solid #3399ff;
+        color: #3399ff;
+        background-color: #e7f3ff;
+        text-align: center;
+        position: absolute;
+        left: .2rem;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .finished {
+        display: block;
+    }
+    .payment {
+        span {
+            color: #f88120;
+        }
+    }
+    .total-discount {
+        span:last-child {
+            color: #262626;
+        }
+    }
+}
+/*
+.checkout-finish {
+	background: url(../img/finish.png);
+	float: left;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	top: -8px;
+	display: none;
+}
+*/
+
+.verify-checkout {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	padding: .15rem .32rem .23rem;
+	background-color: #fff;
+    border-top: 1px solid @border-color;
+
+    .confirm-checkout {
+    	border: 0;
+        margin: 0;
+        padding: 0;
+    	display: block;
+    	width: 100%;
+    	height: 100%;
+    	text-align: center;
+    	background-color: #f88120;
+    	color: #fff;
+    	border-radius: 2px;
+        font-size: 16px;
+        .rmdefault();
+    }
+
+}
+
+
+.checkout-quantity {
+    position: relative;
+    padding: 0 .2rem;
+	border-top: 1px solid @border-color;
+	color: #262626;
+    font-size: 14px;
+    height: 1.25rem;
+    line-height: 1.25rem;
+
+    .numop {
+    	position: absolute;
+    	height: .6rem;
+    	line-height: .6rem;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        right: .2rem;
+        font-size: 16px;
+
+        .decrease, .quantity, .increase {
+            text-align: center;
+            margin-left: -1px;
+            width: .72rem;
+            float: left;
+            border: 1px solid @border-color;
+        }
+
+        .increase, .decrease {
+            color: #f40;
+            width: .56rem;
+            border-radius: 0 2px 2px 0;
+            outline: none;
+            .rmdefault();
+        }
+        .decrease {
+            margin-left: 0;
+            border-radius: 2px 0 0 2px;
+        }
+
+        .disabled {
+            color: #999;
+        }
+    }
+}

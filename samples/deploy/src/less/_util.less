@@ -1,0 +1,32 @@
+.px2px(@name, @px){
+    @{name}: @px * 1px;
+    [data-dpr="2"] & {
+        @{name}: @px * 2 *1px;
+    }
+    [data-dpr="2.5"] & {
+        @{name}: @px * 2.5 * 1px;
+    }
+    [data-dpr="2.75"] & {
+        @{name}: @px * 2.75 * 1px;
+    }
+    [data-dpr="3"] & {
+        @{name}: @px * 3 * 1px
+    }
+    [data-dpr="4"] & {
+        @{name}: @px * 4 * 1px;
+    }
+}
+
+.rmdefault() {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          -webkit-touch-callout: none;
+            -webkit-user-select: none;
+}
+
+.text-overflow() {
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+}
