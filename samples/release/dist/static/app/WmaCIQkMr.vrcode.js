@@ -1,1 +1,0 @@
-__d("tospe",function(n,t,e){t.isPast=function(){return Boolean('<%$_REQUEST["token"]%>')}});

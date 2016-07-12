@@ -35,14 +35,35 @@ describe('Task Class', function() {
   var fs = require('fs');
   // global
   require('../lib/soi');
+  var Task = require('../lib/Task');
+  var noop = function() {};
 
-  it('onBeforeMethod', function() {
+  describe('AOP plugin mechanism support', function() {
+
+    it('onBeforeMethod', function() {
+      var task = new Task('test');
+      var counter = 1;
+      task.onBeforeMethod('beforeCompile', function() {
+        counter++;
+      });
+
+      task.beforeCompile(noop);
+
+      expect(counter).to.equal(2);
+    });
+
+    it('onAfterMethod', function() {
+      var task = new Task('test');
+      var counter = 1;
+      task.onAfterMethod('beforeCompile', function() {
+        counter++;
+      });
+
+      task.beforeCompile(noop);
+
+      expect(counter).to.equal(2);
+    });
 
   });
-
-  it('onAfterMethod', function() {
-
-  });
-
 
 });
