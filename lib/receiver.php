@@ -1,29 +1,4 @@
 <?php
-//
-//echo var_dump($_POST);
-//
-//function createFolder($path) {
-//    if (!file_exists($path)) {
-//        createFolder(dirname($path));
-//        mkdir($path);
-//        // linux默认的umask一般0022, 即创建目录的默认权限是0755,
-//        // 所以这时php  mkdir('./aa/',0777) 得到目录的权限是0755.
-//        chmod($path, 0777);
-//    }
-//}
-//
-//$path = urldecode($_POST["path"]);
-//$data = urldecode($_POST["data"]);
-//$dir = dirname($path);
-//
-//// 创建目录
-//createFolder($dir);
-//
-//// 写入文件
-//chmod($path, 0777);
-//$file = fopen($path, "w+");
-//fwrite($file, $data);
-//fclose($file);
 
 @error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 
