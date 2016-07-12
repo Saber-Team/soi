@@ -29,7 +29,7 @@
     "css": "^2.2.1",
     "et-util-logger": "^1.1.0",
     "less": "^2.5.3",
-    "minimatch": "^3.0.0",
+    "minimatch": "^3.0.2",
     "neo-core": "^0.7.0",
     "uglify-js": "^2.6.1"
   },
