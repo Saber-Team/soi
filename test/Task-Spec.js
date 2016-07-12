@@ -42,26 +42,39 @@ describe('Task Class', function() {
 
     it('onBeforeMethod', function() {
       var task = new Task('test');
-      var counter = 1;
+      var counter = 'a';
+      var context;
+
+      task.beforeCompile = function() {
+        counter += 'c';
+      };
       task.onBeforeMethod('beforeCompile', function() {
-        counter++;
+        counter += 'b';
+        context = this;
       });
 
       task.beforeCompile(noop);
 
-      expect(counter).to.equal(2);
+      expect(counter).to.equal('abc');
+      expect(context).deep.equal(task);
     });
 
     it('onAfterMethod', function() {
       var task = new Task('test');
       var counter = 1;
-      task.onAfterMethod('beforeCompile', function() {
+
+      task.beforeCompile = function() {
         counter++;
+      };
+      task.onAfterMethod('beforeCompile', function() {
+        counter += 'b';
+        context = this;
       });
 
       task.beforeCompile(noop);
 
-      expect(counter).to.equal(2);
+      expect(counter).to.equal('2b');
+      expect(context).deep.equal(task);
     });
 
   });

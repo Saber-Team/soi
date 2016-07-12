@@ -29,7 +29,7 @@
 /* globals it */
 /* globals soi */
 
-describe('Global soi object', function() {
+describe('Global soi', function() {
 
   var expect = require('chai').expect;
   var fs = require('fs');

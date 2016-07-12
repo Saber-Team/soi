@@ -28,7 +28,7 @@
 /* globals describe */
 /* globals it */
 
-describe('Command arguments parser', function() {
+describe('Command-Line parameters parser', function() {
 
   var expect = require('chai').expect;
   var fs = require('fs');
