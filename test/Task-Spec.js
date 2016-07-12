@@ -21,53 +21,28 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * @file css插件, 代码压缩, 监听task的`compiled-resource`事件
+ * @file lib/Task.js测试用例
  * @author AceMood
  */
 
-'use strict';
+/* globals describe */
+/* globals it */
+/* globals soi */
 
-const css = require('css');
+describe('Task Class', function() {
 
-// 默认css配置
-let defaultOptions = {
-  compress: true
-};
+  var expect = require('chai').expect;
+  var fs = require('fs');
+  // global
+  require('../lib/soi');
 
-class Compressor {
-  constructor(options) {
-    options = options || {};
-    // 合并配置对象
-    this.options = soi.util.merge({}, defaultOptions, options);
-    this.ignore = options.ignore || soi.fn.FALSE;
-  }
+  it('onBeforeMethod', function() {
 
-  init(task) {
-    this.host = task;
-    this.exec = this.exec.bind(this);
-    task.on('compiled-resource', this.exec);
-  }
+  });
 
-  exec(resource) {
-    if (resource.type === 'CSS' && !this.ignore(resource.path)) {
-      let code = resource.getContent();
-      try {
-        var ast = css.parse(code);
-      } catch (err) {
-        soi.log.error(
-          `Parse Resource at [${resource.path}], [${err.message}]`);
-        process.exit();
-      }
+  it('onAfterMethod', function() {
 
-      // stylesheet is the root node returned by css.parse.
-      code = css.stringify(ast, this.options);
-      resource.setContent(code);
-    }
-  }
+  });
 
-  uninstall() {
-    this.host.removeListener('compiled-resource', this.exec);
-  }
-}
 
-module.exports = Compressor;
+});
