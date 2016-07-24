@@ -13,7 +13,7 @@ document.addEventListener($btn, 'click', fn);
 function fn() {
   require.async(['./vrcode'], function(vrcode) {
     if (vrcode.isPast()) {
-
+      alert('done!');
     }
   });
 }

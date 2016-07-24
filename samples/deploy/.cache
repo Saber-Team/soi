@@ -2,36 +2,6 @@
   "version": "0.1",
   "objects": [
     {
-      "type": "JS",
-      "path": "src/app/app.js",
-      "id": "app",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./moduleA": true,
-        "./moduleB": true,
-        "./moduleC": true
-      },
-      "_requiredAsyncModuleMap": {
-        "./vrcode": true
-      },
-      "_requiredTextToResolvedID": {
-        "./moduleA": "src/app/moduleA.js",
-        "./moduleB": "src/app/moduleB.js",
-        "./moduleC": "src/app/moduleC.js",
-        "./vrcode": "src/app/vrcode.js"
-      },
-      "isEntryPoint": true,
-      "requiredModules": [
-        "src/app/moduleA.js",
-        "src/app/moduleB.js",
-        "src/app/moduleC.js"
-      ],
-      "requiredAsyncModules": [
-        "src/app/vrcode.js"
-      ],
-      "mtime": 1459855774000
-    },
-    {
       "type": "CSS",
       "path": "src/app/moduleA.css",
       "id": "src/app/moduleA.css",
@@ -57,24 +27,6 @@
         "src/app/moduleA.js"
       ],
       "mtime": 1459845395000
-    },
-    {
-      "type": "JS",
-      "path": "src/app/moduleA.js",
-      "id": "src/app/moduleA.js",
-      "_requiredCSSMap": {
-        "./moduleA.css": true
-      },
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {
-        "./moduleA.css": "src/app/moduleA.css"
-      },
-      "isModule": true,
-      "requiredCSS": [
-        "src/app/moduleA.css"
-      ],
-      "mtime": 1460347836000
     },
     {
       "type": "JS",
@@ -377,6 +329,54 @@
         "base"
       ],
       "mtime": 1468331566000
+    },
+    {
+      "type": "JS",
+      "path": "src/app/app.js",
+      "id": "app",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./moduleA": true,
+        "./moduleB": true,
+        "./moduleC": true
+      },
+      "_requiredAsyncModuleMap": {
+        "./vrcode": true
+      },
+      "_requiredTextToResolvedID": {
+        "./moduleA": "src/app/moduleA.js",
+        "./moduleB": "src/app/moduleB.js",
+        "./moduleC": "src/app/moduleC.js",
+        "./vrcode": "src/app/vrcode.js"
+      },
+      "isEntryPoint": true,
+      "requiredModules": [
+        "src/app/moduleA.js",
+        "src/app/moduleB.js",
+        "src/app/moduleC.js"
+      ],
+      "requiredAsyncModules": [
+        "src/app/vrcode.js"
+      ],
+      "mtime": 1469367295000
+    },
+    {
+      "type": "JS",
+      "path": "src/app/moduleA.js",
+      "id": "src/app/moduleA.js",
+      "_requiredCSSMap": {
+        "./moduleA.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {
+        "./moduleA.css": "src/app/moduleA.css"
+      },
+      "isModule": true,
+      "requiredCSS": [
+        "src/app/moduleA.css"
+      ],
+      "mtime": 1469368120000
     }
   ]
 }

@@ -163,12 +163,12 @@
                 "uri": "/static/page/page.tpl",
                 "type": "TPL"
             },
-            "src/page/part.tpl": {
-                "uri": "/static/page/part.tpl",
-                "type": "TPL"
-            },
             "src/page/layout.tpl": {
                 "uri": "/static/page/layout.tpl",
+                "type": "TPL"
+            },
+            "src/page/part.tpl": {
+                "uri": "/static/page/part.tpl",
                 "type": "TPL"
             }
         }

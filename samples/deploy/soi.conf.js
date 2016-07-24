@@ -19,11 +19,11 @@ soi.config.set('types', ['JS', 'CSS', 'TPL']);
 
 soi.deploy.task('dev',
     {
-      mapTo: './dist/resource.json',
+      mapTo: './resource.json',
       domain: '',
       scandirs: ['src'],
-      receiver: 'http://cp01-zhida-mkt.epc.baidu.com:8343/receiver',
-      dir: '/home/work/webroot/soi-test',
+      receiver: 'http://localhost/receiver.php',
+      dir: '/Users/baidu/Git/soi/samples/deploy/dist',
       cachedKey: '.cache',
       watch: true,
       loaders: [
@@ -42,6 +42,9 @@ soi.deploy.task('dev',
     })
     .addRule(/src\/(.*)\/.*/, {
       to : '/static/$1/'
+    })
+    .use('messid', {
+      ext: ['JS']
     })
     .use('wrapper', {
       define: '__d'
