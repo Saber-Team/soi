@@ -10,29 +10,29 @@
 
 ![sloc stats](./doc/assets/sloc.png "sloc stats")
 
-**s.o.i** 是一个前端项目构建打包构建工具，内部集成了[neo](https://github.com/AceMood/neo) 作为其资源扫描器，soi相当于neo的后处理服务，提供常见的打包插件，如压缩、合并、文件指纹、CommonJS包装、less解析等等。
+**s.o.i** 是一个前端项目构建打包构建工具，内部集成了 [neo](https://github.com/AceMood/neo) 作为其资源扫描器，soi相当于neo的后处理服务，提供常见的打包插件，如压缩、合并、文件指纹、CommonJS包装、less解析等等。
 
 ## 安装
-确保本地安装了Node环境，通过包管理器NPM进行安装。
+确保本地安装了 node 安装包（大于v1.0.0版本），通过包管理器 npm 进行安装。
 
 **注意**：
 
-若安装过v0.14.0之前版本的 **soi**，需要通过以下命令卸载依赖的soi-cli
+若安装过v0.14.0之前版本的 **soi**，需要通过以下命令卸载依赖的 soi-cli
 
 ```
 npm uninstall -g soi-cli
 ```
-原因是老版本的 **soi** 绑定命令行执行是由soi-cli模块实现的，而新版的 **soi** 内部就直接通过package.json绑定了，不再需要soi-cli模块。
+原因是老版本的 **soi** 绑定命令行执行是由 soi-cli 模块实现的，而新版的 **soi** 内部就直接通过 package.json 的 bin 字段绑定了，不再需要 soi-cli 模块。
 
-如第一次安装 **soi**，或者之前没有安装过soi-cli，则直接运行以下脚本：
+如第一次安装 **soi**，或者之前没有安装过 soi-cli，则直接运行以下脚本：
 
 ```
   npm install -g soi
 ```
 
-安装新版本 **soi** 切记加-g全局安装标志，这样可以在任意目录使用 **soi** 构建前端项目。
+安装新版本 **soi** 切记加 -g 全局安装标志，这样可以在任意目录使用 **soi** 构建前端项目。
 
-接着安装soi依赖模块，进入soi模块目录，运行
+接着安装 soi 依赖模块，进入 soi 模块的安装目录，运行
 
 ```
 npm install
@@ -43,7 +43,7 @@ npm install
 ```
   soi.conf.js
 ```
-在soi的安装目录samples下会有示例项目，分别对应 **soi release** 任务和 **soi deploy** 任务。
+在 soi 的安装目录 samples 下会有示例项目，分别对应 **soi release** 任务和 **soi deploy** 任务。
 
 ## 未来
 **soi** 力求future proof，包括其插件体系的实现。分离编译工具为资源扫描和后处理服务插件正是为此。灵感和启发来自于 Facebook 的 **Haste Internals**，国内方面前辈有百度的 **F.I.S**。
