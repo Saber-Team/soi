@@ -45,6 +45,10 @@ npm install
 ```
 在soi的安装目录samples下会有示例项目，分别对应 **soi release** 任务和 **soi deploy** 任务。
 
+## 未来
+**soi** 力求future proof，包括其插件体系的实现。分离编译工具为资源扫描和后处理服务插件正是为此。灵感和启发来自于 Facebook 的 **Haste Internals**，国内方面前辈有百度的 **F.I.S**。
+
+未实现的部分或者还不满意的部分[参见todo](./doc/todos.md)，其中最迫不及待就是对于html静态资源的扫描和基于ipc方式实现的编译缓存。
 
 
 [travis-image]: https://img.shields.io/travis/Saber-Team/soi.svg?style=flat-square
