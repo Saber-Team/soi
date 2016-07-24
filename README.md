@@ -6,14 +6,13 @@
 
 <style></style>
 
-# What is soi
+## soi前端工程化工具
 
 ![sloc stats](./doc/assets/sloc.png "sloc stats")
 
-s.o.i (<em style="color:rgb(0,249,89)">S</em>mart <em style="color:rgb(72,128,255)">O</em>ptimization 
-<em style="color:rgb(255,141,123)">I</em>ntegration) 是一个前端项目构建打包构建工具，内部集成了[neo](https://github.com/AceMood/neo) 作为其资源扫描器，soi相当于neo的后处理服务，提供常见的打包插件，如压缩、合并、文件指纹、CommonJS包装、less解析等等。
+**s.o.i** 是一个前端项目构建打包构建工具，内部集成了[neo](https://github.com/AceMood/neo) 作为其资源扫描器，soi相当于neo的后处理服务，提供常见的打包插件，如压缩、合并、文件指纹、CommonJS包装、less解析等等。
 
-# Installation
+## 安装
 确保本地安装了Node环境，通过包管理器NPM进行安装。
 
 **注意**：
@@ -39,12 +38,13 @@ npm uninstall -g soi-cli
 npm install
 ```
 
-# Usage
+## 使用
 在任意目录建立你的代码仓库，开发完毕后在此目录添加配置文件：
 ```
   soi.conf.js
 ```
-在soi的安装目录samples下会有示例项目。
+在soi的安装目录samples下会有示例项目，分别对应 **soi release** 任务和 **soi deploy** 任务。
+
 
 
 [travis-image]: https://img.shields.io/travis/Saber-Team/soi.svg?style=flat-square

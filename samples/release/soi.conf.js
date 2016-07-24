@@ -21,7 +21,7 @@ soi.release.task('dev',
   {
     dir: './dist/',
     mapTo: './dist/resource.json',
-    domain: '',
+    domain: 'https://facebook.com/static',
     scandirs: ['src'],
     loaders: [
       new soi.Loaders.ImageLoader(),
