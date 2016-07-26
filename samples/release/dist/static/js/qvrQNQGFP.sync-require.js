@@ -1,0 +1,1 @@
+__d("src/js/sync-require.js",function(n,e,c){var s=n("base");e.getModuleA=function(){return new s}});

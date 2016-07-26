@@ -1,1 +1,0 @@
-__d("HOicX",function(n,t,e){function o(t){n.async(["vrcode"],function(n){n.isPast()})}var c=document.querySelector("button");document.addEventListener(c,"click",o)});

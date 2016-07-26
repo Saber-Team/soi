@@ -1,140 +1,23 @@
 {
     "resource": {
-        "CSS": {
-            "src/app/moduleA.css": {
-                "uri": "/static/app/moduleA.css",
-                "type": "CSS"
+        "tpl": {
+            "src/page.tpl": {
+                "uri": "/static/page/page.tpl",
+                "type": "tpl"
             },
-            "src/css/inlineImage.css": {
-                "uri": "/static/css/inlineImage.css",
-                "type": "CSS",
-                "within": [
-                    "p0"
-                ]
+            "src/page/layout.tpl": {
+                "uri": "/static/page/layout.tpl",
+                "type": "tpl"
             },
-            "src/css/plain.css": {
-                "uri": "/static/css/plain.css",
-                "type": "CSS",
-                "within": [
-                    "p0"
-                ]
-            },
-            "reset-style": {
-                "uri": "/static/css/reset.css",
-                "type": "CSS",
-                "within": [
-                    "p0"
-                ]
-            },
-            "main": {
-                "uri": "/static/css/withId.css",
-                "type": "CSS",
-                "within": [
-                    "p0"
-                ]
-            },
-            "src/less/detail.less": {
-                "uri": "/static/less/detail.css",
-                "type": "CSS"
-            },
-            "src/less/dialog.less": {
-                "uri": "/static/less/dialog.css",
-                "type": "CSS"
-            },
-            "src/less/empty.less": {
-                "type": "CSS"
-            },
-            "src/less/import.less": {
-                "uri": "/static/less/import.css",
-                "type": "CSS",
-                "css": [
-                    "src/less/test.less"
-                ]
-            },
-            "src/less/purecss.less": {
-                "uri": "/static/less/purecss.css",
-                "type": "CSS"
-            },
-            "src/less/shop_list.less": {
-                "uri": "/static/less/shop_list.css",
-                "type": "CSS",
-                "css": [
-                    "src/less/dialog.less"
-                ]
-            },
-            "src/less/test.less": {
-                "uri": "/static/less/test.css",
-                "type": "CSS"
-            },
-            "src/less/verify_list.less": {
-                "uri": "/static/less/verify_list.css",
-                "type": "CSS"
+            "src/page/part.tpl": {
+                "uri": "/static/page/part.tpl",
+                "type": "tpl"
             }
         },
-        "JS": {
-            "src/app/moduleB.js": {
-                "uri": "/static/app/moduleB.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ],
-                "deps": [
-                    "src/app/moduleA.js"
-                ]
-            },
-            "src/app/moduleC.js": {
-                "uri": "/static/app/moduleC.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ],
-                "deps": [
-                    "src/app/moduleB.js"
-                ]
-            },
-            "src/app/vrcode.js": {
-                "uri": "/static/app/vrcode.js",
-                "type": "JS",
-                "within": [
-                    "p1"
-                ]
-            },
-            "src/js/async-require.js": {
-                "uri": "/static/js/async-require.js",
-                "type": "JS",
-                "asyncLoaded": [
-                    "vrcode"
-                ]
-            },
-            "src/js/noId.js": {
-                "uri": "/static/js/noId.js",
-                "type": "JS"
-            },
-            "src/js/sync-require.js": {
-                "uri": "/static/js/sync-require.js",
-                "type": "JS",
-                "deps": [
-                    "base"
-                ]
-            },
-            "vrcode": {
-                "uri": "/static/js/vrcode.js",
-                "type": "JS"
-            },
-            "base": {
-                "uri": "/static/js/withId.js",
-                "type": "JS"
-            },
-            "src/js/entry.js": {
-                "uri": "/static/js/entry.js",
-                "type": "JS",
-                "deps": [
-                    "base"
-                ]
-            },
+        "js": {
             "app": {
                 "uri": "/static/app/app.js",
-                "type": "JS",
+                "type": "js",
                 "within": [
                     "p1"
                 ],
@@ -149,27 +32,144 @@
             },
             "src/app/moduleA.js": {
                 "uri": "/static/app/moduleA.js",
-                "type": "JS",
+                "type": "js",
                 "within": [
                     "p1"
                 ],
                 "css": [
                     "src/app/moduleA.css"
                 ]
+            },
+            "src/app/moduleB.js": {
+                "uri": "/static/app/moduleB.js",
+                "type": "js",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "src/app/moduleA.js"
+                ]
+            },
+            "src/app/moduleC.js": {
+                "uri": "/static/app/moduleC.js",
+                "type": "js",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "src/app/moduleB.js"
+                ]
+            },
+            "src/app/vrcode.js": {
+                "uri": "/static/app/vrcode.js",
+                "type": "js",
+                "within": [
+                    "p1"
+                ]
+            },
+            "src/js/async-require.js": {
+                "uri": "/static/js/async-require.js",
+                "type": "js",
+                "asyncLoaded": [
+                    "vrcode"
+                ]
+            },
+            "src/js/entry.js": {
+                "uri": "/static/js/entry.js",
+                "type": "js",
+                "deps": [
+                    "base"
+                ]
+            },
+            "src/js/noId.js": {
+                "uri": "/static/js/noId.js",
+                "type": "js"
+            },
+            "src/js/sync-require.js": {
+                "uri": "/static/js/sync-require.js",
+                "type": "js",
+                "deps": [
+                    "base"
+                ]
+            },
+            "vrcode": {
+                "uri": "/static/js/vrcode.js",
+                "type": "js"
+            },
+            "base": {
+                "uri": "/static/js/withId.js",
+                "type": "js"
             }
         },
-        "TPL": {
-            "src/page.tpl": {
-                "uri": "/static/page/page.tpl",
-                "type": "TPL"
+        "css": {
+            "src/app/moduleA.css": {
+                "uri": "/static/app/moduleA.css",
+                "type": "css"
             },
-            "src/page/layout.tpl": {
-                "uri": "/static/page/layout.tpl",
-                "type": "TPL"
+            "src/less/detail.less": {
+                "uri": "/static/less/detail.css",
+                "type": "css"
             },
-            "src/page/part.tpl": {
-                "uri": "/static/page/part.tpl",
-                "type": "TPL"
+            "src/less/dialog.less": {
+                "uri": "/static/less/dialog.css",
+                "type": "css"
+            },
+            "src/less/empty.less": {
+                "type": "css"
+            },
+            "src/less/import.less": {
+                "uri": "/static/less/import.css",
+                "type": "css",
+                "css": [
+                    "src/less/test.less"
+                ]
+            },
+            "src/less/purecss.less": {
+                "uri": "/static/less/purecss.css",
+                "type": "css"
+            },
+            "src/less/shop_list.less": {
+                "uri": "/static/less/shop_list.css",
+                "type": "css",
+                "css": [
+                    "src/less/dialog.less"
+                ]
+            },
+            "src/less/test.less": {
+                "uri": "/static/less/test.css",
+                "type": "css"
+            },
+            "src/less/verify_list.less": {
+                "uri": "/static/less/verify_list.css",
+                "type": "css"
+            },
+            "src/css/inlineImage.css": {
+                "uri": "/static/css/inlineImage.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
+            },
+            "src/css/plain.css": {
+                "uri": "/static/css/plain.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
+            },
+            "src/css/reset.css": {
+                "uri": "/static/css/reset.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
+            },
+            "src/css/withId.css": {
+                "uri": "/static/css/withId.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
             }
         }
     },
@@ -177,8 +177,8 @@
         "p0": {
             "uri": "/static/pkg/krbXuxDmH.pkg.build.css",
             "has": [
-                "main",
-                "reset-style",
+                "src/css/withId.css",
+                "src/css/reset.css",
                 "src/css/plain.css",
                 "src/css/inlineImage.css"
             ]

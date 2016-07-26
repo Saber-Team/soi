@@ -10,8 +10,13 @@
 
 .idea/
 .DS_Store
+# local packages
 node_modules
 private
+# files during development
+lib/command/install.js
+lib/command/server.js
+samples/install
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*

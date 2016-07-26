@@ -1,0 +1,1 @@
+__d("src/js/sync-require.js",function(n,e,c){var t=n("./withId");e.getModuleA=function(){return new t}});

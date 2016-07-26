@@ -1,0 +1,1 @@
+kerneljs.exec("src/js/entry.js",function(n,e,c){n("base")});

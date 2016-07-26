@@ -1,4 +1,4 @@
-{{extends file="layout.tpl"}}
+{{extends file="./layout.tpl"}}
 {{block name=main-content}}
 
 <header>Test pages</header>
@@ -9,7 +9,7 @@
 <div class="ret"></div>
 <img src="/static/img/index.png" />
 
-{{include file="part.tpl"}}
+{{include file="./part.tpl"}}
 
 <script>
     var apidomain = '__APIDOMAIN__';

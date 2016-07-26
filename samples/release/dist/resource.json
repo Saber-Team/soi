@@ -1,195 +1,158 @@
 {
     "resource": {
-        "CSS": {
-            "reset-style": {
-                "uri": "https://facebook.com/static/css/eWpfSHgbv.reset.css",
-                "type": "CSS",
+        "css": {
+            "src/css/inlineImage.css": {
+                "uri": "https://facebook.com/static/css/TZoeCF86B.inlineImage.css",
+                "type": "css",
                 "within": [
                     "p0"
                 ]
             },
-            "main": {
-                "uri": "https://facebook.com/static/css/wisK2iQDx.withId.css",
-                "type": "CSS",
+            "src/css/plain.css": {
+                "uri": "https://facebook.com/static/css/QMKYTfzfG.plain.css",
+                "type": "css",
                 "within": [
                     "p0"
                 ]
             },
-            "YG9FV": {
-                "uri": "https://facebook.com/static/css/FJ5kFRw3a.inlineImage.css",
-                "type": "CSS",
+            "src/css/reset.css": {
+                "uri": "https://facebook.com/static/css/GiLFzUiDA.reset.css",
+                "type": "css",
                 "within": [
                     "p0"
                 ]
             },
-            "mFLE6": {
-                "uri": "https://facebook.com/static/css/233bAyDDi.plain.css",
-                "type": "CSS",
+            "src/css/withId.css": {
+                "uri": "https://facebook.com/static/css/WR_knmMtz.withId.css",
+                "type": "css",
                 "within": [
                     "p0"
                 ]
             },
-            "a5tlT": {
-                "uri": "https://facebook.com/static/app/yXw+TguNt.moduleA.css",
-                "type": "CSS"
-            },
-            "JAhPf": {
-                "uri": "https://facebook.com/static/less/qRmtccLXG.detail.css",
-                "type": "CSS"
-            },
-            "e6fCE": {
-                "uri": "https://facebook.com/static/less/chm2xK42x.dialog.css",
-                "type": "CSS"
-            },
-            "zhSrg": {
-                "type": "CSS"
-            },
-            "UVPXf": {
-                "uri": "https://facebook.com/static/less/e9o_uE8vh.import.css",
-                "type": "CSS",
-                "css": [
-                    "l4gcP"
-                ]
-            },
-            "J0bO1": {
-                "uri": "https://facebook.com/static/less/YYOgnsfaw.purecss.css",
-                "type": "CSS"
-            },
-            "Dez3f": {
-                "uri": "https://facebook.com/static/less/o_8v21QhC.shop_list.css",
-                "type": "CSS",
-                "css": [
-                    "e6fCE"
-                ]
-            },
-            "l4gcP": {
-                "uri": "https://facebook.com/static/less/9EHOZ+xXt.test.css",
-                "type": "CSS"
-            },
-            "xI2wM": {
-                "uri": "https://facebook.com/static/less/9EC6TJj6t.verify_list.css",
-                "type": "CSS"
+            "src/app/moduleA.css": {
+                "uri": "https://facebook.com/static/app/nsstiQXzn.moduleA.css",
+                "type": "css"
             }
         },
-        "JS": {
+        "js": {
             "app": {
-                "uri": "https://facebook.com/static/app/nJ00HCEIn.app.js",
-                "type": "JS",
+                "uri": "https://facebook.com/static/app/bTX48HvHe.app.js",
+                "type": "js",
                 "within": [
                     "p1"
                 ],
                 "deps": [
-                    "AQJGK",
-                    "zMZ2x",
-                    "T4EMD"
+                    "src/app/moduleA.js",
+                    "src/app/moduleB.js",
+                    "src/app/moduleC.js"
                 ],
                 "asyncLoaded": [
-                    "tospe"
+                    "src/app/vrcode.js"
                 ]
             },
-            "vrcode": {
-                "uri": "https://facebook.com/static/js/mrJ9GgXyz.vrcode.js",
-                "type": "JS"
-            },
-            "base": {
-                "uri": "https://facebook.com/static/js/N2KMO04B9.withId.js",
-                "type": "JS"
-            },
-            "AQJGK": {
-                "uri": "https://facebook.com/static/app/V1A7xUUZb.moduleA.js",
-                "type": "JS",
+            "src/app/moduleA.js": {
+                "uri": "https://facebook.com/static/app/F0kGzwGi4.moduleA.js",
+                "type": "js",
                 "within": [
                     "p1"
                 ],
                 "css": [
-                    "a5tlT"
+                    "src/app/moduleA.css"
                 ]
             },
-            "zMZ2x": {
-                "uri": "https://facebook.com/static/app/ljeQAfdI0.moduleB.js",
-                "type": "JS",
+            "src/app/moduleB.js": {
+                "uri": "https://facebook.com/static/app/CYjnTdRPs.moduleB.js",
+                "type": "js",
                 "within": [
                     "p1"
                 ],
                 "deps": [
-                    "AQJGK"
+                    "src/app/moduleA.js"
                 ]
             },
-            "T4EMD": {
-                "uri": "https://facebook.com/static/app/FLZrTKXyq.moduleC.js",
-                "type": "JS",
+            "src/app/moduleC.js": {
+                "uri": "https://facebook.com/static/app/yQ95EVeWr.moduleC.js",
+                "type": "js",
                 "within": [
                     "p1"
                 ],
                 "deps": [
-                    "zMZ2x"
+                    "src/app/moduleB.js"
                 ]
             },
-            "tospe": {
-                "uri": "https://facebook.com/static/app/0YZnyjIZE.vrcode.js",
-                "type": "JS",
+            "src/app/vrcode.js": {
+                "uri": "https://facebook.com/static/app/MAEyd0_An.vrcode.js",
+                "type": "js",
                 "within": [
                     "p1"
                 ]
             },
-            "HOicX": {
-                "uri": "https://facebook.com/static/js/UtstocWGX.async-require.js",
-                "type": "JS",
+            "src/js/async-require.js": {
+                "uri": "https://facebook.com/static/js/Zx0INJ+Fx.async-require.js",
+                "type": "js",
                 "asyncLoaded": [
                     "vrcode"
                 ]
             },
-            "sWXOl": {
-                "uri": "https://facebook.com/static/js/jucL12xVP.entry.js",
-                "type": "JS",
+            "src/js/entry.js": {
+                "uri": "https://facebook.com/static/js/BXUQWVR7a.entry.js",
+                "type": "js",
                 "deps": [
                     "base"
                 ]
             },
-            "fvr+Q": {
-                "uri": "https://facebook.com/static/js/pf_OHWoq7.noId.js",
-                "type": "JS"
+            "src/js/noId.js": {
+                "uri": "https://facebook.com/static/js/LojRVGC+B.noId.js",
+                "type": "js"
             },
-            "SqQ7E": {
-                "uri": "https://facebook.com/static/js/OYHF4_sua.sync-require.js",
-                "type": "JS",
+            "src/js/sync-require.js": {
+                "uri": "https://facebook.com/static/js/qvrQNQGFP.sync-require.js",
+                "type": "js",
                 "deps": [
                     "base"
                 ]
+            },
+            "vrcode": {
+                "uri": "https://facebook.com/static/js/IsYS47iyE.vrcode.js",
+                "type": "js"
+            },
+            "base": {
+                "uri": "https://facebook.com/static/js/UyZx8jW_j.withId.js",
+                "type": "js"
             }
         },
-        "TPL": {
+        "tpl": {
             "src/page.tpl": {
                 "uri": "https://facebook.com/static/page/page.tpl",
-                "type": "TPL"
+                "type": "tpl"
             },
             "src/page/layout.tpl": {
                 "uri": "https://facebook.com/static/page/layout.tpl",
-                "type": "TPL"
+                "type": "tpl"
             },
             "src/page/part.tpl": {
                 "uri": "https://facebook.com/static/page/part.tpl",
-                "type": "TPL"
+                "type": "tpl"
             }
         }
     },
     "pkgs": {
         "p0": {
-            "uri": "https://facebook.com/static/pkg/Ut68xayXe.pkg.build.css",
+            "uri": "https://facebook.com/static/pkg/bG+p2BdWP.pkg.build.css",
             "has": [
-                "main",
-                "reset-style",
-                "mFLE6",
-                "YG9FV"
+                "src/css/withId.css",
+                "src/css/reset.css",
+                "src/css/plain.css",
+                "src/css/inlineImage.css"
             ]
         },
         "p1": {
-            "uri": "https://facebook.com/static/pkg/n3QfJBlod.pkg.build.js",
+            "uri": "https://facebook.com/static/pkg/hSuveWppi.pkg.build.js",
             "has": [
-                "tospe",
-                "AQJGK",
-                "zMZ2x",
-                "T4EMD",
+                "src/app/vrcode.js",
+                "src/app/moduleA.js",
+                "src/app/moduleB.js",
+                "src/app/moduleC.js",
                 "app"
             ]
         }

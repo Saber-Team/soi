@@ -12,10 +12,10 @@
 
 const TPLLoader = require('et-plugin-tplloader').TPLLoader;
 const TPLCompiler = require('et-plugin-tplloader').TPLCompiler;
-soi.addCompiler('TPL', TPLCompiler);
+soi.addCompiler('tpl', TPLCompiler);
 
 // 资源表中包含的资源类型
-soi.config.set('types', ['JS', 'CSS', 'TPL']);
+soi.config.set('types', ['js', 'css', 'tpl']);
 
 soi.deploy.task('dev',
     {

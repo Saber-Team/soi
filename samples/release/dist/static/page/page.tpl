@@ -1,4 +1,4 @@
-{{extends file="layout.tpl"}}
+{{extends file="./layout.tpl"}}
 {{block name=main-content}}
 
 <header>Test pages</header>
@@ -9,10 +9,10 @@
 <div class="ret"></div>
 <img src="https://facebook.com/static/img/WvnP91D++.index.png" />
 
-{{include file="part.tpl"}}
+{{include file="./part.tpl"}}
 
 <script>
     var apidomain = '__APIDOMAIN__';
 </script>
-<script type="text/javascript" src="https://facebook.com/static/js/OYHF4_sua.sync-require.js"></script>
+<script type="text/javascript" src="https://facebook.com/static/js/qvrQNQGFP.sync-require.js"></script>
 {{brisk_require_js name="app" }}

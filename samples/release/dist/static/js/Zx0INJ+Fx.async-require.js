@@ -1,0 +1,1 @@
+__d("src/js/async-require.js",function(n,e,o){function c(e){n.async(["vrcode"],function(n){n.isPast()})}var t=document.querySelector("button");document.addEventListener(t,"click",c)});
