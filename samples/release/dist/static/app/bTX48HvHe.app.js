@@ -1,1 +1,0 @@
-kerneljs.exec("app",function(e,n,o){function s(){e.async(["src/app/vrcode.js"],function(e){e.isPast()})}var c=(e("src/app/moduleA.js"),e("src/app/moduleB.js"),e("src/app/moduleC.js"),document.querySelector("button"));document.addEventListener(c,"click",s)});

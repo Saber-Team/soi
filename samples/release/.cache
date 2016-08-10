@@ -225,24 +225,6 @@
     },
     {
       "type": "js",
-      "path": "src/js/entry.js",
-      "id": "src/js/entry.js",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./withId": true
-      },
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedPath": {
-        "./withId": "src/js/withId.js"
-      },
-      "isEntryPoint": true,
-      "requiredModules": [
-        "base"
-      ],
-      "mtime": 1459413619000
-    },
-    {
-      "type": "js",
       "path": "src/js/noId.js",
       "id": "src/js/noId.js",
       "_requiredCSSMap": {},
@@ -291,6 +273,46 @@
       "_requiredTextToResolvedPath": {},
       "isModule": true,
       "mtime": 1470829194000
+    },
+    {
+      "type": "js",
+      "path": "src/js/inlineTest.js",
+      "id": "src/js/inlineTest.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedPath": {},
+      "isModule": true,
+      "mtime": 1470834087000
+    },
+    {
+      "type": "js",
+      "path": "src/js/entry.js",
+      "id": "src/js/entry.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./withId": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedPath": {
+        "./withId": "src/js/withId.js"
+      },
+      "isEntryPoint": true,
+      "requiredModules": [
+        "base"
+      ],
+      "mtime": 1470834151000
+    },
+    {
+      "type": "js",
+      "path": "src/js/uriTest.js",
+      "id": "src/js/uriTest.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedPath": {},
+      "isModule": true,
+      "mtime": 1470834147000
     }
   ]
 }

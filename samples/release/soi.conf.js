@@ -21,7 +21,7 @@ soi.release.task('dev',
   {
     dir: './dist/',
     mapTo: './dist/resource.json',
-    domain: 'https://facebook.com/static',
+    domain: 'https://fbstatic.com/static',
     scandirs: ['src'],
     loaders: [
       new soi.Loaders.ImageLoader(),
@@ -32,7 +32,8 @@ soi.release.task('dev',
     pack: {
       '/static/pkg/build.css': ['src/css/*.css'],
       '/static/pkg/build.js': ['src/app/*.js']
-    }
+    },
+    preserveComments: true
   })
   .addRule(/src\/.*\.tpl/, {
     to : '/static/page/'
@@ -50,9 +51,9 @@ soi.release.task('dev',
       }
     })
   .use('messid', {
-    ext: ['JS', 'CSS']
+    ext: ['js', 'css']
   })
-  .use('uglify')
+  //.use('uglify')
   .use('hash', {
     noname: false,
     algorithm: 'sha1'

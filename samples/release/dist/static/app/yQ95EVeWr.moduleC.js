@@ -1,1 +1,0 @@
-__d("src/app/moduleC.js",function(u,e,n){u("src/app/moduleB.js");n.exports={name:"C"}});

@@ -7,12 +7,12 @@
 <button>get reverse</button>
 <div>your result:</div>
 <div class="ret"></div>
-<img src="https://facebook.com/static/img/WvnP91D++.index.png" />
+<img src="https://fbstatic.com/static/img/WvnP91D++.index.png" />
 
 {{include file="./part.tpl"}}
 
 <script>
     var apidomain = '__APIDOMAIN__';
 </script>
-<script type="text/javascript" src="https://facebook.com/static/js/qvrQNQGFP.sync-require.js"></script>
+<script type="text/javascript" src="https://fbstatic.com/static/js/TXHjy1rqG.sync-require.js"></script>
 {{brisk_require_js name="app" }}
