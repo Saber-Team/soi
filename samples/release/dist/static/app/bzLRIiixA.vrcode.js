@@ -1,4 +1,4 @@
-__d("src/app/vrcode.js", function(require, exports, module) {
+__d("tospe", function(require, exports, module) {
 /**
  * @module
  */

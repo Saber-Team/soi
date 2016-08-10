@@ -1,4 +1,4 @@
-__d("src/app/moduleA.js", function(require, exports, module) {
+__d("AQJGK", function(require, exports, module) {
 /**
  * @module
  * @css ./moduleA.css

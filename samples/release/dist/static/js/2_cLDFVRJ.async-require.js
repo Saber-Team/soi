@@ -1,4 +1,4 @@
-__d("src/js/async-require.js", function(require, exports, module) {
+__d("HOicX", function(require, exports, module) {
 /**
  * @module
  */

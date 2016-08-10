@@ -1,4 +1,4 @@
-__d("src/app/vrcode.js", function(require, exports, module) {
+__d("tospe", function(require, exports, module) {
 /**
  * @module
  */
@@ -7,7 +7,7 @@ exports.isPast = function() {
   return Boolean('<%$_REQUEST["token"]%>');
 };
 });
-__d("src/app/moduleA.js", function(require, exports, module) {
+__d("AQJGK", function(require, exports, module) {
 /**
  * @module
  * @css ./moduleA.css
@@ -16,23 +16,23 @@ __d("src/app/moduleA.js", function(require, exports, module) {
 exports.identity = 'moduleA';
 exports.fulfill = false;
 });
-__d("src/app/moduleB.js", function(require, exports, module) {
+__d("zMZ2x", function(require, exports, module) {
 /**
  * @module
  */
 
-var A = require('src/app/moduleA.js');
+var A = require('AQJGK');
 
 exports.getModuleA = function() {
   return new A();
 };
 });
-__d("src/app/moduleC.js", function(require, exports, module) {
+__d("T4EMD", function(require, exports, module) {
 /**
  * @module
  */
 
-var moduleB = require('src/app/moduleB.js');
+var moduleB = require('zMZ2x');
 
 module.exports = {name: 'C'};
 });
@@ -42,15 +42,15 @@ kerneljs.exec("app", function(require, exports, module) {
  * @provides app
  */
 
-var moduleA = require('src/app/moduleA.js');
-var moduleB = require('src/app/moduleB.js');
-var moduleC = require('src/app/moduleC.js');
+var moduleA = require('AQJGK');
+var moduleB = require('zMZ2x');
+var moduleC = require('T4EMD');
 
 var $btn = document.querySelector('button');
 document.addEventListener($btn, 'click', fn);
 
 function fn() {
-  require.async(["src/app/vrcode.js"], function(vrcode) {
+  require.async(["tospe"], function(vrcode) {
     if (vrcode.isPast()) {
 
     }

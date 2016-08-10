@@ -14,5 +14,5 @@
 <script>
     var apidomain = '__APIDOMAIN__';
 </script>
-<script type="text/javascript" src="https://fbstatic.com/static/js/TXHjy1rqG.sync-require.js"></script>
+<script type="text/javascript" src="https://fbstatic.com/static/js/b_63If3Vt.sync-require.js"></script>
 {{brisk_require_js name="app" }}
