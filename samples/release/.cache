@@ -283,14 +283,14 @@
     },
     {
       "type": "js",
-      "path": "src/app/withId.js",
+      "path": "src/js/withId.js",
       "id": "base",
       "_requiredCSSMap": {},
       "_requiredModuleMap": {},
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedPath": {},
       "isModule": true,
-      "mtime": 1469537954000
+      "mtime": 1470829194000
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "advanced": false,
+  "aggressiveMerging": false,
+  "benchmarknt": true,
+  "debug": true,
+  "keepBreaks": false,
+  "keepSpecialComments": 1,
+  "mediaMerging": true,
+  "semanticMerging": false,
+  "sourceMap": true
+}

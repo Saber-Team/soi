@@ -2,35 +2,35 @@
     "resource": {
         "css": {
             "src/css/inlineImage.css": {
-                "uri": "https://facebook.com/static/css/TZoeCF86B.inlineImage.css",
+                "uri": "https://facebook.com/static/css/S7hKYpD1N.inlineImage.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "src/css/plain.css": {
-                "uri": "https://facebook.com/static/css/QMKYTfzfG.plain.css",
+                "uri": "https://facebook.com/static/css/0oKEUi+Km.plain.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "src/css/reset.css": {
-                "uri": "https://facebook.com/static/css/GiLFzUiDA.reset.css",
+                "uri": "https://facebook.com/static/css/1ivQk2_US.reset.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "src/css/withId.css": {
-                "uri": "https://facebook.com/static/css/WR_knmMtz.withId.css",
+                "uri": "https://facebook.com/static/css/91pXE6LDh.withId.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "src/app/moduleA.css": {
-                "uri": "https://facebook.com/static/app/nsstiQXzn.moduleA.css",
+                "uri": "https://facebook.com/static/app/pb_B5vADd.moduleA.css",
                 "type": "css"
             }
         },
@@ -138,7 +138,7 @@
     },
     "pkgs": {
         "p0": {
-            "uri": "https://facebook.com/static/pkg/bG+p2BdWP.pkg.build.css",
+            "uri": "https://facebook.com/static/pkg/pRRFZLsET.pkg.build.css",
             "has": [
                 "src/css/withId.css",
                 "src/css/reset.css",

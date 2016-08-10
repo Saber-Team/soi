@@ -1,5 +1,5 @@
 /**
- * @provides withId
+ * @provides base
  * @module
  */
 

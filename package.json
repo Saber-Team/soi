@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/Saber-Team/soi",
   "dependencies": {
+    "clean-css": "^3.4.19",
     "css": "^2.2.1",
     "et-util-logger": "^1.1.0",
     "less": "^2.5.3",
