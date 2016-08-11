@@ -2,39 +2,39 @@
     "resource": {
         "css": {
             "mFLE6": {
-                "uri": "https://fbstatic.com/static/css/qkrmM_0lC.plain.css",
+                "uri": "https://fbstatic.com/static/css/9uLwS7glP.plain.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "xz4WD": {
-                "uri": "https://fbstatic.com/static/css/Z2a2CTTYP.reset.css",
+                "uri": "https://fbstatic.com/static/css/eWpfSHgbv.reset.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "5evpM": {
-                "uri": "https://fbstatic.com/static/css/NGTSz_Nue.withId.css",
+                "uri": "https://fbstatic.com/static/css/ZYb0GpmCa.withId.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "a5tlT": {
-                "uri": "https://fbstatic.com/static/app/F7BylcDod.moduleA.css",
+                "uri": "https://fbstatic.com/static/app/yXw+TguNt.moduleA.css",
                 "type": "css"
             },
             "YG9FV": {
-                "uri": "https://fbstatic.com/static/css/K_c65Z6i6.inlineImage.css",
+                "uri": "https://fbstatic.com/static/css/Yi7dub7hw.inlineImage.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "+mruT": {
-                "uri": "https://fbstatic.com/static/css/GHHiiirgw.mangle.css",
+                "uri": "https://fbstatic.com/static/css/tiqqPF7ND.mangle.css",
                 "type": "css",
                 "within": [
                     "p0"
@@ -121,7 +121,7 @@
                 ]
             },
             "27kaY": {
-                "uri": "https://fbstatic.com/static/js/755LKMWyh.inlineTest.js",
+                "uri": "https://fbstatic.com/static/js/ybgFu7CGf.inlineTest.js",
                 "type": "js"
             },
             "sWXOl": {
@@ -132,7 +132,7 @@
                 ]
             },
             "XvY+s": {
-                "uri": "https://fbstatic.com/static/js/ONaZTz37M.uriTest.js",
+                "uri": "https://fbstatic.com/static/js/i4HbfF1ud.uriTest.js",
                 "type": "js"
             }
         },
@@ -153,7 +153,7 @@
     },
     "pkgs": {
         "p0": {
-            "uri": "https://fbstatic.com/static/pkg/4mNqsdEbw.pkg.build.css",
+            "uri": "https://fbstatic.com/static/pkg/FZNdbJOVy.pkg.build.css",
             "has": [
                 "+mruT",
                 "YG9FV",

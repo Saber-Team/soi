@@ -44,7 +44,7 @@ soi.release.task('dev',
   .use('wrapper', {
     define: '__d'
   })
-  //.use('css')
+  .use('css')
   .use('css-mangler')
   .use('less', {
       ignore: function(path) {
