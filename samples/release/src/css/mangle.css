@@ -1,0 +1,16 @@
+.dialog {
+    width: 600px;
+    height: 250px;
+}
+
+.dialog-title {
+    color: #ccc;
+}
+
+.dialog-content {
+    line-height: 1.5em;
+}
+
+.dialog-foot {
+    color: orange;
+}

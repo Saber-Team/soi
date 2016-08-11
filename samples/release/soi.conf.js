@@ -44,7 +44,8 @@ soi.release.task('dev',
   .use('wrapper', {
     define: '__d'
   })
-  .use('clean-css')
+  //.use('css')
+  .use('css-mangler')
   .use('less', {
       ignore: function(path) {
         return /_.less$/.test(path);

@@ -3,15 +3,6 @@
   "objects": [
     {
       "type": "css",
-      "path": "src/css/inlineImage.css",
-      "id": "src/css/inlineImage.css",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1459416717000
-    },
-    {
-      "type": "css",
       "path": "src/css/plain.css",
       "id": "src/css/plain.css",
       "_requiredCSSMap": {},
@@ -313,6 +304,24 @@
       "_requiredTextToResolvedPath": {},
       "isModule": true,
       "mtime": 1470834147000
+    },
+    {
+      "type": "css",
+      "path": "src/css/inlineImage.css",
+      "id": "src/css/inlineImage.css",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1470913433000
+    },
+    {
+      "type": "css",
+      "path": "src/css/mangle.css",
+      "id": "src/css/mangle.css",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1470913557000
     }
   ]
 }
