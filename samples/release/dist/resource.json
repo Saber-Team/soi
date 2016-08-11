@@ -16,14 +16,14 @@
                 ]
             },
             "xz4WD": {
-                "uri": "https://fbstatic.com/static/css/1ivQk2_US.reset.css",
+                "uri": "https://fbstatic.com/static/css/jy7XrFM6L.reset.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "5evpM": {
-                "uri": "https://fbstatic.com/static/css/s2czPqh8J.withId.css",
+                "uri": "https://fbstatic.com/static/css/wxrSEfEYl.withId.css",
                 "type": "css",
                 "within": [
                     "p0"
@@ -146,7 +146,7 @@
     },
     "pkgs": {
         "p0": {
-            "uri": "https://fbstatic.com/static/pkg/55Bz_f0OW.pkg.build.css",
+            "uri": "https://fbstatic.com/static/pkg/BghzXIA92.pkg.build.css",
             "has": [
                 "5evpM",
                 "xz4WD",
