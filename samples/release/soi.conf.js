@@ -25,7 +25,11 @@ soi.release.task('dev',
     scandirs: ['src'],
     loaders: [
       new soi.Loaders.ImageLoader(),
-      new soi.Loaders.CSSLoader(),
+      new soi.Loaders.CSSLoader({
+        preProcessors: [
+          soi.processor.less
+        ]
+      }),
       new soi.Loaders.JSLoader(),
       new TPLLoader()
     ],
