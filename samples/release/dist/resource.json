@@ -172,5 +172,16 @@
                 "app"
             ]
         }
+    },
+    "cssClassMap": {
+        "x": "a",
+        "a": "b",
+        "abg": "c",
+        "dialog": "d",
+        "title": "e",
+        "content": "f",
+        "foot": "g",
+        "header": "h",
+        "footer": "i"
     }
 }
