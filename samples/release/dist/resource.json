@@ -1,44 +1,17 @@
 {
     "resource": {
-        "css": {
-            "mFLE6": {
-                "uri": "https://fbstatic.com/static/css/9uLwS7glP.plain.css",
-                "type": "css",
-                "within": [
-                    "p0"
-                ]
+        "tpl": {
+            "src/page.tpl": {
+                "uri": "https://fbstatic.com/static/page/page.tpl",
+                "type": "tpl"
             },
-            "xz4WD": {
-                "uri": "https://fbstatic.com/static/css/eWpfSHgbv.reset.css",
-                "type": "css",
-                "within": [
-                    "p0"
-                ]
+            "src/page/layout.tpl": {
+                "uri": "https://fbstatic.com/static/page/layout.tpl",
+                "type": "tpl"
             },
-            "5evpM": {
-                "uri": "https://fbstatic.com/static/css/ZYb0GpmCa.withId.css",
-                "type": "css",
-                "within": [
-                    "p0"
-                ]
-            },
-            "a5tlT": {
-                "uri": "https://fbstatic.com/static/app/yXw+TguNt.moduleA.css",
-                "type": "css"
-            },
-            "YG9FV": {
-                "uri": "https://fbstatic.com/static/css/Yi7dub7hw.inlineImage.css",
-                "type": "css",
-                "within": [
-                    "p0"
-                ]
-            },
-            "+mruT": {
-                "uri": "https://fbstatic.com/static/css/tiqqPF7ND.mangle.css",
-                "type": "css",
-                "within": [
-                    "p0"
-                ]
+            "src/page/part.tpl": {
+                "uri": "https://fbstatic.com/static/page/part.tpl",
+                "type": "tpl"
             }
         },
         "js": {
@@ -109,6 +82,17 @@
                     "vrcode"
                 ]
             },
+            "sWXOl": {
+                "uri": "https://fbstatic.com/static/js/Xcg5aXJrS.entry.js",
+                "type": "js",
+                "deps": [
+                    "base"
+                ]
+            },
+            "27kaY": {
+                "uri": "https://fbstatic.com/static/js/_r1Tw6yHo.inlineTest.js",
+                "type": "js"
+            },
             "fvr+Q": {
                 "uri": "https://fbstatic.com/static/js/hIrwpEOSn.noId.js",
                 "type": "js"
@@ -120,46 +104,92 @@
                     "base"
                 ]
             },
-            "27kaY": {
-                "uri": "https://fbstatic.com/static/js/ybgFu7CGf.inlineTest.js",
-                "type": "js"
-            },
-            "sWXOl": {
-                "uri": "https://fbstatic.com/static/js/Xcg5aXJrS.entry.js",
-                "type": "js",
-                "deps": [
-                    "base"
-                ]
-            },
             "XvY+s": {
-                "uri": "https://fbstatic.com/static/js/i4HbfF1ud.uriTest.js",
+                "uri": "https://fbstatic.com/static/js/Dr9aRAsCE.uriTest.js",
                 "type": "js"
             }
         },
-        "tpl": {
-            "src/page.tpl": {
-                "uri": "https://fbstatic.com/static/page/page.tpl",
-                "type": "tpl"
+        "css": {
+            "reset-style": {
+                "uri": "https://fbstatic.com/static/css/eWpfSHgbv.reset.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
             },
-            "src/page/layout.tpl": {
-                "uri": "https://fbstatic.com/static/page/layout.tpl",
-                "type": "tpl"
+            "main": {
+                "uri": "https://fbstatic.com/static/css/ZYb0GpmCa.withId.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
             },
-            "src/page/part.tpl": {
-                "uri": "https://fbstatic.com/static/page/part.tpl",
-                "type": "tpl"
+            "a5tlT": {
+                "uri": "https://fbstatic.com/static/app/yXw+TguNt.moduleA.css",
+                "type": "css"
+            },
+            "YG9FV": {
+                "uri": "https://fbstatic.com/static/css/FJ5kFRw3a.inlineImage.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
+            },
+            "+mruT": {
+                "uri": "https://fbstatic.com/static/css/2+ikBh9XF.mangle.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
+            },
+            "mFLE6": {
+                "uri": "https://fbstatic.com/static/css/YHvnzL6Tw.plain.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
+            },
+            "JAhPf": {
+                "uri": "https://fbstatic.com/static/less/qRmtccLXG.detail.css",
+                "type": "css"
+            },
+            "e6fCE": {
+                "uri": "https://fbstatic.com/static/less/chm2xK42x.dialog.css",
+                "type": "css"
+            },
+            "zhSrg": {
+                "type": "css"
+            },
+            "UVPXf": {
+                "uri": "https://fbstatic.com/static/less/WqhZXzyv5.import.css",
+                "type": "css"
+            },
+            "J0bO1": {
+                "uri": "https://fbstatic.com/static/less/YYOgnsfaw.purecss.css",
+                "type": "css"
+            },
+            "Dez3f": {
+                "uri": "https://fbstatic.com/static/less/WxBUnAwJU.shop_list.css",
+                "type": "css",
+                "css": [
+                    "e6fCE"
+                ]
+            },
+            "xI2wM": {
+                "uri": "https://fbstatic.com/static/less/OS1Mhjb+g.verify_list.css",
+                "type": "css"
             }
         }
     },
     "pkgs": {
         "p0": {
-            "uri": "https://fbstatic.com/static/pkg/FZNdbJOVy.pkg.build.css",
+            "uri": "https://fbstatic.com/static/pkg/2RKShKBUw.pkg.build.css",
             "has": [
+                "main",
+                "reset-style",
+                "mFLE6",
                 "+mruT",
-                "YG9FV",
-                "5evpM",
-                "xz4WD",
-                "mFLE6"
+                "YG9FV"
             ]
         },
         "p1": {
@@ -173,15 +203,5 @@
             ]
         }
     },
-    "cssClassMap": {
-        "x": "a",
-        "a": "b",
-        "abg": "c",
-        "dialog": "d",
-        "title": "e",
-        "content": "f",
-        "foot": "g",
-        "header": "h",
-        "footer": "i"
-    }
+    "cssClassMap": {}
 }

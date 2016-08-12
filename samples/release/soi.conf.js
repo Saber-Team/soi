@@ -16,6 +16,9 @@ soi.addCompiler('tpl', SimpleTPLCompiler);
 
 // 资源表中包含的资源类型
 soi.config.set('types', ['js', 'css', 'tpl']);
+soi.config.set('forceRescan', true);
+// 设置less处理器
+// soi.processor.less.config();
 
 soi.release.task('dev',
   {
@@ -26,9 +29,7 @@ soi.release.task('dev',
     loaders: [
       new soi.Loaders.ImageLoader(),
       new soi.Loaders.CSSLoader({
-        preProcessors: [
-          soi.processor.less
-        ]
+        preProcessors: [soi.processor.less]
       }),
       new soi.Loaders.JSLoader(),
       new TPLLoader()
@@ -37,7 +38,8 @@ soi.release.task('dev',
       '/static/pkg/build.css': ['src/css/*.css'],
       '/static/pkg/build.js': ['src/app/*.js']
     },
-    preserveComments: true
+    preserveComments: true,
+
   })
   .addRule(/src\/.*\.tpl/, {
     to : '/static/page/'
@@ -49,12 +51,7 @@ soi.release.task('dev',
     define: '__d'
   })
   .use('css')
-  .use('css-mangler')
-  .use('less', {
-      ignore: function(path) {
-        return /_.less$/.test(path);
-      }
-    })
+  //.use('css-mangler')
   .use('messid', {
     ext: ['js', 'css']
   })

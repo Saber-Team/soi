@@ -1,0 +1,1 @@
+.dialog{width:600px;height:250px;}.dialog-title{color:#ccc;}.dialog-content{line-height:1.5em;}.dialog-foot{color:orange;}div .dialog-foot{width:auto;}div > .dialog-foot{width:auto;}.header,.footer{border-bottom-width:1px;}.header,div .footer{border-bottom-width:1px;}
