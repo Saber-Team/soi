@@ -1,6 +1,6 @@
 {
   "name": "soi",
-  "version": "1.4.2",
+  "version": "1.4.4",
   "description": "Build Tools for Front-End projects",
   "bin": "./bin/soi",
   "main": "soi.js",
@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/Saber-Team/soi",
   "dependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
     "clean-css": "^3.4.19",
     "css": "^2.2.1",
     "et-util-logger": "^1.1.0",
