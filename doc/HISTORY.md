@@ -1,5 +1,10 @@
 # ChangeLog
 
+### `v1.4.2`
+* 工作流的预处理机制, less不再作为插件而是预处理器存在
+* Task改名为Workflow基类
+* 添加tag
+
 ### `v1.4.0`
 * js编译支持内置的__uri和__inline函数
 * 增加更稳定和广泛的clean-css插件作为css的默认压缩工具
