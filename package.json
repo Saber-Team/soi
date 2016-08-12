@@ -5,7 +5,7 @@
   "bin": "./bin/soi",
   "main": "soi.js",
   "engines": {
-    "node": ">= 1.0.0"
+    "node": ">= 4.0.0"
   },
   "scripts": {
     "test": "mocha --timeout 60000 ./test/**/*-Spec.js"

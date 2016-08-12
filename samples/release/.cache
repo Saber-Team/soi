@@ -32,15 +32,6 @@
       "mtime": 1459855774000
     },
     {
-      "type": "css",
-      "path": "src/app/moduleA.css",
-      "id": "src/app/moduleA.css",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1460347856000
-    },
-    {
       "type": "js",
       "path": "src/app/moduleA.js",
       "id": "src/app/moduleA.js",
@@ -57,6 +48,15 @@
         "src/app/moduleA.css"
       ],
       "mtime": 1460347836000
+    },
+    {
+      "type": "css",
+      "path": "src/app/moduleA.css",
+      "id": "src/app/moduleA.css",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1460347856000
     },
     {
       "type": "js",
