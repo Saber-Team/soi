@@ -9,9 +9,9 @@
 
 <img src="./doc/assets/sloc.png" alt="sloc stats" style="display: inline-block; position: relative; width: 80%; height: auto;" />
 
-**s.o.i** 是一个前端项目构建打包构建工具, 内部集成了 [neo](https://github.com/AceMood/neo) 作为其资源扫描器, soi 相当于 neo 的后处理服务, 提供常见的打包插件, 如压缩、合并、文件指纹、CommonJS包装、less解析等等. 
+**s.o.i** 是一个前端项目构建打包构建工具, 内部集成了 [neo](https://github.com/AceMood/neo) 作为其资源扫描器, soi 相当于 neo 的后处理服务, 提供常见的打包插件, 如压缩, 合并, 文件指纹, CommonJS包装, less解析等等. 
 
-## 流程
+## 处理流程
 
 <img src="./doc/assets/workflow.png" alt="workflow" style="display: inline-block; position: relative; width: 80%; height: auto;" />
 
@@ -22,7 +22,104 @@
 3. soi 作为 neo-core 的外部使用程序得到原始表后根据用户配置进行一系列编译操作
 4. 将操作后的文件内容和简化后的资源表一并写入到配置指定的磁盘位置
 
-之所以说大致，是因为有一些细节和机制随时调整，比如编译缓存的实现。但于整体来说流程没有改变过，插件机制也没有改变过。
+之所以说大致, 是因为有一些细节和机制随时调整, 比如编译缓存的实现。但于整体来说流程没有改变过, 插件机制也没有改变过。最终生成的资源表格式大致如下（部分）, 结合服务端资源加载框架, 可以实现类似bigpipe, quickling, bigrender等多种加载方式。
+
+```
+{
+    "resource": {
+        "css": {
+            "reset-style": {
+                "uri": "https://fbstatic.com/static/css/Vm87C6yZl.reset.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
+            },
+            "main": {
+                "uri": "https://fbstatic.com/static/css/sBb7WjS1h.withId.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
+            },
+            "YG9FV": {
+                "uri": "https://fbstatic.com/static/css/47bCoH0Nq.inlineImage.css",
+                "type": "css",
+                "within": [
+                    "p0"
+                ]
+            }
+        },
+        "js": {
+            "app": {
+                "uri": "https://fbstatic.com/static/app/uJscvoH_I.app.js",
+                "type": "js",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "AQJGK",
+                    "zMZ2x",
+                    "T4EMD"
+                ],
+                "asyncLoaded": [
+                    "tospe"
+                ]
+            },
+            "Foo": {
+                "uri": "https://fbstatic.com/static/es2015/W1qlh6ATN.class.js",
+                "type": "js"
+            },
+            "vrcode": {
+                "uri": "https://fbstatic.com/static/js/v8T_eWYja.vrcode.js",
+                "type": "js"
+            },
+            "base": {
+                "uri": "https://fbstatic.com/static/js/SZyUOjeH4.withId.js",
+                "type": "js"
+            },
+            "react-app": {
+                "uri": "https://fbstatic.com/static/jsx/GxOJM6+cT.app.jsx",
+                "type": "js",
+                "deps": [
+                    "math"
+                ]
+            },
+            "math": {
+                "uri": "https://fbstatic.com/static/jsx/MnPvjDU8m.math.js",
+                "type": "js"
+            },
+            "AQJGK": {
+                "uri": "https://fbstatic.com/static/app/iVzvT46_t.moduleA.js",
+                "type": "js",
+                "within": [
+                    "p1"
+                ],
+                "css": [
+                    "a5tlT"
+                ]
+            },
+            "WlvnF": {
+                "uri": "https://fbstatic.com/static/jsx/cIU1ZS86W.module.js",
+                "type": "js",
+                "deps": [
+                    "math"
+                ]
+            }
+        }
+    },
+    "pkgs": {
+        "p0": {
+            "uri": "https://fbstatic.com/static/pkg/88ml9AhKX.pkg.build.css",
+            "has": [
+                "main",
+                "reset-style"
+            ]
+        }
+    },
+    "cssClassMap": {}
+}
+```
 
 ## 安装
 确保本地安装了 node 安装包(大于v4.0.0版本), 通过包管理器 npm 进行安装. 
@@ -55,18 +152,26 @@ npm install
 ```
   soi.conf.js
 ```
-在 soi 的安装目录 samples 下会有示例项目, 分别对应 **soi release** 任务和 **soi deploy** 任务. 
+在 soi 的安装目录 samples 下会有示例项目, 分别对应 **soi release** 任务和 **soi deploy** 任务, 可作参考。
 
 **注意**：
 资源扫描器在扫描目录的时候默认会跳过`_`开头的文件名, 在一些预处理插件中可以把诸如提供假数据的js文件或者抽想出来的变量、函数
 的less文件名改成`_`开头, 在产出时不会产生空文件. 另一种做法是配置扫描器的ignorePaths属性或者插件的ignore属性(内置插件都
 支持), 这个函数可以接受文件的工程路径作为参数, 返回true则表示忽略此资源. 
 
-### soi api
+### 配置
 
-### releaseTask api
+soi 通过命令行执行操作, 默认当前目录为所要扫描的工程目录。在配置文件中通过全局soi对象提供的api进行配置, 全部方法可以从[这里找到](./doc/soi.api.md), 常用方法有:
 
-### deployTask api
+### soi.addRule
+
+### soi.config.get
+
+### soi.config.set
+
+### soi.release.task
+
+### soi.deploy.task
 
 
 ## 预处理器
