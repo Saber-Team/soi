@@ -2,17 +2,10 @@
 'use strict';
 
 // 配置线上路径
-//soi
-//  .addRule(/merchant\/img\/.*\.png$/, {
-//    to: 'static/images/'
-//  })
-//  .addRule(/merchant\/(.*)\/.*\.js$/, {
-//    to: 'static/js/'
-//  });
 
 const TPLLoader = require('et-plugin-tplloader').TPLLoader;
-const SimpleTPLCompiler = require('et-plugin-tplloader').TPLCompiler;
-soi.addCompiler('tpl', SimpleTPLCompiler);
+const TPLCompiler = require('et-plugin-tplloader').TPLCompiler;
+soi.addCompiler('tpl', TPLCompiler);
 
 // 资源表中包含的资源类型
 soi.config.set('types', ['js', 'css', 'tpl']);
@@ -30,9 +23,16 @@ soi.release.task('dev',
     loaders: [
       new soi.Loaders.ImageLoader(),
       new soi.Loaders.CSSLoader({
-        preProcessors: [soi.processor.less]
+        preProcessors: [
+          soi.processor.less
+        ]
       }),
-      new soi.Loaders.JSLoader(),
+      new soi.Loaders.JSLoader({
+        preProcessors: [
+          soi.processor['babel-jsx'],
+          soi.processor['babel-es2015']
+        ]
+      }),
       new TPLLoader()
     ],
     pack: {
