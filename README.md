@@ -4,17 +4,25 @@
 [![Downloads][downloads-image]][downloads-url]
 [![License][license-image]][license-url]
 
-<style></style>
+<style>
+img {
+  display: inline-block;
+  position: relative;
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+</style>
 
 ## soi前端工程化工具
 
-![sloc stats](./doc/assets/sloc.png "sloc stats")
+<img src="./doc/assets/sloc.png" alt="sloc stats" />
 
 **s.o.i** 是一个前端项目构建打包构建工具, 内部集成了 [neo](https://github.com/AceMood/neo) 作为其资源扫描器, soi 相当于 neo 的后处理服务, 提供常见的打包插件, 如压缩、合并、文件指纹、CommonJS包装、less解析等等. 
 
 ## 流程
 
-![workflow](./doc/assets/workflow.png "workflow")
+<img src="./doc/assets/workflow.png" alt="workflow" />
 
 大致如流程图所示:
 
