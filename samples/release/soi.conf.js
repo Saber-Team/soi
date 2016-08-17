@@ -46,7 +46,6 @@ soi.release.task('dev',
   .addRule(/src\/(.*)\/.*/, {to : '/static/$1/'})
   .use('wrapper', {define: '__d'})
   .use('css')
-  //.use('css-mangler')
   .use('messid', {ext: ['js', 'css']})
   //.use('uglify')
   .use('hash', {noname: false})
