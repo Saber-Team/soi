@@ -3,12 +3,12 @@
 
 // 配置线上路径
 
-const TPLLoader = require('et-plugin-tplloader').TPLLoader;
-const TPLCompiler = require('et-plugin-tplloader').TPLCompiler;
-soi.addCompiler('tpl', TPLCompiler);
+//const TPLLoader = require('et-plugin-tplloader').TPLLoader;
+//const TPLCompiler = require('et-plugin-tplloader').TPLCompiler;
+//soi.addCompiler('tpl', TPLCompiler);
 
 // 资源表中包含的资源类型
-soi.config.set('types', ['js', 'css', 'tpl']);
+soi.config.set('types', ['js', 'css']);
 // 设置每次不利用编译缓存
 soi.config.set('forceRescan', true);
 // 设置less处理器
@@ -32,8 +32,7 @@ soi.release.task('dev',
           soi.processor['babel-jsx'],
           soi.processor['babel-es2015']
         ]
-      }),
-      new TPLLoader()
+      })
     ],
     pack: {
       '/static/pkg/build.css': ['src/css/*.css'],
@@ -42,8 +41,8 @@ soi.release.task('dev',
     preserveComments: true
 
   })
-  .addRule(/src\/.*\.tpl/, {to : '/static/page/'})
-  .addRule(/src\/(.*)\/.*/, {to : '/static/$1/'})
+  //.addRule(/src\/.*\.tpl/, {to : '/static/page/'})
+  //.addRule(/src\/(.*)\/.*/, {to : '/static/$1/'})
   .use('wrapper', {define: '__d'})
   .use('css')
   .use('messid', {ext: ['js', 'css']})

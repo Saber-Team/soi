@@ -1,22 +1,8 @@
 {
     "resource": {
-        "tpl": {
-            "src/page.tpl": {
-                "uri": "https://fbstatic.com/static/page/page.tpl",
-                "type": "tpl"
-            },
-            "src/page/layout.tpl": {
-                "uri": "https://fbstatic.com/static/page/layout.tpl",
-                "type": "tpl"
-            },
-            "src/page/part.tpl": {
-                "uri": "https://fbstatic.com/static/page/part.tpl",
-                "type": "tpl"
-            }
-        },
         "js": {
             "app": {
-                "uri": "https://fbstatic.com/static/app/uJscvoH_I.app.js",
+                "uri": "https://fbstatic.com/static/res/uJscvoH_I.app.js",
                 "type": "js",
                 "within": [
                     "p1"
@@ -31,30 +17,30 @@
                 ]
             },
             "Foo": {
-                "uri": "https://fbstatic.com/static/es2015/W1qlh6ATN.class.js",
+                "uri": "https://fbstatic.com/static/res/W1qlh6ATN.class.js",
                 "type": "js"
             },
             "vrcode": {
-                "uri": "https://fbstatic.com/static/js/v8T_eWYja.vrcode.js",
+                "uri": "https://fbstatic.com/static/res/v8T_eWYja.vrcode.js",
                 "type": "js"
             },
             "base": {
-                "uri": "https://fbstatic.com/static/js/SZyUOjeH4.withId.js",
+                "uri": "https://fbstatic.com/static/res/SZyUOjeH4.withId.js",
+                "type": "js"
+            },
+            "math": {
+                "uri": "https://fbstatic.com/static/res/MnPvjDU8m.math.js",
                 "type": "js"
             },
             "react-app": {
-                "uri": "https://fbstatic.com/static/jsx/GxOJM6+cT.app.jsx",
+                "uri": "https://fbstatic.com/static/res/GxOJM6+cT.app.jsx",
                 "type": "js",
                 "deps": [
                     "math"
                 ]
             },
-            "math": {
-                "uri": "https://fbstatic.com/static/jsx/MnPvjDU8m.math.js",
-                "type": "js"
-            },
             "AQJGK": {
-                "uri": "https://fbstatic.com/static/app/iVzvT46_t.moduleA.js",
+                "uri": "https://fbstatic.com/static/res/iVzvT46_t.moduleA.js",
                 "type": "js",
                 "within": [
                     "p1"
@@ -64,7 +50,7 @@
                 ]
             },
             "zMZ2x": {
-                "uri": "https://fbstatic.com/static/app/nHqSA1QzU.moduleB.js",
+                "uri": "https://fbstatic.com/static/res/nHqSA1QzU.moduleB.js",
                 "type": "js",
                 "within": [
                     "p1"
@@ -74,7 +60,7 @@
                 ]
             },
             "T4EMD": {
-                "uri": "https://fbstatic.com/static/app/hHaPMAdXb.moduleC.js",
+                "uri": "https://fbstatic.com/static/res/hHaPMAdXb.moduleC.js",
                 "type": "js",
                 "within": [
                     "p1"
@@ -84,51 +70,51 @@
                 ]
             },
             "tospe": {
-                "uri": "https://fbstatic.com/static/app/CvUJQubWL.vrcode.js",
+                "uri": "https://fbstatic.com/static/res/CvUJQubWL.vrcode.js",
                 "type": "js",
                 "within": [
                     "p1"
                 ]
             },
             "Iu6OX": {
-                "uri": "https://fbstatic.com/static/es2015/ACB6fOs8S.arrow.js",
+                "uri": "https://fbstatic.com/static/res/ACB6fOs8S.arrow.js",
                 "type": "js"
             },
             "dj5Pa": {
-                "uri": "https://fbstatic.com/static/js/hV+rEz19P.asyncRequire.js",
+                "uri": "https://fbstatic.com/static/res/hV+rEz19P.asyncRequire.js",
                 "type": "js",
                 "asyncLoaded": [
                     "vrcode"
                 ]
             },
             "sWXOl": {
-                "uri": "https://fbstatic.com/static/js/1dVv1Hrnk.entry.js",
+                "uri": "https://fbstatic.com/static/res/1dVv1Hrnk.entry.js",
                 "type": "js",
                 "deps": [
                     "base"
                 ]
             },
             "27kaY": {
-                "uri": "https://fbstatic.com/static/js/PfSM2pdxW.inlineTest.js",
+                "uri": "https://fbstatic.com/static/res/kdB0F7I8p.inlineTest.js",
                 "type": "js"
             },
             "fvr+Q": {
-                "uri": "https://fbstatic.com/static/js/nUSerlK7z.noId.js",
+                "uri": "https://fbstatic.com/static/res/nUSerlK7z.noId.js",
                 "type": "js"
             },
             "GwHRf": {
-                "uri": "https://fbstatic.com/static/js/kXialOfkC.syncRequire.js",
+                "uri": "https://fbstatic.com/static/res/kXialOfkC.syncRequire.js",
                 "type": "js",
                 "deps": [
                     "base"
                 ]
             },
             "XvY+s": {
-                "uri": "https://fbstatic.com/static/js/ZjOTSVL2r.uriTest.js",
+                "uri": "https://fbstatic.com/static/res/qJFIAD_9+.uriTest.js",
                 "type": "js"
             },
             "WlvnF": {
-                "uri": "https://fbstatic.com/static/jsx/cIU1ZS86W.module.js",
+                "uri": "https://fbstatic.com/static/res/cIU1ZS86W.module.js",
                 "type": "js",
                 "deps": [
                     "math"
@@ -137,86 +123,83 @@
         },
         "css": {
             "reset-style": {
-                "uri": "https://fbstatic.com/static/css/Vm87C6yZl.reset.css",
+                "uri": "https://fbstatic.com/static/res/Vm87C6yZl.reset.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "main": {
-                "uri": "https://fbstatic.com/static/css/sBb7WjS1h.withId.css",
+                "uri": "https://fbstatic.com/static/res/g69kHLSo2.withId.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "a5tlT": {
-                "uri": "https://fbstatic.com/static/app/ISzUrzbxo.moduleA.css",
+                "uri": "https://fbstatic.com/static/res/ISzUrzbxo.moduleA.css",
                 "type": "css"
             },
-            "+mruT": {
-                "uri": "https://fbstatic.com/static/css/iwc5AHNS1.mangle.css",
+            "YG9FV": {
+                "uri": "https://fbstatic.com/static/res/47bCoH0Nq.inlineImage.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
-            "YG9FV": {
-                "uri": "https://fbstatic.com/static/css/47bCoH0Nq.inlineImage.css",
+            "+mruT": {
+                "uri": "https://fbstatic.com/static/res/iwc5AHNS1.mangle.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "mFLE6": {
-                "uri": "https://fbstatic.com/static/css/Erk4rIczP.plain.css",
+                "uri": "https://fbstatic.com/static/res/KrYRWuc+Q.plain.css",
                 "type": "css",
                 "within": [
                     "p0"
                 ]
             },
             "JAhPf": {
-                "uri": "https://fbstatic.com/static/less/ukiiX1OM0.detail.css",
+                "uri": "https://fbstatic.com/static/res/ukiiX1OM0.detail.css",
                 "type": "css"
             },
             "e6fCE": {
-                "uri": "https://fbstatic.com/static/less/nLFdhtvim.dialog.css",
+                "uri": "https://fbstatic.com/static/res/nLFdhtvim.dialog.css",
                 "type": "css"
             },
             "zhSrg": {
                 "type": "css"
             },
             "UVPXf": {
-                "uri": "https://fbstatic.com/static/less/8yEFKPkV2.import.css",
+                "uri": "https://fbstatic.com/static/res/tEUjsrWyA.import.css",
                 "type": "css"
             },
             "J0bO1": {
-                "uri": "https://fbstatic.com/static/less/F+4wWG4c2.purecss.css",
+                "uri": "https://fbstatic.com/static/res/F+4wWG4c2.purecss.css",
                 "type": "css"
             },
             "Dez3f": {
-                "uri": "https://fbstatic.com/static/less/3FVCUMtR3.shop_list.css",
+                "uri": "https://fbstatic.com/static/res/sjVMJBGn3.shop_list.css",
                 "type": "css",
                 "css": [
                     "e6fCE"
                 ]
             },
             "xI2wM": {
-                "uri": "https://fbstatic.com/static/less/dwHPbla5+.verify_list.css",
+                "uri": "https://fbstatic.com/static/res/NWMt7SkmE.verify_list.css",
                 "type": "css"
             }
         }
     },
     "paths": {
-        "src/page.tpl": "src/page.tpl",
-        "src/page/layout.tpl": "src/page/layout.tpl",
-        "src/page/part.tpl": "src/page/part.tpl",
         "src/app/app.js": "app",
         "src/es2015/class.js": "Foo",
         "src/js/vrcode.js": "vrcode",
         "src/js/withId.js": "base",
-        "src/jsx/app.jsx": "react-app",
         "src/jsx/math.js": "math",
+        "src/jsx/app.jsx": "react-app",
         "src/app/moduleA.js": "AQJGK",
         "src/app/moduleB.js": "zMZ2x",
         "src/app/moduleC.js": "T4EMD",
@@ -232,8 +215,8 @@
         "src/css/reset.css": "reset-style",
         "src/css/withId.css": "main",
         "src/app/moduleA.css": "a5tlT",
-        "src/css/mangle.css": "+mruT",
         "src/css/inlineImage.css": "YG9FV",
+        "src/css/mangle.css": "+mruT",
         "src/css/plain.css": "mFLE6",
         "src/less/detail.less": "JAhPf",
         "src/less/dialog.less": "e6fCE",
@@ -245,13 +228,13 @@
     },
     "pkgs": {
         "p0": {
-            "uri": "https://fbstatic.com/static/pkg/bPpc9Ujrg.pkg.build.css",
+            "uri": "https://fbstatic.com/static/pkg/T1UyQRXHo.pkg.build.css",
             "has": [
                 "main",
-                "mFLE6",
-                "YG9FV",
                 "reset-style",
-                "+mruT"
+                "mFLE6",
+                "+mruT",
+                "YG9FV"
             ]
         },
         "p1": {
