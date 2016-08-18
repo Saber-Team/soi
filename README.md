@@ -127,6 +127,39 @@ __Miscellaneous__
             ]
         }
     },
+    "paths": {
+        "src/app/app.js": "app",
+        "src/es2015/class.js": "Foo",
+        "src/js/vrcode.js": "vrcode",
+        "src/js/withId.js": "base",
+        "src/jsx/math.js": "math",
+        "src/jsx/app.jsx": "react-app",
+        "src/app/moduleA.js": "AQJGK",
+        "src/app/moduleB.js": "zMZ2x",
+        "src/app/moduleC.js": "T4EMD",
+        "src/app/vrcode.js": "tospe",
+        "src/es2015/arrow.js": "Iu6OX",
+        "src/js/asyncRequire.js": "dj5Pa",
+        "src/js/entry.js": "sWXOl",
+        "src/js/inlineTest.js": "27kaY",
+        "src/js/noId.js": "fvr+Q",
+        "src/js/syncRequire.js": "GwHRf",
+        "src/js/uriTest.js": "XvY+s",
+        "src/jsx/module.js": "WlvnF",
+        "src/css/reset.css": "reset-style",
+        "src/css/withId.css": "main",
+        "src/app/moduleA.css": "a5tlT",
+        "src/css/inlineImage.css": "YG9FV",
+        "src/css/mangle.css": "+mruT",
+        "src/css/plain.css": "mFLE6",
+        "src/less/detail.less": "JAhPf",
+        "src/less/dialog.less": "e6fCE",
+        "src/less/empty.less": "zhSrg",
+        "src/less/import.less": "UVPXf",
+        "src/less/purecss.less": "J0bO1",
+        "src/less/shop_list.less": "Dez3f",
+        "src/less/verify_list.less": "xI2wM"
+    },    
     "cssClassMap": {}
 }
 ```
@@ -217,21 +250,21 @@ soi 内部集成了如下插件, 无需安装其他模块可直接使用:
 未实现的部分或者还不满意的部分[参见todo](./doc/todos.md), 其中最迫不及待就是对于html静态资源的扫描和基于ipc方式实现的编译缓存. 
 
 
-[travis-image]: https://img.shields.io/travis/Saber-Team/soi.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/Saber-Team/soi.svg
 [travis-url]: https://travis-ci.org/Saber-Team/soi
 
-[npm-image]: https://img.shields.io/npm/v/soi.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/soi.svg
 [npm-url]: https://npmjs.org/package/soi
-[node-image]: https://img.shields.io/node/v/soi.svg?style=flat-square
+[node-image]: https://img.shields.io/node/v/soi.svg
 [node-url]: https://npmjs.org/package/soi
 
-[david-image]: http://img.shields.io/david/Saber-Team/soi.svg?style=flat-square
+[david-image]: http://img.shields.io/david/Saber-Team/soi.svg
 [david-url]: https://david-dm.org/Saber-Team/soi
 
-[coveralls-image]: https://img.shields.io/coveralls/Saber-Team/soi.svg?style=flat-square
+[coveralls-image]: https://img.shields.io/coveralls/Saber-Team/soi.svg
 [coveralls-url]: https://coveralls.io/r/Saber-Team/soi?branch=master
 
-[license-image]: http://img.shields.io/npm/l/soi.svg?style=flat-square
+[license-image]: http://img.shields.io/npm/l/soi.svg
 [license-url]: LICENSE.md
 
 [maintain-image]: https://img.shields.io/badge/maintained-Yes-blue.svg
@@ -242,3 +275,7 @@ soi 内部集成了如下插件, 无需安装其他模块可直接使用:
 [downloads-image]: https://img.shields.io/npm/dm/soi.svg
 [downloads-url]: https://npmjs.org/package/soi
 [downloads-all-image]: https://img.shields.io/npm/dt/soi.svg
+
+[coverage-image]: https://api.codacy.com/project/badge/coverage/43c442e150024a5fb80c876bb426c139
+[codacy-image]: https://api.codacy.com/project/badge/grade/43c442e150024a5fb80c876bb426c139
+[codacy-url]: https://www.codacy.com/app/zmike86/neo
