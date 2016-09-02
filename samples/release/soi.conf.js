@@ -17,7 +17,7 @@ soi.config.set('forceRescan', true);
 soi.release.task('dev',
   {
     dir: './dist/',
-    mapTo: './dist/resource.json',
+    mapTo: './dist/',
     domain: 'https://fbstatic.com/static',
     scandirs: ['src'],
     loaders: [

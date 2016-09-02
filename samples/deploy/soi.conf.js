@@ -10,16 +10,16 @@
 //    to: 'static/js/'
 //  });
 
-const TPLLoader = require('et-plugin-tplloader').TPLLoader;
-const TPLCompiler = require('et-plugin-tplloader').TPLCompiler;
-soi.addCompiler('tpl', TPLCompiler);
+//const TPLLoader = require('et-plugin-tplloader').TPLLoader;
+//const TPLCompiler = require('et-plugin-tplloader').TPLCompiler;
+//soi.addCompiler('tpl', TPLCompiler);
 
 // 资源表中包含的资源类型
-soi.config.set('types', ['js', 'css', 'tpl']);
+soi.config.set('types', ['js', 'css']);
 
 soi.deploy.task('dev',
     {
-      mapTo: './resource.json',
+      mapTo: './',
       domain: '',
       scandirs: ['src'],
       receiver: 'http://localhost/receiver.php',
@@ -29,16 +29,12 @@ soi.deploy.task('dev',
       loaders: [
         new soi.Loaders.ImageLoader(),
         new soi.Loaders.CSSLoader(),
-        new soi.Loaders.JSLoader(),
-        new TPLLoader()
+        new soi.Loaders.JSLoader()
       ],
       pack: {
         '/static/pkg/build.css': ['src/css/*.css'],
         '/static/pkg/build.js': ['src/app/*.js']
       }
-    })
-    .addRule(/src\/.*\.tpl/, {
-      to : '/static/page/'
     })
     .addRule(/src\/(.*)\/.*/, {
       to : '/static/$1/'
