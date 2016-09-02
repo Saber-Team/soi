@@ -19,7 +19,7 @@ soi.config.set('types', ['js', 'css']);
 
 soi.deploy.task('dev',
     {
-      mapTo: './',
+      mapTo: './map/',
       domain: '',
       scandirs: ['src'],
       receiver: 'http://localhost/receiver.php',
@@ -28,7 +28,11 @@ soi.deploy.task('dev',
       watch: true,
       loaders: [
         new soi.Loaders.ImageLoader(),
-        new soi.Loaders.CSSLoader(),
+        new soi.Loaders.CSSLoader({
+          preProcessors: [
+            soi.processor.less
+          ]
+        }),
         new soi.Loaders.JSLoader()
       ],
       pack: {
@@ -45,7 +49,6 @@ soi.deploy.task('dev',
     .use('wrapper', {
       define: '__d'
     })
-    .use('less')
     .use('packager', {
       noname: false,
       algorithm: 'sha1'
