@@ -1,5 +1,10 @@
 # ChangeLog
 
+### `v1.6.0`
+* 修复自测时的bug
+* 增加对modux框架的支持, 添加modux插件
+
+
 ### `v1.5.0`
 * 增加了babel-jsx预处理插件
 * 增加了babel-es2015预处理插件
