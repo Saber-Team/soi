@@ -1,6 +1,6 @@
 {
   "name": "soi",
-  "version": "1.5.7",
+  "version": "1.6.0",
   "description": "Build Tools for Front-End projects",
   "bin": "./bin/soi",
   "main": "soi.js",
@@ -20,7 +20,7 @@
     "Build Tools"
   ],
   "author": "AceMood, XCB",
-  "license": "(MIT OR Apache-2.0)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Saber-Team/soi/issues"
   },

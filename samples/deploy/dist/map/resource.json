@@ -1,0 +1,213 @@
+{
+    "resource": {
+        "js": {
+            "app": {
+                "uri": "/static/app/app.js",
+                "type": "js",
+                "path": "src/app/app.js",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "src/app/moduleA.js",
+                    "src/app/moduleB.js",
+                    "src/app/moduleC.js"
+                ],
+                "asyncLoaded": [
+                    "src/app/vrcode.js"
+                ]
+            },
+            "src/app/moduleA.js": {
+                "uri": "/static/app/moduleA.js",
+                "type": "js",
+                "path": "src/app/moduleA.js",
+                "within": [
+                    "p1"
+                ],
+                "css": [
+                    "src/app/moduleA.css"
+                ]
+            },
+            "src/app/moduleB.js": {
+                "uri": "/static/app/moduleB.js",
+                "type": "js",
+                "path": "src/app/moduleB.js",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "src/app/moduleA.js"
+                ]
+            },
+            "src/app/moduleC.js": {
+                "uri": "/static/app/moduleC.js",
+                "type": "js",
+                "path": "src/app/moduleC.js",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "src/app/moduleB.js"
+                ]
+            },
+            "src/app/vrcode.js": {
+                "uri": "/static/app/vrcode.js",
+                "type": "js",
+                "path": "src/app/vrcode.js",
+                "within": [
+                    "p1"
+                ]
+            },
+            "src/js/async-require.js": {
+                "uri": "/static/js/async-require.js",
+                "type": "js",
+                "path": "src/js/async-require.js",
+                "asyncLoaded": [
+                    "vrcode"
+                ]
+            },
+            "src/js/entry.js": {
+                "uri": "/static/js/entry.js",
+                "type": "js",
+                "path": "src/js/entry.js",
+                "deps": [
+                    "base"
+                ]
+            },
+            "src/js/noId.js": {
+                "uri": "/static/js/noId.js",
+                "type": "js",
+                "path": "src/js/noId.js"
+            },
+            "src/js/sync-require.js": {
+                "uri": "/static/js/sync-require.js",
+                "type": "js",
+                "path": "src/js/sync-require.js",
+                "deps": [
+                    "base"
+                ]
+            },
+            "vrcode": {
+                "uri": "/static/js/vrcode.js",
+                "type": "js",
+                "path": "src/js/vrcode.js"
+            },
+            "base": {
+                "uri": "/static/js/withId.js",
+                "type": "js",
+                "path": "src/js/withId.js"
+            }
+        },
+        "css": {
+            "src/app/moduleA.css": {
+                "uri": "/static/app/moduleA.css",
+                "type": "css",
+                "path": "src/app/moduleA.css"
+            },
+            "src/less/detail.less": {
+                "uri": "/static/less/detail.css",
+                "type": "css",
+                "path": "src/less/detail.less"
+            },
+            "src/less/dialog.less": {
+                "uri": "/static/less/dialog.css",
+                "type": "css",
+                "path": "src/less/dialog.less"
+            },
+            "src/less/empty.less": {
+                "type": "css",
+                "path": "src/less/empty.less"
+            },
+            "src/less/import.less": {
+                "uri": "/static/less/import.css",
+                "type": "css",
+                "path": "src/less/import.less",
+                "css": [
+                    "src/less/test.less"
+                ]
+            },
+            "src/less/purecss.less": {
+                "uri": "/static/less/purecss.css",
+                "type": "css",
+                "path": "src/less/purecss.less"
+            },
+            "src/less/shop_list.less": {
+                "uri": "/static/less/shop_list.css",
+                "type": "css",
+                "path": "src/less/shop_list.less",
+                "css": [
+                    "src/less/dialog.less"
+                ]
+            },
+            "src/less/test.less": {
+                "uri": "/static/less/test.css",
+                "type": "css",
+                "path": "src/less/test.less"
+            },
+            "src/less/verify_list.less": {
+                "uri": "/static/less/verify_list.css",
+                "type": "css",
+                "path": "src/less/verify_list.less"
+            },
+            "src/css/inlineImage.css": {
+                "uri": "/static/css/inlineImage.css",
+                "type": "css",
+                "path": "src/css/inlineImage.css",
+                "within": [
+                    "p0"
+                ]
+            },
+            "src/css/plain.css": {
+                "uri": "/static/css/plain.css",
+                "type": "css",
+                "path": "src/css/plain.css",
+                "within": [
+                    "p0"
+                ]
+            },
+            "src/css/reset.css": {
+                "uri": "/static/css/reset.css",
+                "type": "css",
+                "path": "src/css/reset.css",
+                "within": [
+                    "p0"
+                ]
+            },
+            "src/css/withId.css": {
+                "uri": "/static/css/withId.css",
+                "type": "css",
+                "path": "src/css/withId.css",
+                "within": [
+                    "p0"
+                ]
+            }
+        }
+    },
+    "paths": {
+        "src/app/app.js": "app",
+        "src/app/moduleA.js": "src/app/moduleA.js",
+        "src/app/moduleB.js": "src/app/moduleB.js",
+        "src/app/moduleC.js": "src/app/moduleC.js",
+        "src/app/vrcode.js": "src/app/vrcode.js",
+        "src/js/async-require.js": "src/js/async-require.js",
+        "src/js/entry.js": "src/js/entry.js",
+        "src/js/noId.js": "src/js/noId.js",
+        "src/js/sync-require.js": "src/js/sync-require.js",
+        "src/js/vrcode.js": "vrcode",
+        "src/js/withId.js": "base",
+        "src/app/moduleA.css": "src/app/moduleA.css",
+        "src/less/detail.less": "src/less/detail.less",
+        "src/less/dialog.less": "src/less/dialog.less",
+        "src/less/empty.less": "src/less/empty.less",
+        "src/less/import.less": "src/less/import.less",
+        "src/less/purecss.less": "src/less/purecss.less",
+        "src/less/shop_list.less": "src/less/shop_list.less",
+        "src/less/test.less": "src/less/test.less",
+        "src/less/verify_list.less": "src/less/verify_list.less",
+        "src/css/inlineImage.css": "src/css/inlineImage.css",
+        "src/css/plain.css": "src/css/plain.css",
+        "src/css/reset.css": "src/css/reset.css",
+        "src/css/withId.css": "src/css/withId.css"
+    },
+    "cssClassMap": {}
+}

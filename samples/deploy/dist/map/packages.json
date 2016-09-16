@@ -1,0 +1,23 @@
+{
+    "p0": {
+        "uri": "/static/pkg/krbXuxDmH.pkg.build.css",
+        "has": [
+            "src/css/withId.css",
+            "src/css/reset.css",
+            "src/css/plain.css",
+            "src/css/inlineImage.css"
+        ],
+        "type": "css"
+    },
+    "p1": {
+        "uri": "/static/pkg/tzucQhhAp.pkg.build.js",
+        "has": [
+            "src/app/vrcode.js",
+            "src/app/moduleA.js",
+            "src/app/moduleB.js",
+            "src/app/moduleC.js",
+            "app"
+        ],
+        "type": "js"
+    }
+}

@@ -1,0 +1,1 @@
+__d("base",[],function(t,e,n,r){"use strict";n.exports={name:"A"}});

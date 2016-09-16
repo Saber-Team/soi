@@ -43,9 +43,9 @@ soi.release.task('dev',
   })
   //.addRule(/src\/.*\.tpl/, {to : '/static/page/'})
   //.addRule(/src\/(.*)\/.*/, {to : '/static/$1/'})
-  .use('wrapper', {define: '__d'})
+  .use('modux')
   .use('css')
   .use('messid', {ext: ['js', 'css']})
-  //.use('uglify')
+  .use('uglify')
   .use('hash', {noname: false})
   .use('packager', {noname: false});

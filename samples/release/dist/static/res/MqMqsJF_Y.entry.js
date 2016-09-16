@@ -1,0 +1,1 @@
+"use strict";var dialog=require("base");

@@ -173,70 +173,6 @@
       "mtime": 1471072849000
     },
     {
-      "path": "src/img/finish.png",
-      "id": "src/img/finish.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 60,
-      "height": 60
-    },
-    {
-      "path": "src/img/index.png",
-      "id": "src/img/index.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 100,
-      "height": 25
-    },
-    {
-      "path": "src/img/invalid.png",
-      "id": "src/img/invalid.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 177,
-      "height": 203
-    },
-    {
-      "path": "src/img/dot.png",
-      "id": "src/img/dot.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 35,
-      "height": 13
-    },
-    {
-      "path": "src/img/qrcode.png",
-      "id": "src/img/qrcode.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 87,
-      "height": 88
-    },
-    {
-      "path": "src/img/none.png",
-      "id": "src/img/none.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 355,
-      "height": 373
-    },
-    {
-      "path": "src/img/shop_list.png",
-      "id": "src/img/shop_list.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 200,
-      "height": 50
-    },
-    {
-      "path": "src/img/tip.png",
-      "id": "src/img/tip.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 18,
-      "height": 17
-    },
-    {
       "type": "js",
       "path": "src/jsx/app.jsx",
       "id": "react-app",
@@ -284,76 +220,6 @@
       "mtime": 1471074990000
     },
     {
-      "type": "css",
-      "path": "src/less/detail.less",
-      "id": "src/less/detail.less",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1471002243000
-    },
-    {
-      "type": "css",
-      "path": "src/less/dialog.less",
-      "id": "src/less/dialog.less",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1455799669000
-    },
-    {
-      "type": "css",
-      "path": "src/less/import.less",
-      "id": "src/less/import.less",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1471002243000
-    },
-    {
-      "type": "css",
-      "path": "src/less/empty.less",
-      "id": "src/less/empty.less",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1455799669000
-    },
-    {
-      "type": "css",
-      "path": "src/less/purecss.less",
-      "id": "src/less/purecss.less",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1455799669000
-    },
-    {
-      "type": "css",
-      "path": "src/less/shop_list.less",
-      "id": "src/less/shop_list.less",
-      "_requiredCSSMap": {
-        "./dialog.less": true
-      },
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {
-        "./dialog.less": "src/less/dialog.less"
-      },
-      "requiredCSS": [
-        "src/less/dialog.less"
-      ],
-      "mtime": 1471002243000
-    },
-    {
-      "type": "css",
-      "path": "src/less/verify_list.less",
-      "id": "src/less/verify_list.less",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1471002243000
-    },
-    {
       "type": "js",
       "path": "src/js/asyncRequire.js",
       "id": "src/js/asyncRequire.js",
@@ -373,6 +239,17 @@
     },
     {
       "type": "js",
+      "path": "src/js/inlineTest.js",
+      "id": "src/js/inlineTest.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedPath": {},
+      "isModule": true,
+      "mtime": 1470834087000
+    },
+    {
+      "type": "js",
       "path": "src/js/entry.js",
       "id": "src/js/entry.js",
       "_requiredCSSMap": {},
@@ -388,17 +265,6 @@
         "base"
       ],
       "mtime": 1470834151000
-    },
-    {
-      "type": "js",
-      "path": "src/js/inlineTest.js",
-      "id": "src/js/inlineTest.js",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedPath": {},
-      "isModule": true,
-      "mtime": 1470834087000
     },
     {
       "type": "js",
@@ -461,6 +327,140 @@
       "_requiredTextToResolvedPath": {},
       "isModule": true,
       "mtime": 1470829194000
+    },
+    {
+      "path": "src/img/dot.png",
+      "id": "src/img/dot.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 35,
+      "height": 13
+    },
+    {
+      "path": "src/img/finish.png",
+      "id": "src/img/finish.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 60,
+      "height": 60
+    },
+    {
+      "path": "src/img/index.png",
+      "id": "src/img/index.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 100,
+      "height": 25
+    },
+    {
+      "path": "src/img/invalid.png",
+      "id": "src/img/invalid.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 177,
+      "height": 203
+    },
+    {
+      "path": "src/img/none.png",
+      "id": "src/img/none.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 355,
+      "height": 373
+    },
+    {
+      "path": "src/img/qrcode.png",
+      "id": "src/img/qrcode.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 87,
+      "height": 88
+    },
+    {
+      "path": "src/img/shop_list.png",
+      "id": "src/img/shop_list.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 200,
+      "height": 50
+    },
+    {
+      "path": "src/img/tip.png",
+      "id": "src/img/tip.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 18,
+      "height": 17
+    },
+    {
+      "type": "css",
+      "path": "src/less/detail.less",
+      "id": "src/less/detail.less",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1471002243000
+    },
+    {
+      "type": "css",
+      "path": "src/less/dialog.less",
+      "id": "src/less/dialog.less",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1455799669000
+    },
+    {
+      "type": "css",
+      "path": "src/less/empty.less",
+      "id": "src/less/empty.less",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1455799669000
+    },
+    {
+      "type": "css",
+      "path": "src/less/import.less",
+      "id": "src/less/import.less",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1471002243000
+    },
+    {
+      "type": "css",
+      "path": "src/less/purecss.less",
+      "id": "src/less/purecss.less",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1455799669000
+    },
+    {
+      "type": "css",
+      "path": "src/less/shop_list.less",
+      "id": "src/less/shop_list.less",
+      "_requiredCSSMap": {
+        "./dialog.less": true
+      },
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {
+        "./dialog.less": "src/less/dialog.less"
+      },
+      "requiredCSS": [
+        "src/less/dialog.less"
+      ],
+      "mtime": 1471002243000
+    },
+    {
+      "type": "css",
+      "path": "src/less/verify_list.less",
+      "id": "src/less/verify_list.less",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1471002243000
     }
   ]
 }
