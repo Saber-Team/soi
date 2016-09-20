@@ -18,8 +18,8 @@ soi.release.task('dev',
   {
     dir: './dist/',
     mapTo: './dist/',
-    domain: 'https://fbstatic.com/static',
-    scandirs: ['src'],
+    domain: 'https://foo.static.com/static',
+    scandirs: ['src/bb'],
     loaders: [
       new soi.Loaders.ImageLoader(),
       new soi.Loaders.CSSLoader({
@@ -29,8 +29,7 @@ soi.release.task('dev',
       }),
       new soi.Loaders.JSLoader({
         preProcessors: [
-          soi.processor['babel-jsx'],
-          soi.processor['babel-es2015']
+          soi.processor['babel-jsx']
         ]
       })
     ],

@@ -1,261 +1,31 @@
 {
     "resource": {
         "js": {
-            "app": {
-                "uri": "https://fbstatic.com/static/res/5npylXEc+.app.js",
+            "Backbone": {
+                "uri": "https://foo.static.com/static/res/hIlM3nKdX.backbone.js",
                 "type": "js",
-                "path": "src/app/app.js",
-                "within": [
-                    "p1"
-                ],
+                "path": "src/bb/backbone.js",
                 "deps": [
-                    "AQJGK",
-                    "zMZ2x",
-                    "T4EMD"
-                ],
-                "asyncLoaded": [
-                    "tospe"
+                    "underscore",
+                    "jquery"
                 ]
             },
-            "Foo": {
-                "uri": "https://fbstatic.com/static/res/zRPoJvV3n.class.js",
+            "jquery": {
+                "uri": "https://foo.static.com/static/res/8dCIg4uxO.jquery.js",
                 "type": "js",
-                "path": "src/es2015/class.js"
+                "path": "src/bb/jquery.js"
             },
-            "vrcode": {
-                "uri": "https://fbstatic.com/static/res/kVGDq69sR.vrcode.js",
+            "underscore": {
+                "uri": "https://foo.static.com/static/res/QNdGrPCCd.underscore.js",
                 "type": "js",
-                "path": "src/js/vrcode.js"
-            },
-            "base": {
-                "uri": "https://fbstatic.com/static/res/FJr8o8cUV.withId.js",
-                "type": "js",
-                "path": "src/js/withId.js"
-            },
-            "react-app": {
-                "uri": "https://fbstatic.com/static/res/Sxf8puuQV.app.js",
-                "type": "js",
-                "path": "src/jsx/app.jsx",
-                "deps": [
-                    "math"
-                ]
-            },
-            "math": {
-                "uri": "https://fbstatic.com/static/res/Blpsm0bUP.math.js",
-                "type": "js",
-                "path": "src/jsx/math.js"
-            },
-            "zMZ2x": {
-                "uri": "https://fbstatic.com/static/res/KCwSmYCgZ.moduleB.js",
-                "type": "js",
-                "path": "src/app/moduleB.js",
-                "within": [
-                    "p1"
-                ],
-                "deps": [
-                    "AQJGK"
-                ]
-            },
-            "AQJGK": {
-                "uri": "https://fbstatic.com/static/res/MeDp4uPtR.moduleA.js",
-                "type": "js",
-                "path": "src/app/moduleA.js",
-                "within": [
-                    "p1"
-                ],
-                "css": [
-                    "a5tlT"
-                ]
-            },
-            "T4EMD": {
-                "uri": "https://fbstatic.com/static/res/PA+K_WCw0.moduleC.js",
-                "type": "js",
-                "path": "src/app/moduleC.js",
-                "within": [
-                    "p1"
-                ],
-                "deps": [
-                    "zMZ2x"
-                ]
-            },
-            "tospe": {
-                "uri": "https://fbstatic.com/static/res/596YbTI+R.vrcode.js",
-                "type": "js",
-                "path": "src/app/vrcode.js",
-                "within": [
-                    "p1"
-                ]
-            },
-            "Iu6OX": {
-                "uri": "https://fbstatic.com/static/res/rF8n2odFF.arrow.js",
-                "type": "js",
-                "path": "src/es2015/arrow.js"
-            },
-            "dj5Pa": {
-                "uri": "https://fbstatic.com/static/res/andi+rSzG.asyncRequire.js",
-                "type": "js",
-                "path": "src/js/asyncRequire.js",
-                "asyncLoaded": [
-                    "vrcode"
-                ]
-            },
-            "sWXOl": {
-                "uri": "https://fbstatic.com/static/res/MqMqsJF_Y.entry.js",
-                "type": "js",
-                "path": "src/js/entry.js",
-                "deps": [
-                    "base"
-                ]
-            },
-            "27kaY": {
-                "uri": "https://fbstatic.com/static/res/INaC08861.inlineTest.js",
-                "type": "js",
-                "path": "src/js/inlineTest.js"
-            },
-            "fvr+Q": {
-                "uri": "https://fbstatic.com/static/res/9uNSg_eML.noId.js",
-                "type": "js",
-                "path": "src/js/noId.js"
-            },
-            "GwHRf": {
-                "uri": "https://fbstatic.com/static/res/V4UJ8tBDS.syncRequire.js",
-                "type": "js",
-                "path": "src/js/syncRequire.js",
-                "deps": [
-                    "base"
-                ]
-            },
-            "XvY+s": {
-                "uri": "https://fbstatic.com/static/res/gYMIfx41h.uriTest.js",
-                "type": "js",
-                "path": "src/js/uriTest.js"
-            },
-            "WlvnF": {
-                "uri": "https://fbstatic.com/static/res/OgfIGdqwf.module.js",
-                "type": "js",
-                "path": "src/jsx/module.js",
-                "deps": [
-                    "math"
-                ]
-            }
-        },
-        "css": {
-            "reset-style": {
-                "uri": "https://fbstatic.com/static/res/Vm87C6yZl.reset.css",
-                "type": "css",
-                "path": "src/css/reset.css",
-                "within": [
-                    "p0"
-                ]
-            },
-            "main": {
-                "uri": "https://fbstatic.com/static/res/g69kHLSo2.withId.css",
-                "type": "css",
-                "path": "src/css/withId.css",
-                "within": [
-                    "p0"
-                ]
-            },
-            "a5tlT": {
-                "uri": "https://fbstatic.com/static/res/ISzUrzbxo.moduleA.css",
-                "type": "css",
-                "path": "src/app/moduleA.css"
-            },
-            "YG9FV": {
-                "uri": "https://fbstatic.com/static/res/47bCoH0Nq.inlineImage.css",
-                "type": "css",
-                "path": "src/css/inlineImage.css",
-                "within": [
-                    "p0"
-                ]
-            },
-            "+mruT": {
-                "uri": "https://fbstatic.com/static/res/iwc5AHNS1.mangle.css",
-                "type": "css",
-                "path": "src/css/mangle.css",
-                "within": [
-                    "p0"
-                ]
-            },
-            "mFLE6": {
-                "uri": "https://fbstatic.com/static/res/KrYRWuc+Q.plain.css",
-                "type": "css",
-                "path": "src/css/plain.css",
-                "within": [
-                    "p0"
-                ]
-            },
-            "JAhPf": {
-                "uri": "https://fbstatic.com/static/res/ukiiX1OM0.detail.css",
-                "type": "css",
-                "path": "src/less/detail.less"
-            },
-            "e6fCE": {
-                "uri": "https://fbstatic.com/static/res/nLFdhtvim.dialog.css",
-                "type": "css",
-                "path": "src/less/dialog.less"
-            },
-            "zhSrg": {
-                "type": "css",
-                "path": "src/less/empty.less"
-            },
-            "UVPXf": {
-                "uri": "https://fbstatic.com/static/res/tEUjsrWyA.import.css",
-                "type": "css",
-                "path": "src/less/import.less"
-            },
-            "J0bO1": {
-                "uri": "https://fbstatic.com/static/res/F+4wWG4c2.purecss.css",
-                "type": "css",
-                "path": "src/less/purecss.less"
-            },
-            "Dez3f": {
-                "uri": "https://fbstatic.com/static/res/sjVMJBGn3.shop_list.css",
-                "type": "css",
-                "path": "src/less/shop_list.less",
-                "css": [
-                    "e6fCE"
-                ]
-            },
-            "xI2wM": {
-                "uri": "https://fbstatic.com/static/res/NWMt7SkmE.verify_list.css",
-                "type": "css",
-                "path": "src/less/verify_list.less"
+                "path": "src/bb/underscore.js"
             }
         }
     },
     "paths": {
-        "src/app/app.js": "app",
-        "src/es2015/class.js": "Foo",
-        "src/js/vrcode.js": "vrcode",
-        "src/js/withId.js": "base",
-        "src/jsx/app.jsx": "react-app",
-        "src/jsx/math.js": "math",
-        "src/app/moduleB.js": "zMZ2x",
-        "src/app/moduleA.js": "AQJGK",
-        "src/app/moduleC.js": "T4EMD",
-        "src/app/vrcode.js": "tospe",
-        "src/es2015/arrow.js": "Iu6OX",
-        "src/js/asyncRequire.js": "dj5Pa",
-        "src/js/entry.js": "sWXOl",
-        "src/js/inlineTest.js": "27kaY",
-        "src/js/noId.js": "fvr+Q",
-        "src/js/syncRequire.js": "GwHRf",
-        "src/js/uriTest.js": "XvY+s",
-        "src/jsx/module.js": "WlvnF",
-        "src/css/reset.css": "reset-style",
-        "src/css/withId.css": "main",
-        "src/app/moduleA.css": "a5tlT",
-        "src/css/inlineImage.css": "YG9FV",
-        "src/css/mangle.css": "+mruT",
-        "src/css/plain.css": "mFLE6",
-        "src/less/detail.less": "JAhPf",
-        "src/less/dialog.less": "e6fCE",
-        "src/less/empty.less": "zhSrg",
-        "src/less/import.less": "UVPXf",
-        "src/less/purecss.less": "J0bO1",
-        "src/less/shop_list.less": "Dez3f",
-        "src/less/verify_list.less": "xI2wM"
+        "src/bb/backbone.js": "Backbone",
+        "src/bb/jquery.js": "jquery",
+        "src/bb/underscore.js": "underscore"
     },
     "cssClassMap": {}
 }
