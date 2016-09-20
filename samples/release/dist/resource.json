@@ -2,7 +2,7 @@
     "resource": {
         "js": {
             "Backbone": {
-                "uri": "https://foo.static.com/static/res/hIlM3nKdX.backbone.js",
+                "uri": "https://foo.static.com/static/res/JFc1XaGFP.backbone.js",
                 "type": "js",
                 "path": "src/bb/backbone.js",
                 "deps": [
@@ -11,7 +11,7 @@
                 ]
             },
             "jquery": {
-                "uri": "https://foo.static.com/static/res/8dCIg4uxO.jquery.js",
+                "uri": "https://foo.static.com/static/res/oo0fwZYbw.jquery.js",
                 "type": "js",
                 "path": "src/bb/jquery.js"
             },
