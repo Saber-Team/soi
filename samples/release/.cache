@@ -32,13 +32,22 @@
       "mtime": 1459855774000
     },
     {
-      "type": "css",
-      "path": "src/app/moduleA.css",
-      "id": "src/app/moduleA.css",
+      "type": "js",
+      "path": "src/app/moduleB.js",
+      "id": "src/app/moduleB.js",
       "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1460347856000
+      "_requiredModuleMap": {
+        "./moduleA": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedPath": {
+        "./moduleA": "src/app/moduleA.js"
+      },
+      "isModule": true,
+      "requiredModules": [
+        "src/app/moduleA.js"
+      ],
+      "mtime": 1459845395000
     },
     {
       "type": "js",
@@ -59,22 +68,13 @@
       "mtime": 1460347836000
     },
     {
-      "type": "js",
-      "path": "src/app/moduleB.js",
-      "id": "src/app/moduleB.js",
+      "type": "css",
+      "path": "src/app/moduleA.css",
+      "id": "src/app/moduleA.css",
       "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./moduleA": true
-      },
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedPath": {
-        "./moduleA": "src/app/moduleA.js"
-      },
-      "isModule": true,
-      "requiredModules": [
-        "src/app/moduleA.js"
-      ],
-      "mtime": 1459845395000
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1460347856000
     },
     {
       "type": "js",
@@ -174,53 +174,6 @@
     },
     {
       "type": "js",
-      "path": "src/jsx/app.jsx",
-      "id": "react-app",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./math": true
-      },
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedPath": {
-        "./math": "src/jsx/math.js"
-      },
-      "isModule": true,
-      "requiredModules": [
-        "math"
-      ],
-      "mtime": 1471073836000
-    },
-    {
-      "type": "js",
-      "path": "src/jsx/math.js",
-      "id": "math",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedPath": {},
-      "isModule": true,
-      "mtime": 1471073759000
-    },
-    {
-      "type": "js",
-      "path": "src/jsx/module.js",
-      "id": "src/jsx/module.js",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./math": true
-      },
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedPath": {
-        "./math": "src/jsx/math.js"
-      },
-      "isModule": true,
-      "requiredModules": [
-        "math"
-      ],
-      "mtime": 1471074990000
-    },
-    {
-      "type": "js",
       "path": "src/js/asyncRequire.js",
       "id": "src/js/asyncRequire.js",
       "_requiredCSSMap": {},
@@ -239,17 +192,6 @@
     },
     {
       "type": "js",
-      "path": "src/js/inlineTest.js",
-      "id": "src/js/inlineTest.js",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedPath": {},
-      "isModule": true,
-      "mtime": 1470834087000
-    },
-    {
-      "type": "js",
       "path": "src/js/entry.js",
       "id": "src/js/entry.js",
       "_requiredCSSMap": {},
@@ -265,6 +207,17 @@
         "base"
       ],
       "mtime": 1470834151000
+    },
+    {
+      "type": "js",
+      "path": "src/js/inlineTest.js",
+      "id": "src/js/inlineTest.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedPath": {},
+      "isModule": true,
+      "mtime": 1470834087000
     },
     {
       "type": "js",
@@ -329,68 +282,51 @@
       "mtime": 1470829194000
     },
     {
-      "path": "src/img/dot.png",
-      "id": "src/img/dot.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 35,
-      "height": 13
+      "type": "js",
+      "path": "src/jsx/app.jsx",
+      "id": "react-app",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./math": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedPath": {
+        "./math": "src/jsx/math.js"
+      },
+      "isModule": true,
+      "requiredModules": [
+        "math"
+      ],
+      "mtime": 1471073836000
     },
     {
-      "path": "src/img/finish.png",
-      "id": "src/img/finish.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 60,
-      "height": 60
+      "type": "js",
+      "path": "src/jsx/math.js",
+      "id": "math",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedPath": {},
+      "isModule": true,
+      "mtime": 1471073759000
     },
     {
-      "path": "src/img/index.png",
-      "id": "src/img/index.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 100,
-      "height": 25
-    },
-    {
-      "path": "src/img/invalid.png",
-      "id": "src/img/invalid.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 177,
-      "height": 203
-    },
-    {
-      "path": "src/img/none.png",
-      "id": "src/img/none.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 355,
-      "height": 373
-    },
-    {
-      "path": "src/img/qrcode.png",
-      "id": "src/img/qrcode.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 87,
-      "height": 88
-    },
-    {
-      "path": "src/img/shop_list.png",
-      "id": "src/img/shop_list.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 200,
-      "height": 50
-    },
-    {
-      "path": "src/img/tip.png",
-      "id": "src/img/tip.png",
-      "type": "image",
-      "mtime": 1455799669000,
-      "width": 18,
-      "height": 17
+      "type": "js",
+      "path": "src/jsx/module.js",
+      "id": "src/jsx/module.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./math": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedPath": {
+        "./math": "src/jsx/math.js"
+      },
+      "isModule": true,
+      "requiredModules": [
+        "math"
+      ],
+      "mtime": 1471074990000
     },
     {
       "type": "css",
@@ -461,6 +397,70 @@
       "_spriteMap": {},
       "_requiredTextToResolvedPath": {},
       "mtime": 1471002243000
+    },
+    {
+      "path": "src/img/dot.png",
+      "id": "src/img/dot.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 35,
+      "height": 13
+    },
+    {
+      "path": "src/img/finish.png",
+      "id": "src/img/finish.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 60,
+      "height": 60
+    },
+    {
+      "path": "src/img/index.png",
+      "id": "src/img/index.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 100,
+      "height": 25
+    },
+    {
+      "path": "src/img/invalid.png",
+      "id": "src/img/invalid.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 177,
+      "height": 203
+    },
+    {
+      "path": "src/img/none.png",
+      "id": "src/img/none.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 355,
+      "height": 373
+    },
+    {
+      "path": "src/img/qrcode.png",
+      "id": "src/img/qrcode.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 87,
+      "height": 88
+    },
+    {
+      "path": "src/img/shop_list.png",
+      "id": "src/img/shop_list.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 200,
+      "height": 50
+    },
+    {
+      "path": "src/img/tip.png",
+      "id": "src/img/tip.png",
+      "type": "image",
+      "mtime": 1455799669000,
+      "width": 18,
+      "height": 17
     }
   ]
 }
