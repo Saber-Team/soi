@@ -1,10 +1,12 @@
 # ChangeLog
 
+### `v1.7.0`
+* addRule的to支持function类型
+
 ### `v1.6.0`
 * 修复自测时的bug
 * 增加对modux框架的支持, 添加modux插件
 * 更改为apache 2.0协议
-
 
 ### `v1.5.0`
 * 增加了babel-jsx预处理插件
