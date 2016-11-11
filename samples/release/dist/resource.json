@@ -1,10 +1,12 @@
 {
+    "root": "/Users/baidu/Git/soi/samples/release/dist",
     "resource": {
         "js": {
             "Backbone": {
                 "uri": "https://example.static0.com/av/static/res/JFc1XaGFP.backbone.js",
                 "type": "js",
                 "path": "src/bb/backbone.js",
+                "localPathName": "/av/static/res/JFc1XaGFP.backbone.js",
                 "version": "JFc1XaGFP",
                 "deps": [
                     "underscore",
@@ -15,12 +17,14 @@
                 "uri": "https://example.static0.com/av/static/res/oo0fwZYbw.jquery.js",
                 "type": "js",
                 "path": "src/bb/jquery.js",
+                "localPathName": "/av/static/res/oo0fwZYbw.jquery.js",
                 "version": "oo0fwZYbw"
             },
             "underscore": {
                 "uri": "https://example.static0.com/av/static/res/QNdGrPCCd.underscore.js",
                 "type": "js",
                 "path": "src/bb/underscore.js",
+                "localPathName": "/av/static/res/QNdGrPCCd.underscore.js",
                 "version": "QNdGrPCCd"
             }
         }
