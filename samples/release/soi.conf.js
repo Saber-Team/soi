@@ -18,7 +18,7 @@ soi.release.task('dev',
   {
     dir: './dist/',
     mapTo: './dist/',
-    domain: 'https://foo.static.com/static',
+    domain: 'https://example.static0.com/av',
     scandirs: ['src/bb'],
     loaders: [
       new soi.Loaders.ImageLoader(),

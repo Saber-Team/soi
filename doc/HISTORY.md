@@ -3,6 +3,7 @@
 ### `v1.7.0`
 * addRule的to支持function类型
 * 在文件指纹的插件中实现为每个静态资源添加版本号version属性
+* 修复node url模块resolve方法的实现对domain配置解析path丢失的bug
 
 ### `v1.6.0`
 * 修复自测时的bug

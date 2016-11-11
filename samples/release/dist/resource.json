@@ -2,7 +2,7 @@
     "resource": {
         "js": {
             "Backbone": {
-                "uri": "https://foo.static.com/static/res/JFc1XaGFP.backbone.js",
+                "uri": "https://example.static0.com/av/static/res/JFc1XaGFP.backbone.js",
                 "type": "js",
                 "path": "src/bb/backbone.js",
                 "version": "JFc1XaGFP",
@@ -12,13 +12,13 @@
                 ]
             },
             "jquery": {
-                "uri": "https://foo.static.com/static/res/oo0fwZYbw.jquery.js",
+                "uri": "https://example.static0.com/av/static/res/oo0fwZYbw.jquery.js",
                 "type": "js",
                 "path": "src/bb/jquery.js",
                 "version": "oo0fwZYbw"
             },
             "underscore": {
-                "uri": "https://foo.static.com/static/res/QNdGrPCCd.underscore.js",
+                "uri": "https://example.static0.com/av/static/res/QNdGrPCCd.underscore.js",
                 "type": "js",
                 "path": "src/bb/underscore.js",
                 "version": "QNdGrPCCd"

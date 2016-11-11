@@ -44,11 +44,9 @@ soi.deploy.task('dev',
       to : '/static/$1/'
     })
     .use('messid', {
-      ext: ['JS']
+      ext: ['js', 'css']
     })
-    .use('wrapper', {
-      define: '__d'
-    })
+    .use('modux')
     .use('packager', {
       noname: false,
       algorithm: 'sha1'
