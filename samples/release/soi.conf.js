@@ -1,12 +1,6 @@
 
 'use strict';
 
-// 配置线上路径
-
-//const TPLLoader = require('et-plugin-tplloader').TPLLoader;
-//const TPLCompiler = require('et-plugin-tplloader').TPLCompiler;
-//soi.addCompiler('tpl', TPLCompiler);
-
 // 资源表中包含的资源类型
 soi.config.set('types', ['js', 'css']);
 // 设置每次不利用编译缓存
@@ -19,7 +13,7 @@ soi.release.task('dev',
     dir: './dist/',
     mapTo: './dist/',
     domain: 'https://example.static0.com/av',
-    scandirs: ['src/bb'],
+    scandirs: ['src'],
     loaders: [
       new soi.Loaders.ImageLoader(),
       new soi.Loaders.CSSLoader({
