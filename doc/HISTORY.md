@@ -5,6 +5,7 @@
 * 在文件指纹的插件中实现为每个静态资源添加版本号version属性
 * 修复node url模块resolve方法的实现对domain配置解析path丢失的bug
 * 写文件时为每个资源加上localPathName, 方便框架读文件
+* 增加对字体文件类型的编译支持
 
 ### `v1.6.0`
 * 修复自测时的bug
