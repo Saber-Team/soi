@@ -1,1 +1,0 @@
-__d("GwHRf",["base"],function(t,e,n,r){"use strict";var u=e("base");r.getModuleA=function(){return new u}});

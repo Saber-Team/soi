@@ -3,36 +3,360 @@
     "resource": {
         "js": {
             "Backbone": {
-                "uri": "https://example.static0.com/av/static/res/JFc1XaGFP.backbone.js",
+                "uri": "https://bd.static0.com/dev/static/bb/7fedd6102.backbone.js",
                 "type": "js",
                 "path": "src/bb/backbone.js",
-                "localPathName": "/av/static/res/JFc1XaGFP.backbone.js",
-                "version": "JFc1XaGFP",
+                "localPathName": "/dev/static/bb/7fedd6102.backbone.js",
+                "version": "7fedd6102",
                 "deps": [
                     "underscore",
                     "jquery"
                 ]
             },
             "jquery": {
-                "uri": "https://example.static0.com/av/static/res/oo0fwZYbw.jquery.js",
+                "uri": "https://bd.static0.com/dev/static/bb/5cd353a52.jquery.js",
                 "type": "js",
                 "path": "src/bb/jquery.js",
-                "localPathName": "/av/static/res/oo0fwZYbw.jquery.js",
-                "version": "oo0fwZYbw"
+                "localPathName": "/dev/static/bb/5cd353a52.jquery.js",
+                "version": "5cd353a52"
             },
             "underscore": {
-                "uri": "https://example.static0.com/av/static/res/QNdGrPCCd.underscore.js",
+                "uri": "https://bd.static0.com/dev/static/bb/71b05f21b.underscore.js",
                 "type": "js",
                 "path": "src/bb/underscore.js",
-                "localPathName": "/av/static/res/QNdGrPCCd.underscore.js",
-                "version": "QNdGrPCCd"
+                "localPathName": "/dev/static/bb/71b05f21b.underscore.js",
+                "version": "71b05f21b"
+            },
+            "app": {
+                "uri": "https://bd.static0.com/dev/static/app/1ddf480a1.app.js",
+                "type": "js",
+                "path": "src/app/app.js",
+                "localPathName": "/dev/static/app/1ddf480a1.app.js",
+                "version": "1ddf480a1",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "AQJGK",
+                    "zMZ2x",
+                    "T4EMD"
+                ],
+                "asyncLoaded": [
+                    "tospe"
+                ]
+            },
+            "Foo": {
+                "uri": "https://bd.static0.com/dev/static/es2015/35975693d.class.js",
+                "type": "js",
+                "path": "src/es2015/class.js",
+                "localPathName": "/dev/static/es2015/35975693d.class.js",
+                "version": "35975693d"
+            },
+            "vrcode": {
+                "uri": "https://bd.static0.com/dev/static/js/95b0f5e8d.vrcode.js",
+                "type": "js",
+                "path": "src/js/vrcode.js",
+                "localPathName": "/dev/static/js/95b0f5e8d.vrcode.js",
+                "version": "95b0f5e8d"
+            },
+            "base": {
+                "uri": "https://bd.static0.com/dev/static/js/d199aaf93.withId.js",
+                "type": "js",
+                "path": "src/js/withId.js",
+                "localPathName": "/dev/static/js/d199aaf93.withId.js",
+                "version": "d199aaf93"
+            },
+            "react-app": {
+                "uri": "https://bd.static0.com/dev/static/jsx/bb423fdf4.app.js",
+                "type": "js",
+                "path": "src/jsx/app.jsx",
+                "localPathName": "/dev/static/jsx/bb423fdf4.app.js",
+                "version": "bb423fdf4",
+                "deps": [
+                    "math"
+                ]
+            },
+            "math": {
+                "uri": "https://bd.static0.com/dev/static/jsx/19a493d86.math.js",
+                "type": "js",
+                "path": "src/jsx/math.js",
+                "localPathName": "/dev/static/jsx/19a493d86.math.js",
+                "version": "19a493d86"
+            },
+            "AQJGK": {
+                "uri": "https://bd.static0.com/dev/static/app/947648092.moduleA.js",
+                "type": "js",
+                "path": "src/app/moduleA.js",
+                "localPathName": "/dev/static/app/947648092.moduleA.js",
+                "version": "947648092",
+                "within": [
+                    "p1"
+                ],
+                "css": [
+                    "a5tlT"
+                ]
+            },
+            "zMZ2x": {
+                "uri": "https://bd.static0.com/dev/static/app/8f04dde37.moduleB.js",
+                "type": "js",
+                "path": "src/app/moduleB.js",
+                "localPathName": "/dev/static/app/8f04dde37.moduleB.js",
+                "version": "8f04dde37",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "AQJGK"
+                ]
+            },
+            "T4EMD": {
+                "uri": "https://bd.static0.com/dev/static/app/0d56bf87a.moduleC.js",
+                "type": "js",
+                "path": "src/app/moduleC.js",
+                "localPathName": "/dev/static/app/0d56bf87a.moduleC.js",
+                "version": "0d56bf87a",
+                "within": [
+                    "p1"
+                ],
+                "deps": [
+                    "zMZ2x"
+                ]
+            },
+            "tospe": {
+                "uri": "https://bd.static0.com/dev/static/app/39a4883bc.vrcode.js",
+                "type": "js",
+                "path": "src/app/vrcode.js",
+                "localPathName": "/dev/static/app/39a4883bc.vrcode.js",
+                "version": "39a4883bc",
+                "within": [
+                    "p1"
+                ]
+            },
+            "Iu6OX": {
+                "uri": "https://bd.static0.com/dev/static/es2015/d54d89ebf.arrow.js",
+                "type": "js",
+                "path": "src/es2015/arrow.js",
+                "localPathName": "/dev/static/es2015/d54d89ebf.arrow.js",
+                "version": "d54d89ebf"
+            },
+            "dj5Pa": {
+                "uri": "https://bd.static0.com/dev/static/js/47ef4c19c.asyncRequire.js",
+                "type": "js",
+                "path": "src/js/asyncRequire.js",
+                "localPathName": "/dev/static/js/47ef4c19c.asyncRequire.js",
+                "version": "47ef4c19c",
+                "asyncLoaded": [
+                    "vrcode"
+                ]
+            },
+            "sWXOl": {
+                "uri": "https://bd.static0.com/dev/static/js/32a32ab09.entry.js",
+                "type": "js",
+                "path": "src/js/entry.js",
+                "localPathName": "/dev/static/js/32a32ab09.entry.js",
+                "version": "32a32ab09",
+                "deps": [
+                    "base"
+                ]
+            },
+            "27kaY": {
+                "uri": "https://bd.static0.com/dev/static/js/36fa36142.inlineTest.js",
+                "type": "js",
+                "path": "src/js/inlineTest.js",
+                "localPathName": "/dev/static/js/36fa36142.inlineTest.js",
+                "version": "36fa36142"
+            },
+            "fvr+Q": {
+                "uri": "https://bd.static0.com/dev/static/js/268390bef.noId.js",
+                "type": "js",
+                "path": "src/js/noId.js",
+                "localPathName": "/dev/static/js/268390bef.noId.js",
+                "version": "268390bef"
+            },
+            "GwHRf": {
+                "uri": "https://bd.static0.com/dev/static/js/b16261b4f.syncRequire.js",
+                "type": "js",
+                "path": "src/js/syncRequire.js",
+                "localPathName": "/dev/static/js/b16261b4f.syncRequire.js",
+                "version": "b16261b4f",
+                "deps": [
+                    "base"
+                ]
+            },
+            "XvY+s": {
+                "uri": "https://bd.static0.com/dev/static/js/9c5f2665c.uriTest.js",
+                "type": "js",
+                "path": "src/js/uriTest.js",
+                "localPathName": "/dev/static/js/9c5f2665c.uriTest.js",
+                "version": "9c5f2665c"
+            },
+            "WlvnF": {
+                "uri": "https://bd.static0.com/dev/static/jsx/412502852.module.js",
+                "type": "js",
+                "path": "src/jsx/module.js",
+                "localPathName": "/dev/static/jsx/412502852.module.js",
+                "version": "412502852",
+                "deps": [
+                    "math"
+                ]
+            }
+        },
+        "css": {
+            "icon-style": {
+                "uri": "https://bd.static0.com/dev/static/css/82e2712e8.font.css",
+                "type": "css",
+                "path": "src/css/font.css",
+                "localPathName": "/dev/static/css/82e2712e8.font.css",
+                "version": "82e2712e8",
+                "within": [
+                    "p0"
+                ]
+            },
+            "reset-style": {
+                "uri": "https://bd.static0.com/dev/static/css/566f3b0ba.reset.css",
+                "type": "css",
+                "path": "src/css/reset.css",
+                "localPathName": "/dev/static/css/566f3b0ba.reset.css",
+                "version": "566f3b0ba",
+                "within": [
+                    "p0"
+                ]
+            },
+            "main": {
+                "uri": "https://bd.static0.com/dev/static/css/31d9b6967.withId.css",
+                "type": "css",
+                "path": "src/css/withId.css",
+                "localPathName": "/dev/static/css/31d9b6967.withId.css",
+                "version": "31d9b6967",
+                "within": [
+                    "p0"
+                ]
+            },
+            "a5tlT": {
+                "uri": "https://bd.static0.com/dev/static/app/212cd4af3.moduleA.css",
+                "type": "css",
+                "path": "src/app/moduleA.css",
+                "localPathName": "/dev/static/app/212cd4af3.moduleA.css",
+                "version": "212cd4af3"
+            },
+            "YG9FV": {
+                "uri": "https://bd.static0.com/dev/static/css/9c0408721.inlineImage.css",
+                "type": "css",
+                "path": "src/css/inlineImage.css",
+                "localPathName": "/dev/static/css/9c0408721.inlineImage.css",
+                "version": "9c0408721",
+                "within": [
+                    "p0"
+                ]
+            },
+            "+mruT": {
+                "uri": "https://bd.static0.com/dev/static/css/8b0739007.mangle.css",
+                "type": "css",
+                "path": "src/css/mangle.css",
+                "localPathName": "/dev/static/css/8b0739007.mangle.css",
+                "version": "8b0739007",
+                "within": [
+                    "p0"
+                ]
+            },
+            "mFLE6": {
+                "uri": "https://bd.static0.com/dev/static/css/0731711e5.plain.css",
+                "type": "css",
+                "path": "src/css/plain.css",
+                "localPathName": "/dev/static/css/0731711e5.plain.css",
+                "version": "0731711e5",
+                "within": [
+                    "p0"
+                ]
+            },
+            "JAhPf": {
+                "uri": "https://bd.static0.com/dev/static/less/ba48a25f5.detail.css",
+                "type": "css",
+                "path": "src/less/detail.less",
+                "localPathName": "/dev/static/less/ba48a25f5.detail.css",
+                "version": "ba48a25f5"
+            },
+            "e6fCE": {
+                "uri": "https://bd.static0.com/dev/static/less/9cb15d86d.dialog.css",
+                "type": "css",
+                "path": "src/less/dialog.less",
+                "localPathName": "/dev/static/less/9cb15d86d.dialog.css",
+                "version": "9cb15d86d"
+            },
+            "UVPXf": {
+                "uri": "https://bd.static0.com/dev/static/less/c28f35ba4.import.css",
+                "type": "css",
+                "path": "src/less/import.less",
+                "localPathName": "/dev/static/less/c28f35ba4.import.css",
+                "version": "c28f35ba4"
+            },
+            "zhSrg": {
+                "type": "css",
+                "path": "src/less/empty.less",
+                "version": "v0.1"
+            },
+            "J0bO1": {
+                "uri": "https://bd.static0.com/dev/static/less/17ee30586.purecss.css",
+                "type": "css",
+                "path": "src/less/purecss.less",
+                "localPathName": "/dev/static/less/17ee30586.purecss.css",
+                "version": "17ee30586"
+            },
+            "Dez3f": {
+                "uri": "https://bd.static0.com/dev/static/less/a5f28e99b.shop_list.css",
+                "type": "css",
+                "path": "src/less/shop_list.less",
+                "localPathName": "/dev/static/less/a5f28e99b.shop_list.css",
+                "version": "a5f28e99b",
+                "css": [
+                    "e6fCE"
+                ]
+            },
+            "xI2wM": {
+                "uri": "https://bd.static0.com/dev/static/less/2c74f7209.verify_list.css",
+                "type": "css",
+                "path": "src/less/verify_list.less",
+                "localPathName": "/dev/static/less/2c74f7209.verify_list.css",
+                "version": "2c74f7209"
             }
         }
     },
     "paths": {
         "src/bb/backbone.js": "Backbone",
         "src/bb/jquery.js": "jquery",
-        "src/bb/underscore.js": "underscore"
+        "src/bb/underscore.js": "underscore",
+        "src/app/app.js": "app",
+        "src/es2015/class.js": "Foo",
+        "src/js/vrcode.js": "vrcode",
+        "src/js/withId.js": "base",
+        "src/jsx/app.jsx": "react-app",
+        "src/jsx/math.js": "math",
+        "src/app/moduleA.js": "AQJGK",
+        "src/app/moduleB.js": "zMZ2x",
+        "src/app/moduleC.js": "T4EMD",
+        "src/app/vrcode.js": "tospe",
+        "src/es2015/arrow.js": "Iu6OX",
+        "src/js/asyncRequire.js": "dj5Pa",
+        "src/js/entry.js": "sWXOl",
+        "src/js/inlineTest.js": "27kaY",
+        "src/js/noId.js": "fvr+Q",
+        "src/js/syncRequire.js": "GwHRf",
+        "src/js/uriTest.js": "XvY+s",
+        "src/jsx/module.js": "WlvnF",
+        "src/css/font.css": "icon-style",
+        "src/css/reset.css": "reset-style",
+        "src/css/withId.css": "main",
+        "src/app/moduleA.css": "a5tlT",
+        "src/css/inlineImage.css": "YG9FV",
+        "src/css/mangle.css": "+mruT",
+        "src/css/plain.css": "mFLE6",
+        "src/less/detail.less": "JAhPf",
+        "src/less/dialog.less": "e6fCE",
+        "src/less/import.less": "UVPXf",
+        "src/less/empty.less": "zhSrg",
+        "src/less/purecss.less": "J0bO1",
+        "src/less/shop_list.less": "Dez3f",
+        "src/less/verify_list.less": "xI2wM"
     },
     "cssClassMap": {}
 }

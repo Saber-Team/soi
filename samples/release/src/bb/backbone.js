@@ -1901,4 +1901,3 @@ var wrapError = function(model, options) {
 
 // 仍然向全局导出做向后兼容
 root.Backbone = Backbone;
-return Backbone;

@@ -1,1 +1,0 @@
-__d("dj5Pa",[],function(t,e,n,r){"use strict";function o(t){e.async(["vrcode"],function(t){t.isPast()})}var u=document.querySelector("button");document.addEventListener(u,"click",o)});

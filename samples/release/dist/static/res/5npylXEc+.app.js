@@ -1,1 +1,0 @@
-"use strict";function fn(){require.async(["tospe"],function(t){t.isPast()})}var moduleA=require("AQJGK"),moduleB=require("zMZ2x"),moduleC=require("T4EMD"),$btn=document.querySelector("button");document.addEventListener($btn,"click",fn);

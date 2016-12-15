@@ -1,0 +1,1 @@
+__d("Iu6OX",[],function(e,t,n,i){"use strict";i.ret=[1,2,3].map(function(e){return e+1})});

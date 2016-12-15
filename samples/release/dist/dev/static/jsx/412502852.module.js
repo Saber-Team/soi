@@ -1,0 +1,1 @@
+__d("WlvnF",["math"],function(e,t,n,i){"use strict";function r(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n]);return t["default"]=e,t}var o=t("math"),s=r(o);console.log("2π = "+s.sum(s.pi,s.pi))});

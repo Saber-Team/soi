@@ -1,1 +1,0 @@
-__d("math",[],function(t,e,n,o){"use strict";function r(t,e){return t+e}Object.defineProperty(o,"__esModule",{value:!0}),o.sum=r;o.pi=3.141593});
