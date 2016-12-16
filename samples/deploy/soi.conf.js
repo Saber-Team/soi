@@ -19,35 +19,35 @@ soi.config.set('types', ['js', 'css']);
 
 soi.deploy.task('dev',
     {
-      mapTo: './map/',
-      domain: '',
-      scandirs: ['src'],
-      receiver: 'http://localhost/receiver.php',
-      dir: '/Users/baidu/Git/soi/samples/deploy/dist',
-      cachedKey: '.cache',
-      watch: true,
-      loaders: [
-        new soi.Loaders.ImageLoader(),
-        new soi.Loaders.CSSLoader({
-          preProcessors: [
-            soi.processor.less
-          ]
-        }),
-        new soi.Loaders.JSLoader()
-      ],
-      pack: {
-        '/static/pkg/build.css': ['src/css/*.css'],
-        '/static/pkg/build.js': ['src/app/*.js']
-      }
+        mapTo: './map/',
+        domain: '',
+        scandirs: ['src'],
+        receiver: 'http://localhost/receiver.php',
+        dir: '/Users/baidu/Git/soi/samples/deploy/dist',
+        cachedKey: '.cache',
+        watch: true,
+        loaders: [
+            new soi.Loaders.ImageLoader(),
+            new soi.Loaders.FontLoader(),
+            new soi.Loaders.CSSLoader({
+                preProcessors: [
+                    soi.processor.less
+                ]
+            }),
+            new soi.Loaders.JSLoader()
+        ],
+        pack: {
+            '/static/pkg/build.css': ['src/css/*.css'],
+            '/static/pkg/build.js': ['src/app/*.js']
+        }
     })
     .addRule(/src\/(.*)\/.*/, {
-      to : '/static/$1/'
+        to : '/static/$1/'
     })
     .use('messid', {
-      ext: ['js', 'css']
+        ext: ['js', 'css']
     })
     .use('modux')
     .use('packager', {
-      noname: false,
-      algorithm: 'sha1'
+        noname: false
     });

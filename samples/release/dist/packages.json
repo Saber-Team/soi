@@ -1,6 +1,6 @@
 {
     "p0": {
-        "uri": "https://bd.static0.com/dev/static/pkg/KjtodioAj.pkg.build.css",
+        "uri": "https://bd.static0.com/dev/static/pkg/FvEz+U3jz.pkg.build.css",
         "has": [
             "icon-style",
             "YG9FV",
@@ -10,8 +10,8 @@
             "main"
         ],
         "type": "css",
-        "version": "KjtodioAj",
-        "localPathName": "/dev/static/pkg/KjtodioAj.pkg.build.css"
+        "version": "FvEz+U3jz",
+        "localPathName": "/static/pkg/FvEz+U3jz.pkg.build.css"
     },
     "p1": {
         "uri": "https://bd.static0.com/dev/static/pkg/hk+kstXuF.pkg.build.js",
@@ -24,6 +24,6 @@
         ],
         "type": "js",
         "version": "hk+kstXuF",
-        "localPathName": "/dev/static/pkg/hk+kstXuF.pkg.build.js"
+        "localPathName": "/static/pkg/hk+kstXuF.pkg.build.js"
     }
 }
