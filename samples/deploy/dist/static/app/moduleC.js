@@ -1,7 +1,7 @@
-__d("src/app/moduleC.js", function(require, exports, module) {
+__d("T4EMD", ["zMZ2x"], function(global, require, module, exports) {
 
 
-var moduleB = require('src/app/moduleB.js');
+var moduleB = require('zMZ2x');
 
 module.exports = {name: 'C'};
 });

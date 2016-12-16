@@ -1,4 +1,4 @@
-__d("vrcode", function(require, exports, module) {
+__d("vrcode", [], function(global, require, module, exports) {
 
 
 exports.isPast = function() {

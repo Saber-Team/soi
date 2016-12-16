@@ -1,18 +1,16 @@
-kerneljs.exec("app", function(require, exports, module) {
 
 
-var moduleA = require('src/app/moduleA.js');
-var moduleB = require('src/app/moduleB.js');
-var moduleC = require('src/app/moduleC.js');
+var moduleA = require('AQJGK');
+var moduleB = require('zMZ2x');
+var moduleC = require('T4EMD');
 
 var $btn = document.querySelector('button');
 document.addEventListener($btn, 'click', fn);
 
 function fn() {
-  require.async(["src/app/vrcode.js"], function(vrcode) {
+  require.async(["tospe"], function(vrcode) {
     if (vrcode.isPast()) {
       alert('done!');
     }
   });
 }
-});

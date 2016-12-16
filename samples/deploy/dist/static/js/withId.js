@@ -1,4 +1,4 @@
-__d("base", function(require, exports, module) {
+__d("base", [], function(global, require, module, exports) {
 
 
 module.exports = {name: 'A'};

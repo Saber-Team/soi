@@ -1,23 +1,27 @@
 {
     "p0": {
-        "uri": "/static/pkg/krbXuxDmH.pkg.build.css",
+        "uri": "/static/pkg/nW4LiAj0C.pkg.build.css",
         "has": [
-            "src/css/withId.css",
-            "src/css/reset.css",
-            "src/css/plain.css",
-            "src/css/inlineImage.css"
+            "YG9FV",
+            "mFLE6",
+            "xz4WD",
+            "5evpM"
         ],
-        "type": "css"
+        "type": "css",
+        "version": "nW4LiAj0C",
+        "localPathName": "/static/pkg/nW4LiAj0C.pkg.build.css"
     },
     "p1": {
-        "uri": "/static/pkg/tzucQhhAp.pkg.build.js",
+        "uri": "/static/pkg/8UaPd2PpL.pkg.build.js",
         "has": [
-            "src/app/vrcode.js",
-            "src/app/moduleA.js",
-            "src/app/moduleB.js",
-            "src/app/moduleC.js",
-            "app"
+            "AQJGK",
+            "zMZ2x",
+            "T4EMD",
+            "app",
+            "tospe"
         ],
-        "type": "js"
+        "type": "js",
+        "version": "8UaPd2PpL",
+        "localPathName": "/static/pkg/8UaPd2PpL.pkg.build.js"
     }
 }

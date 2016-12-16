@@ -1,7 +1,7 @@
-__d("src/app/moduleB.js", function(require, exports, module) {
+__d("zMZ2x", ["AQJGK"], function(global, require, module, exports) {
 
 
-var A = require('src/app/moduleA.js');
+var A = require('AQJGK');
 
 exports.getModuleA = function() {
   return new A();

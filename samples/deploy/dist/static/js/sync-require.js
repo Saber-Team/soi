@@ -1,4 +1,4 @@
-__d("src/js/sync-require.js", function(require, exports, module) {
+__d("SqQ7E", ["base"], function(global, require, module, exports) {
 
 
 var A = require('base');

@@ -17,10 +17,12 @@
 // 资源表中包含的资源类型
 soi.config.set('types', ['js', 'css']);
 
+const domain = '';
+
 soi.deploy.task('dev',
     {
         mapTo: './map/',
-        domain: '',
+        domain: domain,
         scandirs: ['src'],
         receiver: 'http://localhost/receiver.php',
         dir: '/Users/baidu/Git/soi/samples/deploy/dist',
@@ -41,8 +43,10 @@ soi.deploy.task('dev',
             '/static/pkg/build.js': ['src/app/*.js']
         }
     })
-    .addRule(/src\/(.*)\/.*/, {
-        to : '/static/$1/'
+    .addRule(/src\/(.*)\/(.*)/, {
+        to : function($0, $1, $2) {
+            return [domain + '/static', $1, $2].join('/');
+        }
     })
     .use('messid', {
         ext: ['js', 'css']

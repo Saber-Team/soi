@@ -1,4 +1,4 @@
-__d("src/js/noId.js", function(require, exports, module) {
+__d("fvr+Q", [], function(global, require, module, exports) {
 
 
 exports.identity = 'noname';
