@@ -15,7 +15,7 @@ __Miscellaneous__
 [![License][license-image]][license-url]
 [![maintain][maintain-image]][project-url]
 
-## soi前端工程化工具
+## 前端构建工具
 
 <img src="./doc/assets/sloc.png" alt="sloc stats" style="display: inline-block; position: relative; width: 80%; height: auto;" />
 
@@ -42,145 +42,72 @@ __Miscellaneous__
 {
     "resource": {
         "js": {
-            "app": {
-                "uri": "https://fbstatic.com/static/res/5npylXEc+.app.js",
+            "Backbone": {
+                "uri": "https://bd.static0.com/dev/static/bb/7fedd6102.backbone.js",
                 "type": "js",
-                "path": "src/app/app.js",
-                "within": [
-                    "p1"
-                ],
+                "path": "src/bb/backbone.js",
+                "localPathName": "/static/bb/7fedd6102.backbone.js",
+                "version": "7fedd6102",
                 "deps": [
-                    "AQJGK",
-                    "zMZ2x",
-                    "T4EMD"
-                ],
-                "asyncLoaded": [
-                    "tospe"
+                    "underscore",
+                    "jquery"
                 ]
             },
-            "Foo": {
-                "uri": "https://fbstatic.com/static/res/zRPoJvV3n.class.js",
+            "jquery": {
+                "uri": "https://bd.static0.com/dev/static/bb/5cd353a52.jquery.js",
                 "type": "js",
-                "path": "src/es2015/class.js"
+                "path": "src/bb/jquery.js",
+                "localPathName": "/static/bb/5cd353a52.jquery.js",
+                "version": "5cd353a52"
             },
-            "react-app": {
-                "uri": "https://fbstatic.com/static/res/17uDYG2lB.app.js",
+            "underscore": {
+                "uri": "https://bd.static0.com/dev/static/bb/71b05f21b.underscore.js",
                 "type": "js",
-                "path": "src/jsx/app.jsx",
-                "deps": [
-                    "math"
-                ]
-            },
-            "math": {
-                "uri": "https://fbstatic.com/static/res/Blpsm0bUP.math.js",
-                "type": "js",
-                "path": "src/jsx/math.js"
-            },
-            "vrcode": {
-                "uri": "https://fbstatic.com/static/res/YAun8+H3+.vrcode.js",
-                "type": "js",
-                "path": "src/js/vrcode.js"
-            },
-            "base": {
-                "uri": "https://fbstatic.com/static/res/ey9TqfIYO.withId.js",
-                "type": "js",
-                "path": "src/js/withId.js"
-            },
-            "AQJGK": {
-                "uri": "https://fbstatic.com/static/res/MeDp4uPtR.moduleA.js",
-                "type": "js",
-                "path": "src/app/moduleA.js",
-                "within": [
-                    "p1"
-                ],
-                "css": [
-                    "a5tlT"
-                ]
-            },
-            "zMZ2x": {
-                "uri": "https://fbstatic.com/static/res/KCwSmYCgZ.moduleB.js",
-                "type": "js",
-                "path": "src/app/moduleB.js",
-                "within": [
-                    "p1"
-                ],
-                "deps": [
-                    "AQJGK"
-                ]
+                "path": "src/bb/underscore.js",
+                "localPathName": "/static/bb/71b05f21b.underscore.js",
+                "version": "71b05f21b"
             }
         },
         "css": {
+            "icon-style": {
+                "uri": "https://bd.static0.com/dev/static/css/82e2712e8.font.css",
+                "type": "css",
+                "path": "src/css/font.css",
+                "localPathName": "/static/css/82e2712e8.font.css",
+                "version": "82e2712e8",
+                "within": [
+                    "p0"
+                ]
+            },
             "reset-style": {
-                "uri": "https://fbstatic.com/static/res/Vm87C6yZl.reset.css",
+                "uri": "https://bd.static0.com/dev/static/css/566f3b0ba.reset.css",
                 "type": "css",
                 "path": "src/css/reset.css",
+                "localPathName": "/static/css/566f3b0ba.reset.css",
+                "version": "566f3b0ba",
                 "within": [
                     "p0"
                 ]
             },
             "main": {
-                "uri": "https://fbstatic.com/static/res/g69kHLSo2.withId.css",
+                "uri": "https://bd.static0.com/dev/static/css/31d9b6967.withId.css",
                 "type": "css",
                 "path": "src/css/withId.css",
+                "localPathName": "/static/css/31d9b6967.withId.css",
+                "version": "31d9b6967",
                 "within": [
                     "p0"
                 ]
-            },
-            "a5tlT": {
-                "uri": "https://fbstatic.com/static/res/ISzUrzbxo.moduleA.css",
-                "type": "css",
-                "path": "src/app/moduleA.css"
-            },
-            "YG9FV": {
-                "uri": "https://fbstatic.com/static/res/47bCoH0Nq.inlineImage.css",
-                "type": "css",
-                "path": "src/css/inlineImage.css",
-                "within": [
-                    "p0"
-                ]
-            },
-            "JAhPf": {
-                "uri": "https://fbstatic.com/static/res/ukiiX1OM0.detail.css",
-                "type": "css",
-                "path": "src/less/detail.less"
-            },
-            "e6fCE": {
-                "uri": "https://fbstatic.com/static/res/nLFdhtvim.dialog.css",
-                "type": "css",
-                "path": "src/less/dialog.less"
-            },
-            "zhSrg": {
-                "type": "css",
-                "path": "src/less/empty.less"
-            },
-            "UVPXf": {
-                "uri": "https://fbstatic.com/static/res/tEUjsrWyA.import.css",
-                "type": "css",
-                "path": "src/less/import.less"
             }
         }
     },
     "paths": {
-        "src/jsx/module.js": "WlvnF",
-        "src/js/asyncRequire.js": "dj5Pa",
-        "src/js/inlineTest.js": "27kaY",
-        "src/js/entry.js": "sWXOl",
-        "src/js/noId.js": "fvr+Q",
-        "src/js/syncRequire.js": "GwHRf",
-        "src/js/uriTest.js": "XvY+s",
+        "src/bb/backbone.js": "Backbone",
+        "src/bb/jquery.js": "jquery",
+        "src/bb/underscore.js": "underscore",
+        "src/css/font.css": "icon-style",
         "src/css/reset.css": "reset-style",
-        "src/css/withId.css": "main",
-        "src/app/moduleA.css": "a5tlT",
-        "src/css/inlineImage.css": "YG9FV",
-        "src/css/mangle.css": "+mruT",
-        "src/css/plain.css": "mFLE6",
-        "src/less/detail.less": "JAhPf",
-        "src/less/dialog.less": "e6fCE",
-        "src/less/empty.less": "zhSrg",
-        "src/less/import.less": "UVPXf",
-        "src/less/purecss.less": "J0bO1",
-        "src/less/shop_list.less": "Dez3f",
-        "src/less/verify_list.less": "xI2wM"
+        "src/css/withId.css": "main"
     },
     "cssClassMap": {}
 }
@@ -229,6 +156,27 @@ __Miscellaneous__
 soi 通过命令行执行操作, 默认当前目录为所要扫描的工程目录。在配置文件中通过全局soi对象提供的api进行配置, 全部方法可以从[这里找到](./doc/soi.api.md), 常用方法有:
 
 ### soi.addRule
+
+为多个构建任务添加全局共享的打包路径规则, 例
+
+```
+soi.addRule(/src\/(.*)\/(.*)/, {
+	to : function($0, $1, $2) {
+    	return [domain + '/static', $1, $2].join('/');
+    }
+})
+```
+会匹配工程目录下路径类似`src/js/jquery.js`的所有资源, 将其线上打包路径设置为`https://s0.db.com/static/js/jquery.js`. addRule的第二个参数也可以为一个字符串配置, 例
+
+```
+soi.addRule(/src\/(.*)\/(.*)/, '/static/$1/')
+```
+
+注意: 
+
+1. task.addRule第二个参数传字符串不用自己拼接domain的设置, soi会自动加上为task设置的domain属性. 但是如果第二个参数传函数就需要自己拼接.
+2. task.addRule第二个参数传字符串
+
 
 ### soi.config.get
 

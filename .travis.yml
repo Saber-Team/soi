@@ -17,3 +17,4 @@ branches:
 
 before_script:
   - npm install -g mocha
+  - npm install -g istanbul

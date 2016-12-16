@@ -8,8 +8,12 @@
     "node": ">= 4.0.0"
   },
   "scripts": {
-    "test": "mocha --timeout 60000 ./test/**/*-Spec.js"
+    "test": "mocha --timeout 60000 ./test/**/*-Spec.js",
+    "cover": "istanbul cover -i ./lib/**/*.js ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage && rm -rf ./coverage"
   },
+  "pre-commit": [
+    "cover"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Saber-Team/soi.git"
@@ -39,6 +43,9 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "codacy-coverage": "^2.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^2.4.5",
+    "mocha-lcov-reporter": "^1.2.0"
   }
 }
