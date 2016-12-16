@@ -155,7 +155,11 @@ __Miscellaneous__
 
 soi 通过命令行执行操作, 默认当前目录为所要扫描的工程目录。在配置文件中通过全局soi对象提供的api进行配置, 全部方法可以从[这里找到](./doc/soi.api.md), 常用方法有:
 
-### soi.addRule
+### soi.addRule(pattern, option)
+
+* **pattern {string|Regexp}** 匹配模式, glob string或者正则
+* **option {object}**
+	* **to {function|string}** 线上路径
 
 为多个构建任务添加全局共享的打包路径规则, 例
 
@@ -166,23 +170,53 @@ soi.addRule(/src\/(.*)\/(.*)/, {
     }
 })
 ```
-会匹配工程目录下路径类似`src/js/jquery.js`的所有资源, 将其线上打包路径设置为`https://s0.db.com/static/js/jquery.js`. addRule的第二个参数也可以为一个字符串配置, 例
+会匹配工程目录下路径类似`src/js/jquery.js`的所有资源, 将其线上打包路径设置为`https://s0.db.com/static/js/jquery.js`. addRule的第二个参数的`to`也可以为一个字符串配置, 例
 
 ```
-soi.addRule(/src\/(.*)\/(.*)/, '/static/$1/')
+soi.addRule(/src\/(.*)\/(.*)/, {
+	to: '/static/$1/'
+})
 ```
 
 注意: 
 
 1. task.addRule第二个参数传字符串不用自己拼接domain的设置, soi会自动加上为task设置的domain属性. 但是如果第二个参数传函数就需要自己拼接.
-2. task.addRule第二个参数传字符串
+2. task.addRule第二个参数传字符串, 无需考虑文件名字, 只需指定目录即可, 若`to`最后未加上系统的目录分隔符, 构建工具也会自行加上
 
 
 ### soi.config.get
 
 ### soi.config.set
 
-### soi.release.task
+### soi.release.task(name, option)
+
+* **name {string}** 构建任务的名称
+* **option {object}** 任务配置对象
+	* **dir {string}** 相对工程目录的目录地址, 用于存放打包后的静态文件
+    * **mapTo {string}** 相对工程目录的目录地址, 用于存放打包后的资源表文件
+    * **domain {string}** 资源线上cdn的地址, 如 'https://s0.bdstatic.com/'
+    * **scandirs {Array.<string>}** 扫描的相对工程目录的目录, 如 `['src']`
+    * **loaders {Array.<ResourceLoader>}** 要扫描的文件类型, 不同类型对应soi.Loaders的一个属性, 传入即可, 如 
+    
+    ``` javascript 
+    [
+    	new soi.Loaders.JSLoader(),
+    	new soi.Loaders.CSSLoader()
+    ]
+    ```
+    
+    * **pack {object}** 文件合并配置, 需要和packger插件配合使用, 配置是参考如下代码:
+     
+    ``` javascript
+    {
+          '/static/pkg/build.css': ['src/css/*.css'],
+          '/static/pkg/build.js': ['src/app/*.js']
+    }
+    ```
+      
+    * **preserveComments {boolean}** 打包是否保留注释
+
+生成一个release类型的task, 用于构建工程目录下的代码. 第一个参数传递task的名称, 第二个参数传递
 
 ### soi.deploy.task
 
