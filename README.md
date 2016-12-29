@@ -17,6 +17,9 @@ __Miscellaneous__
 
 ## 前端构建工具
 
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/18bf1b237bed4d4eb554adf191a5c973)](https://www.codacy.com/app/zmike86/soi?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Saber-Team/soi&amp;utm_campaign=badger)
+
 <img src="./doc/assets/sloc.png" alt="sloc stats" style="display: inline-block; position: relative; width: 80%; height: auto;" />
 
 **soi** 是一个前端项目构建打包构建工具, 内部集成了 [neo](https://github.com/AceMood/neo) 作为其资源扫描器, soi 相当于 neo 的后处理服务, 提供常见的打包插件, 如压缩, 合并, 文件指纹, CommonJS包装, less解析等等。
